@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrimVision — GrimFolio Docs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function(){var t=localStorage.getItem('grimfolio-docs-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+</head>
+<body>
+
+<div class="layout">
+
+  <nav class="topnav">
+    <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    <a href="/index.html" class="topnav-wordmark">Grim<span>Folio</span> Docs</a>
+    <div class="topnav-search">
+      <input type="search" id="search-input" placeholder="Search the docs..." autocomplete="off" aria-label="Search documentation">
+      <div class="search-dropdown" id="search-dropdown"></div>
+    </div>
+    <div class="topnav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9788;</button>
+      <a href="https://grimfolio.com" target="_blank" rel="noopener" class="topnav-site-link">grimfolio.com</a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <nav>
+      <div class="nav-group">
+        <div class="nav-group-label">Getting Started</div>
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/dashboard.html" class="nav-link">Dashboard</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">The App</div>
+        <a href="/stage-1.html" class="nav-link">Stage 1 — The Pile</a>
+        <a href="/stage-2.html" class="nav-link">Stage 2 — Build</a>
+        <a href="/stage-3.html" class="nav-link">Stage 3 — Production</a>
+        <a href="/grim.html" class="nav-link">Grim</a>
+        <a href="/exports.html" class="nav-link">Exports</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Libraries and Tools</div>
+        <a href="/reference-documents.html" class="nav-link">Reference Documents</a>
+        <a href="/inspiration-library.html" class="nav-link">Inspiration Library</a>
+        <a href="/grimvision.html" class="nav-link active">GrimVision</a>
+        <a href="/inventory.html" class="nav-link">Inventory</a>
+        <a href="/calendar.html" class="nav-link">Calendar</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Account</div>
+        <a href="/account.html" class="nav-link">Account Settings</a>
+        <a href="/team.html" class="nav-link">Team and Collaboration</a>
+        <a href="/referrals.html" class="nav-link">Referrals and Ambassador</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Blog</div>
+        <a href="/blog/index.html" class="nav-link">All Posts</a>
+        <a href="/blog/planning-the-ritual-2026.html" class="nav-link">Planning The Ritual 2026</a>
+        <a href="/blog/why-spreadsheets-dont-work.html" class="nav-link">Why Spreadsheets Don't Work</a>
+        <a href="/blog/grimfolio-for-dnd.html" class="nav-link">GrimFolio for D&amp;D</a>
+      </div>
+    </nav>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <main class="main-content">
+    <div class="content-body">
+
+      <div class="page-header">
+        <h1>GrimVision</h1>
+      </div>
+
+      <p>GrimVision generates AI concept art from inside your project. Use it to visualize a room before it's built, reference a prop style, explore a character design, or just see what your haunt's atmosphere looks like rendered out. Generated images save to your GrimVision Library and link directly to the card that inspired them.</p>
+
+      <p>GrimVision is a credit-based feature available to Pro and Studio accounts. Credits are purchased separately from your subscription.</p>
+
+      <div class="screenshot-placeholder">
+        <div class="placeholder-icon">&#128247;</div>
+        <div class="placeholder-caption">Screenshot: The GrimVision panel open from a card drawer showing niche selector, style templates, and description input</div>
+      </div>
+
+      <h2 id="accessing-grimvision">Accessing GrimVision</h2>
+
+      <p>GrimVision is accessed from inside a card. Open any card's detail drawer by double-clicking it in Stage 2. In the <strong>Inspiration</strong> section click the <strong>GrimVision</strong> button. Your current credit balance appears alongside the button label.</p>
+
+      <h2 id="generating-an-image">Generating an Image</h2>
+
+      <p>The GrimVision panel opens on the right side of the canvas. Generation has three steps.</p>
+
+      <h3 id="step-1-niche">Step 1 — Select a niche</h3>
+
+      <p>Choose the category that best matches your project type.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Niche</th>
+            <th>Best for</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Haunted House</strong></td>
+            <td>Scare attractions, haunted experiences, dark atmosphere.</td>
+          </tr>
+          <tr>
+            <td><strong>Escape Room</strong></td>
+            <td>Puzzle environments, themed rooms, set design.</td>
+          </tr>
+          <tr>
+            <td><strong>Film</strong></td>
+            <td>Production design, scene visualization, costume reference.</td>
+          </tr>
+          <tr>
+            <td><strong>Cosplay</strong></td>
+            <td>Character design, costume details, prop reference.</td>
+          </tr>
+          <tr>
+            <td><strong>Theater</strong></td>
+            <td>Stage sets, lighting concepts, period design.</td>
+          </tr>
+          <tr>
+            <td><strong>TTRPG</strong></td>
+            <td>Dungeons, creatures, characters, world building.</td>
+          </tr>
+          <tr>
+            <td><strong>General</strong></td>
+            <td>Anything that does not fit a specific niche.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="step-2-style">Step 2 — Select a style template</h3>
+
+      <p>Style templates are tuned to the selected niche. Each one steers the generation toward a specific visual output type.</p>
+
+      <p>Examples across niches include: Atmospheric Background, Prop Reference Sheet, Creature or Monster Sheet, Character Portrait, Floor Plan Sketch, Lighting Concept, Scene Overview, and others. The available templates update based on your niche selection.</p>
+
+      <h3 id="step-3-description">Step 3 — Write a description</h3>
+
+      <p>Describe what you want to see. Be specific about materials, mood, lighting, color, and scale. The more specific the description the more useful the output.</p>
+
+      <p>A few things that work well:</p>
+      <ul>
+        <li>Name the setting directly: "abandoned Victorian ballroom with collapsed ceiling, fog, single spotlight"</li>
+        <li>Describe materials and condition: "rusted iron cage, chains, dried blood stains, dim orange light"</li>
+        <li>Reference the card context: "the entrance room of a haunted farmhouse, corn stalks visible through broken windows"</li>
+      </ul>
+
+      <p>Click <strong>Generate</strong> to create the image. Each generation uses credits. The number of credits per generation is shown before you confirm.</p>
+
+      <h2 id="credits">Credits</h2>
+
+      <p>GrimVision runs on a separate credit system from Grim's token allowance. Credits are purchased in packs via Account Settings &rarr; Plan and Billing.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Detail</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Credits per generation</strong></td>
+            <td>Shown in the panel before you generate.</td>
+          </tr>
+          <tr>
+            <td><strong>Credit balance</strong></td>
+            <td>Displayed on the GrimVision button in every card drawer.</td>
+          </tr>
+          <tr>
+            <td><strong>Purchasing</strong></td>
+            <td>Account Settings &rarr; Plan and Billing &rarr; GrimVision Credits.</td>
+          </tr>
+          <tr>
+            <td><strong>Expiry</strong></td>
+            <td>Purchased credits do not expire.</td>
+          </tr>
+          <tr>
+            <td><strong>First use</strong></td>
+            <td>New accounts receive a small number of free credits on first use.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>When your credit balance reaches zero the Generate button is disabled and a link to purchase more appears in the panel.</p>
+
+      <h2 id="your-grimvision-library">Your GrimVision Library</h2>
+
+      <p>Every image you generate is saved automatically to your GrimVision Library. The library is accessible from the Dashboard library cards.</p>
+
+      <p>In the library you can:</p>
+      <ul>
+        <li>Browse all generated images across all projects</li>
+        <li>Rename any image by clicking its filename</li>
+        <li>Download any image</li>
+        <li>See which project and card it was generated from</li>
+      </ul>
+
+      <p>Generated images are also available in the canvas image picker's <strong>GrimVision Library</strong> tab so you can place them directly on the canvas as background images without leaving Stage 2.</p>
+
+      <h2 id="generated-images-and-cards">Generated Images and Cards</h2>
+
+      <p>When GrimVision generates an image it is automatically linked to the card that was open when you generated it. The image appears as a thumbnail in the card's Inspiration section alongside any other linked images.</p>
+
+      <p>From the Inspiration section you can:</p>
+      <ul>
+        <li>Set the image as the card's canvas photo tile using the <strong>Show on canvas</strong> toggle in the Photos section</li>
+        <li>Unlink the image from the card without deleting it from your library</li>
+        <li>Open the image in a lightbox by clicking the thumbnail</li>
+      </ul>
+
+      <div class="callout">
+        GrimVision images are yours. They are stored in your account and do not expire. Cancelling a Pro subscription does not delete your GrimVision Library — your images remain accessible.
+      </div>
+
+      <hr>
+
+      <p>
+        <a href="/inspiration-library.html">&larr; Inspiration Library</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="/inventory.html">Next: Inventory &rarr;</a>
+      </p>
+
+    </div>
+  </main>
+
+  <aside class="toc">
+    <div class="toc-label">On This Page</div>
+    <ul class="toc-list" id="toc-list"></ul>
+  </aside>
+
+</div>
+
+<div id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="main.js" defer></script>
+<script src="search.js" defer></script>
+</body>
+</html>
