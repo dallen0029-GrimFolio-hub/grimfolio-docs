@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory — GrimFolio Docs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function(){var t=localStorage.getItem('grimfolio-docs-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+</head>
+<body>
+
+<div class="layout">
+
+  <nav class="topnav">
+    <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    <a href="/index.html" class="topnav-wordmark">Grim<span>Folio</span> Docs</a>
+    <div class="topnav-search">
+      <input type="search" id="search-input" placeholder="Search the docs..." autocomplete="off" aria-label="Search documentation">
+      <div class="search-dropdown" id="search-dropdown"></div>
+    </div>
+    <div class="topnav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9788;</button>
+      <a href="https://grimfolio.com" target="_blank" rel="noopener" class="topnav-site-link">grimfolio.com</a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <nav>
+      <div class="nav-group">
+        <div class="nav-group-label">Getting Started</div>
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/dashboard.html" class="nav-link">Dashboard</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">The App</div>
+        <a href="/stage-1.html" class="nav-link">Stage 1 — The Pile</a>
+        <a href="/stage-2.html" class="nav-link">Stage 2 — Build</a>
+        <a href="/stage-3.html" class="nav-link">Stage 3 — Production</a>
+        <a href="/grim.html" class="nav-link">Grim</a>
+        <a href="/exports.html" class="nav-link">Exports</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Libraries and Tools</div>
+        <a href="/reference-documents.html" class="nav-link">Reference Documents</a>
+        <a href="/inspiration-library.html" class="nav-link">Inspiration Library</a>
+        <a href="/grimvision.html" class="nav-link">GrimVision</a>
+        <a href="/inventory.html" class="nav-link active">Inventory</a>
+        <a href="/calendar.html" class="nav-link">Calendar</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Account</div>
+        <a href="/account.html" class="nav-link">Account Settings</a>
+        <a href="/team.html" class="nav-link">Team and Collaboration</a>
+        <a href="/referrals.html" class="nav-link">Referrals and Ambassador</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Blog</div>
+        <a href="/blog/index.html" class="nav-link">All Posts</a>
+        <a href="/blog/planning-the-ritual-2026.html" class="nav-link">Planning The Ritual 2026</a>
+        <a href="/blog/why-spreadsheets-dont-work.html" class="nav-link">Why Spreadsheets Don't Work</a>
+        <a href="/blog/grimfolio-for-dnd.html" class="nav-link">GrimFolio for D&amp;D</a>
+      </div>
+    </nav>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <main class="main-content">
+    <div class="content-body">
+
+      <div class="page-header">
+        <h1>Inventory</h1>
+      </div>
+
+      <p>The Inventory Manager is GrimFolio's material tracking system. It lives outside any individual project so your prop collections, consumable supplies, and tools are available to every project you build. Track quantities, set low-stock alerts, manage a shopping list, and assign items to specific cards. The system has two faces: a full standalone page for managing your inventory in detail, and a panel inside Stage 2 Build for assigning items to cards and tracking consumption.</p>
+
+      <h2 id="the-standalone-page">The Standalone Inventory Page</h2>
+
+      <p>Access the Inventory Manager from the Dashboard library cards. The page is split into two columns: Collections on the left and Shopping List on the right.</p>
+
+      <figure class="lightbox-fig full-page">
+        <img src="images/inventory-full-page.png" alt="The full Inventory Manager showing collections with item rows on the left and the shopping list on the right" class="img-large">
+        <figcaption>The full Inventory Manager showing collections on the left and the shopping list on the right.</figcaption>
+      </figure>
+
+      <h2 id="collections">Collections</h2>
+
+      <p>Everything in your inventory lives inside a collection. A collection is a named color-coded group of items. You might have one for props, one for fog machines and effects, one for consumables like fake blood and adhesive.</p>
+
+      <p>Click <strong>+ New Collection</strong> at the bottom of the left panel to create one. Pick a color from the preset palette and type a name.</p>
+
+      <p><strong>Collection header elements:</strong></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Color swatch</strong></td>
+            <td>Visual identifier. Click &middot;&middot;&middot; then Change color to update.</td>
+          </tr>
+          <tr>
+            <td><strong>Name</strong></td>
+            <td>Double-click to rename inline.</td>
+          </tr>
+          <tr>
+            <td><strong>Item count</strong></td>
+            <td>Number of items in the collection.</td>
+          </tr>
+          <tr>
+            <td><strong>Low-stock badge</strong></td>
+            <td>Amber triangle when one or more items are below their threshold.</td>
+          </tr>
+          <tr>
+            <td><strong>+ Add Item</strong></td>
+            <td>Opens an inline row to add a new item.</td>
+          </tr>
+          <tr>
+            <td><strong>&middot;&middot;&middot; menu</strong></td>
+            <td>Rename, Change color, Delete (requires confirmation).</td>
+          </tr>
+          <tr>
+            <td><strong>Collapse arrow</strong></td>
+            <td>Collapses the item list without removing anything.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Collections are draggable. Grab the handle on the left of the header and drag to reorder.</p>
+
+      <h2 id="items">Items</h2>
+
+      <p>Click <strong>+ Add Item</strong> on any collection header, type the item name, and press Enter or click Add. Items start with a quantity of 1 and the unit "each."</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Drag handle</strong></td>
+            <td>Reorder items within the collection.</td>
+          </tr>
+          <tr>
+            <td><strong>Name</strong></td>
+            <td>Double-click to rename.</td>
+          </tr>
+          <tr>
+            <td><strong>Quantity stepper</strong></td>
+            <td>&#8722; and + buttons change quantity by 1. Click the number to type a value directly.</td>
+          </tr>
+          <tr>
+            <td><strong>Unit</strong></td>
+            <td>Click to edit. Accepts any text: pcs, ft, gallons, etc.</td>
+          </tr>
+          <tr>
+            <td><strong>Consumable toggle</strong></td>
+            <td>Marks the item as a consumable. Enables the low-stock threshold field.</td>
+          </tr>
+          <tr>
+            <td><strong>Alert at</strong></td>
+            <td>Sets the low-stock threshold. Only appears when Consumable is checked.</td>
+          </tr>
+          <tr>
+            <td><strong>Notes button</strong></td>
+            <td>Expands a notes text area beneath the row.</td>
+          </tr>
+          <tr>
+            <td><strong>Delete button</strong></td>
+            <td>Visible on hover. Deletes immediately without confirmation.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Right-click any item to access a small context menu: Rename, Add to Shopping List, Delete.</p>
+
+      <h2 id="low-stock-alerts">Low-Stock Alerts</h2>
+
+      <p>When any consumable item's quantity reaches its threshold an amber warning icon appears on the item row and on the collection header. A banner appears at the top of the page when any item is flagged. Clicking the banner scrolls to the first flagged item.</p>
+
+      <h2 id="shopping-list">Shopping List</h2>
+
+      <p>The right panel is a project-agnostic shopping list. Add items manually with <strong>+ Add item</strong> or send items there from any collection row via right-click.</p>
+
+      <p>Check an item to mark it purchased. If <strong>Auto-add</strong> is toggled on and the item was added from a specific collection, marking it purchased automatically increments that item's quantity in the linked collection.</p>
+
+      <p>The <strong>Purchased</strong> section at the bottom accumulates checked items. Click <strong>Clear purchased</strong> to remove them.</p>
+
+      <div class="callout">
+        The Shopping List is not scoped to any project. It is a global list that works alongside all your collections. Use it for hardware store runs, vendor orders, or any purchase that spans multiple projects.
+      </div>
+
+      <h2 id="exporting-inventory">Exporting Inventory</h2>
+
+      <p>The <strong>Export</strong> button in the top bar generates a PDF of your full inventory showing all collections and their current quantities.</p>
+
+      <h2 id="inventory-inside-stage-2">Inventory Inside Stage 2</h2>
+
+      <p>When you are in Stage 2 Build, click the <strong>Inventory</strong> button in the left toolbar to open the Inventory panel. This panel only shows collections that have been linked to the current project.</p>
+
+      <h3 id="linking-a-collection">Linking a Collection to a Project</h3>
+
+      <p>From inside Stage 2 click <strong>+ Link a collection</strong> at the bottom of the Inventory panel. A picker opens listing all your collections. Check which ones should be accessible in this project. From the standalone page you can also open any collection and link it to projects from the collection header menu.</p>
+
+      <p>Once a collection is linked its items appear in the panel tabs.</p>
+
+      <h3 id="items-tab">Items Tab</h3>
+
+      <p>Shows all items with an Item category. Each row displays the item name, available quantity (total minus any quantity currently in use), and an <strong>Assign</strong> button.</p>
+
+      <p>Clicking Assign enters pick mode. A banner appears: "Click a card to assign [item name]." Click any card on the canvas to complete the assignment. The item then appears in that card's Inventory section in the detail drawer. Press Escape to cancel.</p>
+
+      <h3 id="consumables-tab">Consumables Tab</h3>
+
+      <p>Shows items with a Consumable category. The quantity shown is the current on-hand count. An amber dot replaces the status dot when the item is at or below its threshold.</p>
+
+      <p>Each consumable has a <strong>Use</strong> button. Clicking it opens a quantity popover. Confirm the amount used and the quantity updates immediately.</p>
+
+      <h3 id="tools-tab">Tools Tab</h3>
+
+      <p>Shows items with a Tool category. Each row has an inline text field for owner or condition notes. Notes save automatically.</p>
+
+      <h2 id="inventory-in-the-card-drawer">Inventory in the Card Drawer</h2>
+
+      <p>The card detail drawer in Stage 2 has an Inventory section. Items assigned via the Inventory panel appear here showing what is allocated to that card. You can view assignments without leaving the drawer.</p>
+
+      <h2 id="inventory-in-stage-3">Inventory in Stage 3</h2>
+
+      <p>The Inventory widget in Stage 3 Production shows all inventory items assigned to cards across the project grouped by card name. Each row shows item name, quantity in use, quantity available, and a &#9888; Low badge when stock is at or below the threshold. Consumable items have a <strong>Use Some</strong> button for logging consumption directly from the Production board.</p>
+
+      <p>A collapsible <strong>Collection Overview</strong> section at the bottom of the widget shows all linked collections with low-stock alerts across every item.</p>
+
+      <hr>
+
+      <p>
+        <a href="/grimvision.html">&larr; GrimVision</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="/calendar.html">Next: Calendar &rarr;</a>
+      </p>
+
+    </div>
+  </main>
+
+  <aside class="toc">
+    <div class="toc-label">On This Page</div>
+    <ul class="toc-list" id="toc-list"></ul>
+  </aside>
+
+</div>
+
+<div id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="main.js" defer></script>
+<script src="search.js" defer></script>
+</body>
+</html>
