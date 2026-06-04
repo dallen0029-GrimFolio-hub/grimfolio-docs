@@ -576,6 +576,7 @@ figure.lightbox-fig.full-page:hover::after {
   background: var(--overlay);
   align-items: center;
   justify-content: center;
+  cursor: zoom-out;
 }
 
 #lightbox.open {
@@ -583,11 +584,25 @@ figure.lightbox-fig.full-page:hover::after {
 }
 
 #lightbox img {
-  max-width: 75vw;
-  max-height: 80vh;
-  object-fit: contain;
+  /* Natural resolution — no viewport cap */
+  max-width: none;
+  max-height: none;
+  width: auto;
+  height: auto;
+  object-fit: none;
   border-radius: 8px;
   box-shadow: 0 24px 64px rgba(0,0,0,0.6);
+}
+
+/* Disable lightbox on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  figure.lightbox-fig {
+    cursor: default;
+    pointer-events: none;
+  }
+  figure.lightbox-fig::after {
+    display: none;
+  }
 }
 
 /* ── Search Dropdown ───────────────────────────────────────── */
