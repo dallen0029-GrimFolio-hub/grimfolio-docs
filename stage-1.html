@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stage 1 — The Pile — GrimFolio Docs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function(){var t=localStorage.getItem('grimfolio-docs-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+</head>
+<body>
+
+<div class="layout">
+
+  <nav class="topnav">
+    <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    <a href="/index.html" class="topnav-wordmark">Grim<span>Folio</span> Docs</a>
+    <div class="topnav-search">
+      <input type="search" id="search-input" placeholder="Search the docs..." autocomplete="off" aria-label="Search documentation">
+      <div class="search-dropdown" id="search-dropdown"></div>
+    </div>
+    <div class="topnav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9788;</button>
+      <a href="https://grimfolio.com" target="_blank" rel="noopener" class="topnav-site-link">grimfolio.com</a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <nav>
+      <div class="nav-group">
+        <div class="nav-group-label">Getting Started</div>
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/dashboard.html" class="nav-link">Dashboard</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">The App</div>
+        <a href="/stage-1.html" class="nav-link active">Stage 1 — The Pile</a>
+        <a href="/stage-2.html" class="nav-link">Stage 2 — Build</a>
+        <a href="/stage-3.html" class="nav-link">Stage 3 — Production</a>
+        <a href="/grim.html" class="nav-link">Grim</a>
+        <a href="/exports.html" class="nav-link">Exports</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Libraries and Tools</div>
+        <a href="/reference-documents.html" class="nav-link">Reference Documents</a>
+        <a href="/inspiration-library.html" class="nav-link">Inspiration Library</a>
+        <a href="/grimvision.html" class="nav-link">GrimVision</a>
+        <a href="/inventory.html" class="nav-link">Inventory</a>
+        <a href="/calendar.html" class="nav-link">Calendar</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Account</div>
+        <a href="/account.html" class="nav-link">Account Settings</a>
+        <a href="/team.html" class="nav-link">Team and Collaboration</a>
+        <a href="/referrals.html" class="nav-link">Referrals and Ambassador</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Blog</div>
+        <a href="/blog/index.html" class="nav-link">All Posts</a>
+        <a href="/blog/planning-the-ritual-2026.html" class="nav-link">Planning The Ritual 2026</a>
+        <a href="/blog/why-spreadsheets-dont-work.html" class="nav-link">Why Spreadsheets Don't Work</a>
+        <a href="/blog/grimfolio-for-dnd.html" class="nav-link">GrimFolio for D&amp;D</a>
+      </div>
+    </nav>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <main class="main-content">
+    <div class="content-body">
+
+      <div class="page-header">
+        <h1>Stage 1 — The Pile</h1>
+      </div>
+
+      <p>The Pile is where a project begins. No canvas, no structure, no pressure to have it figured out. You are here to capture — to get the raw material out of your head and somewhere you can see it. Every card you add is an idea with a type. That is all it needs to be. The only job of Stage 1 is to fill the pile. When you are ready to start making sense of it, move to Stage 2.</p>
+
+      <h2 id="the-top-bar">The Top Bar</h2>
+
+      <p>The top bar is the same across all stages.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>GrimFolio &rsaquo; Project Name</strong></td>
+            <td>Breadcrumb showing where you are.</td>
+          </tr>
+          <tr>
+            <td><strong>Move to Build</strong></td>
+            <td>Advances the project to Stage 2.</td>
+          </tr>
+          <tr>
+            <td><strong>Export</strong></td>
+            <td>Opens the export dropdown. Shown in Stage 2 and Stage 3, not in Stage 1.</td>
+          </tr>
+          <tr>
+            <td><strong>Walk-Through</strong></td>
+            <td>Disabled in Stage 1 until connected cards exist on the canvas.</td>
+          </tr>
+          <tr>
+            <td><strong>Help</strong></td>
+            <td>Opens the help panel.</td>
+          </tr>
+          <tr>
+            <td><strong>Account</strong></td>
+            <td>Opens Account Settings.</td>
+          </tr>
+          <tr>
+            <td><strong>Calendar</strong></td>
+            <td>Opens the project calendar.</td>
+          </tr>
+          <tr>
+            <td><strong>Collaborators</strong></td>
+            <td>Opens the Collaborators panel. Studio plan owners only.</td>
+          </tr>
+          <tr>
+            <td><strong>Team Notepad</strong></td>
+            <td>Toggles the shared team notepad. Purple dot badge when unread entries exist.</td>
+          </tr>
+          <tr>
+            <td><strong>Activity Log</strong></td>
+            <td>Toggles the Activity Log panel. Pro and Studio plans.</td>
+          </tr>
+          <tr>
+            <td><strong>Back to Dashboard</strong></td>
+            <td>Returns to the Dashboard without changing the project stage.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>On mobile the top bar becomes two rows. Row 1 shows back, project name, Inventory, an overflow menu, Help, and Walk-Through. Row 2 is the stage navigation strip.</p>
+
+      <h2 id="the-pile-workspace">The Pile Workspace</h2>
+
+      <p>When you open a new project, The Pile greets you with a single prompt: <strong>"What are you building?"</strong> This disappears once you have three or more cards.</p>
+
+      <p>Cards live in a draggable grid. Each card sits at a slight tilt — a small visual detail that makes the pile feel like a real stack of notes. Cards straighten when you hover them.</p>
+
+      <figure>
+        <img src="images/stage1-pile-cards.png" alt="The Pile workspace showing several cards with different types, indicator dots, and slight tilts" class="img-medium">
+        <figcaption>The Pile with several cards showing different types, tilts, and indicator dots.</figcaption>
+      </figure>
+
+      <h2 id="adding-cards">Adding Cards</h2>
+
+      <p>At the bottom of the screen is the card creation bar. It stays pinned as you scroll.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Text input</strong></td>
+            <td>Title for the new card. Press Enter or click + to create.</td>
+          </tr>
+          <tr>
+            <td><strong>Type dropdown</strong></td>
+            <td>Selects the card type. Pulls from your project's active type list.</td>
+          </tr>
+          <tr>
+            <td><strong>+ button</strong></td>
+            <td>Creates the card. Disabled until you have typed something.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Cards are added to the end of the pile and appear immediately. If creation fails, your draft is restored to the input.</p>
+
+      <p>The type dropdown is auto-populated based on your project template. A Haunted House project starts with Room, Scare, Prop, Effect, Transition, and Finale. You can change and extend your types at any time using the Stamp tool.</p>
+
+      <h2 id="card-tiles">Card Tiles</h2>
+
+      <p>Each card in the grid shows:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>What it shows</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Title</strong></td>
+            <td>The card's name.</td>
+          </tr>
+          <tr>
+            <td><strong>Type badge</strong></td>
+            <td>The card type, color-coded to match your project's type palette.</td>
+          </tr>
+          <tr>
+            <td><strong>Left accent border</strong></td>
+            <td>A colored stripe matching the card type.</td>
+          </tr>
+          <tr>
+            <td><strong>Drag handle</strong></td>
+            <td>Drag to reorder cards in the grid.</td>
+          </tr>
+          <tr>
+            <td><strong>&#10022; dot</strong> (purple, top-left)</td>
+            <td>Appears on cards Grim created that you have not clicked yet. Disappears on click.</td>
+          </tr>
+          <tr>
+            <td><strong>&#9670; dot</strong> (purple, top-right)</td>
+            <td>Shows when inspiration images are linked to this card.</td>
+          </tr>
+          <tr>
+            <td><strong>Image button</strong> (bottom-right)</td>
+            <td>Opens the inspiration image picker. Shows a count badge when images are linked.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        The <strong>&#10022; dot</strong> means Grim made this card and you have not looked at it yet. The <strong>&#9670; dot</strong> means this card has inspiration images linked to it. Both can appear on the same card at the same time.
+      </div>
+
+      <p><strong>Card interactions:</strong></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>What happens</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Single click</strong></td>
+            <td>Clears the Grim unseen dot if present.</td>
+          </tr>
+          <tr>
+            <td><strong>Double-click</strong></td>
+            <td>Opens the Card Detail Drawer.</td>
+          </tr>
+          <tr>
+            <td><strong>Right-click</strong></td>
+            <td>Opens the context menu.</td>
+          </tr>
+          <tr>
+            <td><strong>Drag via handle</strong></td>
+            <td>Reorders the card in the grid. Order saves automatically.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="right-click-context-menu">Right-Click Context Menu</h2>
+
+      <p>Right-click any card to open a small menu with four options.</p>
+
+      <p><strong>Edit details</strong> — Opens the Card Detail Drawer, same as double-click.</p>
+
+      <p><strong>Rename card</strong> — Activates an inline text input on the card. Press Enter to save, Escape to cancel, or click away to save.</p>
+
+      <p><strong>Change type</strong> — Opens a type picker showing all active types. Click one to reassign the card.</p>
+
+      <p><strong>Delete card</strong> — Removes the card immediately. No confirmation prompt in The Pile.</p>
+
+      <h2 id="card-detail-drawer">Card Detail Drawer</h2>
+
+      <p>Double-click any card to open its detail drawer. It slides in from the left side of the workspace.</p>
+
+      <figure>
+        <img src="images/stage1-card-drawer.png" alt="The card detail drawer showing an editable title, type badge selector, and notes textarea" class="img-medium">
+        <figcaption>The card detail drawer showing title, type badge, and notes.</figcaption>
+      </figure>
+
+      <p><strong>Header:</strong></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Type badge / selector</strong></td>
+            <td>Shows the card's current type. Click to change.</td>
+          </tr>
+          <tr>
+            <td><strong>Title textarea</strong></td>
+            <td>Editable. Auto-grows up to two lines. Saves on blur or Enter.</td>
+          </tr>
+          <tr>
+            <td><strong>Close (‹ Close)</strong></td>
+            <td>Collapses the drawer.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Notes section</strong> — A large freeform textarea. Saves automatically after you stop typing. A brief "Saved" indicator confirms changes are written.</p>
+
+      <p><strong>Inspiration section</strong> — Shows inspiration images linked to this card. Link images from your Inspiration Library or unlink existing ones directly from the drawer.</p>
+
+      <p>Closing the drawer returns you to the pile. Pressing Escape also closes it.</p>
+
+      <h2 id="left-toolbar">Left Toolbar</h2>
+
+      <p>A narrow vertical toolbar on the left edge of the workspace. Four tools.</p>
+
+      <p><strong>+ (Add card)</strong> — Focuses the card creation input at the bottom of the screen.</p>
+
+      <p><strong>Stamp tool</strong> — Activates stamp mode for bulk type assignment. See below.</p>
+
+      <p><strong>Reference Docs</strong> (document icon) — Toggles the Reference Documents panel. Opens as a sidebar between the toolbar and the card grid. Shows documents linked to this project and lets you link additional ones.</p>
+
+      <p><strong>Linked Projects</strong> (chain link icon) — Toggles the Linked Projects panel. Same sidebar behavior. Shows other GrimFolio projects linked to this one.</p>
+
+      <h2 id="stamp-tool">Stamp Tool</h2>
+
+      <p>The Stamp tool is for bulk type assignment. When you have a pile of cards and want to rapidly categorize them without right-clicking each one, this is how.</p>
+
+      <figure>
+        <img src="images/stage1-stamp-tool.png" alt="The Stamp tool active showing type chips in the palette and an active stamp type selected" class="img-medium">
+        <figcaption>The Stamp tool active with type chips visible and an active stamp selected.</figcaption>
+      </figure>
+
+      <p>Activating the stamp tool opens a type palette that appears between the top bar and the card grid.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Stamp: label</strong></td>
+            <td>Shows which type is currently selected for stamping.</td>
+          </tr>
+          <tr>
+            <td><strong>Type chips</strong></td>
+            <td>One chip per active type. Click to select as the active stamp.</td>
+          </tr>
+          <tr>
+            <td><strong>Color dot on each chip</strong></td>
+            <td>Click to open the color picker for that type.</td>
+          </tr>
+          <tr>
+            <td><strong>&times; on each chip</strong></td>
+            <td>Removes that type from the project. Does not delete cards already assigned that type.</td>
+          </tr>
+          <tr>
+            <td><strong>+ Card set button</strong></td>
+            <td>Opens the Card Set Picker.</td>
+          </tr>
+          <tr>
+            <td><strong>New type input</strong></td>
+            <td>Type a name and press Enter or click + to add a new type on the fly.</td>
+          </tr>
+          <tr>
+            <td><strong>&times; close button</strong></td>
+            <td>Exits stamp mode.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Using the stamp</strong> — Select a type chip. Click any card to assign that type. Click a different chip to change what you are stamping. Press Escape or click &times; to exit. Double-clicking is disabled while in stamp mode.</p>
+
+      <h2 id="card-sets">Card Sets</h2>
+
+      <p>Opened via <strong>+ Card set</strong> in the stamp palette. Card sets are pre-built collections of types for specific project categories. Selecting one gives you the choice to <strong>Add</strong> (merge with existing types) or <strong>Replace</strong> (swap out current types entirely).</p>
+
+      <p><strong>Built-in sets:</strong> Haunted House, Escape Room, Film Production, Cosplay Build, Writing Project, Project Management.</p>
+
+      <p><strong>TTRPG sets:</strong> D&amp;D Campaign, Pathfinder, Dragonbane, Vampire: The Masquerade, Call of Cthulhu, Blades in the Dark, Dungeon World, Monster of the Week, PbtA Generic, OSR, FATE.</p>
+
+      <p><strong>Saved sets</strong> — Any type combination you have saved from a previous project appears at the top. Click to apply. Click &times; to delete from your library.</p>
+
+      <div class="callout">
+        Saved card sets are account-level, not project-level. A set you save from one project is available in every future project you create.
+      </div>
+
+      <p><strong>Save current types as a set</strong> — Click "Save current types as a set" at the bottom of the picker. Deselect any types you do not want to include, name the set, and click Save.</p>
+
+      <h2 id="reference-documents-panel">Reference Documents Panel</h2>
+
+      <p>Click the document icon in the left toolbar to open the Reference Documents panel. It shows all documents currently linked to this project and lets you link additional ones from your library.</p>
+
+      <p>Documents are grouped by folder. Click a folder to expand it, click a document to link it. Click &times; on a linked document to unlink it.</p>
+
+      <p>For full documentation on uploading and managing reference documents see the <a href="/reference-documents.html">Reference Documents</a> page.</p>
+
+      <h2 id="linked-projects-panel">Linked Projects Panel</h2>
+
+      <p>Click the chain link icon in the left toolbar to open the Linked Projects panel. It shows all GrimFolio projects currently linked to this one.</p>
+
+      <p>Linking two projects gives Grim shared awareness across them. When you ask Grim something in one project he has context about what lives in the other.</p>
+
+      <p>Click <strong>+ Link a project</strong> to open a picker listing all your other projects. Click any row to link it. To unlink, expand a linked project card and click &times;.</p>
+
+      <div class="callout">
+        Right-clicking any card on the Stage 2 canvas gives you a "Copy to [Project Name]" option for each linked project. This copies the card to that project's pile without leaving your current canvas.
+      </div>
+
+      <h2 id="grim-in-the-pile">Grim in The Pile</h2>
+
+      <p>The Grim panel is available in Stage 1 from the right side of the screen. Grim can read your reference documents, ask questions about your project, and create cards directly into your Pile.</p>
+
+      <p>Cards that Grim creates appear with a 4-second purple glow and a persistent ✦ dot. The dot stays until you click the card.</p>
+
+      <p>For full Grim documentation see the <a href="/grim.html">Grim</a> page.</p>
+
+      <h2 id="moving-to-build">Moving to Build</h2>
+
+      <p>When you are ready to start connecting ideas spatially, click <strong>Move to Build</strong> in the top bar. This advances the project to Stage 2 and takes you to the canvas.</p>
+
+      <p>Your Pile cards do not disappear — they move to the Pile Drawer on the left side of the canvas where you can drag them onto the canvas at your own pace.</p>
+
+      <div class="callout">
+        You can return to Stage 1 at any time from within Stage 2. Moving to Build does not lock or remove anything from your pile.
+      </div>
+
+      <hr>
+
+      <p>
+        <a href="/dashboard.html">&larr; Dashboard</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="/stage-2.html">Next: Stage 2 — Build &rarr;</a>
+      </p>
+
+    </div>
+  </main>
+
+  <aside class="toc">
+    <div class="toc-label">On This Page</div>
+    <ul class="toc-list" id="toc-list"></ul>
+  </aside>
+
+</div>
+
+<div id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="main.js" defer></script>
+<script src="search.js" defer></script>
+</body>
+</html>
