@@ -80,8 +80,9 @@ function parseFile(filePath, urlPath) {
     extractFirst(html, /<title>([\s\S]*?)<\/title>/i) ||
     path.basename(filePath, '.html');
 
-  // Extract main content body (between content-body div)
-  var bodyMatch = html.match(/<(?:div|main)[^>]*class="[^"]*content-body[^"]*"[^>]*>([\s\S]*?)<\/(?:div|main)>/i);
+  // Extract main content body — grab everything from the content-body opening tag
+  // to the end of file (greedy); nested divs mean lazy matching stops too early.
+  var bodyMatch = html.match(/<div[^>]*class="[^"]*content-body[^"]*"[^>]*>([\s\S]*)/i);
   var bodyHtml = bodyMatch ? bodyMatch[1] : html;
 
   // Split by H2 headings

@@ -1,0 +1,830 @@
+[
+  {
+    "title": "What is GrimFolio",
+    "section": "",
+    "body": "What is GrimFolio GrimFolio is a canvas-based creative planning tool built for people who design experiences. Haunted houses, escape rooms, theater productions, live events, tabletop RPG campaigns. If you are building something complex with rooms, scenes, flow, dependencies, props, and a hundred moving pieces, GrimFolio gives you one place to hold all of it. It is a planning tool first. There is an optional AI collaborator named Grim who reads your entire project before he responds. The tool wor",
+    "url": "/index.html"
+  },
+  {
+    "title": "What is GrimFolio",
+    "section": "Who it's for",
+    "body": "If you are building... GrimFolio helps you... A haunted house or scare attraction Map rooms and scares, track props and budget, plan guest flow, manage your build An escape room Design puzzle chains and dependencies, sequence the experience, track room elements A theater production or live event Organize scenes, track production elements, plan the run of show A tabletop RPG campaign Build your world, map faction and NPC relationships, plan session arcs Anything with rooms, scenes, and a sequence Plan it spatially, connect it logically, export it cleanly",
+    "url": "/index.html#who-its-for"
+  },
+  {
+    "title": "What is GrimFolio",
+    "section": "How it works",
+    "body": "Stage 1 — The Pile Every project starts with The Pile. No canvas, no structure, no pressure to have it figured out. Add cards for every idea — rooms, scenes, props, characters, mechanics. Give them a type. Write notes if you have them. The only job of Stage 1 is to capture everything. Stage 2 — Build When you're ready to make sense of your ideas, move to Build. Place cards on a canvas and connect them with labeled paths to show flow, dependencies, and relationships. Load a floor plan as a background image and place your room cards directly on top of it. Draw zone boundaries and annotate measur",
+    "url": "/index.html#how-it-works"
+  },
+  {
+    "title": "What is GrimFolio",
+    "section": "Grim",
+    "body": "Grim is an optional AI collaborator built into every project. He reads your entire project — every card, every note, every connection, every reference document — before he responds. He finds gaps before opening night does, builds checklists, thinks through flow, and stress-tests your sequences. He is there when you want a second opinion. The tool works completely without him.",
+    "url": "/index.html#grim"
+  },
+  {
+    "title": "What is GrimFolio",
+    "section": "Getting started",
+    "body": "GrimFolio is free to start. Create an account at grimfolio.com , create a project, and start adding cards. The wiki you are reading now covers every feature in detail — use the navigation on the left to find what you need. New here? Start with the Dashboard, then follow the navigation in order. The wiki is written the same way you encounter GrimFolio — from first login through your first finished project. Next: Dashboard &rarr; On This Page",
+    "url": "/index.html#getting-started"
+  },
+  {
+    "title": "The Dashboard",
+    "section": "",
+    "body": "The Dashboard The Dashboard is your home base. Every project you have ever built lives here, along with quick access to your libraries, an optional look at what is coming up in the next 10 days, and the button that starts everything new. The GrimFolio dashboard showing the project grid, library sidebar, and top navigation.",
+    "url": "/dashboard.html"
+  },
+  {
+    "title": "The Dashboard",
+    "section": "Top Navigation Bar",
+    "body": "The bar across the top stays with you on every page of GrimFolio. Element What it does GrimFolio The wordmark on the far left. Not a button. Just a reminder of where you are. Plan badge A small pill showing your current tier: Free, Unlimited, Pro, or Studio. Color changes with your plan. Upgrade to Pro Appears only on Free and Unlimited accounts. Clicking it starts the upgrade flow. Disappears once you are on Pro or Studio. Inventory (crate icon) Opens your global Inventory as a panel overlay without leaving the dashboard. On mobile, access Inventory from inside a project instead. Help (? icon",
+    "url": "/dashboard.html#top-navigation-bar"
+  },
+  {
+    "title": "The Dashboard",
+    "section": "Welcome Header",
+    "body": "If you have set a display name in Account Settings, the dashboard greets you by name with your email shown underneath. If you have not, it just says Projects — which is equally accurate.",
+    "url": "/dashboard.html#welcome-header"
+  },
+  {
+    "title": "The Dashboard",
+    "section": "Your Projects",
+    "body": "Projects are displayed in a responsive grid. The New Project card is always the first card in the grid — dashed border, a + , and the label \"New Project.\" It never moves. Everything else sorts by last edited. On desktop, a gradient fade and a down arrow appear at the bottom of the projects column when there are more projects below the fold. Project Cards Each card shows everything you need to know about a project at a glance. Element What it shows Title The project name. Click anywhere on the card to open it. Stage pill Which stage the project is in — amber for The Pile, blue for Build, green ",
+    "url": "/dashboard.html#your-projects"
+  },
+  {
+    "title": "The Dashboard",
+    "section": "Search",
+    "body": "The search bar appears above the project grid as soon as you have at least one project. It filters in real time as you type. GrimFolio searches three things simultaneously — project title, template type, and Grim's project summary. Matching cards are highlighted with a purple border. Non-matching cards drop to low opacity. Hovering a matching card shows a tooltip with exactly where the match was found: \"Title: The Ritual\", \"Template: Haunted House\", or a short excerpt from the Grim summary. The &times; button inside the bar clears the search instantly.",
+    "url": "/dashboard.html#search"
+  },
+  {
+    "title": "The Dashboard",
+    "section": "Creating a Project",
+    "body": "Click the New Project card to open the Create Project modal. The Create Project modal with TTRPG templates expanded and a reference document selected. Project title — Give your project a name. This is the only required field. Template — Templates set the default card types available in your project. They are a starting point, not a constraint — you can customize card types at any time inside the project. Standard templates: Blank, Haunted House, Escape Room, Theater, Event Planning, Film, Cosplay, Creative Writing, General. Click Show TTRPG templates to reveal a second group: D&D 5e, Pathfinde",
+    "url": "/dashboard.html#creating-a-project"
+  },
+  {
+    "title": "The Dashboard",
+    "section": "Libraries",
+    "body": "The right column of the dashboard holds five entry-point cards — your global libraries and tools that exist across all projects. Library What it holds Inventory Props, materials, gear, and consumables tracked across all projects. Inspiration Library Reference images, mood board pulls, and concept art linked to cards. GrimVision Library AI-generated concept art from GrimVision, browsable and downloadable. Reference Documents Scripts, lore bibles, floor plans, and any document you want Grim to read. Data and Import Export your data or import from another tool. Coming soon.",
+    "url": "/dashboard.html#libraries"
+  },
+  {
+    "title": "The Dashboard",
+    "section": "Next 10 Days",
+    "body": "The Next 10 Days panel gives you a rolling look at what is coming up across all your projects — deadlines, build days, rehearsals, deliveries, anything added to a project's calendar. It is optional. Turn it on or off in Account Settings &rarr; Project Defaults under \"Show upcoming events on dashboard.\" When enabled it appears below the main two-column layout. Events are displayed chronologically showing the event name, type, date, and which project it belongs to. Adding an Event from the Dashboard Click + Add Event to open the Add Event modal. Field Notes Project Which project this event belon",
+    "url": "/dashboard.html#next-10-days"
+  },
+  {
+    "title": "Stage 1 — The Pile",
+    "section": "",
+    "body": "Stage 1 — The Pile The Pile is where a project begins. No canvas, no structure, no pressure to have it figured out. You are here to capture — to get the raw material out of your head and somewhere you can see it. Every card you add is an idea with a type. That is all it needs to be. The only job of Stage 1 is to fill the pile. When you are ready to start making sense of it, move to Stage 2.",
+    "url": "/stage-1.html"
+  },
+  {
+    "title": "Stage 1 — The Pile",
+    "section": "The Top Bar",
+    "body": "The top bar is the same across all stages. Element What it does GrimFolio &rsaquo; Project Name Breadcrumb showing where you are. Move to Build Advances the project to Stage 2. Export Opens the export dropdown. Shown in Stage 2 and Stage 3, not in Stage 1. Walk-Through Disabled in Stage 1 until connected cards exist on the canvas. Help Opens the help panel. Account Opens Account Settings. Calendar Opens the project calendar. Collaborators Opens the Collaborators panel. Studio plan owners only. Team Notepad Toggles the shared team notepad. Purple dot badge when unread entries exist. Activity Lo",
+    "url": "/stage-1.html#the-top-bar"
+  },
+  {
+    "title": "Stage 1 — The Pile",
+    "section": "The Pile Workspace",
+    "body": "When you open a new project, The Pile greets you with a single prompt: \"What are you building?\" This disappears once you have three or more cards. Cards live in a draggable grid. Each card sits at a slight tilt — a small visual detail that makes the pile feel like a real stack of notes. Cards straighten when you hover them. The Pile with several cards showing different types, tilts, and indicator dots.",
+    "url": "/stage-1.html#the-pile-workspace"
+  },
+  {
+    "title": "Stage 1 — The Pile",
+    "section": "Adding Cards",
+    "body": "At the bottom of the screen is the card creation bar. It stays pinned as you scroll. Element What it does Text input Title for the new card. Press Enter or click + to create. Type dropdown Selects the card type. Pulls from your project's active type list. + button Creates the card. Disabled until you have typed something. Cards are added to the end of the pile and appear immediately. If creation fails, your draft is restored to the input. The type dropdown is auto-populated based on your project template. A Haunted House project starts with Room, Scare, Prop, Effect, Transition, and Finale. Yo",
+    "url": "/stage-1.html#adding-cards"
+  },
+  {
+    "title": "Stage 1 — The Pile",
+    "section": "Card Tiles",
+    "body": "Each card in the grid shows: Element What it shows Title The card's name. Type badge The card type, color-coded to match your project's type palette. Left accent border A colored stripe matching the card type. Drag handle Drag to reorder cards in the grid. dot (purple, top-left) Appears on cards Grim created that you have not clicked yet. Disappears on click. dot (purple, top-right) Shows when inspiration images are linked to this card. Image button (bottom-right) Opens the inspiration image picker. Shows a count badge when images are linked. The dot means Grim made this card and you have not ",
+    "url": "/stage-1.html#card-tiles"
+  },
+  {
+    "title": "Stage 1 — The Pile",
+    "section": "Right-Click Context Menu",
+    "body": "Right-click any card to open a small menu with four options. Edit details — Opens the Card Detail Drawer, same as double-click. Rename card — Activates an inline text input on the card. Press Enter to save, Escape to cancel, or click away to save. Change type — Opens a type picker showing all active types. Click one to reassign the card. Delete card — Removes the card immediately. No confirmation prompt in The Pile.",
+    "url": "/stage-1.html#right-click-context-menu"
+  },
+  {
+    "title": "Stage 1 — The Pile",
+    "section": "Card Detail Drawer",
+    "body": "Double-click any card to open its detail drawer. It slides in from the left side of the workspace. The card detail drawer showing title, type badge, and notes. Header: Element What it does Type badge / selector Shows the card's current type. Click to change. Title textarea Editable. Auto-grows up to two lines. Saves on blur or Enter. Close (‹ Close) Collapses the drawer. Notes section — A large freeform textarea. Saves automatically after you stop typing. A brief \"Saved\" indicator confirms changes are written. Inspiration section — Shows inspiration images linked to this card. Link images from",
+    "url": "/stage-1.html#card-detail-drawer"
+  },
+  {
+    "title": "Stage 1 — The Pile",
+    "section": "Left Toolbar",
+    "body": "A narrow vertical toolbar on the left edge of the workspace. Four tools. + (Add card) — Focuses the card creation input at the bottom of the screen. Stamp tool — Activates stamp mode for bulk type assignment. See below. Reference Docs (document icon) — Toggles the Reference Documents panel. Opens as a sidebar between the toolbar and the card grid. Shows documents linked to this project and lets you link additional ones. Linked Projects (chain link icon) — Toggles the Linked Projects panel. Same sidebar behavior. Shows other GrimFolio projects linked to this one.",
+    "url": "/stage-1.html#left-toolbar"
+  },
+  {
+    "title": "Stage 1 — The Pile",
+    "section": "Stamp Tool",
+    "body": "The Stamp tool is for bulk type assignment. When you have a pile of cards and want to rapidly categorize them without right-clicking each one, this is how. The Stamp tool active with type chips visible and an active stamp selected. Activating the stamp tool opens a type palette that appears between the top bar and the card grid. Element What it does Stamp: label Shows which type is currently selected for stamping. Type chips One chip per active type. Click to select as the active stamp. Color dot on each chip Click to open the color picker for that type. &times; on each chip Removes that type ",
+    "url": "/stage-1.html#stamp-tool"
+  },
+  {
+    "title": "Stage 1 — The Pile",
+    "section": "Card Sets",
+    "body": "Opened via + Card set in the stamp palette. Card sets are pre-built collections of types for specific project categories. Selecting one gives you the choice to Add (merge with existing types) or Replace (swap out current types entirely). Built-in sets: Haunted House, Escape Room, Film Production, Cosplay Build, Writing Project, Project Management. TTRPG sets: D&D Campaign, Pathfinder, Dragonbane, Vampire: The Masquerade, Call of Cthulhu, Blades in the Dark, Dungeon World, Monster of the Week, PbtA Generic, OSR, FATE. Saved sets — Any type combination you have saved from a previous project appe",
+    "url": "/stage-1.html#card-sets"
+  },
+  {
+    "title": "Stage 1 — The Pile",
+    "section": "Reference Documents Panel",
+    "body": "Click the document icon in the left toolbar to open the Reference Documents panel. It shows all documents currently linked to this project and lets you link additional ones from your library. Documents are grouped by folder. Click a folder to expand it, click a document to link it. Click &times; on a linked document to unlink it. For full documentation on uploading and managing reference documents see the Reference Documents page.",
+    "url": "/stage-1.html#reference-documents-panel"
+  },
+  {
+    "title": "Stage 1 — The Pile",
+    "section": "Linked Projects Panel",
+    "body": "Click the chain link icon in the left toolbar to open the Linked Projects panel. It shows all GrimFolio projects currently linked to this one. Linking two projects gives Grim shared awareness across them. When you ask Grim something in one project he has context about what lives in the other. Click + Link a project to open a picker listing all your other projects. Click any row to link it. To unlink, expand a linked project card and click &times;. Right-clicking any card on the Stage 2 canvas gives you a \"Copy to [Project Name]\" option for each linked project. This copies the card to that proj",
+    "url": "/stage-1.html#linked-projects-panel"
+  },
+  {
+    "title": "Stage 1 — The Pile",
+    "section": "Grim in The Pile",
+    "body": "The Grim panel is available in Stage 1 from the right side of the screen. Grim can read your reference documents, ask questions about your project, and create cards directly into your Pile. Cards that Grim creates appear with a 4-second purple glow and a persistent ✦ dot. The dot stays until you click the card. For full Grim documentation see the Grim page.",
+    "url": "/stage-1.html#grim-in-the-pile"
+  },
+  {
+    "title": "Stage 1 — The Pile",
+    "section": "Moving to Build",
+    "body": "When you are ready to start connecting ideas spatially, click Move to Build in the top bar. This advances the project to Stage 2 and takes you to the canvas. Your Pile cards do not disappear — they move to the Pile Drawer on the left side of the canvas where you can drag them onto the canvas at your own pace. You can return to Stage 1 at any time from within Stage 2. Moving to Build does not lock or remove anything from your pile. &larr; Dashboard Next: Stage 2 — Build &rarr; On This Page",
+    "url": "/stage-1.html#moving-to-build"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "",
+    "body": "Stage 2 — Build The Pile captured your ideas. Build gives them position, relationship, and structure. When you enter Stage 2 the canvas opens and your pile cards move to the Pile Drawer on the left. You bring them onto the canvas and arrange them intentionally. Connections form paths. The structure of your project becomes visible. All tools are available from day one.",
+    "url": "/stage-2.html"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "The Canvas",
+    "body": "The canvas is an infinite spatial workspace rendered on a dot-grid background. Pan by dragging any empty area. Zoom by scrolling or use the + and - buttons in the left toolbar. Minimum zoom is 10%, maximum is 200%. Fit to Screen reframes the camera to show all placed cards. Snap to grid (16px) is optional. Toggle it in Account Settings &rarr; Appearance. The Stage 2 canvas with cards, connections, and a path label pill visible.",
+    "url": "/stage-2.html#the-canvas"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "The Left Toolbar",
+    "body": "A narrow vertical toolbar on the left edge of the canvas. Tools are grouped into two sections — navigation and selection modes on top, workspace tools on the bottom. Left Toolbar — Top Section Tool Icon What it does Select Cursor arrow Default mode. Click to select cards, drag to move, drag from handles to connect. Tooltip: \"Select (Esc)\" Multi-Select Dashed rectangle Drag across empty canvas space to select cards inside the box. Scroll wheel or two-finger trackpad to pan while in this mode. Ctrl+click adds individual cards to selection. Place Anchor Circle + crosshair Click anywhere on the ca",
+    "url": "/stage-2.html#the-left-toolbar"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Search",
+    "body": "The search bar is opened from the Search button in the left toolbar. It auto-focuses the input on open. Escape closes it and clears the query. Element What it does Search input Filters cards in real time by title, type, or notes. Matching cards highlight in place. Non-matching cards dim. Edge Labels toggle Shows or hides all edge label text on connections. Useful when the canvas is dense. Path label pills are unaffected.",
+    "url": "/stage-2.html#search"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "The Pile Drawer",
+    "body": "The Pile Drawer opens on the left side of the canvas. It contains every card from Stage 1 that has not yet been placed on the canvas. Cards are grouped by type. Each group has a colored left border. Fully placed groups hide themselves. The auto toggle controls whether the drawer opens automatically each time you enter Stage 2. Placing Cards Method What happens Drag onto canvas Card lands at the drop position. Hover card and click + Card appears near the center of the visible canvas area. Double-click any pile card to read its title and notes in a popup. Right-click for the same option via cont",
+    "url": "/stage-2.html#the-pile-drawer"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Cards on the Canvas",
+    "body": "Interactions Interaction Result Single click Selects the card. Double-click Opens the card detail drawer. Right-click Opens the card context menu. Drag Moves the card. Position saves on release. Drag from handle Starts a connection. Handles Each card has connection handles on all four sides. Hover a card to reveal them. Drag from any handle toward another card to create a connection. The canvas assigns the closest exit direction automatically. Card Sizes Right-click any card to access the size picker. The card size picker showing all size options. Size Dimensions Best for Small 140px wide Dens",
+    "url": "/stage-2.html#cards-on-the-canvas"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Card Detail Drawer",
+    "body": "Double-click any card to open its detail drawer. It slides in from the right. The canvas stays visible and interactive behind it. The drawer has two panels. Left Panel Element What it does Notes Free-text field. Auto-saves 800ms after you stop typing. Elements A tagged list of sub-components, props, effects, or other elements attached to this card. Right Panel Element What it does Type picker The card's category type. Cards and Colors Opens the Type Manager to add, remove, recolor, or organize types. Title Editable. Saves on blur or Enter. Status Click to cycle: blank, In Progress, On Hold, Co",
+    "url": "/stage-2.html#card-detail-drawer"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Connections and Path Labels",
+    "body": "Drag from any card handle to another card to create a connection. The canvas draws a curved path with an arrowhead pointing toward the target. Connection direction matters — Walk-Through follows arrows forward. Path Labels A path label is a text pill floating on a connection that describes the relationship: \"blocks,\" \"leads to,\" \"depends on.\" Right-click any connection and choose Edit path label to set one, or use the Path Label tool in the left toolbar and click directly on any connection. The pill appears mid-edge and can be dragged along the path to reposition it. Path labels appear in Walk",
+    "url": "/stage-2.html#connections-and-path-labels"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Anchor Nodes",
+    "body": "Anchors are small purple circles used as routing waypoints. They have no title, no detail view, and no content. They bend connections around other cards and create cleaner path geometry. Place an anchor: Right-click the canvas and choose Add anchor. Activate the Place Anchor tool in the left toolbar then click anywhere on the canvas. Each anchor supports exactly one incoming and one outgoing connection. Attempting a third connection is blocked with a warning. Anchors are invisible to Walk-Through, exports, Grim, and card count limits.",
+    "url": "/stage-2.html#anchor-nodes"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Card Groups",
+    "body": "Select two or more cards, right-click any of them, and choose Group N selected cards . A colored boundary box wraps them with an editable label. The boundary auto-sizes as members move. Dragging the group boundary or label moves all member cards together. Individual cards inside a group can still be dragged independently. Right-click a group boundary for group options: Option What it does Rename Renames the group. Hide / Show Boundary Toggles the visible boundary ring. Fill opacity 10%, 15%, 25%, or 50%. Reset to auto-size Recalculates the boundary to fit current member positions. Ungroup Diss",
+    "url": "/stage-2.html#card-groups"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Context Menus",
+    "body": "Canvas — right-click empty space Item Action New Card Opens card creation modal at click position. New room tile Opens card creation pre-set to room tile style. Paste Pastes clipboard card at cursor position. Add anchor Places an anchor at click position. Add Canvas Image Opens picker to place a reference image on the canvas. Card — right-click any card Item Action Edit details Opens the card detail drawer. Rename Activates inline title editing. Duplicate Creates a copy offset from the original. Size Picker: Small, Normal, Large, Small Square, Large Square. Cut Copies to clipboard then deletes",
+    "url": "/stage-2.html#context-menus"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Restore Points",
+    "body": "Restore Points are full project snapshots available to Studio plan members. Access them from the bottom bar beside the Undo button. The panel shows up to 10 auto snapshots (created automatically on project open and after significant changes) and up to 5 manual snapshots (created by clicking Save snapshot). Each restore point shows a timestamp. Right-click any entry to rename or delete it. Click Restore to roll the canvas back to that state. Restore Points vs. Undo. Undo steps back one canvas action at a time (up to 10 steps). Restore Points are full project snapshots you can jump back to at an",
+    "url": "/stage-2.html#restore-points"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Walk-Through Mode",
+    "body": "Walk-Through traces the canvas as a guided sequence, following the direction of your connections one card at a time. Use it to rehearse a guest experience, a narrative path, or any sequence that has a direction. The Walk-Through button lives in the top bar. It is disabled until at least one connection exists. Click Walk-Through to enter pick mode. The canvas dims and all cards pulse. Click the card where the sequence begins. The Drawer A full-width drawer slides down from the top and locks in place. The canvas stays live behind it. Element What it does Card title Name of the current card. Stat",
+    "url": "/stage-2.html#walk-through-mode"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Drawing Tools",
+    "body": "The drawing layer sits above the canvas and below card nodes. Use it to sketch floor plans, annotate card positions, measure spaces, or block out zone boundaries. Everything drawn is invisible to Grim, Walk-Through, exports, and card counts. Click the pencil icon in the left toolbar to open the Drawing Tools panel. Drawing tools work well alongside canvas images — load a floor plan as a canvas image and draw zone boundaries on top of it. Draw Tools Tool What it does Freehand Click and drag to draw a freeform stroke. Line Click and drag to draw a straight line. Hold Shift to constrain to 45-deg",
+    "url": "/stage-2.html#drawing-tools"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Canvas Images",
+    "body": "Canvas images are photographs, floor plans, or AI-generated artwork placed directly on the Build canvas. They sit behind all cards and drawing layers. They are not cards and do not appear in the Pile, Walk-Through, Grim context, or exports. A floor plan placed as a canvas background image with room cards positioned on top. Placing an Image Right-click any empty area of the canvas and select Add Canvas Image . The image picker opens with three tabs: Tab What it shows Upload File picker. Accepts JPG, PNG, WebP, GIF up to 20MB. Inspiration Library All images from your Inspiration Library. GrimVis",
+    "url": "/stage-2.html#canvas-images"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Grim on the Canvas",
+    "body": "Grim stays in the right panel throughout Stage 2. He reads both the canvas and the pile at the start of each turn. When Grim creates cards they go to the Pile Drawer, not onto the canvas. They arrive with a purple glow and a ✦ indicator. Drag them from the drawer to place them where you want them. Grim action What it does Create cards Adds cards to the Pile Drawer with title, type, and notes. Append to notes Adds content to an existing card's notes without overwriting. Replace notes Rewrites a card's notes from scratch. Add elements Adds items to a card's Elements list. Create checklist Adds c",
+    "url": "/stage-2.html#grim-on-the-canvas"
+  },
+  {
+    "title": "Stage 3 — Production",
+    "section": "",
+    "body": "Stage 3 — Production Production replaces the canvas view entirely. The spatial map from Stage 2 stays intact behind the scenes. Production surfaces it differently: as a customizable command center built from widgets. Each widget is a focused tool. You choose what goes on the board and where it sits. Everything here reflects the current state of your project. Check off a checklist item in Production and it updates in Build. Edit a budget line and it saves to the card. Nothing is a duplicate view ",
+    "url": "/stage-3.html"
+  },
+  {
+    "title": "Stage 3 — Production",
+    "section": "Getting Started",
+    "body": "When you enter Stage 3 for the first time the board is empty and a help modal opens automatically. The toolbar at the top has three elements: the Production stage label, the + Add Widget button, and a ? help button. Click + Add Widget to open the widget picker. It shows all ten available widgets. Widgets already on the board show an Added ✓ badge. Pro-only widgets show a Pro badge if your plan does not include them. Click any unlocked unadded widget to place it. The picker closes and the widget appears at the bottom of the layout.",
+    "url": "/stage-3.html#getting-started"
+  },
+  {
+    "title": "Stage 3 — Production",
+    "section": "The Widget Grid",
+    "body": "Pro, Studio, and Base Unlimited accounts get a drag-and-drop grid. Widgets can be repositioned and resized freely using handles at the edges and corners. The layout autosaves 800ms after any change. Free accounts get a stacked vertical layout. Widgets appear at full width in the order added. Position and size cannot be changed. Viewers always see the owner's saved layout regardless of their own plan. Every widget header has a drag handle to reposition it, a label, and an &times; button to remove it. Removing a widget does not delete any data — add it back at any time from the widget picker.",
+    "url": "/stage-3.html#the-widget-grid"
+  },
+  {
+    "title": "Stage 3 — Production",
+    "section": "Cross-Stage Sync",
+    "body": "Production and Build share the same data layer. Changes in Production reflect immediately in Build and vice versa without a page reload. Check off a checklist item in Production and it updates in Build's card detail drawer instantly. This is not a sync — it is the same data.",
+    "url": "/stage-3.html#cross-stage-sync"
+  },
+  {
+    "title": "Stage 3 — Production",
+    "section": "Hiding Cards from Production",
+    "body": "Some cards belong on the canvas but not in the command center. Right-click any card row in the Card List widget and choose Hide from Production . The card disappears from all widgets but remains on the canvas in Build. A collapsible Hidden from Production section at the bottom of the Card List shows everything hidden. Right-click any hidden card and choose Show in Production to restore it.",
+    "url": "/stage-3.html#hiding-cards-from-production"
+  },
+  {
+    "title": "Stage 3 — Production",
+    "section": "The Widgets",
+    "body": "Card List Free All canvas cards grouped by type. Click any card row to expand it inline showing notes, checklist items, and an \"Edit photos in Build &rarr;\" link. Collapsed rows show a checklist summary badge and the card's current status. Right-click any row to hide or show the card in Production. Master Checklist Free Every checklist item across all visible cards in one scrollable list. A progress bar at the top shows total completion: X/Y done (Z%). Cards are grouped by title with a per-card done/total count. Filter buttons: all, done, undone. Toggle items directly in this widget — changes ",
+    "url": "/stage-3.html#the-widgets"
+  },
+  {
+    "title": "Stage 3 — Production",
+    "section": "Grim in Production  Pro ",
+    "body": "Production Grim is a separate conversation from Stage 2 Grim. Same assistant, different context and focus. In Production, Grim is operationally oriented — readiness, gaps, prioritization, final checks. The Production board with the Grim widget active and the Build Summary card expanded. Context At the start of each turn Production Grim reads your project name, all visible card titles, types, and checklist items with done/undone status. It does not receive the full canvas graph, connection structure, or Stage 2 Grim conversation history. Its context is your current production state — what is do",
+    "url": "/stage-3.html#grim-in-production"
+  },
+  {
+    "title": "Grim",
+    "section": "",
+    "body": "Grim Grim is the AI collaborator built into every GrimFolio project. He lives in the right panel in Stage 1 and Stage 2, and inside the Grim widget in Stage 3. He reads your project at the start of every turn and responds as someone who has been paying attention the whole time. Grim is not a general AI assistant. He knows what you are building, what is on the canvas, what is in the pile, and what connections exist. He acts from that context, not from a blank slate. The Grim panel in Stage 2 with",
+    "url": "/grim.html"
+  },
+  {
+    "title": "Grim",
+    "section": "Access and Tokens",
+    "body": "Grim is a paid feature. Plan Monthly token allowance Free None Base Unlimited None Pro 500,000 tokens per month Studio 2,000,000 tokens per month Token allowances reset on the first of each month. When the monthly allowance runs out Grim becomes unavailable until the next reset. Additional tokens can be purchased in packs via Account Settings &rarr; Plan and Billing. Purchased tokens do not expire and are spent after the monthly allowance is exhausted.",
+    "url": "/grim.html#access-and-tokens"
+  },
+  {
+    "title": "Grim",
+    "section": "What Grim Reads",
+    "body": "At the start of every turn Grim receives a structured snapshot of your project: Project name, current stage, and template type Canvas cards: title, type, status, number of connections, notes (up to 300 characters), elements, checklist completion, budget lines, and inventory assignments Pile items: title, type, and notes (up to 200 characters) for all unplaced cards Connections: all edges with their path labels On large projects with more than 15 canvas cards Grim uses semantic search to identify the 12 cards most relevant to your current message. Those get full detail. All other cards are incl",
+    "url": "/grim.html#what-grim-reads"
+  },
+  {
+    "title": "Grim",
+    "section": "How Grim Opens a Conversation",
+    "body": "The first time you start a conversation on a project Grim responds based on what it finds. If autostart is enabled (on by default) Grim skips the pleasantries and creates 3 starter cards immediately. It ends with \"Placed: [title 1], [title 2], [title 3].\" This is the fastest path from a blank project to something in the pile. If reference documents are attached Grim reads them and leads with something specific from the content — a named character, a faction with an agenda, a location with an unusual property. The opening observation makes it unmistakably clear Grim has read the material. If th",
+    "url": "/grim.html#how-grim-opens"
+  },
+  {
+    "title": "Grim",
+    "section": "What Grim Can Do — Stage 2",
+    "body": "Grim acts on your project through structured actions embedded in its responses. The actions save data to the project automatically. If Grim confirms something in prose without an action block nothing is saved. Grim-created cards arriving in the Pile Drawer with purple glow, indicator dots, and the Placed confirmation line. Action What it does Create cards Adds cards to the Pile Drawer with title, type, and notes. Append to notes Adds content to an existing card's notes without overwriting. Replace notes Rewrites a card's notes from scratch. Add elements Adds items to a card's Elements list. Cr",
+    "url": "/grim.html#what-grim-can-do-stage-2"
+  },
+  {
+    "title": "Grim",
+    "section": "What Grim Can Do — Stage 3",
+    "body": "Production Grim is a separate conversation with a different focus. It does not have access to the canvas graph or Stage 2 Grim history. Its context is your current production state — visible card titles, types, and checklist completion. Production Grim is advisory only. It does not create cards, connections, or any project data. It responds in plain text. Three quick prompts are available in the Production Grim widget: Prompt What it asks Run final check Highest-priority gaps before the project opens. What's not done? Pulls all incomplete checklist items and asks for prioritization. Generate s",
+    "url": "/grim.html#what-grim-can-do-stage-3"
+  },
+  {
+    "title": "Grim",
+    "section": "Conversation History",
+    "body": "Grim remembers every conversation within a project. Messages persist in the database. When you return to a project the conversation continues exactly where it left off. As conversations grow long a background summary compresses older context. Grim always sees the last 10 messages in full plus a summary of everything before them. Background summarization runs silently without interrupting the conversation.",
+    "url": "/grim.html#conversation-history"
+  },
+  {
+    "title": "Grim",
+    "section": "Focus Mode  Pro ",
+    "body": "A Focus toggle appears in the Grim header on Pro plans in Stage 2. The Focus mode toggle in the Grim panel header. When Focus is on the canvas and pile are hidden from Grim's context. Grim only sees the current chat. This uses roughly 60% fewer tokens per turn. Use Focus mode when you are having a planning conversation that does not require Grim to read the whole project state — iterating on an idea, asking general questions, or working through a specific problem. It keeps responses faster and token usage significantly lower. Focus mode is not available in Stage 3. The Production context is al",
+    "url": "/grim.html#focus-mode"
+  },
+  {
+    "title": "Grim",
+    "section": "The Grim Panel",
+    "body": "The Grim panel lives on the right side of the screen in Stages 1 and 2. Resizing — Drag the left edge of the panel to make it narrower (minimum 220px) or wider (up to half the viewport on desktop). Collapsing — Click ‹ in the panel header to collapse. The panel shrinks to a narrow rail showing the Grim avatar. Click the rail to expand again. A dot appears on the collapsed rail when there are new messages you have not seen. Status dot — A small indicator in the panel header shows Grim's current state. State What it means Waking Grim is initializing. Ready Rotating messages: \"here to help,\" \"wat",
+    "url": "/grim.html#the-grim-panel"
+  },
+  {
+    "title": "Grim",
+    "section": "Appearance Settings",
+    "body": "Three Grim-specific appearance settings live in Account Settings &rarr; Appearance. Setting Options Grim Chat Font Size Small, Medium, Large, Huge Display Font Size Small, Large, Huge Grim Avatar Default G mark, or Gold G mark (Founder accounts only) Font size and avatar apply to both Stage 2 and Stage 3 Grim.",
+    "url": "/grim.html#appearance-settings"
+  },
+  {
+    "title": "Grim",
+    "section": "Working Effectively with Grim",
+    "body": "Grim acts first and invites reaction after. It does not ask for names, confirmation, or details before creating. If a request is vague Grim makes a creative choice and executes it. Tell it what you want changed or refined afterward. This is the most important thing to understand about how Grim works. It does not ask permission. It creates, then invites you to react. If you do not like what it made, tell it. If you want something different, say so. The fastest workflow is: let Grim act, then refine. A few things that work well: Ask Grim to populate a card's checklist or budget after you have pl",
+    "url": "/grim.html#working-effectively"
+  },
+  {
+    "title": "Exports",
+    "section": "",
+    "body": "Exports GrimFolio exports your project data as print-ready PDFs and raw JSON. Exports are available from two places: the Export button in the top bar from Stage 2, and the Export Hub widget in Stage 3 Production. All PDF exports open in a full-screen print preview overlay before downloading. When the print preview opens, enable Background graphics in your browser's print settings for best results. Without it colored elements and table backgrounds may not render correctly in the saved PDF.",
+    "url": "/exports.html"
+  },
+  {
+    "title": "Exports",
+    "section": "Export Formats",
+    "body": "Every PDF carries a document header with the project name, export type, your company name if set in Account Settings, and the current date. A GrimFolio watermark appears on each page. Plan Watermark behavior Free GrimFolio watermark on all pages. Base Unlimited GrimFolio watermark on all pages. Pro Toggle the watermark off in Account Settings &rarr; Appearance. Studio Replace the GrimFolio mark with a custom SVG logo.",
+    "url": "/exports.html#export-formats"
+  },
+  {
+    "title": "Exports",
+    "section": "Checklist",
+    "body": "A printable task list showing all checklist items across every card that has them. Cards without checklist items are excluded. Summary stats at top: card count, total items, completed count, remaining count. For each card: Card title and type Per-card progress bar showing done vs total Each checklist item with its checkbox state — checked items show a filled box, unchecked show an empty box Screenshot: Checklist export PDF preview showing card sections with progress bars and checkbox items Use this for pre-show walkthroughs, tech checks, and production handoffs where the team needs a physical ",
+    "url": "/exports.html#checklist"
+  },
+  {
+    "title": "Exports",
+    "section": "Budget",
+    "body": "A full budget breakdown across every card that has budget lines. Cards without budget lines are excluded. Summary stats at top: card count, total line items, grand total. For each card: Card title and type Table: item name, quantity, unit cost, status, line total Card subtotal Budget cap if set, with remaining amount or over-by amount in red Status labels: Planned, Ordered, Received, In Progress, Installed. Grand total appears at the bottom of the document. The Budget export showing line items, status pills, card subtotal, and grand total. Use this when reviewing spend against plan, presenting",
+    "url": "/exports.html#budget"
+  },
+  {
+    "title": "Exports",
+    "section": "Card Summary",
+    "body": "A document-style overview of every card on the canvas. All cards are included even those without notes. Summary stats at top: total card count, count with notes. For each card: Card title and type Notes in full if any. Cards without notes show \"No notes.\" in italics. Elements list if any are attached Use this for early-stage documentation, venue walk-through packets, or sharing project structure with people who are not in GrimFolio.",
+    "url": "/exports.html#card-summary"
+  },
+  {
+    "title": "Exports",
+    "section": "Walk-Through Guide",
+    "body": "A reference document that maps the canvas as a sequence. Every card appears with its outgoing connections shown explicitly, creating a printed version of the Walk-Through path. Summary stats at top: card count, connection count, total checklist items, completed checklist items. For each card: Card title and type Notes if any Elements list if any Checklist progress bar Outgoing connections: \"Connects to [card name]\" with path label shown in quotes when set The Walk-Through Guide export showing a card section with notes, elements, and outgoing connections. Use this as a show-night reference pack",
+    "url": "/exports.html#walk-through-guide"
+  },
+  {
+    "title": "Exports",
+    "section": "Inventory",
+    "body": "An assignment-based view of all inventory items across cards. Only cards with at least one inventory assignment appear. Summary stats at top: cards with inventory, total assignments. For each card: Card title and item count Table: item name, category, unit, quantity used, quantity available The Available column turns red when available quantity is less than the quantity in use, flagging potential supply gaps before build day.",
+    "url": "/exports.html#inventory"
+  },
+  {
+    "title": "Exports",
+    "section": "Chat History",
+    "body": "A full transcript of your Grim conversation for this project. Includes both Stage 2 and Production conversations if both exist. Summary stats at top: total message count, earliest message date, latest message date. Messages are grouped by day with date dividers. Each message shows the speaker (Grim or You), the time, and the full content. System notices appear as horizontal separators in the transcript. Use this to hand off creative decisions to collaborators, review what was brainstormed, or archive the development conversation for a project.",
+    "url": "/exports.html#chat-history"
+  },
+  {
+    "title": "Exports",
+    "section": "Project Data (JSON)",
+    "body": "Available from the Export Hub widget in Stage 3 only. Exports the raw project data as a JSON file and downloads immediately without opening a print preview. The JSON contains your full project structure — zones, connections, pile items, crew, and shift arrays. This format is designed to be integration-ready for external tools. The JSON export is the foundation for future integrations including direct handoff to operational tools. The crew and shifts arrays are reserved and ready for tools that handle staffing and scheduling.",
+    "url": "/exports.html#project-data"
+  },
+  {
+    "title": "Exports",
+    "section": "Map Export  Coming Soon ",
+    "body": "Map Export will generate a printable canvas image with a numbered legend. Cards will render as either full tiles or numbered pins. Background images and drawing layers will be included. A legend below the map will list each number alongside the card title, optional photo, and optional notes. Exported maps will include a QR code linking to the hosted version when published via the Hosted Exports system. Map Export is coming in a future update. It will appear in the export menu alongside the existing exports when it ships. &larr; Grim Next: Reference Documents &rarr; On This Page",
+    "url": "/exports.html#map-export"
+  },
+  {
+    "title": "Reference Documents",
+    "section": "",
+    "body": "Reference Documents Reference documents are files you upload to GrimFolio and attach to projects so Grim can read them. A lore bible, a floor plan, a script, a vendor quote, a game system rulebook — any document relevant to what you are building. Once linked to a project the document's content becomes part of Grim's context in every conversation there. No manual pasting. No prompting required.",
+    "url": "/reference-documents.html"
+  },
+  {
+    "title": "Reference Documents",
+    "section": "The Documents Manager",
+    "body": "Reference Documents is a standalone section accessible from your Dashboard library cards. It is the global library for all documents across all your projects. The Documents Manager showing folder sections, document rows, and collapsed summaries.",
+    "url": "/reference-documents.html#the-documents-manager"
+  },
+  {
+    "title": "Reference Documents",
+    "section": "Uploading",
+    "body": "Click Upload Document to open a file picker. One file at a time. Supported formats: DOCX, TXT, Markdown (.md), and PDF. For strongest results use DOCX. Google Docs, Word, and most writing tools export directly to it. PDFs work but are labeled simple PDFs — heavily formatted or scanned PDFs may not extract text cleanly. If a PDF fails try exporting the same document as DOCX instead. After upload the document appears at the top of the list. Grim begins reading it immediately. While processing the row shows \"Grim is reading this...\" The page updates automatically when processing is complete. When",
+    "url": "/reference-documents.html#uploading"
+  },
+  {
+    "title": "Reference Documents",
+    "section": "Document Size and Structure",
+    "body": "Keep individual documents under 20 to 25 pages. For larger references split at logical boundaries — factions, locations, acts, chapters. Upload each as its own document. Grim reads across all documents linked to a project on every exchange. Smaller focused documents give better results than one large file. A 50-page sourcebook split into five 10-page faction documents gives Grim more precise context than the whole thing as one upload. Split at meaningful boundaries — not arbitrary page counts.",
+    "url": "/reference-documents.html#document-size-and-structure"
+  },
+  {
+    "title": "Reference Documents",
+    "section": "Document Rows",
+    "body": "Each document in the list shows: Element What it shows Filename Full name with extension. File type badge Uppercase extension: DOCX, PDF, TXT, MD. Upload date When the file was added. Link count \"Linked to N projects\" if linked anywhere. Summary Grim-generated summary, processing status, or extraction failure message. Folder button Opens the folder assignment dropdown. Delete button Opens a confirmation dialog before deletion. Deleting a document is permanent. It is removed from all linked projects and cannot be undone.",
+    "url": "/reference-documents.html#document-rows"
+  },
+  {
+    "title": "Reference Documents",
+    "section": "Folders",
+    "body": "Documents can be organized into named folders. Folders are collapsible in the list and carry over into the project panel picker so you can find documents quickly when linking. Action How Move a document to a folder Click the folder button on the document row, choose a folder or select Unfiled. Create a new folder Click the folder button, then \"New folder...\", type a name, press Enter. Rename a folder Double-click the folder name in the list header. Delete a folder Click &times; on the folder header — all documents in it move to Unfiled. Documents without a folder appear under an Unfiled sectio",
+    "url": "/reference-documents.html#folders"
+  },
+  {
+    "title": "Reference Documents",
+    "section": "Linking Documents to a Project",
+    "body": "Linking tells Grim which documents belong to a project. A document can be linked to multiple projects with no duplication — the same file serves all of them. From inside a project — Open the Reference Docs panel via the left toolbar. The panel shows linked documents and a picker of everything in your library not yet linked to this project. Click any unlinked document to link it. Click &times; on a linked document to unlink it. Documents are grouped by folder in the picker — click a folder to expand it. The Reference Docs panel inside a project showing linked documents and the add document pick",
+    "url": "/reference-documents.html#linking-to-a-project"
+  },
+  {
+    "title": "Reference Documents",
+    "section": "Linking at Project Creation",
+    "body": "When creating a new project the Create Project modal includes an optional Start Grim with a reference document section. Select a document here and Grim walks into the very first conversation already knowing what is in that file. Documents are grouped by folder in this picker the same way as the in-project panel.",
+    "url": "/reference-documents.html#linking-at-creation"
+  },
+  {
+    "title": "Reference Documents",
+    "section": "How Grim Uses Linked Documents",
+    "body": "When Grim opens a conversation on a project that has linked documents it reads them. The opening observation and any starter cards come from the document content directly — not from the project name, not from a guess. This is the difference between: \"A haunted house — are we going literal with water, or is the drowning metaphorical?\" and: \"Pellucid voted against sealing the Rift the first time — which means what he's doing now isn't sabotage, it's completion.\" The second only happens when the document is there. Grim reads across all linked documents in each exchange. The context is available f",
+    "url": "/reference-documents.html#how-grim-uses-documents"
+  },
+  {
+    "title": "Reference Documents",
+    "section": "How Grim Reads Documents",
+    "body": "GrimFolio splits documents into overlapping chunks of roughly 1,500 characters and embeds each one. On every Grim exchange, only the chunks semantically relevant to your current message are retrieved and injected into context. A message about your budget injects nothing from the lore bible. A message about a specific character surfaces the two or three chunks that mention them. This keeps token usage proportional to what is actually relevant rather than injecting the entire document on every exchange. Small documents under 6,000 characters skip chunking entirely and inject directly. &larr; Exp",
+    "url": "/reference-documents.html#how-grim-reads-documents"
+  },
+  {
+    "title": "Inspiration Library",
+    "section": "",
+    "body": "Inspiration Library The Inspiration Library is where reference images live. Upload production stills, mood board pulls, concept sketches, floor plan photos — anything that belongs to your creative mental model. Images in the library can be linked to individual cards, dropped onto the canvas as background images, or used as the starting point for GrimVision concept art generation. Screenshot: Inspiration Library panel open in Build showing the image grid, upload zone, and tag filter bar",
+    "url": "/inspiration-library.html"
+  },
+  {
+    "title": "Inspiration Library",
+    "section": "Opening the Library",
+    "body": "The Inspiration Library is accessible two ways. From the Dashboard, click the Inspiration Library card in the right column to open the full standalone library page. From inside a project in Stage 2, click the Libraries button in the left toolbar and select Inspiration Library to open it as a panel on the right side of the canvas.",
+    "url": "/inspiration-library.html#opening-the-library"
+  },
+  {
+    "title": "Inspiration Library",
+    "section": "Uploading Images",
+    "body": "The upload zone is at the top of the panel or page. Drag an image onto it or click to open a file picker. Detail Spec Accepted formats JPEG, PNG, WebP, GIF Maximum file size 10MB per image Free plan limit 50 images total Pro plan limit 500 images total The image count is shown in the upload zone as you approach your plan limit. When you reach the ceiling the zone is disabled and shows a message. Images appear in the grid immediately after uploading.",
+    "url": "/inspiration-library.html#uploading-images"
+  },
+  {
+    "title": "Inspiration Library",
+    "section": "Managing Images",
+    "body": "Each image tile shows a thumbnail, filename, and any tags applied to it. Action How Rename Click the filename below the thumbnail. Type a new name and press Enter or click away. Add a tag Hover the tile, click + tag in the tag row. Type the tag and press Enter. Remove a tag Hover the tile. An &times; appears next to each tag. Click it. Delete image Hover the tile, click the button in the overlay. Deletes immediately. Link to a card Hover the tile, click Link. See below. Tags are lowercase and stored per image. Images can have multiple tags. A tag filter bar appears above the grid once any imag",
+    "url": "/inspiration-library.html#managing-images"
+  },
+  {
+    "title": "Inspiration Library",
+    "section": "Linking Images to Cards",
+    "body": "There are two ways to link an image to a card. From the library panel — Hover the image tile and click Link . A hint bar appears: \"Click a node on the canvas to link this image.\" Click any card. The link is created and the image appears in the card's Inspiration section in the detail drawer. Press Escape to cancel. From the card drawer — Open a card by double-clicking it. In the Inspiration section click + Link . An inline image picker opens showing all your library images. Click one to link it. Already-linked images show a purple checkmark and cannot be selected again. To unlink an image from",
+    "url": "/inspiration-library.html#linking-images-to-cards"
+  },
+  {
+    "title": "Inspiration Library",
+    "section": "GrimVision",
+    "body": "The GrimVision button appears in the Inspiration section of any card's detail drawer alongside your current credit balance. Clicking it opens the GrimVision panel. Select a niche — Haunted House, Escape Room, Film, Cosplay, and others — then a style template suited to your project type. Add a visual description of what you want to see and generate. Each generation uses credits. Generated images are saved to your GrimVision Library and appear as thumbnails in the card's Inspiration section. They are also available in the canvas image picker's GrimVision Library tab so you can place them directl",
+    "url": "/inspiration-library.html#grimvision"
+  },
+  {
+    "title": "Inspiration Library",
+    "section": "Inspiration in Stage 3",
+    "body": "The Inspiration Board widget in Stage 3 Production surfaces all inspiration images linked to cards across the project in a single read-only grid. Each thumbnail shows the image, an optional title, and the card it belongs to. Click any thumbnail to open it in a lightbox. The board is read-only. Manage images in Stage 2 via the Inspiration section of each card's detail drawer. &larr; Reference Documents Next: GrimVision &rarr; On This Page",
+    "url": "/inspiration-library.html#inspiration-in-stage-3"
+  },
+  {
+    "title": "GrimVision",
+    "section": "",
+    "body": "GrimVision GrimVision generates AI concept art from inside your project. Use it to visualize a room before it's built, reference a prop style, explore a character design, or just see what your haunt's atmosphere looks like rendered out. Generated images save to your GrimVision Library and link directly to the card that inspired them. GrimVision is a credit-based feature available to Pro and Studio accounts. Credits are purchased separately from your subscription. Screenshot: The GrimVision panel",
+    "url": "/grimvision.html"
+  },
+  {
+    "title": "GrimVision",
+    "section": "Accessing GrimVision",
+    "body": "GrimVision is accessed from inside a card. Open any card's detail drawer by double-clicking it in Stage 2. In the Inspiration section click the GrimVision button. Your current credit balance appears alongside the button label.",
+    "url": "/grimvision.html#accessing-grimvision"
+  },
+  {
+    "title": "GrimVision",
+    "section": "Generating an Image",
+    "body": "The GrimVision panel opens on the right side of the canvas. Generation has three steps. Step 1 — Select a niche Choose the category that best matches your project type. Niche Best for Haunted House Scare attractions, haunted experiences, dark atmosphere. Escape Room Puzzle environments, themed rooms, set design. Film Production design, scene visualization, costume reference. Cosplay Character design, costume details, prop reference. Theater Stage sets, lighting concepts, period design. TTRPG Dungeons, creatures, characters, world building. General Anything that does not fit a specific niche. S",
+    "url": "/grimvision.html#generating-an-image"
+  },
+  {
+    "title": "GrimVision",
+    "section": "Credits",
+    "body": "GrimVision runs on a separate credit system from Grim's token allowance. Credits are purchased in packs via Account Settings &rarr; Plan and Billing. Detail Notes Credits per generation Shown in the panel before you generate. Credit balance Displayed on the GrimVision button in every card drawer. Purchasing Account Settings &rarr; Plan and Billing &rarr; GrimVision Credits. Expiry Purchased credits do not expire. First use New accounts receive a small number of free credits on first use. When your credit balance reaches zero the Generate button is disabled and a link to purchase more appears i",
+    "url": "/grimvision.html#credits"
+  },
+  {
+    "title": "GrimVision",
+    "section": "Your GrimVision Library",
+    "body": "Every image you generate is saved automatically to your GrimVision Library. The library is accessible from the Dashboard library cards. In the library you can: Browse all generated images across all projects Rename any image by clicking its filename Download any image See which project and card it was generated from Generated images are also available in the canvas image picker's GrimVision Library tab so you can place them directly on the canvas as background images without leaving Stage 2.",
+    "url": "/grimvision.html#your-grimvision-library"
+  },
+  {
+    "title": "GrimVision",
+    "section": "Generated Images and Cards",
+    "body": "When GrimVision generates an image it is automatically linked to the card that was open when you generated it. The image appears as a thumbnail in the card's Inspiration section alongside any other linked images. From the Inspiration section you can: Set the image as the card's canvas photo tile using the Show on canvas toggle in the Photos section Unlink the image from the card without deleting it from your library Open the image in a lightbox by clicking the thumbnail GrimVision images are yours. They are stored in your account and do not expire. Cancelling a Pro subscription does not delete",
+    "url": "/grimvision.html#generated-images-and-cards"
+  },
+  {
+    "title": "Inventory",
+    "section": "",
+    "body": "Inventory The Inventory Manager is GrimFolio's material tracking system. It lives outside any individual project so your prop collections, consumable supplies, and tools are available to every project you build. Track quantities, set low-stock alerts, manage a shopping list, and assign items to specific cards. The system has two faces: a full standalone page for managing your inventory in detail, and a panel inside Stage 2 Build for assigning items to cards and tracking consumption.",
+    "url": "/inventory.html"
+  },
+  {
+    "title": "Inventory",
+    "section": "The Standalone Inventory Page",
+    "body": "Access the Inventory Manager from the Dashboard library cards. The page is split into two columns: Collections on the left and Shopping List on the right. The full Inventory Manager showing collections on the left and the shopping list on the right.",
+    "url": "/inventory.html#the-standalone-page"
+  },
+  {
+    "title": "Inventory",
+    "section": "Collections",
+    "body": "Everything in your inventory lives inside a collection. A collection is a named color-coded group of items. You might have one for props, one for fog machines and effects, one for consumables like fake blood and adhesive. Click + New Collection at the bottom of the left panel to create one. Pick a color from the preset palette and type a name. Collection header elements: Element What it does Color swatch Visual identifier. Click &middot;&middot;&middot; then Change color to update. Name Double-click to rename inline. Item count Number of items in the collection. Low-stock badge Amber triangle ",
+    "url": "/inventory.html#collections"
+  },
+  {
+    "title": "Inventory",
+    "section": "Items",
+    "body": "Click + Add Item on any collection header, type the item name, and press Enter or click Add. Items start with a quantity of 1 and the unit \"each.\" Element What it does Drag handle Reorder items within the collection. Name Double-click to rename. Quantity stepper and + buttons change quantity by 1. Click the number to type a value directly. Unit Click to edit. Accepts any text: pcs, ft, gallons, etc. Consumable toggle Marks the item as a consumable. Enables the low-stock threshold field. Alert at Sets the low-stock threshold. Only appears when Consumable is checked. Notes button Expands a notes",
+    "url": "/inventory.html#items"
+  },
+  {
+    "title": "Inventory",
+    "section": "Low-Stock Alerts",
+    "body": "When any consumable item's quantity reaches its threshold an amber warning icon appears on the item row and on the collection header. A banner appears at the top of the page when any item is flagged. Clicking the banner scrolls to the first flagged item.",
+    "url": "/inventory.html#low-stock-alerts"
+  },
+  {
+    "title": "Inventory",
+    "section": "Shopping List",
+    "body": "The right panel is a project-agnostic shopping list. Add items manually with + Add item or send items there from any collection row via right-click. Check an item to mark it purchased. If Auto-add is toggled on and the item was added from a specific collection, marking it purchased automatically increments that item's quantity in the linked collection. The Purchased section at the bottom accumulates checked items. Click Clear purchased to remove them. The Shopping List is not scoped to any project. It is a global list that works alongside all your collections. Use it for hardware store runs, v",
+    "url": "/inventory.html#shopping-list"
+  },
+  {
+    "title": "Inventory",
+    "section": "Exporting Inventory",
+    "body": "The Export button in the top bar generates a PDF of your full inventory showing all collections and their current quantities.",
+    "url": "/inventory.html#exporting-inventory"
+  },
+  {
+    "title": "Inventory",
+    "section": "Inventory Inside Stage 2",
+    "body": "When you are in Stage 2 Build, click the Inventory button in the left toolbar to open the Inventory panel. This panel only shows collections that have been linked to the current project. Linking a Collection to a Project From inside Stage 2 click + Link a collection at the bottom of the Inventory panel. A picker opens listing all your collections. Check which ones should be accessible in this project. From the standalone page you can also open any collection and link it to projects from the collection header menu. Once a collection is linked its items appear in the panel tabs. Items Tab Shows ",
+    "url": "/inventory.html#inventory-inside-stage-2"
+  },
+  {
+    "title": "Inventory",
+    "section": "Inventory in the Card Drawer",
+    "body": "The card detail drawer in Stage 2 has an Inventory section. Items assigned via the Inventory panel appear here showing what is allocated to that card. You can view assignments without leaving the drawer.",
+    "url": "/inventory.html#inventory-in-the-card-drawer"
+  },
+  {
+    "title": "Inventory",
+    "section": "Inventory in Stage 3",
+    "body": "The Inventory widget in Stage 3 Production shows all inventory items assigned to cards across the project grouped by card name. Each row shows item name, quantity in use, quantity available, and a Low badge when stock is at or below the threshold. Consumable items have a Use Some button for logging consumption directly from the Production board. A collapsible Collection Overview section at the bottom of the widget shows all linked collections with low-stock alerts across every item. &larr; GrimVision Next: Calendar &rarr; On This Page",
+    "url": "/inventory.html#inventory-in-stage-3"
+  },
+  {
+    "title": "Calendar",
+    "section": "",
+    "body": "Calendar Each project has its own calendar. Use it to track build days, performance dates, inspections, deliveries, and any other time-bound commitment tied to the project. Events feed the Upcoming Events widget in Stage 3 Production and the Next 10 Days panel on your Dashboard. Screenshot: The project calendar showing a month grid with color-coded event pills in various day cells",
+    "url": "/calendar.html"
+  },
+  {
+    "title": "Calendar",
+    "section": "Opening the Calendar",
+    "body": "The calendar is accessible from the top bar inside any project. Click the calendar icon to open it. It is a per-project view scoped entirely to the current project.",
+    "url": "/calendar.html#opening-the-calendar"
+  },
+  {
+    "title": "Calendar",
+    "section": "Navigating the Calendar",
+    "body": "The calendar displays a standard month grid, Sunday through Saturday. Today's cell is highlighted. Use the ‹ and › buttons on either side of the month label to move back and forward one month at a time.",
+    "url": "/calendar.html#navigating-the-calendar"
+  },
+  {
+    "title": "Calendar",
+    "section": "Event Types",
+    "body": "When you create an event you assign it a type. Each type renders as a color-coded pill in the calendar cell. Type Color Rehearsal Blue Performance Purple Meeting Slate Inspection Orange Delivery Green Deadline Red Build Day Amber Custom Gray",
+    "url": "/calendar.html#event-types"
+  },
+  {
+    "title": "Calendar",
+    "section": "Adding Events",
+    "body": "Click any day cell to open the new event form. A + button also appears in the top-right corner of each cell on hover and triggers the same form. Field Notes Title Required. Press Enter to submit. Type Dropdown. Determines the event pill color. Time Optional. Auto-fills to the current hour on focus. Notes Optional free text. Click Add Event or press Enter in the title field to save. The event appears as a color pill in the correct day cell immediately. Right-clicking any day cell opens a context menu with a single option: + Add Event . This opens the same form pre-filled with that date.",
+    "url": "/calendar.html#adding-events"
+  },
+  {
+    "title": "Calendar",
+    "section": "Editing and Deleting Events",
+    "body": "Click any event pill to open the detail panel. All fields are editable including the date, so you can reschedule by changing the date field directly. Click Save to confirm changes. To delete click Delete in the panel footer. A confirmation prompt replaces the buttons. Confirm to remove. Right-clicking an event pill opens a context menu with Edit (opens the detail panel) and Delete (skips to the confirmation step inside the panel). Events do not repeat. There is no recurring event option. For events that happen on multiple dates add them individually or add a note in the event description refer",
+    "url": "/calendar.html#editing-and-deleting"
+  },
+  {
+    "title": "Calendar",
+    "section": "How Events Surface Elsewhere",
+    "body": "Next 10 Days on Dashboard — Events across all your projects that fall within the next 10 days appear in the Next 10 Days panel on the Dashboard. Toggle this panel on or off in Account Settings &rarr; Project Defaults. Upcoming Events widget in Stage 3 — Events for the current project in the next 14 days appear in the Upcoming Events widget on the Production board. A scope toggle in the widget switches between this project only and all projects. Adding events from the Dashboard — You can add events without opening a project. Click + Add Event in the Next 10 Days panel on the Dashboard, select a",
+    "url": "/calendar.html#how-events-surface-elsewhere"
+  },
+  {
+    "title": "Account Settings",
+    "section": "",
+    "body": "Account Settings Account Settings is accessible from any screen in GrimFolio. Click your name or email address in the top-right corner to open it. The modal has a sidebar of tabs. Most changes save automatically as you make them.",
+    "url": "/account.html"
+  },
+  {
+    "title": "Account Settings",
+    "section": "Profile",
+    "body": "Your display name, company or studio name, email address, and password settings. Display name — Appears across the app and in exported document headers. Set it to your name, studio name, or whatever you want GrimFolio to call you. Company or studio name — Appears in export headers alongside the project name. Optional but useful for professional handoffs. Email — Read-only. Your login email cannot be changed from this screen. Password — Click Send password reset email and follow the link in your inbox to set a new password. Contact preference — A toggle at the bottom lets you opt in or out of o",
+    "url": "/account.html#profile"
+  },
+  {
+    "title": "Account Settings",
+    "section": "Appearance",
+    "body": "Controls theme, canvas behavior, and Grim's interface. The Appearance tab showing theme toggle, snap to grid, and Grim settings. The Appearance tab showing font size options and export branding controls. Theme A single toggle: Dark Mode . On by default. Turn it off to switch to light mode. The toggle applies immediately without saving. Walk-Through presentation mode always stays dark regardless of the theme setting. This is intentional — the dark canvas makes presentations readable on any screen. Snap to Grid Toggles a 16px grid on the Stage 2 canvas. When on, cards snap to grid positions duri",
+    "url": "/account.html#appearance"
+  },
+  {
+    "title": "Account Settings",
+    "section": "Plan and Billing",
+    "body": "Shows your current plan, upgrade options, billing cycle dates, and invoice history. Your Grim Token balance is shown on the right — monthly allowance remaining, any purchased top-up credits, and the reset date. Token top-up packs can be purchased here. GrimVision credits are shown and purchased separately on the same tab. For subscription cancellations contact support@grimfolio.com .",
+    "url": "/account.html#plan-and-billing"
+  },
+  {
+    "title": "Account Settings",
+    "section": "Project Defaults",
+    "body": "Default project type — Sets the template that pre-fills when you create a new project. Options are grouped into Standard types and TTRPG systems. Show upcoming events on dashboard — Controls whether the Next 10 Days panel appears on your Dashboard. The \"Show upcoming events\" toggle lives here in Project Defaults, not in the Appearance tab.",
+    "url": "/account.html#project-defaults"
+  },
+  {
+    "title": "Account Settings",
+    "section": "Data",
+    "body": "Export a full JSON backup of your account including all projects, cards, connections, and settings. A Restore option lets you import from a previous backup.",
+    "url": "/account.html#data"
+  },
+  {
+    "title": "Account Settings",
+    "section": "Referrals",
+    "body": "Your referral link and program stats. See the Referrals and Ambassador page for full documentation.",
+    "url": "/account.html#referrals"
+  },
+  {
+    "title": "Account Settings",
+    "section": "Help and Support",
+    "body": "A contact form for reaching the GrimFolio team. Fill in a subject and message and submit. This goes directly to support.",
+    "url": "/account.html#help-and-support"
+  },
+  {
+    "title": "Account Settings",
+    "section": "Danger Zone",
+    "body": "Account deletion. Type DELETE in the confirmation field and click the delete button. This is immediate and permanent. All projects, cards, images, documents, and data are removed with no recovery option. &larr; Calendar Next: Team and Collaboration &rarr; On This Page",
+    "url": "/account.html#danger-zone"
+  },
+  {
+    "title": "Team and Collaboration",
+    "section": "",
+    "body": "Team and Collaboration GrimFolio supports project collaboration on Studio plans. Invite other GrimFolio users to your projects as Editors or Viewers. They see the project in their Dashboard alongside their own work and can contribute based on their role. The Team tab in Account Settings is where all collaboration is managed — incoming invitations, active collaborations, and outgoing invites. The Team tab showing the invite form and an active collaborator with role selector.",
+    "url": "/team.html"
+  },
+  {
+    "title": "Team and Collaboration",
+    "section": "Roles",
+    "body": "GrimFolio collaboration has two roles. Role What they can do Editor View and edit the project, add and modify cards, use Grim, draw, and update any content. Viewer Read-only access. Can view the canvas, Walk-Through, and card content but cannot make changes. Editors see the full Stage 2 canvas with all controls active. Viewers see the canvas with editing interactions disabled. Viewers do not see the Grim chat — they see the project's generated summary instead if one exists. There is no Owner or Admin role in the collaboration model. The project owner is always the account that created it. Edit",
+    "url": "/team.html#roles"
+  },
+  {
+    "title": "Team and Collaboration",
+    "section": "Pending Invitations",
+    "body": "If someone has invited you to collaborate on one of their projects it appears in the Pending invitations section of the Team tab. Each card shows the project name, your assigned role, the name of the person who invited you, and when the invite was sent. Click Accept to join the project. It will appear in your Dashboard alongside your own projects with an Editor or Viewer badge. Click Decline to remove the invite without joining.",
+    "url": "/team.html#pending-invitations"
+  },
+  {
+    "title": "Team and Collaboration",
+    "section": "Projects You Are Collaborating On",
+    "body": "Once you accept an invite the project appears in the Projects I'm collaborating on section. Each card shows the project name, the owner's name, and your role. Click Leave to remove yourself from the project. A confirmation prompt appears before the action completes. Leaving is immediate — the project disappears from your Dashboard and you lose access.",
+    "url": "/team.html#projects-you-are-collaborating-on"
+  },
+  {
+    "title": "Team and Collaboration",
+    "section": "Inviting Collaborators  Studio ",
+    "body": "Studio accounts have an Invite someone form at the top of the Team tab. Field Notes Email address The person's GrimFolio account email. They must already have a GrimFolio account. Role Editor or Viewer. Can be changed after the invite is accepted. Project Which of your projects to invite them to. One project per invite submission. Click Send invite . The invite appears in the recipient's Team tab as a pending invitation. The email address must match an existing GrimFolio account. If it does not the form returns an error. To invite someone who does not have an account ask them to sign up at gri",
+    "url": "/team.html#inviting-collaborators"
+  },
+  {
+    "title": "Team and Collaboration",
+    "section": "Managing Your Team  Studio ",
+    "body": "The My projects and team section lists all your projects that have collaborators along with their current collaborators. Each collaborator row shows: Element What it does Name and email The collaborator's display name and email. Status badge Accepted (green) or Pending (gray). Pending means they have not responded yet. Role selector Change the role between Editor and Viewer at any time. Takes effect immediately. Remove button Removes the collaborator from the project. Confirmation prompt appears first. Projects with no collaborators show a \"No collaborators yet\" placeholder. They still appear ",
+    "url": "/team.html#managing-your-team"
+  },
+  {
+    "title": "Team and Collaboration",
+    "section": "Collaborated Projects on the Dashboard",
+    "body": "Projects you have been invited to appear in your Dashboard project grid alongside your own projects. They show an Editor or Viewer badge on the card so you can tell at a glance which projects you own and which you are collaborating on. The &middot;&middot;&middot; menu on a collaborated project shows View only instead of Rename and Delete — you cannot rename or delete projects you do not own. &larr; Account Settings Next: Referrals and Ambassador &rarr; On This Page",
+    "url": "/team.html#collaborated-projects-on-the-dashboard"
+  },
+  {
+    "title": "Referrals and Ambassador Program",
+    "section": "",
+    "body": "Referrals and Ambassador Program GrimFolio has a built-in referral program. Share your unique link and earn recurring token credits for every paying member who signs up through it. Bring in enough paying members and your Pro access upgrades automatically — no codes to redeem, no forms to fill out. It happens on its own. Screenshot: The Referrals tab showing the referral link, Ambassador badge, and stats panel",
+    "url": "/referrals.html"
+  },
+  {
+    "title": "Referrals and Ambassador Program",
+    "section": "Finding the Referrals Tab",
+    "body": "Open Account Settings from any screen. Navigate to the Referrals tab in the sidebar. It is labeled with a diamond icon.",
+    "url": "/referrals.html#finding-the-referrals-tab"
+  },
+  {
+    "title": "Referrals and Ambassador Program",
+    "section": "Your Referral Link",
+    "body": "If you already have a referral code your unique link appears in a read-only input field. Click Copy to copy it to the clipboard. The button briefly confirms the copy. If you do not have a code yet click Generate Link . A code is created and the link appears immediately. Share the link anywhere — publicly in a post, directly to a colleague, in a forum signature. Anyone who signs up through your link is attributed to you.",
+    "url": "/referrals.html#your-referral-link"
+  },
+  {
+    "title": "Referrals and Ambassador Program",
+    "section": "How Rewards Work",
+    "body": "Every paying member who signs up through your link earns you a recurring credit toward GrimChat tokens each month. The reward continues for as long as they remain on a paid plan. It is tied to their continued subscription, not a one-time payment. Bring enough paying members and your account upgrades to Pro automatically. That upgrade stays active as long as the qualifying referrals do. The Pro upgrade from referrals is automatic and conditional. If referred members cancel their paid plans your account may step back down. The upgrade is not permanent — it reflects your active referral count at ",
+    "url": "/referrals.html#how-rewards-work"
+  },
+  {
+    "title": "Referrals and Ambassador Program",
+    "section": "Ambassador Status",
+    "body": "Some accounts carry Ambassador status. If your account has Ambassador status a crystal G badge and the Ambassador label appear at the top of the Referrals tab alongside your referral link. Ambassador status is distinct from being a standard referral participant. It represents a deeper relationship with GrimFolio and carries enhanced rewards.",
+    "url": "/referrals.html#ambassador-status"
+  },
+  {
+    "title": "Referrals and Ambassador Program",
+    "section": "Founder Status",
+    "body": "Founder status is granted to the first 100 paid members on the platform. Founders receive 20% off their subscription forever and a gold G badge that appears in their account and on the Grim avatar if enabled in Appearance settings. If your account is both a Founder and an Ambassador both badges appear together at the top of the Referrals tab. The Founder offer is closed. The first 100 paid members have been claimed. Founder status cannot be earned after the fact.",
+    "url": "/referrals.html#founder-status"
+  },
+  {
+    "title": "Referrals and Ambassador Program",
+    "section": "Referral Stats",
+    "body": "Once you have a referral code a stats panel appears below your link. Stat What it shows Total Signups How many accounts were created through your link. Paid Plans How many of those accounts are on a paid plan. Tokens Earned Your cumulative token earnings from referrals. A conversion list below the stats shows each paying referral with their plan type and conversion date. &larr; Team and Collaboration Back to Home &rarr; On This Page",
+    "url": "/referrals.html#referral-stats"
+  },
+  {
+    "title": "Blog",
+    "section": "",
+    "body": "Blog Notes on creative project planning, haunted house production, and building GrimFolio. How I Planned The Ritual Haunted House 2026 Season Coming Soon June 2026 How GrimFolio was used to plan The Ritual Haunted House 2026 season from concept through production. Why Spreadsheets Don't Work for Haunt Planning Coming Soon June 2026 Why spreadsheets break down for complex haunted house and escape room planning, and what to use instead. Using GrimFolio for D&D Campaign Planning Coming Soon June 20",
+    "url": "/blog/index.html"
+  },
+  {
+    "title": "How I Planned The Ritual Haunted House 2026 Season",
+    "section": "",
+    "body": "Blog / Post How I Planned The Ritual Haunted House 2026 Season Coming soon Coming Soon This post is in progress. Check back soon for the full write-up on how GrimFolio was used to plan The Ritual Haunted House 2026 season from concept through production. &larr; Back to all posts On This Page",
+    "url": "/blog/planning-the-ritual-2026.html"
+  },
+  {
+    "title": "Why Spreadsheets Don't Work for Haunt Planning",
+    "section": "",
+    "body": "Blog / Post Why Spreadsheets Don't Work for Haunt Planning Coming soon Coming Soon This post is in progress. The full article on why spreadsheets break down for complex haunted house and escape room planning — and what to use instead — is coming soon. &larr; Back to all posts On This Page",
+    "url": "/blog/why-spreadsheets-dont-work.html"
+  },
+  {
+    "title": "Using GrimFolio for D&D Campaign Planning",
+    "section": "",
+    "body": "Blog / Post Using GrimFolio for D&D Campaign Planning Coming soon Coming Soon This post is in progress. A full walkthrough on using GrimFolio to plan D&D campaigns — from world-building in the Pile to mapping out encounters on the canvas — is coming soon. &larr; Back to all posts On This Page",
+    "url": "/blog/grimfolio-for-dnd.html"
+  }
+]
