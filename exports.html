@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exports — GrimFolio Docs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function(){var t=localStorage.getItem('grimfolio-docs-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+</head>
+<body>
+
+<div class="layout">
+
+  <nav class="topnav">
+    <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    <a href="/index.html" class="topnav-wordmark">Grim<span>Folio</span> Docs</a>
+    <div class="topnav-search">
+      <input type="search" id="search-input" placeholder="Search the docs..." autocomplete="off" aria-label="Search documentation">
+      <div class="search-dropdown" id="search-dropdown"></div>
+    </div>
+    <div class="topnav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9788;</button>
+      <a href="https://grimfolio.com" target="_blank" rel="noopener" class="topnav-site-link">grimfolio.com</a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <nav>
+      <div class="nav-group">
+        <div class="nav-group-label">Getting Started</div>
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/dashboard.html" class="nav-link">Dashboard</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">The App</div>
+        <a href="/stage-1.html" class="nav-link">Stage 1 — The Pile</a>
+        <a href="/stage-2.html" class="nav-link">Stage 2 — Build</a>
+        <a href="/stage-3.html" class="nav-link">Stage 3 — Production</a>
+        <a href="/grim.html" class="nav-link">Grim</a>
+        <a href="/exports.html" class="nav-link active">Exports</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Libraries and Tools</div>
+        <a href="/reference-documents.html" class="nav-link">Reference Documents</a>
+        <a href="/inspiration-library.html" class="nav-link">Inspiration Library</a>
+        <a href="/grimvision.html" class="nav-link">GrimVision</a>
+        <a href="/inventory.html" class="nav-link">Inventory</a>
+        <a href="/calendar.html" class="nav-link">Calendar</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Account</div>
+        <a href="/account.html" class="nav-link">Account Settings</a>
+        <a href="/team.html" class="nav-link">Team and Collaboration</a>
+        <a href="/referrals.html" class="nav-link">Referrals and Ambassador</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Blog</div>
+        <a href="/blog/index.html" class="nav-link">All Posts</a>
+        <a href="/blog/planning-the-ritual-2026.html" class="nav-link">Planning The Ritual 2026</a>
+        <a href="/blog/why-spreadsheets-dont-work.html" class="nav-link">Why Spreadsheets Don't Work</a>
+        <a href="/blog/grimfolio-for-dnd.html" class="nav-link">GrimFolio for D&amp;D</a>
+      </div>
+    </nav>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <main class="main-content">
+    <div class="content-body">
+
+      <div class="page-header">
+        <h1>Exports</h1>
+      </div>
+
+      <p>GrimFolio exports your project data as print-ready PDFs and raw JSON. Exports are available from two places: the <strong>Export</strong> button in the top bar from Stage 2, and the <strong>Export Hub</strong> widget in Stage 3 Production. All PDF exports open in a full-screen print preview overlay before downloading.</p>
+
+      <div class="callout">
+        When the print preview opens, enable <strong>Background graphics</strong> in your browser's print settings for best results. Without it colored elements and table backgrounds may not render correctly in the saved PDF.
+      </div>
+
+      <h2 id="export-formats">Export Formats</h2>
+
+      <p>Every PDF carries a document header with the project name, export type, your company name if set in Account Settings, and the current date. A GrimFolio watermark appears on each page.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Watermark behavior</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Free</td>
+            <td>GrimFolio watermark on all pages.</td>
+          </tr>
+          <tr>
+            <td>Base Unlimited</td>
+            <td>GrimFolio watermark on all pages.</td>
+          </tr>
+          <tr>
+            <td>Pro</td>
+            <td>Toggle the watermark off in Account Settings &rarr; Appearance.</td>
+          </tr>
+          <tr>
+            <td>Studio</td>
+            <td>Replace the GrimFolio mark with a custom SVG logo.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="checklist">Checklist</h2>
+
+      <p>A printable task list showing all checklist items across every card that has them. Cards without checklist items are excluded.</p>
+
+      <p><strong>Summary stats at top:</strong> card count, total items, completed count, remaining count.</p>
+
+      <p><strong>For each card:</strong></p>
+      <ul>
+        <li>Card title and type</li>
+        <li>Per-card progress bar showing done vs total</li>
+        <li>Each checklist item with its checkbox state — checked items show a filled box, unchecked show an empty box</li>
+      </ul>
+
+      <div class="screenshot-placeholder">
+        <div class="placeholder-icon">&#128247;</div>
+        <div class="placeholder-caption">Screenshot: Checklist export PDF preview showing card sections with progress bars and checkbox items</div>
+      </div>
+
+      <p>Use this for pre-show walkthroughs, tech checks, and production handoffs where the team needs a physical reference.</p>
+
+      <h2 id="budget">Budget</h2>
+
+      <p>A full budget breakdown across every card that has budget lines. Cards without budget lines are excluded.</p>
+
+      <p><strong>Summary stats at top:</strong> card count, total line items, grand total.</p>
+
+      <p><strong>For each card:</strong></p>
+      <ul>
+        <li>Card title and type</li>
+        <li>Table: item name, quantity, unit cost, status, line total</li>
+        <li>Card subtotal</li>
+        <li>Budget cap if set, with remaining amount or over-by amount in red</li>
+      </ul>
+
+      <p>Status labels: Planned, Ordered, Received, In Progress, Installed.</p>
+
+      <p>Grand total appears at the bottom of the document.</p>
+
+      <figure>
+        <img src="images/export-budget-pdf.png" alt="The Budget export PDF showing line items, status labels, card subtotal, and grand total" class="img-medium">
+        <figcaption>The Budget export showing line items, status pills, card subtotal, and grand total.</figcaption>
+      </figure>
+
+      <p>Use this when reviewing spend against plan, presenting to collaborators, or submitting a budget report.</p>
+
+      <h2 id="card-summary">Card Summary</h2>
+
+      <p>A document-style overview of every card on the canvas. All cards are included even those without notes.</p>
+
+      <p><strong>Summary stats at top:</strong> total card count, count with notes.</p>
+
+      <p><strong>For each card:</strong></p>
+      <ul>
+        <li>Card title and type</li>
+        <li>Notes in full if any. Cards without notes show "No notes." in italics.</li>
+        <li>Elements list if any are attached</li>
+      </ul>
+
+      <p>Use this for early-stage documentation, venue walk-through packets, or sharing project structure with people who are not in GrimFolio.</p>
+
+      <h2 id="walk-through-guide">Walk-Through Guide</h2>
+
+      <p>A reference document that maps the canvas as a sequence. Every card appears with its outgoing connections shown explicitly, creating a printed version of the Walk-Through path.</p>
+
+      <p><strong>Summary stats at top:</strong> card count, connection count, total checklist items, completed checklist items.</p>
+
+      <p><strong>For each card:</strong></p>
+      <ul>
+        <li>Card title and type</li>
+        <li>Notes if any</li>
+        <li>Elements list if any</li>
+        <li>Checklist progress bar</li>
+        <li>Outgoing connections: "Connects to [card name]" with path label shown in quotes when set</li>
+      </ul>
+
+      <figure>
+        <img src="images/export-walkthrough-pdf.png" alt="The Walk-Through Guide export showing a card section with notes, elements, and outgoing connections listed" class="img-medium">
+        <figcaption>The Walk-Through Guide export showing a card section with notes, elements, and outgoing connections.</figcaption>
+      </figure>
+
+      <p>Use this as a show-night reference packet, a script substitute for actors or crew, or a guide for a client walk of the experience.</p>
+
+      <h2 id="inventory">Inventory</h2>
+
+      <p>An assignment-based view of all inventory items across cards. Only cards with at least one inventory assignment appear.</p>
+
+      <p><strong>Summary stats at top:</strong> cards with inventory, total assignments.</p>
+
+      <p><strong>For each card:</strong></p>
+      <ul>
+        <li>Card title and item count</li>
+        <li>Table: item name, category, unit, quantity used, quantity available</li>
+      </ul>
+
+      <p>The Available column turns red when available quantity is less than the quantity in use, flagging potential supply gaps before build day.</p>
+
+      <h2 id="chat-history">Chat History</h2>
+
+      <p>A full transcript of your Grim conversation for this project. Includes both Stage 2 and Production conversations if both exist.</p>
+
+      <p><strong>Summary stats at top:</strong> total message count, earliest message date, latest message date.</p>
+
+      <p>Messages are grouped by day with date dividers. Each message shows the speaker (Grim or You), the time, and the full content. System notices appear as horizontal separators in the transcript.</p>
+
+      <p>Use this to hand off creative decisions to collaborators, review what was brainstormed, or archive the development conversation for a project.</p>
+
+      <h2 id="project-data">Project Data (JSON)</h2>
+
+      <p>Available from the Export Hub widget in Stage 3 only. Exports the raw project data as a JSON file and downloads immediately without opening a print preview.</p>
+
+      <p>The JSON contains your full project structure — zones, connections, pile items, crew, and shift arrays. This format is designed to be integration-ready for external tools.</p>
+
+      <div class="callout">
+        The JSON export is the foundation for future integrations including direct handoff to operational tools. The crew and shifts arrays are reserved and ready for tools that handle staffing and scheduling.
+      </div>
+
+      <h2 id="map-export">Map Export <span class="coming-soon-badge">Coming Soon</span></h2>
+
+      <p>Map Export will generate a printable canvas image with a numbered legend. Cards will render as either full tiles or numbered pins. Background images and drawing layers will be included. A legend below the map will list each number alongside the card title, optional photo, and optional notes.</p>
+
+      <p>Exported maps will include a QR code linking to the hosted version when published via the Hosted Exports system.</p>
+
+      <div class="callout">
+        Map Export is coming in a future update. It will appear in the export menu alongside the existing exports when it ships.
+      </div>
+
+      <hr>
+
+      <p>
+        <a href="/grim.html">&larr; Grim</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="/reference-documents.html">Next: Reference Documents &rarr;</a>
+      </p>
+
+    </div>
+  </main>
+
+  <aside class="toc">
+    <div class="toc-label">On This Page</div>
+    <ul class="toc-list" id="toc-list"></ul>
+  </aside>
+
+</div>
+
+<div id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="main.js" defer></script>
+<script src="search.js" defer></script>
+</body>
+</html>
