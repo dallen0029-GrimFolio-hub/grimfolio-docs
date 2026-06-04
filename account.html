@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Settings — GrimFolio Docs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function(){var t=localStorage.getItem('grimfolio-docs-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+</head>
+<body>
+
+<div class="layout">
+
+  <nav class="topnav">
+    <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    <a href="/index.html" class="topnav-wordmark">Grim<span>Folio</span> Docs</a>
+    <div class="topnav-search">
+      <input type="search" id="search-input" placeholder="Search the docs..." autocomplete="off" aria-label="Search documentation">
+      <div class="search-dropdown" id="search-dropdown"></div>
+    </div>
+    <div class="topnav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9788;</button>
+      <a href="https://grimfolio.com" target="_blank" rel="noopener" class="topnav-site-link">grimfolio.com</a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <nav>
+      <div class="nav-group">
+        <div class="nav-group-label">Getting Started</div>
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/dashboard.html" class="nav-link">Dashboard</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">The App</div>
+        <a href="/stage-1.html" class="nav-link">Stage 1 — The Pile</a>
+        <a href="/stage-2.html" class="nav-link">Stage 2 — Build</a>
+        <a href="/stage-3.html" class="nav-link">Stage 3 — Production</a>
+        <a href="/grim.html" class="nav-link">Grim</a>
+        <a href="/exports.html" class="nav-link">Exports</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Libraries and Tools</div>
+        <a href="/reference-documents.html" class="nav-link">Reference Documents</a>
+        <a href="/inspiration-library.html" class="nav-link">Inspiration Library</a>
+        <a href="/grimvision.html" class="nav-link">GrimVision</a>
+        <a href="/inventory.html" class="nav-link">Inventory</a>
+        <a href="/calendar.html" class="nav-link">Calendar</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Account</div>
+        <a href="/account.html" class="nav-link active">Account Settings</a>
+        <a href="/team.html" class="nav-link">Team and Collaboration</a>
+        <a href="/referrals.html" class="nav-link">Referrals and Ambassador</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Blog</div>
+        <a href="/blog/index.html" class="nav-link">All Posts</a>
+        <a href="/blog/planning-the-ritual-2026.html" class="nav-link">Planning The Ritual 2026</a>
+        <a href="/blog/why-spreadsheets-dont-work.html" class="nav-link">Why Spreadsheets Don't Work</a>
+        <a href="/blog/grimfolio-for-dnd.html" class="nav-link">GrimFolio for D&amp;D</a>
+      </div>
+    </nav>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <main class="main-content">
+    <div class="content-body">
+
+      <div class="page-header">
+        <h1>Account Settings</h1>
+      </div>
+
+      <p>Account Settings is accessible from any screen in GrimFolio. Click your name or email address in the top-right corner to open it. The modal has a sidebar of tabs. Most changes save automatically as you make them.</p>
+
+      <h2 id="profile">Profile</h2>
+
+      <p>Your display name, company or studio name, email address, and password settings.</p>
+
+      <p><strong>Display name</strong> — Appears across the app and in exported document headers. Set it to your name, studio name, or whatever you want GrimFolio to call you.</p>
+
+      <p><strong>Company or studio name</strong> — Appears in export headers alongside the project name. Optional but useful for professional handoffs.</p>
+
+      <p><strong>Email</strong> — Read-only. Your login email cannot be changed from this screen.</p>
+
+      <p><strong>Password</strong> — Click <strong>Send password reset email</strong> and follow the link in your inbox to set a new password.</p>
+
+      <p><strong>Contact preference</strong> — A toggle at the bottom lets you opt in or out of occasional outreach from the GrimFolio team.</p>
+
+      <p>Legal links — Privacy Policy, Terms of Service, and Disclaimer — are at the bottom of this tab.</p>
+
+      <h2 id="appearance">Appearance</h2>
+
+      <p>Controls theme, canvas behavior, and Grim's interface.</p>
+
+      <figure>
+        <img src="images/account-appearance-tab.png" alt="The Appearance tab showing the dark mode theme toggle, snap to grid setting, help tips toggle, and Grim settings section" class="img-medium">
+        <figcaption>The Appearance tab showing theme toggle, snap to grid, and Grim settings.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/account-appearance-tab2.png" alt="The Appearance tab showing Grim font size options with a live preview sample and export branding controls" class="img-medium">
+        <figcaption>The Appearance tab showing font size options and export branding controls.</figcaption>
+      </figure>
+
+      <h3 id="theme">Theme</h3>
+
+      <p>A single toggle: <strong>Dark Mode</strong>. On by default. Turn it off to switch to light mode. The toggle applies immediately without saving.</p>
+
+      <div class="callout">
+        Walk-Through presentation mode always stays dark regardless of the theme setting. This is intentional — the dark canvas makes presentations readable on any screen.
+      </div>
+
+      <h3 id="snap-to-grid">Snap to Grid</h3>
+
+      <p>Toggles a 16px grid on the Stage 2 canvas. When on, cards snap to grid positions during drag. Off by default.</p>
+
+      <h3 id="help-tips">Help Tips</h3>
+
+      <p>Controls whether intro slides appear the first time you open a project. On by default. Turn it off once you know how each stage works.</p>
+
+      <h3 id="grim-settings">Grim Settings</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Setting</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Auto-open Grim</strong></td>
+            <td>Opens the Grim panel automatically when you enter any project.</td>
+          </tr>
+          <tr>
+            <td><strong>Starter cards on new project</strong></td>
+            <td>Grim places 3 starter cards in your Pile when you create a new project. Turn off once you are comfortable with the workflow.</td>
+          </tr>
+          <tr>
+            <td><strong>Grim Chat Font Size</strong></td>
+            <td>Sets text size in Grim's chat messages: Small, Medium, Large, Huge. A live sample shows the selected size.</td>
+          </tr>
+          <tr>
+            <td><strong>Display Font Size</strong></td>
+            <td>Sets the size of titles and headings across GrimFolio: Small, Large, Huge.</td>
+          </tr>
+          <tr>
+            <td><strong>Grim Avatar</strong></td>
+            <td>Founder accounts only. Switch between the default G mark and a gold variant.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="export-branding">Export Branding</h3>
+
+      <p><strong>Show "Built with GrimFolio"</strong> <span class="plan-badge pro">Pro</span> — Toggle the footer watermark on exported PDFs on or off. On by default.</p>
+
+      <p><strong>Custom Watermark Logo</strong> <span class="plan-badge pro">Studio</span> — Upload an SVG file to replace the GrimFolio G mark watermark on all exported pages. SVG format only, 500KB maximum. The logo renders as a subtle watermark previewed against a white background before use. Remove the logo to revert to the default GrimFolio mark.</p>
+
+      <h2 id="plan-and-billing">Plan and Billing</h2>
+
+      <p>Shows your current plan, upgrade options, billing cycle dates, and invoice history.</p>
+
+      <p>Your <strong>Grim Token</strong> balance is shown on the right — monthly allowance remaining, any purchased top-up credits, and the reset date. Token top-up packs can be purchased here.</p>
+
+      <p><strong>GrimVision credits</strong> are shown and purchased separately on the same tab.</p>
+
+      <p>For subscription cancellations contact <a href="mailto:support@grimfolio.com">support@grimfolio.com</a>.</p>
+
+      <h2 id="project-defaults">Project Defaults</h2>
+
+      <p><strong>Default project type</strong> — Sets the template that pre-fills when you create a new project. Options are grouped into Standard types and TTRPG systems.</p>
+
+      <p><strong>Show upcoming events on dashboard</strong> — Controls whether the Next 10 Days panel appears on your Dashboard.</p>
+
+      <div class="callout">
+        The "Show upcoming events" toggle lives here in Project Defaults, not in the Appearance tab.
+      </div>
+
+      <h2 id="data">Data</h2>
+
+      <p>Export a full JSON backup of your account including all projects, cards, connections, and settings. A Restore option lets you import from a previous backup.</p>
+
+      <h2 id="referrals">Referrals</h2>
+
+      <p>Your referral link and program stats. See the <a href="/referrals.html">Referrals and Ambassador</a> page for full documentation.</p>
+
+      <h2 id="help-and-support">Help and Support</h2>
+
+      <p>A contact form for reaching the GrimFolio team. Fill in a subject and message and submit. This goes directly to support.</p>
+
+      <h2 id="danger-zone">Danger Zone</h2>
+
+      <p>Account deletion. Type <strong>DELETE</strong> in the confirmation field and click the delete button. This is immediate and permanent. All projects, cards, images, documents, and data are removed with no recovery option.</p>
+
+      <hr>
+
+      <p>
+        <a href="/calendar.html">&larr; Calendar</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="/team.html">Next: Team and Collaboration &rarr;</a>
+      </p>
+
+    </div>
+  </main>
+
+  <aside class="toc">
+    <div class="toc-label">On This Page</div>
+    <ul class="toc-list" id="toc-list"></ul>
+  </aside>
+
+</div>
+
+<div id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="main.js" defer></script>
+<script src="search.js" defer></script>
+</body>
+</html>
