@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar — GrimFolio Docs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function(){var t=localStorage.getItem('grimfolio-docs-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+</head>
+<body>
+
+<div class="layout">
+
+  <nav class="topnav">
+    <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    <a href="/index.html" class="topnav-wordmark">Grim<span>Folio</span> Docs</a>
+    <div class="topnav-search">
+      <input type="search" id="search-input" placeholder="Search the docs..." autocomplete="off" aria-label="Search documentation">
+      <div class="search-dropdown" id="search-dropdown"></div>
+    </div>
+    <div class="topnav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9788;</button>
+      <a href="https://grimfolio.com" target="_blank" rel="noopener" class="topnav-site-link">grimfolio.com</a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <nav>
+      <div class="nav-group">
+        <div class="nav-group-label">Getting Started</div>
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/dashboard.html" class="nav-link">Dashboard</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">The App</div>
+        <a href="/stage-1.html" class="nav-link">Stage 1 — The Pile</a>
+        <a href="/stage-2.html" class="nav-link">Stage 2 — Build</a>
+        <a href="/stage-3.html" class="nav-link">Stage 3 — Production</a>
+        <a href="/grim.html" class="nav-link">Grim</a>
+        <a href="/exports.html" class="nav-link">Exports</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Libraries and Tools</div>
+        <a href="/reference-documents.html" class="nav-link">Reference Documents</a>
+        <a href="/inspiration-library.html" class="nav-link">Inspiration Library</a>
+        <a href="/grimvision.html" class="nav-link">GrimVision</a>
+        <a href="/inventory.html" class="nav-link">Inventory</a>
+        <a href="/calendar.html" class="nav-link active">Calendar</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Account</div>
+        <a href="/account.html" class="nav-link">Account Settings</a>
+        <a href="/team.html" class="nav-link">Team and Collaboration</a>
+        <a href="/referrals.html" class="nav-link">Referrals and Ambassador</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Blog</div>
+        <a href="/blog/index.html" class="nav-link">All Posts</a>
+        <a href="/blog/planning-the-ritual-2026.html" class="nav-link">Planning The Ritual 2026</a>
+        <a href="/blog/why-spreadsheets-dont-work.html" class="nav-link">Why Spreadsheets Don't Work</a>
+        <a href="/blog/grimfolio-for-dnd.html" class="nav-link">GrimFolio for D&amp;D</a>
+      </div>
+    </nav>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <main class="main-content">
+    <div class="content-body">
+
+      <div class="page-header">
+        <h1>Calendar</h1>
+      </div>
+
+      <p>Each project has its own calendar. Use it to track build days, performance dates, inspections, deliveries, and any other time-bound commitment tied to the project. Events feed the Upcoming Events widget in Stage 3 Production and the Next 10 Days panel on your Dashboard.</p>
+
+      <div class="screenshot-placeholder">
+        <div class="placeholder-icon">&#128247;</div>
+        <div class="placeholder-caption">Screenshot: The project calendar showing a month grid with color-coded event pills in various day cells</div>
+      </div>
+
+      <h2 id="opening-the-calendar">Opening the Calendar</h2>
+
+      <p>The calendar is accessible from the top bar inside any project. Click the calendar icon to open it. It is a per-project view scoped entirely to the current project.</p>
+
+      <h2 id="navigating-the-calendar">Navigating the Calendar</h2>
+
+      <p>The calendar displays a standard month grid, Sunday through Saturday. Today's cell is highlighted. Use the <strong>‹</strong> and <strong>›</strong> buttons on either side of the month label to move back and forward one month at a time.</p>
+
+      <h2 id="event-types">Event Types</h2>
+
+      <p>When you create an event you assign it a type. Each type renders as a color-coded pill in the calendar cell.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Color</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Rehearsal</strong></td>
+            <td>Blue</td>
+          </tr>
+          <tr>
+            <td><strong>Performance</strong></td>
+            <td>Purple</td>
+          </tr>
+          <tr>
+            <td><strong>Meeting</strong></td>
+            <td>Slate</td>
+          </tr>
+          <tr>
+            <td><strong>Inspection</strong></td>
+            <td>Orange</td>
+          </tr>
+          <tr>
+            <td><strong>Delivery</strong></td>
+            <td>Green</td>
+          </tr>
+          <tr>
+            <td><strong>Deadline</strong></td>
+            <td>Red</td>
+          </tr>
+          <tr>
+            <td><strong>Build Day</strong></td>
+            <td>Amber</td>
+          </tr>
+          <tr>
+            <td><strong>Custom</strong></td>
+            <td>Gray</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="adding-events">Adding Events</h2>
+
+      <p>Click any day cell to open the new event form. A <strong>+</strong> button also appears in the top-right corner of each cell on hover and triggers the same form.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Title</strong></td>
+            <td>Required. Press Enter to submit.</td>
+          </tr>
+          <tr>
+            <td><strong>Type</strong></td>
+            <td>Dropdown. Determines the event pill color.</td>
+          </tr>
+          <tr>
+            <td><strong>Time</strong></td>
+            <td>Optional. Auto-fills to the current hour on focus.</td>
+          </tr>
+          <tr>
+            <td><strong>Notes</strong></td>
+            <td>Optional free text.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Click <strong>Add Event</strong> or press Enter in the title field to save. The event appears as a color pill in the correct day cell immediately.</p>
+
+      <p>Right-clicking any day cell opens a context menu with a single option: <strong>+ Add Event</strong>. This opens the same form pre-filled with that date.</p>
+
+      <h2 id="editing-and-deleting">Editing and Deleting Events</h2>
+
+      <p>Click any event pill to open the detail panel. All fields are editable including the date, so you can reschedule by changing the date field directly. Click <strong>Save</strong> to confirm changes.</p>
+
+      <p>To delete click <strong>Delete</strong> in the panel footer. A confirmation prompt replaces the buttons. Confirm to remove.</p>
+
+      <p>Right-clicking an event pill opens a context menu with <strong>Edit</strong> (opens the detail panel) and <strong>Delete</strong> (skips to the confirmation step inside the panel).</p>
+
+      <div class="callout">
+        Events do not repeat. There is no recurring event option. For events that happen on multiple dates add them individually or add a note in the event description referencing the full schedule.
+      </div>
+
+      <h2 id="how-events-surface-elsewhere">How Events Surface Elsewhere</h2>
+
+      <p><strong>Next 10 Days on Dashboard</strong> — Events across all your projects that fall within the next 10 days appear in the Next 10 Days panel on the Dashboard. Toggle this panel on or off in Account Settings &rarr; Project Defaults.</p>
+
+      <p><strong>Upcoming Events widget in Stage 3</strong> — Events for the current project in the next 14 days appear in the Upcoming Events widget on the Production board. A scope toggle in the widget switches between this project only and all projects.</p>
+
+      <p><strong>Adding events from the Dashboard</strong> — You can add events without opening a project. Click <strong>+ Add Event</strong> in the Next 10 Days panel on the Dashboard, select a project from the dropdown, and fill in the event details.</p>
+
+      <hr>
+
+      <p>
+        <a href="/inventory.html">&larr; Inventory</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="/account.html">Next: Account Settings &rarr;</a>
+      </p>
+
+    </div>
+  </main>
+
+  <aside class="toc">
+    <div class="toc-label">On This Page</div>
+    <ul class="toc-list" id="toc-list"></ul>
+  </aside>
+
+</div>
+
+<div id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="main.js" defer></script>
+<script src="search.js" defer></script>
+</body>
+</html>
