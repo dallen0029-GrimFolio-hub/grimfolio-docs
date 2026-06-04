@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stage 3 — Production — GrimFolio Docs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function(){var t=localStorage.getItem('grimfolio-docs-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+</head>
+<body>
+
+<div class="layout">
+
+  <nav class="topnav">
+    <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    <a href="/index.html" class="topnav-wordmark">Grim<span>Folio</span> Docs</a>
+    <div class="topnav-search">
+      <input type="search" id="search-input" placeholder="Search the docs..." autocomplete="off" aria-label="Search documentation">
+      <div class="search-dropdown" id="search-dropdown"></div>
+    </div>
+    <div class="topnav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9788;</button>
+      <a href="https://grimfolio.com" target="_blank" rel="noopener" class="topnav-site-link">grimfolio.com</a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <nav>
+      <div class="nav-group">
+        <div class="nav-group-label">Getting Started</div>
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/dashboard.html" class="nav-link">Dashboard</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">The App</div>
+        <a href="/stage-1.html" class="nav-link">Stage 1 — The Pile</a>
+        <a href="/stage-2.html" class="nav-link">Stage 2 — Build</a>
+        <a href="/stage-3.html" class="nav-link active">Stage 3 — Production</a>
+        <a href="/grim.html" class="nav-link">Grim</a>
+        <a href="/exports.html" class="nav-link">Exports</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Libraries and Tools</div>
+        <a href="/reference-documents.html" class="nav-link">Reference Documents</a>
+        <a href="/inspiration-library.html" class="nav-link">Inspiration Library</a>
+        <a href="/grimvision.html" class="nav-link">GrimVision</a>
+        <a href="/inventory.html" class="nav-link">Inventory</a>
+        <a href="/calendar.html" class="nav-link">Calendar</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Account</div>
+        <a href="/account.html" class="nav-link">Account Settings</a>
+        <a href="/team.html" class="nav-link">Team and Collaboration</a>
+        <a href="/referrals.html" class="nav-link">Referrals and Ambassador</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Blog</div>
+        <a href="/blog/index.html" class="nav-link">All Posts</a>
+        <a href="/blog/planning-the-ritual-2026.html" class="nav-link">Planning The Ritual 2026</a>
+        <a href="/blog/why-spreadsheets-dont-work.html" class="nav-link">Why Spreadsheets Don't Work</a>
+        <a href="/blog/grimfolio-for-dnd.html" class="nav-link">GrimFolio for D&amp;D</a>
+      </div>
+    </nav>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <main class="main-content">
+    <div class="content-body">
+
+      <div class="page-header">
+        <h1>Stage 3 — Production</h1>
+      </div>
+
+      <p>Production replaces the canvas view entirely. The spatial map from Stage 2 stays intact behind the scenes. Production surfaces it differently: as a customizable command center built from widgets. Each widget is a focused tool. You choose what goes on the board and where it sits. Everything here reflects the current state of your project. Check off a checklist item in Production and it updates in Build. Edit a budget line and it saves to the card. Nothing is a duplicate view — it is the same data in a different interface.</p>
+
+      <figure class="lightbox-fig full-page">
+        <img src="images/stage3-production-board.png" alt="The Stage 3 Production board with multiple widgets arranged in a drag-and-drop grid" class="img-large">
+        <figcaption>The Stage 3 Production board with multiple widgets arranged in the drag-and-drop grid.</figcaption>
+      </figure>
+
+      <h2 id="getting-started">Getting Started</h2>
+
+      <p>When you enter Stage 3 for the first time the board is empty and a help modal opens automatically.</p>
+
+      <p>The toolbar at the top has three elements: the <strong>Production</strong> stage label, the <strong>+ Add Widget</strong> button, and a <strong>?</strong> help button.</p>
+
+      <p>Click <strong>+ Add Widget</strong> to open the widget picker. It shows all ten available widgets. Widgets already on the board show an <strong>Added ✓</strong> badge. Pro-only widgets show a <strong>Pro</strong> badge if your plan does not include them. Click any unlocked unadded widget to place it. The picker closes and the widget appears at the bottom of the layout.</p>
+
+      <h2 id="the-widget-grid">The Widget Grid</h2>
+
+      <p>Pro, Studio, and Base Unlimited accounts get a drag-and-drop grid. Widgets can be repositioned and resized freely using handles at the edges and corners. The layout autosaves 800ms after any change.</p>
+
+      <p>Free accounts get a stacked vertical layout. Widgets appear at full width in the order added. Position and size cannot be changed.</p>
+
+      <p>Viewers always see the owner's saved layout regardless of their own plan.</p>
+
+      <p>Every widget header has a drag handle to reposition it, a label, and an &times; button to remove it. Removing a widget does not delete any data — add it back at any time from the widget picker.</p>
+
+      <h2 id="cross-stage-sync">Cross-Stage Sync</h2>
+
+      <p>Production and Build share the same data layer.</p>
+
+      <div class="callout">
+        Changes in Production reflect immediately in Build and vice versa without a page reload. Check off a checklist item in Production and it updates in Build's card detail drawer instantly. This is not a sync — it is the same data.
+      </div>
+
+      <h2 id="hiding-cards-from-production">Hiding Cards from Production</h2>
+
+      <p>Some cards belong on the canvas but not in the command center. Right-click any card row in the Card List widget and choose <strong>Hide from Production</strong>. The card disappears from all widgets but remains on the canvas in Build.</p>
+
+      <p>A collapsible <strong>Hidden from Production</strong> section at the bottom of the Card List shows everything hidden. Right-click any hidden card and choose <strong>Show in Production</strong> to restore it.</p>
+
+      <h2 id="the-widgets">The Widgets</h2>
+
+      <h3 id="card-list">Card List <span class="coming-soon-badge" style="font-size:11px;padding:2px 8px;">Free</span></h3>
+
+      <p>All canvas cards grouped by type. Click any card row to expand it inline showing notes, checklist items, and an "Edit photos in Build &rarr;" link. Collapsed rows show a checklist summary badge and the card's current status. Right-click any row to hide or show the card in Production.</p>
+
+      <h3 id="master-checklist">Master Checklist <span class="coming-soon-badge" style="font-size:11px;padding:2px 8px;">Free</span></h3>
+
+      <p>Every checklist item across all visible cards in one scrollable list. A progress bar at the top shows total completion: X/Y done (Z%). Cards are grouped by title with a per-card done/total count. Filter buttons: all, done, undone. Toggle items directly in this widget — changes sync instantly to Build and to the Card List widget.</p>
+
+      <h3 id="budget-dashboard">Budget Dashboard <span class="coming-soon-badge" style="font-size:11px;padding:2px 8px;">Free</span></h3>
+
+      <p>All budget lines across all visible cards grouped by card type. Each card section shows a table with item name, quantity, and actual cost (editable inline). A group subtotal appears at the end of each type group. A grand total appears at the bottom of the widget. Edit actual cost directly — changes save to the card automatically.</p>
+
+      <h3 id="walk-through-widget">Walk-Through <span class="coming-soon-badge" style="font-size:11px;padding:2px 8px;">Free</span></h3>
+
+      <p>Run Walk-Through without leaving Production. The widget contains its own self-contained navigation interface.</p>
+
+      <p>The launch screen shows a dropdown to pick a starting card and a Start Walk-Through button. Active mode fills the widget with the current card's type, title, status, notes, and navigation. Single-path cards show a Continue button. Fork cards show all outgoing options as labeled buttons. A breadcrumb tracks the path taken.</p>
+
+      <div class="callout">
+        The Walk-Through widget does not include presentation mode or the canvas visual overlay. For the full presentation experience use the Walk-Through button in the top bar from Stage 2.
+      </div>
+
+      <h3 id="export-hub">Export Hub <span class="coming-soon-badge" style="font-size:11px;padding:2px 8px;">Free</span></h3>
+
+      <p>Seven export options in one place.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Export</th>
+            <th>Format</th>
+            <th>What it contains</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Checklist</strong></td>
+            <td>PDF</td>
+            <td>All checklist items grouped by card.</td>
+          </tr>
+          <tr>
+            <td><strong>Budget</strong></td>
+            <td>PDF</td>
+            <td>All budget lines with estimated and actual costs.</td>
+          </tr>
+          <tr>
+            <td><strong>Card Summary</strong></td>
+            <td>PDF</td>
+            <td>All cards with type, status, and notes.</td>
+          </tr>
+          <tr>
+            <td><strong>Walk-Through Guide</strong></td>
+            <td>PDF</td>
+            <td>The project sequence as a readable guide.</td>
+          </tr>
+          <tr>
+            <td><strong>Inventory</strong></td>
+            <td>PDF</td>
+            <td>Inventory assignments across all cards.</td>
+          </tr>
+          <tr>
+            <td><strong>Chat History</strong></td>
+            <td>PDF</td>
+            <td>Full Grim conversation log for this project.</td>
+          </tr>
+          <tr>
+            <td><strong>Project Data</strong></td>
+            <td>JSON</td>
+            <td>Raw project export, downloads immediately.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>PDF exports open in a print preview overlay with download controls. JSON exports download directly without a preview. Free plan exports include a GrimFolio watermark on PDFs.</p>
+
+      <p>For full export documentation see the <a href="/exports.html">Exports</a> page.</p>
+
+      <h3 id="project-summary">Project Summary <span class="coming-soon-badge" style="font-size:11px;padding:2px 8px;">Free</span></h3>
+
+      <p>A free-text area for project overview notes — goals, current status, key decisions, anything worth having at the top of your command center. Saves automatically.</p>
+
+      <p><strong>Grim's Take (Pro only)</strong> — A second block below the manual notes. Click Generate and Grim analyzes the canvas to write a short production status read. The timestamp shows when it was last generated. Click Regenerate to refresh at any time.</p>
+
+      <div class="callout">
+        Grim's generated summary feeds into Production Grim's opening context the next time you start a conversation there. Generate it before opening Production Grim for the best results.
+      </div>
+
+      <h3 id="upcoming-events">Upcoming Events <span class="coming-soon-badge" style="font-size:11px;padding:2px 8px;">Free</span></h3>
+
+      <p>Events from the project calendar in the next 14 days shown as a chronological timeline strip. A scope toggle switches between This Project (14 days) and All (events across all your projects, next 10 days). Open Calendar &rarr; navigates to the full project calendar.</p>
+
+      <h3 id="inventory-widget">Inventory <span class="coming-soon-badge" style="font-size:11px;padding:2px 8px;">Pro</span></h3>
+
+      <p>All inventory items assigned to cards across the project grouped by card name. Each row shows item name, current quantity and unit, quantity in use by this card, and a &#9888; Low badge when stock is at or below the low-stock threshold.</p>
+
+      <p>Consumable items show a <strong>Use Some</strong> button. Click it to open an inline form with a quantity input. The collection quantity updates immediately on confirm.</p>
+
+      <p>A collapsible <strong>Collection Overview</strong> section at the bottom shows all linked inventory collections with low-stock alerts. Go to Inventory Manager &rarr; navigates to the full Inventory page.</p>
+
+      <h3 id="inspiration-board">Inspiration Board <span class="coming-soon-badge" style="font-size:11px;padding:2px 8px;">Pro</span></h3>
+
+      <p>A read-only image grid showing all inspiration images linked to cards across the project. Each thumbnail shows the image, an optional title, and the card it belongs to. Click any thumbnail to open it in a lightbox. The board is read-only — manage images in Build via the Inspiration section of each card's detail drawer.</p>
+
+      <h3 id="schedule">Schedule <span class="coming-soon-badge" style="font-size:11px;padding:2px 8px;">Pro</span></h3>
+
+      <p>Crew roster and a 14-day shift grid for production scheduling. Two tabs: Roster and Schedule.</p>
+
+      <p><strong>Roster tab</strong> — All crew members with names, role pills (color-coded), contact info, and total shift count. Click a row to expand it. Click &#9998; to edit. Click &times; to remove (removes all their shifts after confirmation).</p>
+
+      <p><strong>Schedule tab</strong> — A gantt grid. One row per crew member. One column per day. Today's column is highlighted. Weekends are shaded.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/stage3-schedule-widget.png" alt="The Schedule widget showing the gantt view with color-coded shift bars and a tooltip displaying role and time range" class="img-medium">
+        <figcaption>The Schedule widget showing the gantt view with shift bars and a tooltip.</figcaption>
+      </figure>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>How</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Add a shift</strong></td>
+            <td>Click an empty cell or click the + button.</td>
+          </tr>
+          <tr>
+            <td><strong>Edit a shift</strong></td>
+            <td>Right-click the shift bar, choose Edit shift.</td>
+          </tr>
+          <tr>
+            <td><strong>Copy a shift</strong></td>
+            <td>Drag the shift bar to the target cell.</td>
+          </tr>
+          <tr>
+            <td><strong>Delete a shift</strong></td>
+            <td>Click &times; on the shift bar.</td>
+          </tr>
+          <tr>
+            <td><strong>Mark a date unavailable</strong></td>
+            <td>Right-click the cell to toggle a blackout.</td>
+          </tr>
+          <tr>
+            <td><strong>Navigate weeks</strong></td>
+            <td>‹ and › arrows or the Today button.</td>
+          </tr>
+          <tr>
+            <td><strong>Toggle time format</strong></td>
+            <td>12h / 24h button in the date nav bar.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Hovering a shift bar shows a tooltip with role, time range, and notes. When only one crew member is scheduled on a date and two or more are on the roster an understaffed indicator appears on that date column.</p>
+
+      <p>The &hellip; overflow menu in the date nav bar offers Export CSV, Import CSV, and Export for Sithon.</p>
+
+      <h2 id="grim-in-production">Grim in Production <span class="coming-soon-badge" style="font-size:11px;padding:2px 8px;">Pro</span></h2>
+
+      <p>Production Grim is a separate conversation from Stage 2 Grim. Same assistant, different context and focus. In Production, Grim is operationally oriented — readiness, gaps, prioritization, final checks.</p>
+
+      <figure class="lightbox-fig full-page">
+        <img src="images/stage3-production-board-grim.png" alt="The Production board with the Grim widget active and the Build Summary card expanded showing project context" class="img-large">
+        <figcaption>The Production board with the Grim widget active and the Build Summary card expanded.</figcaption>
+      </figure>
+
+      <h3 id="grim-context">Context</h3>
+
+      <p>At the start of each turn Production Grim reads your project name, all visible card titles, types, and checklist items with done/undone status. It does not receive the full canvas graph, connection structure, or Stage 2 Grim conversation history. Its context is your current production state — what is done and what is not.</p>
+
+      <h3 id="opening-message">Opening Message</h3>
+
+      <p>The first time you open Production Grim on a project it opens with a specific operational question. If a Build Summary exists (generated via the Project Summary widget) Grim uses it to orient before asking about the most pressing thing. On subsequent visits it resumes from saved conversation history.</p>
+
+      <h3 id="build-summary-card">Build Summary Card</h3>
+
+      <p>A collapsible Build Summary card appears at the top of the Grim widget. It shows the Grim-generated summary from the Project Summary widget. If no summary exists yet a link to generate one in Build appears.</p>
+
+      <h3 id="quick-prompts">Quick Prompts</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Button</th>
+            <th>What it sends</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Run final check</strong></td>
+            <td>Asks Grim for the highest-priority gaps before the project opens.</td>
+          </tr>
+          <tr>
+            <td><strong>What's not done?</strong></td>
+            <td>Sends all incomplete checklist items by card and asks for prioritization.</td>
+          </tr>
+          <tr>
+            <td><strong>Generate summary</strong></td>
+            <td>Asks Grim to write a production status read: state, risks, what remains.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <figure class="lightbox-fig">
+        <img src="images/stage3-grim-widget.png" alt="The Production Grim widget with the Build Summary card expanded and quick prompt buttons visible below" class="img-medium">
+        <figcaption>The Production Grim widget with Build Summary expanded and quick prompt buttons visible.</figcaption>
+      </figure>
+
+      <h3 id="production-conversation">Conversation</h3>
+
+      <p>Type in the input and press Enter to send. Shift+Enter for a new line. Production Grim responds in plain text only. It does not create cards, connections, checklists, or any canvas objects. Its role here is advisory.</p>
+
+      <p>Production conversations save separately from Stage 2 conversations. Both appear in the Chat History export.</p>
+
+      <div class="callout">
+        After 15 message exchanges a background summary compresses older context. Every 10 exchanges after that it updates. This keeps the conversation manageable without losing the thread. If Grim seems to have forgotten something from early in the conversation this is why — ask it to recap if needed.
+      </div>
+
+      <hr>
+
+      <p>
+        <a href="/stage-2.html">&larr; Stage 2 — Build</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="/grim.html">Next: Grim &rarr;</a>
+      </p>
+
+    </div>
+  </main>
+
+  <aside class="toc">
+    <div class="toc-label">On This Page</div>
+    <ul class="toc-list" id="toc-list"></ul>
+  </aside>
+
+</div>
+
+<div id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="main.js" defer></script>
+<script src="search.js" defer></script>
+</body>
+</html>
