@@ -76,9 +76,11 @@
 
       <p>The Pile captured your ideas. Build gives them position, relationship, and structure. When you enter Stage 2 the canvas opens and your pile cards move to the Pile Drawer on the left. You bring them onto the canvas and arrange them intentionally. Connections form paths. The structure of your project becomes visible. All tools are available from day one.</p>
 
+      <!-- ── The Canvas ────────────────────────────────── -->
+
       <h2 id="the-canvas">The Canvas</h2>
 
-      <p>The canvas is an infinite spatial workspace rendered on a dot-grid background. Pan by dragging any empty area. Zoom by scrolling or use the + and - buttons in the left sidebar. Minimum zoom is 10%, maximum is 200%. <strong>Fit View</strong> reframes the camera to show all placed cards.</p>
+      <p>The canvas is an infinite spatial workspace rendered on a dot-grid background. Pan by dragging any empty area. Zoom by scrolling or use the + and - buttons in the left toolbar. Minimum zoom is 10%, maximum is 200%. <strong>Fit to Screen</strong> reframes the camera to show all placed cards.</p>
 
       <p>Snap to grid (16px) is optional. Toggle it in Account Settings &rarr; Appearance.</p>
 
@@ -87,84 +89,159 @@
         <figcaption>The Stage 2 canvas with cards, connections, and a path label pill visible.</figcaption>
       </figure>
 
-      <h3 id="searching-the-canvas">Searching the Canvas</h3>
-
-      <p>A search bar is available in the top bar. Matching cards filter by title, type, or notes and highlight in place. Non-matching cards dim. The Pile Drawer also highlights matching cards with a purple ring. Clear the search to return to normal.</p>
+      <!-- ── Left Toolbar ─────────────────────────────── -->
 
       <h2 id="the-left-toolbar">The Left Toolbar</h2>
 
-      <p>A narrow vertical toolbar on the left edge of the canvas. Tools are grouped into two sections.</p>
+      <p>A narrow vertical toolbar on the left edge of the canvas. Tools are grouped into two sections — navigation and selection modes on top, workspace tools on the bottom.</p>
 
-      <p><strong>Top section:</strong></p>
+      <h3 id="left-toolbar-top">Left Toolbar — Top Section</h3>
 
       <table>
         <thead>
           <tr>
             <th>Tool</th>
+            <th>Icon</th>
             <th>What it does</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><strong>Select</strong> (pointer)</td>
-            <td>Default mode. Click cards to select, drag to move, drag from handles to connect.</td>
+            <td><strong>Select</strong></td>
+            <td>Cursor arrow</td>
+            <td>Default mode. Click to select cards, drag to move, drag from handles to connect. Tooltip: "Select (Esc)"</td>
           </tr>
           <tr>
-            <td><strong>Multi-Select</strong> (lasso)</td>
-            <td>Draw a rubber-band selection box over empty canvas space. Cards inside the box are selected together. Ctrl+click adds individual cards to the selection.</td>
+            <td><strong>Multi-Select</strong></td>
+            <td>Dashed rectangle</td>
+            <td>Drag across empty canvas space to select cards inside the box. Scroll wheel or two-finger trackpad to pan while in this mode. Ctrl+click adds individual cards to selection.</td>
           </tr>
           <tr>
-            <td><strong>Anchor</strong></td>
-            <td>Click anywhere on the canvas to place an anchor node routing waypoint.</td>
+            <td><strong>Place Anchor</strong></td>
+            <td>Circle + crosshair</td>
+            <td>Click anywhere on the canvas to place a routing waypoint anchor. Tool automatically returns to Select mode after placement.</td>
           </tr>
           <tr>
-            <td><strong>Zoom in (+)</strong></td>
+            <td><strong>Zoom In</strong></td>
+            <td>Magnifier +</td>
             <td>Zooms in one step.</td>
           </tr>
           <tr>
-            <td><strong>Zoom out (-)</strong></td>
+            <td><strong>Zoom Out</strong></td>
+            <td>Magnifier -</td>
             <td>Zooms out one step.</td>
           </tr>
           <tr>
-            <td><strong>Fit View</strong></td>
-            <td>Reframes camera to show all placed cards.</td>
+            <td><strong>Fit to Screen</strong></td>
+            <td>Four-corner arrows</td>
+            <td>Snaps the camera to show all placed cards. Instant, no animation.</td>
+          </tr>
+          <tr>
+            <td><strong>Edge Labels</strong></td>
+            <td>Hexagon with lines</td>
+            <td>Toggles visibility of edge labels — the short text added to connections via right-click. Does NOT affect path label pills, which are always visible regardless of this toggle.</td>
+          </tr>
+          <tr>
+            <td><strong>Search</strong></td>
+            <td>Magnifier</td>
+            <td>Opens the canvas search bar. Auto-focuses the input on open. Escape closes it and clears the query.</td>
           </tr>
         </tbody>
       </table>
 
-      <p><strong>Bottom section:</strong></p>
+      <div class="callout">
+        <strong>Edge Labels vs. Path Labels.</strong> Edge Labels are short text on the connection line itself, toggled by the Edge Labels button. Path Labels are the floating pill labels that describe the relationship between cards — those are always visible and not affected by this toggle.
+      </div>
+
+      <h3 id="left-toolbar-bottom">Left Toolbar — Bottom Section</h3>
 
       <table>
         <thead>
           <tr>
             <th>Tool</th>
+            <th>Icon</th>
             <th>What it does</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><strong>Pile Drawer</strong></td>
-            <td>Toggles the Pile Drawer open and closed.</td>
-          </tr>
-          <tr>
-            <td><strong>Drawing Tools</strong> (pencil)</td>
-            <td>Opens the Drawing Tools panel. See Drawing Tools section below.</td>
-          </tr>
-          <tr>
-            <td><strong>Libraries</strong></td>
-            <td>Opens a popout listing Reference Documents, Linked Projects, and Inspiration Library. Click any option to open that panel. Active (purple) whenever any of the three panels is open.</td>
+            <td>Stacked cards</td>
+            <td>Opens and collapses the Pile Drawer on the left.</td>
           </tr>
           <tr>
             <td><strong>Inventory</strong></td>
+            <td>Open box</td>
             <td>Opens the Inventory panel scoped to this project.</td>
+          </tr>
+          <tr>
+            <td><strong>Libraries</strong></td>
+            <td>Four squares</td>
+            <td>Opens a popout with three sub-items: Documents, Linked Projects, Inspiration Library.</td>
+          </tr>
+          <tr>
+            <td><strong>Create Card</strong></td>
+            <td>Rectangle +</td>
+            <td>Click any spot on the canvas to place a new card at that position.</td>
+          </tr>
+          <tr>
+            <td><strong>Path Label</strong></td>
+            <td>Hexagon</td>
+            <td>Click any connection to place a floating label pill on it.</td>
+          </tr>
+          <tr>
+            <td><strong>Eraser</strong></td>
+            <td>Circle X</td>
+            <td>Click any edge or anchor node to delete it.</td>
+          </tr>
+          <tr>
+            <td><strong>Drawing Tools</strong></td>
+            <td>Pencil</td>
+            <td>Opens the Drawing Tools panel.</td>
+          </tr>
+          <tr>
+            <td><strong>Team Notepad</strong></td>
+            <td>Notepad</td>
+            <td>Opens the shared team notepad. Studio plan only — hidden on other plans.</td>
           </tr>
         </tbody>
       </table>
+
+      <div class="callout">
+        <strong>Two erasers.</strong> The Eraser tool in the toolbar deletes edges and anchor nodes. The Eraser inside the Drawing Tools panel deletes drawn shapes. They are separate tools.
+      </div>
 
       <figure>
         <img src="images/stage2-libraries-popout.png" alt="The Libraries popout panel showing Reference Documents, Linked Projects, and Inspiration Library options" class="img-small">
         <figcaption>The Libraries popout showing all three panel options.</figcaption>
       </figure>
+
+      <!-- ── Search ───────────────────────────────────── -->
+
+      <h2 id="search">Search</h2>
+
+      <p>The search bar is opened from the Search button in the left toolbar. It auto-focuses the input on open. Escape closes it and clears the query.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Search input</strong></td>
+            <td>Filters cards in real time by title, type, or notes. Matching cards highlight in place. Non-matching cards dim.</td>
+          </tr>
+          <tr>
+            <td><strong>Edge Labels toggle</strong></td>
+            <td>Shows or hides all edge label text on connections. Useful when the canvas is dense. Path label pills are unaffected.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ── Pile Drawer ──────────────────────────────── -->
 
       <h2 id="the-pile-drawer">The Pile Drawer</h2>
 
@@ -203,6 +280,8 @@
         <img src="images/grim-cards-arriving2.png" alt="Grim-created cards arriving in the Pile Drawer with purple glow and a toast notification confirming placement" class="img-medium">
         <figcaption>Grim-created cards arriving in the Pile Drawer with purple glow and placement confirmation.</figcaption>
       </figure>
+
+      <!-- ── Cards on the Canvas ──────────────────────── -->
 
       <h2 id="cards-on-the-canvas">Cards on the Canvas</h2>
 
@@ -248,8 +327,8 @@
       <p>Right-click any card to access the size picker.</p>
 
       <figure>
-        <img src="images/stage2-card-size-picker.png" alt="The card right-click context menu showing all four size options including Small Square and Large Square" class="img-small">
-        <figcaption>The card size picker showing all four size options.</figcaption>
+        <img src="images/stage2-card-size-picker.png" alt="The card right-click context menu showing all size options including Small Square and Large Square" class="img-small">
+        <figcaption>The card size picker showing all size options.</figcaption>
       </figure>
 
       <table>
@@ -361,6 +440,8 @@
         </tbody>
       </table>
 
+      <!-- ── Card Detail Drawer ────────────────────────── -->
+
       <h2 id="card-detail-drawer">Card Detail Drawer</h2>
 
       <p>Double-click any card to open its detail drawer. It slides in from the right. The canvas stays visible and interactive behind it.</p>
@@ -446,15 +527,19 @@
 
       <p><strong>Inventory</strong> — Assign physical inventory items from linked collections to this card.</p>
 
+      <!-- ── Connections and Path Labels ──────────────── -->
+
       <h2 id="connections-and-path-labels">Connections and Path Labels</h2>
 
       <p>Drag from any card handle to another card to create a connection. The canvas draws a curved path with an arrowhead pointing toward the target. Connection direction matters — Walk-Through follows arrows forward.</p>
 
       <h3 id="path-labels">Path Labels</h3>
 
-      <p>A path label is a text pill floating on a connection that describes the relationship: "blocks," "leads to," "depends on." Right-click any connection and choose <strong>Edit path label</strong> to set one. The pill appears mid-edge and can be dragged along the path to reposition it.</p>
+      <p>A path label is a text pill floating on a connection that describes the relationship: "blocks," "leads to," "depends on." Right-click any connection and choose <strong>Edit path label</strong> to set one, or use the Path Label tool in the left toolbar and click directly on any connection. The pill appears mid-edge and can be dragged along the path to reposition it.</p>
 
       <p>Path labels appear in Walk-Through navigation buttons.</p>
+
+      <!-- ── Anchor Nodes ──────────────────────────────── -->
 
       <h2 id="anchor-nodes">Anchor Nodes</h2>
 
@@ -463,12 +548,14 @@
       <p><strong>Place an anchor:</strong></p>
       <ul>
         <li>Right-click the canvas and choose Add anchor.</li>
-        <li>Activate the anchor tool in the left toolbar then click anywhere on the canvas.</li>
+        <li>Activate the Place Anchor tool in the left toolbar then click anywhere on the canvas.</li>
       </ul>
 
       <p>Each anchor supports exactly one incoming and one outgoing connection. Attempting a third connection is blocked with a warning.</p>
 
       <p>Anchors are invisible to Walk-Through, exports, Grim, and card count limits.</p>
+
+      <!-- ── Card Groups ───────────────────────────────── -->
 
       <h2 id="card-groups">Card Groups</h2>
 
@@ -510,6 +597,8 @@
       </table>
 
       <p><strong>Add to Group / Remove from Group</strong> are available on individual card right-click menus. Add opens a group picker. Remove clears immediately.</p>
+
+      <!-- ── Context Menus ─────────────────────────────── -->
 
       <h2 id="context-menus">Context Menus</h2>
 
@@ -663,6 +752,8 @@
         </tbody>
       </table>
 
+      <!-- ── Restore Points ───────────────────────────── -->
+
       <h2 id="restore-points">Restore Points</h2>
 
       <p>Restore Points are full project snapshots available to Studio plan members. Access them from the bottom bar beside the Undo button.</p>
@@ -672,6 +763,352 @@
       <div class="callout">
         <strong>Restore Points vs. Undo.</strong> Undo steps back one canvas action at a time (up to 10 steps). Restore Points are full project snapshots you can jump back to at any point. Use Undo for small mistakes. Use Restore Points for larger rollbacks.
       </div>
+
+      <!-- ── Walk-Through Mode ─────────────────────────── -->
+
+      <h2 id="walk-through-mode">Walk-Through Mode</h2>
+
+      <p>Walk-Through traces the canvas as a guided sequence, following the direction of your connections one card at a time. Use it to rehearse a guest experience, a narrative path, or any sequence that has a direction.</p>
+
+      <p>The <strong>Walk-Through</strong> button lives in the top bar. It is disabled until at least one connection exists.</p>
+
+      <p>Click <strong>Walk-Through</strong> to enter pick mode. The canvas dims and all cards pulse. Click the card where the sequence begins.</p>
+
+      <h3 id="the-drawer">The Drawer</h3>
+
+      <p>A full-width drawer slides down from the top and locks in place. The canvas stays live behind it.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Card title</strong></td>
+            <td>Name of the current card.</td>
+          </tr>
+          <tr>
+            <td><strong>Status pill</strong></td>
+            <td>Current card status.</td>
+          </tr>
+          <tr>
+            <td><strong>Type badge</strong></td>
+            <td>Card type.</td>
+          </tr>
+          <tr>
+            <td><strong>Notes</strong></td>
+            <td>Card notes if any exist.</td>
+          </tr>
+          <tr>
+            <td><strong>Action row</strong></td>
+            <td>Continue button (single path) or fork buttons (multiple outgoing connections).</td>
+          </tr>
+          <tr>
+            <td><strong>Breadcrumb footer</strong></td>
+            <td>The full path taken so far. Click any crumb to jump back to that card.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>&larr; Back steps one card back. Hovering a Continue or fork button highlights the corresponding connection and glows the destination card.</p>
+
+      <h3 id="forks">Forks</h3>
+
+      <p>When a card has multiple outgoing connections the action row shows each option as a button. Path labels appear in the button text. Choose one to continue down that branch.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/stage2-walkthrough-fork.png" alt="Walk-Through in presentation mode showing a fork with two labeled branch choice buttons" class="img-modal">
+        <figcaption>Walk-Through in presentation mode showing a fork with two labeled branch choices.</figcaption>
+      </figure>
+
+      <h3 id="presentation-mode">Presentation Mode</h3>
+
+      <p>Click the expand button in the Walk-Through toolbar to collapse all chrome — the Grim panel closes, the top bar hides, and only the drawer and canvas remain. The canvas stays dark even in light mode.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/stage2-walkthrough-presentation.png" alt="Walk-Through presentation mode with the top bar and Grim panel hidden, showing only the drawer and canvas" class="img-modal">
+        <figcaption>Walk-Through presentation mode with only the drawer and canvas visible.</figcaption>
+      </figure>
+
+      <div class="callout">
+        Presentation mode is useful for client walkthroughs, investor presentations, and run-of-show handoffs. The dark canvas and full-width drawer make it readable on any screen.
+      </div>
+
+      <p>Press Escape while not in presentation mode to exit Walk-Through entirely.</p>
+
+      <!-- ── Drawing Tools ─────────────────────────────── -->
+
+      <h2 id="drawing-tools">Drawing Tools</h2>
+
+      <p>The drawing layer sits above the canvas and below card nodes. Use it to sketch floor plans, annotate card positions, measure spaces, or block out zone boundaries. Everything drawn is invisible to Grim, Walk-Through, exports, and card counts.</p>
+
+      <p>Click the <strong>pencil icon</strong> in the left toolbar to open the Drawing Tools panel. Drawing tools work well alongside canvas images — load a floor plan as a canvas image and draw zone boundaries on top of it.</p>
+
+      <h3 id="draw-tools">Draw Tools</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Tool</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Freehand</strong></td>
+            <td>Click and drag to draw a freeform stroke.</td>
+          </tr>
+          <tr>
+            <td><strong>Line</strong></td>
+            <td>Click and drag to draw a straight line. Hold Shift to constrain to 45-degree angles.</td>
+          </tr>
+          <tr>
+            <td><strong>Rectangle</strong></td>
+            <td>Click and drag to draw a rectangle.</td>
+          </tr>
+          <tr>
+            <td><strong>Circle / Ellipse</strong></td>
+            <td>Click and drag to draw an ellipse.</td>
+          </tr>
+          <tr>
+            <td><strong>Text label</strong></td>
+            <td>Click to place a text element. Type your label then press Enter or click away. Double-click an existing label to edit it.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="edit-tools">Edit Tools</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Tool</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Select / Move</strong></td>
+            <td>Click a shape to select it. Drag to reposition. Shift-click to add to selection.</td>
+          </tr>
+          <tr>
+            <td><strong>Eraser</strong></td>
+            <td>Click any drawn shape to delete it.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Keyboard shortcuts while Drawing Tools panel is open:</strong></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Key</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>Escape</code></td>
+            <td>Deselect all or cancel active drawing.</td>
+          </tr>
+          <tr>
+            <td><code>Delete / Backspace</code></td>
+            <td>Delete selected shapes.</td>
+          </tr>
+          <tr>
+            <td><code>Ctrl+Z</code></td>
+            <td>Undo last drawing action (local session stack, separate from canvas undo).</td>
+          </tr>
+          <tr>
+            <td><code>Ctrl+C</code></td>
+            <td>Copy selected shape.</td>
+          </tr>
+          <tr>
+            <td><code>Ctrl+V</code></td>
+            <td>Paste copied shape offset by 20px.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        Drawing undo (Ctrl+Z inside the drawing panel) is a separate local stack from canvas undo. Drawing actions do not appear in the canvas undo stack and are not included in Restore Points snapshots.
+      </div>
+
+      <h3 id="stroke-and-style">Stroke and Style Controls</h3>
+
+      <p><strong>Stroke</strong> — Available for all tools except Text. Pick a color and set stroke width: 1, 2, 4, or 8px.</p>
+
+      <p><strong>Text</strong> — Color picker for text color and font size buttons: 12, 16, 24, or 36px.</p>
+
+      <p><strong>Fill</strong> — Available for Rectangle and Circle. Toggle fill on and pick a fill color. Off by default.</p>
+
+      <p><strong>Opacity</strong> — Slider from 10% to 100%. Applies to all shapes.</p>
+
+      <h3 id="scale">Scale</h3>
+
+      <p>Set a real-world scale — one grid square equals a measurement in ft, m, cm, or in. While drawing a rectangle, circle, or line a live dimension label appears showing the shape's size in your chosen units. Dimension labels also persist on placed shapes.</p>
+
+      <h3 id="snap-options">Snap Options</h3>
+
+      <p><strong>Grid snap</strong> — Constrains shape start and end points to the 16px grid.</p>
+
+      <p><strong>Edge snap</strong> — Rectangles and circles snap to the edges of other existing rectangles and circles when drawn or moved close to them. The target shape highlights in purple when a snap occurs.</p>
+
+      <h3 id="hide-canvas">Hide Canvas</h3>
+
+      <p>The <strong>Hide Canvas</strong> button in the drawing panel hides all cards, connections, groups, and canvas images. Only your drawings remain visible. The grid stays visible. Click <strong>Show Canvas</strong> to restore.</p>
+
+      <div class="callout">
+        Hide Canvas is one of the most useful tools for haunt and escape room designers. Load your floor plan as a canvas image, hide everything else, and draw zone boundaries and measurements on top of a clean surface.
+      </div>
+
+      <h3 id="clear-all-drawings">Clear All Drawings</h3>
+
+      <p>Click <strong>Clear all drawings</strong> at the bottom of the panel. Click again to confirm. This removes all drawings for the current project permanently.</p>
+
+      <!-- ── Canvas Images ─────────────────────────────── -->
+
+      <h2 id="canvas-images">Canvas Images</h2>
+
+      <p>Canvas images are photographs, floor plans, or AI-generated artwork placed directly on the Build canvas. They sit behind all cards and drawing layers. They are not cards and do not appear in the Pile, Walk-Through, Grim context, or exports.</p>
+
+      <figure class="lightbox-fig full-page">
+        <img src="images/stage2-canvas-image.png" alt="A floor plan placed as a canvas background image with room cards positioned on top of it" class="img-large">
+        <figcaption>A floor plan placed as a canvas background image with room cards positioned on top.</figcaption>
+      </figure>
+
+      <h3 id="placing-an-image">Placing an Image</h3>
+
+      <p>Right-click any empty area of the canvas and select <strong>Add Canvas Image</strong>. The image picker opens with three tabs:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Tab</th>
+            <th>What it shows</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Upload</strong></td>
+            <td>File picker. Accepts JPG, PNG, WebP, GIF up to 20MB.</td>
+          </tr>
+          <tr>
+            <td><strong>Inspiration Library</strong></td>
+            <td>All images from your Inspiration Library.</td>
+          </tr>
+          <tr>
+            <td><strong>GrimVision Library</strong></td>
+            <td>AI-generated images from GrimVision.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="image-controls">Image Controls</h3>
+
+      <p>Click a placed image to select it. A gear button appears in the top-right corner. Click it to open the image settings panel.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Control</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Rotation</strong></td>
+            <td>Slider and numeric input. Range -180 to 180 degrees.</td>
+          </tr>
+          <tr>
+            <td><strong>Opacity</strong></td>
+            <td>Slider and numeric input. Range 0 to 100%.</td>
+          </tr>
+          <tr>
+            <td><strong>Mirror H</strong></td>
+            <td>Flips the image horizontally.</td>
+          </tr>
+          <tr>
+            <td><strong>Mirror V</strong></td>
+            <td>Flips the image vertically.</td>
+          </tr>
+          <tr>
+            <td><strong>Bring to Front</strong></td>
+            <td>Raises the image above other canvas images.</td>
+          </tr>
+          <tr>
+            <td><strong>Send to Back</strong></td>
+            <td>Lowers the image below other canvas images.</td>
+          </tr>
+          <tr>
+            <td><strong>Lock position</strong></td>
+            <td>Prevents the image from being moved by dragging.</td>
+          </tr>
+          <tr>
+            <td><strong>Delete image</strong></td>
+            <td>Removes the image immediately.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Resize handles appear on edges and corners when an image is selected and unlocked at 0 degrees rotation. Drag any handle to resize. Hold Shift to maintain the original aspect ratio.</p>
+
+      <!-- ── Grim on the Canvas ────────────────────────── -->
+
+      <h2 id="grim-on-the-canvas">Grim on the Canvas</h2>
+
+      <p>Grim stays in the right panel throughout Stage 2. He reads both the canvas and the pile at the start of each turn.</p>
+
+      <p>When Grim creates cards they go to the Pile Drawer, not onto the canvas. They arrive with a purple glow and a ✦ indicator. Drag them from the drawer to place them where you want them.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Grim action</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Create cards</strong></td>
+            <td>Adds cards to the Pile Drawer with title, type, and notes.</td>
+          </tr>
+          <tr>
+            <td><strong>Append to notes</strong></td>
+            <td>Adds content to an existing card's notes without overwriting.</td>
+          </tr>
+          <tr>
+            <td><strong>Replace notes</strong></td>
+            <td>Rewrites a card's notes from scratch.</td>
+          </tr>
+          <tr>
+            <td><strong>Add elements</strong></td>
+            <td>Adds items to a card's Elements list.</td>
+          </tr>
+          <tr>
+            <td><strong>Create checklist</strong></td>
+            <td>Adds checklist items to a canvas card.</td>
+          </tr>
+          <tr>
+            <td><strong>Create budget lines</strong></td>
+            <td>Adds budget line items to a canvas card.</td>
+          </tr>
+          <tr>
+            <td><strong>Suggest connections</strong></td>
+            <td>Proposes connections between existing canvas cards. Requires your approval before anything is drawn.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Grim cannot add checklists or budget lines to Pile cards. If you ask Grim to act on all cards and some are still in the pile, Grim confirms what was done for canvas cards and notes which pile cards were skipped.</p>
+
+      <p>Grim does not delete cards, connections, or any project data.</p>
+
+      <p>For full Grim documentation see the <a href="/grim.html">Grim</a> page.</p>
 
       <hr>
 
