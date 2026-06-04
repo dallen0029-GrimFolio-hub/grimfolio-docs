@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grim — GrimFolio Docs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function(){var t=localStorage.getItem('grimfolio-docs-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+</head>
+<body>
+
+<div class="layout">
+
+  <nav class="topnav">
+    <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    <a href="/index.html" class="topnav-wordmark">Grim<span>Folio</span> Docs</a>
+    <div class="topnav-search">
+      <input type="search" id="search-input" placeholder="Search the docs..." autocomplete="off" aria-label="Search documentation">
+      <div class="search-dropdown" id="search-dropdown"></div>
+    </div>
+    <div class="topnav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9788;</button>
+      <a href="https://grimfolio.com" target="_blank" rel="noopener" class="topnav-site-link">grimfolio.com</a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <nav>
+      <div class="nav-group">
+        <div class="nav-group-label">Getting Started</div>
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/dashboard.html" class="nav-link">Dashboard</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">The App</div>
+        <a href="/stage-1.html" class="nav-link">Stage 1 — The Pile</a>
+        <a href="/stage-2.html" class="nav-link">Stage 2 — Build</a>
+        <a href="/stage-3.html" class="nav-link">Stage 3 — Production</a>
+        <a href="/grim.html" class="nav-link active">Grim</a>
+        <a href="/exports.html" class="nav-link">Exports</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Libraries and Tools</div>
+        <a href="/reference-documents.html" class="nav-link">Reference Documents</a>
+        <a href="/inspiration-library.html" class="nav-link">Inspiration Library</a>
+        <a href="/grimvision.html" class="nav-link">GrimVision</a>
+        <a href="/inventory.html" class="nav-link">Inventory</a>
+        <a href="/calendar.html" class="nav-link">Calendar</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Account</div>
+        <a href="/account.html" class="nav-link">Account Settings</a>
+        <a href="/team.html" class="nav-link">Team and Collaboration</a>
+        <a href="/referrals.html" class="nav-link">Referrals and Ambassador</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Blog</div>
+        <a href="/blog/index.html" class="nav-link">All Posts</a>
+        <a href="/blog/planning-the-ritual-2026.html" class="nav-link">Planning The Ritual 2026</a>
+        <a href="/blog/why-spreadsheets-dont-work.html" class="nav-link">Why Spreadsheets Don't Work</a>
+        <a href="/blog/grimfolio-for-dnd.html" class="nav-link">GrimFolio for D&amp;D</a>
+      </div>
+    </nav>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <main class="main-content">
+    <div class="content-body">
+
+      <div class="page-header">
+        <h1>Grim</h1>
+      </div>
+
+      <p>Grim is the AI collaborator built into every GrimFolio project. He lives in the right panel in Stage 1 and Stage 2, and inside the Grim widget in Stage 3. He reads your project at the start of every turn and responds as someone who has been paying attention the whole time. Grim is not a general AI assistant. He knows what you are building, what is on the canvas, what is in the pile, and what connections exist. He acts from that context, not from a blank slate.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/grim-panel-conversation.png" alt="The Grim panel in Stage 2 showing a conversation in progress with the avatar, status dot, and chat history visible" class="img-medium">
+        <figcaption>The Grim panel in Stage 2 with a conversation in progress.</figcaption>
+      </figure>
+
+      <h2 id="access-and-tokens">Access and Tokens</h2>
+
+      <p>Grim is a paid feature.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Monthly token allowance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Free</td>
+            <td>None</td>
+          </tr>
+          <tr>
+            <td>Base Unlimited</td>
+            <td>None</td>
+          </tr>
+          <tr>
+            <td>Pro</td>
+            <td>500,000 tokens per month</td>
+          </tr>
+          <tr>
+            <td>Studio</td>
+            <td>2,000,000 tokens per month</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Token allowances reset on the first of each month. When the monthly allowance runs out Grim becomes unavailable until the next reset. Additional tokens can be purchased in packs via Account Settings &rarr; Plan and Billing. Purchased tokens do not expire and are spent after the monthly allowance is exhausted.</p>
+
+      <h2 id="what-grim-reads">What Grim Reads</h2>
+
+      <p>At the start of every turn Grim receives a structured snapshot of your project:</p>
+
+      <ul>
+        <li>Project name, current stage, and template type</li>
+        <li>Canvas cards: title, type, status, number of connections, notes (up to 300 characters), elements, checklist completion, budget lines, and inventory assignments</li>
+        <li>Pile items: title, type, and notes (up to 200 characters) for all unplaced cards</li>
+        <li>Connections: all edges with their path labels</li>
+      </ul>
+
+      <div class="callout">
+        On large projects with more than 15 canvas cards Grim uses semantic search to identify the 12 cards most relevant to your current message. Those get full detail. All other cards are included as lightweight entries so Grim still understands the full shape of the project without spending tokens on irrelevant detail. This is why Grim sometimes seems to know certain cards better than others — it is not random, it is relevance-based.
+      </div>
+
+      <p>Grim never receives file contents directly. Reference documents are chunked, embedded, and retrieved semantically — only the portions most relevant to your current message are injected into context. For full details see the <a href="/reference-documents.html">Reference Documents</a> page.</p>
+
+      <h2 id="how-grim-opens">How Grim Opens a Conversation</h2>
+
+      <p>The first time you start a conversation on a project Grim responds based on what it finds.</p>
+
+      <p><strong>If autostart is enabled</strong> (on by default) Grim skips the pleasantries and creates 3 starter cards immediately. It ends with "Placed: [title 1], [title 2], [title 3]." This is the fastest path from a blank project to something in the pile.</p>
+
+      <p><strong>If reference documents are attached</strong> Grim reads them and leads with something specific from the content — a named character, a faction with an agenda, a location with an unusual property. The opening observation makes it unmistakably clear Grim has read the material.</p>
+
+      <p><strong>If the project already has cards</strong> Grim opens with an observation about the current state, not a recap. Something that creates forward momentum.</p>
+
+      <p>Grim never opens with a greeting or introduction. It opens as though it has been in the room the whole time.</p>
+
+      <div class="callout">
+        If you want Grim to draw from your reference documents from message one, attach them before starting the conversation. The difference between a title-riff opening and a document-grounded opening is significant — Grim will name specific characters, locations, and factions it found in the text rather than making general observations about the project name.
+      </div>
+
+      <h2 id="what-grim-can-do-stage-2">What Grim Can Do — Stage 2</h2>
+
+      <p>Grim acts on your project through structured actions embedded in its responses. The actions save data to the project automatically. If Grim confirms something in prose without an action block nothing is saved.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/grim-cards-arriving2.png" alt="Grim-created cards arriving in the Pile Drawer with purple glow, indicator dots, and the Placed confirmation line visible in the chat" class="img-medium">
+        <figcaption>Grim-created cards arriving in the Pile Drawer with purple glow, indicator dots, and the Placed confirmation line.</figcaption>
+      </figure>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Create cards</strong></td>
+            <td>Adds cards to the Pile Drawer with title, type, and notes.</td>
+          </tr>
+          <tr>
+            <td><strong>Append to notes</strong></td>
+            <td>Adds content to an existing card's notes without overwriting.</td>
+          </tr>
+          <tr>
+            <td><strong>Replace notes</strong></td>
+            <td>Rewrites a card's notes from scratch.</td>
+          </tr>
+          <tr>
+            <td><strong>Add elements</strong></td>
+            <td>Adds items to a card's Elements list.</td>
+          </tr>
+          <tr>
+            <td><strong>Create checklist</strong></td>
+            <td>Adds checklist items to a canvas card.</td>
+          </tr>
+          <tr>
+            <td><strong>Create budget lines</strong></td>
+            <td>Adds budget line items with estimated costs to a canvas card.</td>
+          </tr>
+          <tr>
+            <td><strong>Suggest connections</strong></td>
+            <td>Proposes connections between existing canvas cards. Requires your approval before anything is drawn.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        Grim cannot add checklists or budget lines to Pile cards — only to cards already placed on the canvas. If you ask Grim to act on all cards and some are still in the pile, Grim confirms what was done for canvas cards and notes which pile cards were skipped. Place cards on the canvas first, then ask Grim to populate them.
+      </div>
+
+      <p>Grim does not delete cards, connections, or any project data.</p>
+
+      <p>After every create action Grim ends with a single confirmation line: "Placed: [title 1], [title 2]..." for cards, or a brief count for checklist and budget additions.</p>
+
+      <h2 id="what-grim-can-do-stage-3">What Grim Can Do — Stage 3</h2>
+
+      <p>Production Grim is a separate conversation with a different focus. It does not have access to the canvas graph or Stage 2 Grim history. Its context is your current production state — visible card titles, types, and checklist completion.</p>
+
+      <p>Production Grim is advisory only. It does not create cards, connections, or any project data. It responds in plain text.</p>
+
+      <p>Three quick prompts are available in the Production Grim widget:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Prompt</th>
+            <th>What it asks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Run final check</strong></td>
+            <td>Highest-priority gaps before the project opens.</td>
+          </tr>
+          <tr>
+            <td><strong>What's not done?</strong></td>
+            <td>Pulls all incomplete checklist items and asks for prioritization.</td>
+          </tr>
+          <tr>
+            <td><strong>Generate summary</strong></td>
+            <td>Writes a short production status read: state, risks, what remains.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>For full Production Grim documentation see the <a href="/stage-3.html">Stage 3</a> page.</p>
+
+      <h2 id="conversation-history">Conversation History</h2>
+
+      <p>Grim remembers every conversation within a project. Messages persist in the database. When you return to a project the conversation continues exactly where it left off.</p>
+
+      <p>As conversations grow long a background summary compresses older context. Grim always sees the last 10 messages in full plus a summary of everything before them. Background summarization runs silently without interrupting the conversation.</p>
+
+      <h2 id="focus-mode">Focus Mode <span class="plan-badge pro">Pro</span></h2>
+
+      <p>A <strong>Focus</strong> toggle appears in the Grim header on Pro plans in Stage 2.</p>
+
+      <figure>
+        <img src="images/grim-focus-mode.png" alt="The Focus mode toggle in the Grim panel header with a token hint visible" class="img-small">
+        <figcaption>The Focus mode toggle in the Grim panel header.</figcaption>
+      </figure>
+
+      <p>When Focus is on the canvas and pile are hidden from Grim's context. Grim only sees the current chat. This uses roughly 60% fewer tokens per turn.</p>
+
+      <div class="callout">
+        Use Focus mode when you are having a planning conversation that does not require Grim to read the whole project state — iterating on an idea, asking general questions, or working through a specific problem. It keeps responses faster and token usage significantly lower.
+      </div>
+
+      <p>Focus mode is not available in Stage 3. The Production context is already minimal by design.</p>
+
+      <h2 id="the-grim-panel">The Grim Panel</h2>
+
+      <p>The Grim panel lives on the right side of the screen in Stages 1 and 2.</p>
+
+      <p><strong>Resizing</strong> — Drag the left edge of the panel to make it narrower (minimum 220px) or wider (up to half the viewport on desktop).</p>
+
+      <p><strong>Collapsing</strong> — Click ‹ in the panel header to collapse. The panel shrinks to a narrow rail showing the Grim avatar. Click the rail to expand again. A dot appears on the collapsed rail when there are new messages you have not seen.</p>
+
+      <p><strong>Status dot</strong> — A small indicator in the panel header shows Grim's current state.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>State</th>
+            <th>What it means</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Waking</strong></td>
+            <td>Grim is initializing.</td>
+          </tr>
+          <tr>
+            <td><strong>Ready</strong></td>
+            <td>Rotating messages: "here to help," "watching your canvas," "ready when you are," "thinking about your design."</td>
+          </tr>
+          <tr>
+            <td><strong>Thinking</strong></td>
+            <td>"on it..." — a response is in progress.</td>
+          </tr>
+          <tr>
+            <td><strong>Degraded</strong></td>
+            <td>"AI backbone slow — Anthropic capacity."</td>
+          </tr>
+          <tr>
+            <td><strong>Down</strong></td>
+            <td>"AI backbone down — Anthropic outage."</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Viewer mode</strong> — Viewers do not see the Grim chat. Instead the panel shows the project's generated summary (if one exists) under a Project Summary header.</p>
+
+      <h2 id="appearance-settings">Appearance Settings</h2>
+
+      <p>Three Grim-specific appearance settings live in Account Settings &rarr; Appearance.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Setting</th>
+            <th>Options</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Grim Chat Font Size</strong></td>
+            <td>Small, Medium, Large, Huge</td>
+          </tr>
+          <tr>
+            <td><strong>Display Font Size</strong></td>
+            <td>Small, Large, Huge</td>
+          </tr>
+          <tr>
+            <td><strong>Grim Avatar</strong></td>
+            <td>Default G mark, or Gold G mark (Founder accounts only)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Font size and avatar apply to both Stage 2 and Stage 3 Grim.</p>
+
+      <h2 id="working-effectively">Working Effectively with Grim</h2>
+
+      <p>Grim acts first and invites reaction after. It does not ask for names, confirmation, or details before creating. If a request is vague Grim makes a creative choice and executes it. Tell it what you want changed or refined afterward.</p>
+
+      <div class="callout">
+        <strong>This is the most important thing to understand about how Grim works.</strong> It does not ask permission. It creates, then invites you to react. If you do not like what it made, tell it. If you want something different, say so. The fastest workflow is: let Grim act, then refine.
+      </div>
+
+      <p>A few things that work well:</p>
+
+      <ul>
+        <li>Ask Grim to populate a card's checklist or budget after you have placed it on the canvas. Grim cannot act on pile cards for those operations.</li>
+        <li>When Grim suggests connections it lists its reasoning. Review the proposals and approve or dismiss them. Nothing is drawn until you confirm.</li>
+        <li>Attach reference documents before starting the conversation if you want Grim to draw from them from message one.</li>
+        <li>Use Focus mode when having a planning conversation that does not need Grim to read the whole project state.</li>
+        <li>In Stage 3 use the quick prompts. "What's not done?" reads your live checklist data and asks Grim to prioritize it without you needing to type anything.</li>
+      </ul>
+
+      <hr>
+
+      <p>
+        <a href="/stage-3.html">&larr; Stage 3 — Production</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="/exports.html">Next: Exports &rarr;</a>
+      </p>
+
+    </div>
+  </main>
+
+  <aside class="toc">
+    <div class="toc-label">On This Page</div>
+    <ul class="toc-list" id="toc-list"></ul>
+  </aside>
+
+</div>
+
+<div id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="main.js" defer></script>
+<script src="search.js" defer></script>
+</body>
+</html>
