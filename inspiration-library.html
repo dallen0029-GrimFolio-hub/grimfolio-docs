@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inspiration Library — GrimFolio Docs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function(){var t=localStorage.getItem('grimfolio-docs-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+</head>
+<body>
+
+<div class="layout">
+
+  <nav class="topnav">
+    <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    <a href="/index.html" class="topnav-wordmark">Grim<span>Folio</span> Docs</a>
+    <div class="topnav-search">
+      <input type="search" id="search-input" placeholder="Search the docs..." autocomplete="off" aria-label="Search documentation">
+      <div class="search-dropdown" id="search-dropdown"></div>
+    </div>
+    <div class="topnav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9788;</button>
+      <a href="https://grimfolio.com" target="_blank" rel="noopener" class="topnav-site-link">grimfolio.com</a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <nav>
+      <div class="nav-group">
+        <div class="nav-group-label">Getting Started</div>
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/dashboard.html" class="nav-link">Dashboard</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">The App</div>
+        <a href="/stage-1.html" class="nav-link">Stage 1 — The Pile</a>
+        <a href="/stage-2.html" class="nav-link">Stage 2 — Build</a>
+        <a href="/stage-3.html" class="nav-link">Stage 3 — Production</a>
+        <a href="/grim.html" class="nav-link">Grim</a>
+        <a href="/exports.html" class="nav-link">Exports</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Libraries and Tools</div>
+        <a href="/reference-documents.html" class="nav-link">Reference Documents</a>
+        <a href="/inspiration-library.html" class="nav-link active">Inspiration Library</a>
+        <a href="/grimvision.html" class="nav-link">GrimVision</a>
+        <a href="/inventory.html" class="nav-link">Inventory</a>
+        <a href="/calendar.html" class="nav-link">Calendar</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Account</div>
+        <a href="/account.html" class="nav-link">Account Settings</a>
+        <a href="/team.html" class="nav-link">Team and Collaboration</a>
+        <a href="/referrals.html" class="nav-link">Referrals and Ambassador</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Blog</div>
+        <a href="/blog/index.html" class="nav-link">All Posts</a>
+        <a href="/blog/planning-the-ritual-2026.html" class="nav-link">Planning The Ritual 2026</a>
+        <a href="/blog/why-spreadsheets-dont-work.html" class="nav-link">Why Spreadsheets Don't Work</a>
+        <a href="/blog/grimfolio-for-dnd.html" class="nav-link">GrimFolio for D&amp;D</a>
+      </div>
+    </nav>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <main class="main-content">
+    <div class="content-body">
+
+      <div class="page-header">
+        <h1>Inspiration Library</h1>
+      </div>
+
+      <p>The Inspiration Library is where reference images live. Upload production stills, mood board pulls, concept sketches, floor plan photos — anything that belongs to your creative mental model. Images in the library can be linked to individual cards, dropped onto the canvas as background images, or used as the starting point for GrimVision concept art generation.</p>
+
+      <div class="screenshot-placeholder">
+        <div class="placeholder-icon">&#128247;</div>
+        <div class="placeholder-caption">Screenshot: Inspiration Library panel open in Build showing the image grid, upload zone, and tag filter bar</div>
+      </div>
+
+      <h2 id="opening-the-library">Opening the Library</h2>
+
+      <p>The Inspiration Library is accessible two ways. From the Dashboard, click the <strong>Inspiration Library</strong> card in the right column to open the full standalone library page. From inside a project in Stage 2, click the <strong>Libraries</strong> button in the left toolbar and select <strong>Inspiration Library</strong> to open it as a panel on the right side of the canvas.</p>
+
+      <h2 id="uploading-images">Uploading Images</h2>
+
+      <p>The upload zone is at the top of the panel or page. Drag an image onto it or click to open a file picker.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Detail</th>
+            <th>Spec</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Accepted formats</strong></td>
+            <td>JPEG, PNG, WebP, GIF</td>
+          </tr>
+          <tr>
+            <td><strong>Maximum file size</strong></td>
+            <td>10MB per image</td>
+          </tr>
+          <tr>
+            <td><strong>Free plan limit</strong></td>
+            <td>50 images total</td>
+          </tr>
+          <tr>
+            <td><strong>Pro plan limit</strong></td>
+            <td>500 images total</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>The image count is shown in the upload zone as you approach your plan limit. When you reach the ceiling the zone is disabled and shows a message. Images appear in the grid immediately after uploading.</p>
+
+      <h2 id="managing-images">Managing Images</h2>
+
+      <p>Each image tile shows a thumbnail, filename, and any tags applied to it.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>How</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Rename</strong></td>
+            <td>Click the filename below the thumbnail. Type a new name and press Enter or click away.</td>
+          </tr>
+          <tr>
+            <td><strong>Add a tag</strong></td>
+            <td>Hover the tile, click + tag in the tag row. Type the tag and press Enter.</td>
+          </tr>
+          <tr>
+            <td><strong>Remove a tag</strong></td>
+            <td>Hover the tile. An &times; appears next to each tag. Click it.</td>
+          </tr>
+          <tr>
+            <td><strong>Delete image</strong></td>
+            <td>Hover the tile, click the &#10005; button in the overlay. Deletes immediately.</td>
+          </tr>
+          <tr>
+            <td><strong>Link to a card</strong></td>
+            <td>Hover the tile, click &#8853; Link. See below.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Tags are lowercase and stored per image. Images can have multiple tags. A tag filter bar appears above the grid once any image has been tagged. Click a tag to filter the grid. Click <strong>All</strong> or the active tag again to clear the filter.</p>
+
+      <p>A small purple badge on a tile shows how many cards that image is currently linked to.</p>
+
+      <h2 id="linking-images-to-cards">Linking Images to Cards</h2>
+
+      <p>There are two ways to link an image to a card.</p>
+
+      <p><strong>From the library panel</strong> — Hover the image tile and click <strong>&#8853; Link</strong>. A hint bar appears: "Click a node on the canvas to link this image." Click any card. The link is created and the image appears in the card's Inspiration section in the detail drawer. Press Escape to cancel.</p>
+
+      <p><strong>From the card drawer</strong> — Open a card by double-clicking it. In the Inspiration section click <strong>+ Link</strong>. An inline image picker opens showing all your library images. Click one to link it. Already-linked images show a purple checkmark and cannot be selected again.</p>
+
+      <p>To unlink an image from a card open the card drawer, go to the Inspiration section, and click the &#10005; button on any linked thumbnail.</p>
+
+      <h2 id="grimvision">GrimVision</h2>
+
+      <p>The GrimVision button appears in the Inspiration section of any card's detail drawer alongside your current credit balance.</p>
+
+      <p>Clicking it opens the GrimVision panel. Select a niche — Haunted House, Escape Room, Film, Cosplay, and others — then a style template suited to your project type. Add a visual description of what you want to see and generate. Each generation uses credits.</p>
+
+      <p>Generated images are saved to your GrimVision Library and appear as thumbnails in the card's Inspiration section. They are also available in the canvas image picker's GrimVision Library tab so you can place them directly on the canvas as background images.</p>
+
+      <p>For full GrimVision documentation see the <a href="/grimvision.html">GrimVision</a> page.</p>
+
+      <h2 id="inspiration-in-stage-3">Inspiration in Stage 3</h2>
+
+      <p>The Inspiration Board widget in Stage 3 Production surfaces all inspiration images linked to cards across the project in a single read-only grid. Each thumbnail shows the image, an optional title, and the card it belongs to. Click any thumbnail to open it in a lightbox.</p>
+
+      <p>The board is read-only. Manage images in Stage 2 via the Inspiration section of each card's detail drawer.</p>
+
+      <hr>
+
+      <p>
+        <a href="/reference-documents.html">&larr; Reference Documents</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="/grimvision.html">Next: GrimVision &rarr;</a>
+      </p>
+
+    </div>
+  </main>
+
+  <aside class="toc">
+    <div class="toc-label">On This Page</div>
+    <ul class="toc-list" id="toc-list"></ul>
+  </aside>
+
+</div>
+
+<div id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="main.js" defer></script>
+<script src="search.js" defer></script>
+</body>
+</html>
