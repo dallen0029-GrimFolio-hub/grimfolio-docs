@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stage 2 — Build — GrimFolio Docs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function(){var t=localStorage.getItem('grimfolio-docs-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+</head>
+<body>
+
+<div class="layout">
+
+  <nav class="topnav">
+    <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    <a href="/index.html" class="topnav-wordmark">Grim<span>Folio</span> Docs</a>
+    <div class="topnav-search">
+      <input type="search" id="search-input" placeholder="Search the docs..." autocomplete="off" aria-label="Search documentation">
+      <div class="search-dropdown" id="search-dropdown"></div>
+    </div>
+    <div class="topnav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9788;</button>
+      <a href="https://grimfolio.com" target="_blank" rel="noopener" class="topnav-site-link">grimfolio.com</a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <nav>
+      <div class="nav-group">
+        <div class="nav-group-label">Getting Started</div>
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/dashboard.html" class="nav-link">Dashboard</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">The App</div>
+        <a href="/stage-1.html" class="nav-link">Stage 1 — The Pile</a>
+        <a href="/stage-2.html" class="nav-link active">Stage 2 — Build</a>
+        <a href="/stage-3.html" class="nav-link">Stage 3 — Production</a>
+        <a href="/grim.html" class="nav-link">Grim</a>
+        <a href="/exports.html" class="nav-link">Exports</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Libraries and Tools</div>
+        <a href="/reference-documents.html" class="nav-link">Reference Documents</a>
+        <a href="/inspiration-library.html" class="nav-link">Inspiration Library</a>
+        <a href="/grimvision.html" class="nav-link">GrimVision</a>
+        <a href="/inventory.html" class="nav-link">Inventory</a>
+        <a href="/calendar.html" class="nav-link">Calendar</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Account</div>
+        <a href="/account.html" class="nav-link">Account Settings</a>
+        <a href="/team.html" class="nav-link">Team and Collaboration</a>
+        <a href="/referrals.html" class="nav-link">Referrals and Ambassador</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Blog</div>
+        <a href="/blog/index.html" class="nav-link">All Posts</a>
+        <a href="/blog/planning-the-ritual-2026.html" class="nav-link">Planning The Ritual 2026</a>
+        <a href="/blog/why-spreadsheets-dont-work.html" class="nav-link">Why Spreadsheets Don't Work</a>
+        <a href="/blog/grimfolio-for-dnd.html" class="nav-link">GrimFolio for D&amp;D</a>
+      </div>
+    </nav>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <main class="main-content">
+    <div class="content-body">
+
+      <div class="page-header">
+        <h1>Stage 2 — Build</h1>
+      </div>
+
+      <p>The Pile captured your ideas. Build gives them position, relationship, and structure. When you enter Stage 2 the canvas opens and your pile cards move to the Pile Drawer on the left. You bring them onto the canvas and arrange them intentionally. Connections form paths. The structure of your project becomes visible. All tools are available from day one.</p>
+
+      <h2 id="the-canvas">The Canvas</h2>
+
+      <p>The canvas is an infinite spatial workspace rendered on a dot-grid background. Pan by dragging any empty area. Zoom by scrolling or use the + and - buttons in the left sidebar. Minimum zoom is 10%, maximum is 200%. <strong>Fit View</strong> reframes the camera to show all placed cards.</p>
+
+      <p>Snap to grid (16px) is optional. Toggle it in Account Settings &rarr; Appearance.</p>
+
+      <figure class="lightbox-fig full-page">
+        <img src="images/stage2-canvas-overview.png" alt="The Stage 2 canvas showing placed cards, curved connections with arrowheads, and a path label pill" class="img-large">
+        <figcaption>The Stage 2 canvas with cards, connections, and a path label pill visible.</figcaption>
+      </figure>
+
+      <h3 id="searching-the-canvas">Searching the Canvas</h3>
+
+      <p>A search bar is available in the top bar. Matching cards filter by title, type, or notes and highlight in place. Non-matching cards dim. The Pile Drawer also highlights matching cards with a purple ring. Clear the search to return to normal.</p>
+
+      <h2 id="the-left-toolbar">The Left Toolbar</h2>
+
+      <p>A narrow vertical toolbar on the left edge of the canvas. Tools are grouped into two sections.</p>
+
+      <p><strong>Top section:</strong></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Tool</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Select</strong> (pointer)</td>
+            <td>Default mode. Click cards to select, drag to move, drag from handles to connect.</td>
+          </tr>
+          <tr>
+            <td><strong>Multi-Select</strong> (lasso)</td>
+            <td>Draw a rubber-band selection box over empty canvas space. Cards inside the box are selected together. Ctrl+click adds individual cards to the selection.</td>
+          </tr>
+          <tr>
+            <td><strong>Anchor</strong></td>
+            <td>Click anywhere on the canvas to place an anchor node routing waypoint.</td>
+          </tr>
+          <tr>
+            <td><strong>Zoom in (+)</strong></td>
+            <td>Zooms in one step.</td>
+          </tr>
+          <tr>
+            <td><strong>Zoom out (-)</strong></td>
+            <td>Zooms out one step.</td>
+          </tr>
+          <tr>
+            <td><strong>Fit View</strong></td>
+            <td>Reframes camera to show all placed cards.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Bottom section:</strong></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Tool</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Pile Drawer</strong></td>
+            <td>Toggles the Pile Drawer open and closed.</td>
+          </tr>
+          <tr>
+            <td><strong>Drawing Tools</strong> (pencil)</td>
+            <td>Opens the Drawing Tools panel. See Drawing Tools section below.</td>
+          </tr>
+          <tr>
+            <td><strong>Libraries</strong></td>
+            <td>Opens a popout listing Reference Documents, Linked Projects, and Inspiration Library. Click any option to open that panel. Active (purple) whenever any of the three panels is open.</td>
+          </tr>
+          <tr>
+            <td><strong>Inventory</strong></td>
+            <td>Opens the Inventory panel scoped to this project.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <figure>
+        <img src="images/stage2-libraries-popout.png" alt="The Libraries popout panel showing Reference Documents, Linked Projects, and Inspiration Library options" class="img-small">
+        <figcaption>The Libraries popout showing all three panel options.</figcaption>
+      </figure>
+
+      <h2 id="the-pile-drawer">The Pile Drawer</h2>
+
+      <p>The Pile Drawer opens on the left side of the canvas. It contains every card from Stage 1 that has not yet been placed on the canvas. Cards are grouped by type. Each group has a colored left border. Fully placed groups hide themselves.</p>
+
+      <p>The <strong>auto</strong> toggle controls whether the drawer opens automatically each time you enter Stage 2.</p>
+
+      <h3 id="placing-cards">Placing Cards</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>What happens</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Drag onto canvas</strong></td>
+            <td>Card lands at the drop position.</td>
+          </tr>
+          <tr>
+            <td><strong>Hover card and click +</strong></td>
+            <td>Card appears near the center of the visible canvas area.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Double-click any pile card to read its title and notes in a popup. Right-click for the same option via context menu.</p>
+
+      <h3 id="grim-created-cards">Grim-Created Cards</h3>
+
+      <p>When Grim creates cards they appear in the Pile Drawer with a 4-second purple glow and a ✦ indicator dot. The drawer header badge pulses when Grim-new cards exist while the drawer is closed.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/grim-cards-arriving2.png" alt="Grim-created cards arriving in the Pile Drawer with purple glow and a toast notification confirming placement" class="img-medium">
+        <figcaption>Grim-created cards arriving in the Pile Drawer with purple glow and placement confirmation.</figcaption>
+      </figure>
+
+      <h2 id="cards-on-the-canvas">Cards on the Canvas</h2>
+
+      <h3 id="interactions">Interactions</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Interaction</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Single click</strong></td>
+            <td>Selects the card.</td>
+          </tr>
+          <tr>
+            <td><strong>Double-click</strong></td>
+            <td>Opens the card detail drawer.</td>
+          </tr>
+          <tr>
+            <td><strong>Right-click</strong></td>
+            <td>Opens the card context menu.</td>
+          </tr>
+          <tr>
+            <td><strong>Drag</strong></td>
+            <td>Moves the card. Position saves on release.</td>
+          </tr>
+          <tr>
+            <td><strong>Drag from handle</strong></td>
+            <td>Starts a connection.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="handles">Handles</h3>
+
+      <p>Each card has connection handles on all four sides. Hover a card to reveal them. Drag from any handle toward another card to create a connection. The canvas assigns the closest exit direction automatically.</p>
+
+      <h3 id="card-sizes">Card Sizes</h3>
+
+      <p>Right-click any card to access the size picker.</p>
+
+      <figure>
+        <img src="images/stage2-card-size-picker.png" alt="The card right-click context menu showing all four size options including Small Square and Large Square" class="img-small">
+        <figcaption>The card size picker showing all four size options.</figcaption>
+      </figure>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Dimensions</th>
+            <th>Best for</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Small</strong></td>
+            <td>140px wide</td>
+            <td>Dense canvases where a card is a known landmark.</td>
+          </tr>
+          <tr>
+            <td><strong>Normal</strong></td>
+            <td>Default</td>
+            <td>General use.</td>
+          </tr>
+          <tr>
+            <td><strong>Large</strong></td>
+            <td>320px wide, 130px min height</td>
+            <td>Hub cards or anything that needs to stand out spatially.</td>
+          </tr>
+          <tr>
+            <td><strong>Small Square</strong></td>
+            <td>140&times;140px</td>
+            <td>Compact visual anchors.</td>
+          </tr>
+          <tr>
+            <td><strong>Large Square</strong></td>
+            <td>200&times;200px</td>
+            <td>Visual balance or section anchors.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="locking-position">Locking Position</h3>
+
+      <p>Right-click any card and choose <strong>Lock position</strong> to prevent accidental dragging. A lock icon appears in the top-left corner of locked cards. Double-click still opens the detail drawer. Right-click again and choose <strong>Unlock position</strong> to restore movement.</p>
+
+      <figure>
+        <img src="images/stage2-lock-icon.png" alt="A card on the canvas with a lock icon visible in the top-left corner indicating the position is locked" class="img-small">
+        <figcaption>A locked card showing the lock indicator in the top-left corner.</figcaption>
+      </figure>
+
+      <h3 id="multi-select">Multi-Select</h3>
+
+      <p>Click the lasso icon in the left toolbar to enter Multi-Select mode. Drag across empty canvas space to draw a rubber-band selection box. Any cards inside the box when you release are selected together. Ctrl+click adds individual cards to an existing selection.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/stage2-multiselect-lasso.png" alt="A rubber-band lasso selection box drawn across several cards on the canvas mid-drag" class="img-medium">
+        <figcaption>The rubber-band lasso selecting multiple cards on the canvas.</figcaption>
+      </figure>
+
+      <p>Right-click any selected card to open the multi-card context menu. Available actions apply to all selected cards at once: group, copy, cut, duplicate, return to pile.</p>
+
+      <p>To pan the canvas while in Multi-Select mode use the scroll wheel, two-finger trackpad, or middle-mouse drag. Left-drag is reserved for the selection box.</p>
+
+      <h3 id="undo">Undo</h3>
+
+      <p>Press <strong>Ctrl+Z</strong> (Windows) or <strong>Cmd+Z</strong> (Mac) from anywhere on the canvas to undo the last action. An Undo button is also available in the bottom bar beside the Restore Points button.</p>
+
+      <figure>
+        <img src="images/stage2-undo-button.png" alt="The bottom bar showing the Undo button in its active state and the Restore Points button beside it" class="img-small">
+        <figcaption>The Undo and Restore Points buttons in the bottom bar.</figcaption>
+      </figure>
+
+      <p>What is undoable: card moves, edge creates, edge deletes, card creates from canvas, card deletes from canvas.</p>
+
+      <p>What is not undoable: note edits, budget changes, checklist edits, and anything in the card detail drawer. These persist continuously. For deeper rollback use Restore Points.</p>
+
+      <h3 id="keyboard-shortcuts">Keyboard Shortcuts</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Shortcut</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>Cmd/Ctrl + C</code></td>
+            <td>Copy selected card.</td>
+          </tr>
+          <tr>
+            <td><code>Cmd/Ctrl + X</code></td>
+            <td>Cut selected card (confirmation required).</td>
+          </tr>
+          <tr>
+            <td><code>Cmd/Ctrl + V</code></td>
+            <td>Paste at cursor position.</td>
+          </tr>
+          <tr>
+            <td><code>Ctrl+Z / Cmd+Z</code></td>
+            <td>Undo last canvas action.</td>
+          </tr>
+          <tr>
+            <td><code>Backspace</code></td>
+            <td>Delete selected card (confirmation required).</td>
+          </tr>
+          <tr>
+            <td><code>Escape</code></td>
+            <td>Exit active tool or close detail drawer.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="card-detail-drawer">Card Detail Drawer</h2>
+
+      <p>Double-click any card to open its detail drawer. It slides in from the right. The canvas stays visible and interactive behind it.</p>
+
+      <p>The drawer has two panels.</p>
+
+      <h3 id="left-panel">Left Panel</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Notes</strong></td>
+            <td>Free-text field. Auto-saves 800ms after you stop typing.</td>
+          </tr>
+          <tr>
+            <td><strong>Elements</strong></td>
+            <td>A tagged list of sub-components, props, effects, or other elements attached to this card.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="right-panel">Right Panel</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Type picker</strong></td>
+            <td>The card's category type.</td>
+          </tr>
+          <tr>
+            <td><strong>Cards and Colors</strong></td>
+            <td>Opens the Type Manager to add, remove, recolor, or organize types.</td>
+          </tr>
+          <tr>
+            <td><strong>Title</strong></td>
+            <td>Editable. Saves on blur or Enter.</td>
+          </tr>
+          <tr>
+            <td><strong>Status</strong></td>
+            <td>Click to cycle: blank, In Progress, On Hold, Complete, Cancelled.</td>
+          </tr>
+          <tr>
+            <td><strong>Icon</strong></td>
+            <td>Single character or emoji pinned to the card.</td>
+          </tr>
+          <tr>
+            <td><strong>Subtitle</strong></td>
+            <td>Secondary descriptor shown in the card header.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="sections">Sections</h3>
+
+      <p>All sections are collapsible. A count badge shows when a section has content.</p>
+
+      <p><strong>Photos</strong> — Upload reference photos. The "Show on canvas" toggle displays the selected photo as the card's background tile on the canvas.</p>
+
+      <p><strong>Inspiration</strong> — Link images from the project's Inspiration Library. The GrimVision button opens the AI concept art panel.</p>
+
+      <p><strong>Checklist</strong> — Add and check off task items. A completion ring appears on the card's canvas tile reflecting progress.</p>
+
+      <p><strong>Budget</strong> — Add line items with name, quantity, unit cost, actual cost, and status. Status cycles per line: Planned, Ordered, Received, In Progress, Installed. Set a budget cap for the card. The Remaining line turns red when over budget.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/stage2-card-drawer-budget.png" alt="The card detail drawer with the Budget section expanded showing line items, quantity fields, status pills, and a budget cap" class="img-medium">
+        <figcaption>The card detail drawer with the Budget section expanded showing line items and status pills.</figcaption>
+      </figure>
+
+      <p><strong>Links</strong> — Read-only. Shows all connections to and from this card with direction arrows. Outgoing connections show as &rarr;, incoming as &larr;.</p>
+
+      <p><strong>Inventory</strong> — Assign physical inventory items from linked collections to this card.</p>
+
+      <h2 id="connections-and-path-labels">Connections and Path Labels</h2>
+
+      <p>Drag from any card handle to another card to create a connection. The canvas draws a curved path with an arrowhead pointing toward the target. Connection direction matters — Walk-Through follows arrows forward.</p>
+
+      <h3 id="path-labels">Path Labels</h3>
+
+      <p>A path label is a text pill floating on a connection that describes the relationship: "blocks," "leads to," "depends on." Right-click any connection and choose <strong>Edit path label</strong> to set one. The pill appears mid-edge and can be dragged along the path to reposition it.</p>
+
+      <p>Path labels appear in Walk-Through navigation buttons.</p>
+
+      <h2 id="anchor-nodes">Anchor Nodes</h2>
+
+      <p>Anchors are small purple circles used as routing waypoints. They have no title, no detail view, and no content. They bend connections around other cards and create cleaner path geometry.</p>
+
+      <p><strong>Place an anchor:</strong></p>
+      <ul>
+        <li>Right-click the canvas and choose Add anchor.</li>
+        <li>Activate the anchor tool in the left toolbar then click anywhere on the canvas.</li>
+      </ul>
+
+      <p>Each anchor supports exactly one incoming and one outgoing connection. Attempting a third connection is blocked with a warning.</p>
+
+      <p>Anchors are invisible to Walk-Through, exports, Grim, and card count limits.</p>
+
+      <h2 id="card-groups">Card Groups</h2>
+
+      <p>Select two or more cards, right-click any of them, and choose <strong>Group N selected cards</strong>. A colored boundary box wraps them with an editable label. The boundary auto-sizes as members move.</p>
+
+      <p>Dragging the group boundary or label moves all member cards together. Individual cards inside a group can still be dragged independently.</p>
+
+      <p><strong>Right-click a group boundary for group options:</strong></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Option</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Rename</strong></td>
+            <td>Renames the group.</td>
+          </tr>
+          <tr>
+            <td><strong>Hide / Show Boundary</strong></td>
+            <td>Toggles the visible boundary ring.</td>
+          </tr>
+          <tr>
+            <td><strong>Fill opacity</strong></td>
+            <td>10%, 15%, 25%, or 50%.</td>
+          </tr>
+          <tr>
+            <td><strong>Reset to auto-size</strong></td>
+            <td>Recalculates the boundary to fit current member positions.</td>
+          </tr>
+          <tr>
+            <td><strong>Ungroup</strong></td>
+            <td>Dissolves the group, keeps all cards in place.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Add to Group / Remove from Group</strong> are available on individual card right-click menus. Add opens a group picker. Remove clears immediately.</p>
+
+      <h2 id="context-menus">Context Menus</h2>
+
+      <h3 id="canvas-context-menu">Canvas — right-click empty space</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>New Card</strong></td>
+            <td>Opens card creation modal at click position.</td>
+          </tr>
+          <tr>
+            <td><strong>New room tile</strong></td>
+            <td>Opens card creation pre-set to room tile style.</td>
+          </tr>
+          <tr>
+            <td><strong>Paste</strong></td>
+            <td>Pastes clipboard card at cursor position.</td>
+          </tr>
+          <tr>
+            <td><strong>Add anchor</strong></td>
+            <td>Places an anchor at click position.</td>
+          </tr>
+          <tr>
+            <td><strong>Add Canvas Image</strong></td>
+            <td>Opens picker to place a reference image on the canvas.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="card-context-menu">Card — right-click any card</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Edit details</strong></td>
+            <td>Opens the card detail drawer.</td>
+          </tr>
+          <tr>
+            <td><strong>Rename</strong></td>
+            <td>Activates inline title editing.</td>
+          </tr>
+          <tr>
+            <td><strong>Duplicate</strong></td>
+            <td>Creates a copy offset from the original.</td>
+          </tr>
+          <tr>
+            <td><strong>Size</strong></td>
+            <td>Picker: Small, Normal, Large, Small Square, Large Square.</td>
+          </tr>
+          <tr>
+            <td><strong>Cut</strong></td>
+            <td>Copies to clipboard then deletes (with confirmation).</td>
+          </tr>
+          <tr>
+            <td><strong>Copy</strong></td>
+            <td>Copies title, status, notes, checklist, and budget to clipboard.</td>
+          </tr>
+          <tr>
+            <td><strong>Paste</strong></td>
+            <td>Pastes clipboard card near cursor.</td>
+          </tr>
+          <tr>
+            <td><strong>Copy to [Project]</strong></td>
+            <td>Copies card to the pile of a linked project.</td>
+          </tr>
+          <tr>
+            <td><strong>Return to pile</strong></td>
+            <td>Removes card from canvas, returns it to the pile drawer.</td>
+          </tr>
+          <tr>
+            <td><strong>Lock / Unlock position</strong></td>
+            <td>Prevents or restores accidental dragging.</td>
+          </tr>
+          <tr>
+            <td><strong>Delete</strong></td>
+            <td>Deletes card with confirmation.</td>
+          </tr>
+          <tr>
+            <td><strong>Group options</strong></td>
+            <td>Group selected cards, Add to Group, Remove from Group.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="connection-context-menu">Connection — right-click any connection</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Edge label</strong></td>
+            <td>Short text on the line, up to 25 characters.</td>
+          </tr>
+          <tr>
+            <td><strong>Line style</strong></td>
+            <td>Solid, Dashed, Dotted.</td>
+          </tr>
+          <tr>
+            <td><strong>Color</strong></td>
+            <td>8 choices: red, amber, teal, sky, purple, pink, slate, gold.</td>
+          </tr>
+          <tr>
+            <td><strong>Edit path label</strong></td>
+            <td>Opens the floating path label editor.</td>
+          </tr>
+          <tr>
+            <td><strong>Clear path label</strong></td>
+            <td>Removes the path label pill.</td>
+          </tr>
+          <tr>
+            <td><strong>Delete</strong></td>
+            <td>Removes the connection.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Select multiple connections and a bulk toolbar appears to apply color or style to all at once.</p>
+
+      <h3 id="anchor-context-menu">Anchor — right-click anchor node</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Delete anchor</strong></td>
+            <td>Removes the anchor and its connections.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="restore-points">Restore Points</h2>
+
+      <p>Restore Points are full project snapshots available to Studio plan members. Access them from the bottom bar beside the Undo button.</p>
+
+      <p>The panel shows up to 10 auto snapshots (created automatically on project open and after significant changes) and up to 5 manual snapshots (created by clicking Save snapshot). Each restore point shows a timestamp. Right-click any entry to rename or delete it. Click Restore to roll the canvas back to that state.</p>
+
+      <div class="callout">
+        <strong>Restore Points vs. Undo.</strong> Undo steps back one canvas action at a time (up to 10 steps). Restore Points are full project snapshots you can jump back to at any point. Use Undo for small mistakes. Use Restore Points for larger rollbacks.
+      </div>
+
+      <hr>
+
+      <p>
+        <a href="/stage-1.html">&larr; Stage 1 — The Pile</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="/stage-3.html">Next: Stage 3 — Production &rarr;</a>
+      </p>
+
+    </div>
+  </main>
+
+  <aside class="toc">
+    <div class="toc-label">On This Page</div>
+    <ul class="toc-list" id="toc-list"></ul>
+  </aside>
+
+</div>
+
+<div id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="main.js" defer></script>
+<script src="search.js" defer></script>
+</body>
+</html>
