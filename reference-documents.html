@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reference Documents — GrimFolio Docs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function(){var t=localStorage.getItem('grimfolio-docs-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+</head>
+<body>
+
+<div class="layout">
+
+  <nav class="topnav">
+    <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    <a href="/index.html" class="topnav-wordmark">Grim<span>Folio</span> Docs</a>
+    <div class="topnav-search">
+      <input type="search" id="search-input" placeholder="Search the docs..." autocomplete="off" aria-label="Search documentation">
+      <div class="search-dropdown" id="search-dropdown"></div>
+    </div>
+    <div class="topnav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9788;</button>
+      <a href="https://grimfolio.com" target="_blank" rel="noopener" class="topnav-site-link">grimfolio.com</a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <nav>
+      <div class="nav-group">
+        <div class="nav-group-label">Getting Started</div>
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/dashboard.html" class="nav-link">Dashboard</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">The App</div>
+        <a href="/stage-1.html" class="nav-link">Stage 1 — The Pile</a>
+        <a href="/stage-2.html" class="nav-link">Stage 2 — Build</a>
+        <a href="/stage-3.html" class="nav-link">Stage 3 — Production</a>
+        <a href="/grim.html" class="nav-link">Grim</a>
+        <a href="/exports.html" class="nav-link">Exports</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Libraries and Tools</div>
+        <a href="/reference-documents.html" class="nav-link active">Reference Documents</a>
+        <a href="/inspiration-library.html" class="nav-link">Inspiration Library</a>
+        <a href="/grimvision.html" class="nav-link">GrimVision</a>
+        <a href="/inventory.html" class="nav-link">Inventory</a>
+        <a href="/calendar.html" class="nav-link">Calendar</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Account</div>
+        <a href="/account.html" class="nav-link">Account Settings</a>
+        <a href="/team.html" class="nav-link">Team and Collaboration</a>
+        <a href="/referrals.html" class="nav-link">Referrals and Ambassador</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Blog</div>
+        <a href="/blog/index.html" class="nav-link">All Posts</a>
+        <a href="/blog/planning-the-ritual-2026.html" class="nav-link">Planning The Ritual 2026</a>
+        <a href="/blog/why-spreadsheets-dont-work.html" class="nav-link">Why Spreadsheets Don't Work</a>
+        <a href="/blog/grimfolio-for-dnd.html" class="nav-link">GrimFolio for D&amp;D</a>
+      </div>
+    </nav>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <main class="main-content">
+    <div class="content-body">
+
+      <div class="page-header">
+        <h1>Reference Documents</h1>
+      </div>
+
+      <p>Reference documents are files you upload to GrimFolio and attach to projects so Grim can read them. A lore bible, a floor plan, a script, a vendor quote, a game system rulebook — any document relevant to what you are building. Once linked to a project the document's content becomes part of Grim's context in every conversation there. No manual pasting. No prompting required.</p>
+
+      <h2 id="the-documents-manager">The Documents Manager</h2>
+
+      <p>Reference Documents is a standalone section accessible from your Dashboard library cards. It is the global library for all documents across all your projects.</p>
+
+      <figure>
+        <img src="images/reference-docs-folders.png" alt="The Documents Manager showing folder sections with collapsed and expanded states, document rows with summaries and Show more controls" class="img-medium">
+        <figcaption>The Documents Manager showing folder sections, document rows, and collapsed summaries.</figcaption>
+      </figure>
+
+      <h2 id="uploading">Uploading</h2>
+
+      <p>Click <strong>Upload Document</strong> to open a file picker. One file at a time.</p>
+
+      <p>Supported formats: DOCX, TXT, Markdown (.md), and PDF.</p>
+
+      <div class="callout">
+        For strongest results use DOCX. Google Docs, Word, and most writing tools export directly to it. PDFs work but are labeled simple PDFs — heavily formatted or scanned PDFs may not extract text cleanly. If a PDF fails try exporting the same document as DOCX instead.
+      </div>
+
+      <p>After upload the document appears at the top of the list. Grim begins reading it immediately. While processing the row shows "Grim is reading this..." The page updates automatically when processing is complete.</p>
+
+      <p>When done Grim generates a working summary and saves it to the document. The summary appears in the row clamped to 3 lines with <strong>Show more</strong> / <strong>Show less</strong> controls.</p>
+
+      <p>If no text could be extracted the row reads: "No text could be extracted. Try uploading as DOCX instead."</p>
+
+      <h2 id="document-size-and-structure">Document Size and Structure</h2>
+
+      <p>Keep individual documents under 20 to 25 pages. For larger references split at logical boundaries — factions, locations, acts, chapters. Upload each as its own document.</p>
+
+      <div class="callout">
+        Grim reads across all documents linked to a project on every exchange. Smaller focused documents give better results than one large file. A 50-page sourcebook split into five 10-page faction documents gives Grim more precise context than the whole thing as one upload. Split at meaningful boundaries — not arbitrary page counts.
+      </div>
+
+      <h2 id="document-rows">Document Rows</h2>
+
+      <p>Each document in the list shows:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>What it shows</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Filename</strong></td>
+            <td>Full name with extension.</td>
+          </tr>
+          <tr>
+            <td><strong>File type badge</strong></td>
+            <td>Uppercase extension: DOCX, PDF, TXT, MD.</td>
+          </tr>
+          <tr>
+            <td><strong>Upload date</strong></td>
+            <td>When the file was added.</td>
+          </tr>
+          <tr>
+            <td><strong>Link count</strong></td>
+            <td>"Linked to N projects" if linked anywhere.</td>
+          </tr>
+          <tr>
+            <td><strong>Summary</strong></td>
+            <td>Grim-generated summary, processing status, or extraction failure message.</td>
+          </tr>
+          <tr>
+            <td><strong>Folder button</strong></td>
+            <td>Opens the folder assignment dropdown.</td>
+          </tr>
+          <tr>
+            <td><strong>Delete button</strong></td>
+            <td>Opens a confirmation dialog before deletion.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Deleting a document is permanent. It is removed from all linked projects and cannot be undone.</p>
+
+      <h2 id="folders">Folders</h2>
+
+      <p>Documents can be organized into named folders. Folders are collapsible in the list and carry over into the project panel picker so you can find documents quickly when linking.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>How</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Move a document to a folder</strong></td>
+            <td>Click the folder button on the document row, choose a folder or select Unfiled.</td>
+          </tr>
+          <tr>
+            <td><strong>Create a new folder</strong></td>
+            <td>Click the folder button, then "New folder...", type a name, press Enter.</td>
+          </tr>
+          <tr>
+            <td><strong>Rename a folder</strong></td>
+            <td>Double-click the folder name in the list header.</td>
+          </tr>
+          <tr>
+            <td><strong>Delete a folder</strong></td>
+            <td>Click &times; on the folder header — all documents in it move to Unfiled.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Documents without a folder appear under an <strong>Unfiled</strong> section at the bottom when named folders exist.</p>
+
+      <h2 id="linking-to-a-project">Linking Documents to a Project</h2>
+
+      <p>Linking tells Grim which documents belong to a project. A document can be linked to multiple projects with no duplication — the same file serves all of them.</p>
+
+      <p><strong>From inside a project</strong> — Open the Reference Docs panel via the left toolbar. The panel shows linked documents and a picker of everything in your library not yet linked to this project. Click any unlinked document to link it. Click &times; on a linked document to unlink it. Documents are grouped by folder in the picker — click a folder to expand it.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/stage2-reference-docs-panel.png" alt="The Reference Docs panel inside a project showing linked documents at the top and the add document picker below with folders" class="img-medium">
+        <figcaption>The Reference Docs panel inside a project showing linked documents and the add document picker.</figcaption>
+      </figure>
+
+      <p>A <strong>Manage Reference Documents &rarr;</strong> link at the bottom of the panel navigates to the full Documents Manager without leaving the project flow.</p>
+
+      <h2 id="linking-at-creation">Linking at Project Creation</h2>
+
+      <p>When creating a new project the Create Project modal includes an optional <strong>Start Grim with a reference document</strong> section. Select a document here and Grim walks into the very first conversation already knowing what is in that file. Documents are grouped by folder in this picker the same way as the in-project panel.</p>
+
+      <h2 id="how-grim-uses-documents">How Grim Uses Linked Documents</h2>
+
+      <p>When Grim opens a conversation on a project that has linked documents it reads them. The opening observation and any starter cards come from the document content directly — not from the project name, not from a guess.</p>
+
+      <p>This is the difference between:</p>
+
+      <p><em>"A haunted house — are we going literal with water, or is the drowning metaphorical?"</em></p>
+
+      <p>and:</p>
+
+      <p><em>"Pellucid voted against sealing the Rift the first time — which means what he's doing now isn't sabotage, it's completion."</em></p>
+
+      <p>The second only happens when the document is there.</p>
+
+      <div class="callout">
+        Grim reads across all linked documents in each exchange. The context is available for the full conversation, not just the opening message. Ask Grim about a specific character, faction, or location from your document and it will surface what it found there.
+      </div>
+
+      <h2 id="how-grim-reads-documents">How Grim Reads Documents</h2>
+
+      <p>GrimFolio splits documents into overlapping chunks of roughly 1,500 characters and embeds each one. On every Grim exchange, only the chunks semantically relevant to your current message are retrieved and injected into context.</p>
+
+      <p>A message about your budget injects nothing from the lore bible. A message about a specific character surfaces the two or three chunks that mention them. This keeps token usage proportional to what is actually relevant rather than injecting the entire document on every exchange.</p>
+
+      <p>Small documents under 6,000 characters skip chunking entirely and inject directly.</p>
+
+      <hr>
+
+      <p>
+        <a href="/exports.html">&larr; Exports</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="/inspiration-library.html">Next: Inspiration Library &rarr;</a>
+      </p>
+
+    </div>
+  </main>
+
+  <aside class="toc">
+    <div class="toc-label">On This Page</div>
+    <ul class="toc-list" id="toc-list"></ul>
+  </aside>
+
+</div>
+
+<div id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="main.js" defer></script>
+<script src="search.js" defer></script>
+</body>
+</html>
