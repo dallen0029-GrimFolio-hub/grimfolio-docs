@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team and Collaboration — GrimFolio Docs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function(){var t=localStorage.getItem('grimfolio-docs-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+</head>
+<body>
+
+<div class="layout">
+
+  <nav class="topnav">
+    <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    <a href="/index.html" class="topnav-wordmark">Grim<span>Folio</span> Docs</a>
+    <div class="topnav-search">
+      <input type="search" id="search-input" placeholder="Search the docs..." autocomplete="off" aria-label="Search documentation">
+      <div class="search-dropdown" id="search-dropdown"></div>
+    </div>
+    <div class="topnav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9788;</button>
+      <a href="https://grimfolio.com" target="_blank" rel="noopener" class="topnav-site-link">grimfolio.com</a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <nav>
+      <div class="nav-group">
+        <div class="nav-group-label">Getting Started</div>
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/dashboard.html" class="nav-link">Dashboard</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">The App</div>
+        <a href="/stage-1.html" class="nav-link">Stage 1 — The Pile</a>
+        <a href="/stage-2.html" class="nav-link">Stage 2 — Build</a>
+        <a href="/stage-3.html" class="nav-link">Stage 3 — Production</a>
+        <a href="/grim.html" class="nav-link">Grim</a>
+        <a href="/exports.html" class="nav-link">Exports</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Libraries and Tools</div>
+        <a href="/reference-documents.html" class="nav-link">Reference Documents</a>
+        <a href="/inspiration-library.html" class="nav-link">Inspiration Library</a>
+        <a href="/grimvision.html" class="nav-link">GrimVision</a>
+        <a href="/inventory.html" class="nav-link">Inventory</a>
+        <a href="/calendar.html" class="nav-link">Calendar</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Account</div>
+        <a href="/account.html" class="nav-link">Account Settings</a>
+        <a href="/team.html" class="nav-link active">Team and Collaboration</a>
+        <a href="/referrals.html" class="nav-link">Referrals and Ambassador</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Blog</div>
+        <a href="/blog/index.html" class="nav-link">All Posts</a>
+        <a href="/blog/planning-the-ritual-2026.html" class="nav-link">Planning The Ritual 2026</a>
+        <a href="/blog/why-spreadsheets-dont-work.html" class="nav-link">Why Spreadsheets Don't Work</a>
+        <a href="/blog/grimfolio-for-dnd.html" class="nav-link">GrimFolio for D&amp;D</a>
+      </div>
+    </nav>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <main class="main-content">
+    <div class="content-body">
+
+      <div class="page-header">
+        <h1>Team and Collaboration</h1>
+      </div>
+
+      <p>GrimFolio supports project collaboration on Studio plans. Invite other GrimFolio users to your projects as Editors or Viewers. They see the project in their Dashboard alongside their own work and can contribute based on their role. The Team tab in Account Settings is where all collaboration is managed — incoming invitations, active collaborations, and outgoing invites.</p>
+
+      <figure>
+        <img src="images/account-team-tab.png" alt="The Team tab in Account Settings showing the invite form at the top and an active collaborator row with a role selector" class="img-medium">
+        <figcaption>The Team tab showing the invite form and an active collaborator with role selector.</figcaption>
+      </figure>
+
+      <h2 id="roles">Roles</h2>
+
+      <p>GrimFolio collaboration has two roles.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>What they can do</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Editor</strong></td>
+            <td>View and edit the project, add and modify cards, use Grim, draw, and update any content.</td>
+          </tr>
+          <tr>
+            <td><strong>Viewer</strong></td>
+            <td>Read-only access. Can view the canvas, Walk-Through, and card content but cannot make changes.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Editors see the full Stage 2 canvas with all controls active. Viewers see the canvas with editing interactions disabled. Viewers do not see the Grim chat — they see the project's generated summary instead if one exists.</p>
+
+      <div class="callout">
+        There is no Owner or Admin role in the collaboration model. The project owner is always the account that created it. Editors have full edit access but cannot delete the project, change its settings, or manage other collaborators.
+      </div>
+
+      <h2 id="pending-invitations">Pending Invitations</h2>
+
+      <p>If someone has invited you to collaborate on one of their projects it appears in the <strong>Pending invitations</strong> section of the Team tab. Each card shows the project name, your assigned role, the name of the person who invited you, and when the invite was sent.</p>
+
+      <p>Click <strong>Accept</strong> to join the project. It will appear in your Dashboard alongside your own projects with an Editor or Viewer badge. Click <strong>Decline</strong> to remove the invite without joining.</p>
+
+      <h2 id="projects-you-are-collaborating-on">Projects You Are Collaborating On</h2>
+
+      <p>Once you accept an invite the project appears in the <strong>Projects I'm collaborating on</strong> section. Each card shows the project name, the owner's name, and your role.</p>
+
+      <p>Click <strong>Leave</strong> to remove yourself from the project. A confirmation prompt appears before the action completes. Leaving is immediate — the project disappears from your Dashboard and you lose access.</p>
+
+      <h2 id="inviting-collaborators">Inviting Collaborators <span class="plan-badge pro">Studio</span></h2>
+
+      <p>Studio accounts have an <strong>Invite someone</strong> form at the top of the Team tab.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Email address</strong></td>
+            <td>The person's GrimFolio account email. They must already have a GrimFolio account.</td>
+          </tr>
+          <tr>
+            <td><strong>Role</strong></td>
+            <td>Editor or Viewer. Can be changed after the invite is accepted.</td>
+          </tr>
+          <tr>
+            <td><strong>Project</strong></td>
+            <td>Which of your projects to invite them to. One project per invite submission.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Click <strong>Send invite</strong>. The invite appears in the recipient's Team tab as a pending invitation.</p>
+
+      <div class="callout">
+        The email address must match an existing GrimFolio account. If it does not the form returns an error. To invite someone who does not have an account ask them to sign up at <a href="https://grimfolio.com" target="_blank" rel="noopener">grimfolio.com</a> first — it is free to start.
+      </div>
+
+      <p>To invite the same person to multiple projects submit a separate invite for each project.</p>
+
+      <h2 id="managing-your-team">Managing Your Team <span class="plan-badge pro">Studio</span></h2>
+
+      <p>The <strong>My projects and team</strong> section lists all your projects that have collaborators along with their current collaborators. Each collaborator row shows:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Name and email</strong></td>
+            <td>The collaborator's display name and email.</td>
+          </tr>
+          <tr>
+            <td><strong>Status badge</strong></td>
+            <td>Accepted (green) or Pending (gray). Pending means they have not responded yet.</td>
+          </tr>
+          <tr>
+            <td><strong>Role selector</strong></td>
+            <td>Change the role between Editor and Viewer at any time. Takes effect immediately.</td>
+          </tr>
+          <tr>
+            <td><strong>Remove button</strong></td>
+            <td>Removes the collaborator from the project. Confirmation prompt appears first.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Projects with no collaborators show a "No collaborators yet" placeholder. They still appear in the list once you have sent at least one invite to that project.</p>
+
+      <div class="callout">
+        Changing a collaborator's role takes effect immediately with no confirmation. An Editor becomes a Viewer the moment you change the selector. If you are working in the same project at the same time the change applies on their next action.
+      </div>
+
+      <h2 id="collaborated-projects-on-the-dashboard">Collaborated Projects on the Dashboard</h2>
+
+      <p>Projects you have been invited to appear in your Dashboard project grid alongside your own projects. They show an <strong>Editor</strong> or <strong>Viewer</strong> badge on the card so you can tell at a glance which projects you own and which you are collaborating on.</p>
+
+      <p>The &middot;&middot;&middot; menu on a collaborated project shows <strong>View only</strong> instead of Rename and Delete — you cannot rename or delete projects you do not own.</p>
+
+      <hr>
+
+      <p>
+        <a href="/account.html">&larr; Account Settings</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="/referrals.html">Next: Referrals and Ambassador &rarr;</a>
+      </p>
+
+    </div>
+  </main>
+
+  <aside class="toc">
+    <div class="toc-label">On This Page</div>
+    <ul class="toc-list" id="toc-list"></ul>
+  </aside>
+
+</div>
+
+<div id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="main.js" defer></script>
+<script src="search.js" defer></script>
+</body>
+</html>
