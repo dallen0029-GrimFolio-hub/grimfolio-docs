@@ -228,15 +228,27 @@
         The JSON export is the foundation for future integrations including direct handoff to operational tools. The crew and shifts arrays are reserved and ready for tools that handle staffing and scheduling.
       </div>
 
-      <h2 id="map-export">Map Export <span class="coming-soon-badge">Coming Soon</span></h2>
+      <h2 id="canvas-export">Canvas Export</h2>
 
-      <p>Map Export will generate a printable canvas image with a numbered legend. Cards will render as either full tiles or numbered pins. Background images and drawing layers will be included. A legend below the map will list each number alongside the card title, optional photo, and optional notes.</p>
+      <p>Canvas Export captures your Build canvas as a PNG or multi-page PDF. There are two modes:</p>
 
-      <p>Exported maps will include a QR code linking to the hosted version when published via the Hosted Exports system.</p>
+      <p><strong>Quick Export</strong> captures the full visible canvas at the current screen size as a PNG. No setup required &mdash; right-click the canvas and select Export Canvas, then Quick Export.</p>
 
-      <div class="callout">
-        Map Export is coming in a future update. It will appear in the export menu alongside the existing exports when it ships.
-      </div>
+      <p><strong>Frame Export</strong> uses Export Frames placed on the canvas to define specific regions. Each frame becomes a page. Right-click the canvas, select Export Canvas, then Export Frames to open the export modal. From the modal you can choose format (PNG or PDF), resolution, which frames to include, and layer visibility toggles including mirrors, drawings, background images, connections, and transparent background.</p>
+
+      <p>For full details on placing and configuring Export Frames see <a href="/stage-2.html#canvas-export-frames">Canvas Export Frames</a> in the Stage 2 documentation.</p>
+
+      <h2 id="map-export">Map Export</h2>
+
+      <p>Map Export generates a printable layout map using the Build canvas floor plan and mirror positions. Mirrors placed on the canvas become pin locations on the map. Cards without mirrors fall back to their canvas position.</p>
+
+      <p>Available from the export menu in Stage 2 and from the Export Hub widget in Stage 3. When Hosted Exports is active the map includes a QR code linking to the hosted version.</p>
+
+      <h2 id="hosted-exports">Hosted Exports</h2>
+
+      <p>Hosted Exports publish a shareable permanent URL for your project's exports. No GrimFolio account is needed to view the hosted version &mdash; anyone with the link can access it.</p>
+
+      <p>Available on Pro and Studio plans.</p>
 
       <hr>
 

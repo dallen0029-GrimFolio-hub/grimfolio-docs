@@ -194,7 +194,7 @@
   {
     "title": "Stage 2 — Build",
     "section": "Cards on the Canvas",
-    "body": "Interactions Interaction Result Single click Selects the card. Double-click Opens the card detail drawer. Right-click Opens the card context menu. Drag Moves the card. Position saves on release. Drag from handle Starts a connection. Handles Each card has connection handles on all four sides. Hover a card to reveal them. Drag from any handle toward another card to create a connection. The canvas assigns the closest exit direction automatically. Card Sizes Right-click any card to access the size picker. The card size picker showing all size options. Size Dimensions Best for Small 140px wide Dens",
+    "body": "Interactions Interaction Result Single click Selects the card. Double-click Opens the card detail drawer. Right-click Opens the card context menu. Drag Moves the card. Position saves on release. Drag from handle Starts a connection. Handles Connection handles are the small dots on all four sides of each card. By default they are always visible. Drag from any handle toward another card to start a connection. A subtle white ring expands when you hover directly over a handle to show it is interactive. You can switch to hover-only mode in Account &rarr; Appearance &rarr; Always show card handles .",
     "url": "/stage-2.html#cards-on-the-canvas"
   },
   {
@@ -202,6 +202,24 @@
     "section": "Card Detail Drawer",
     "body": "Double-click any card to open its detail drawer. It slides in from the right. The canvas stays visible and interactive behind it. The drawer has two panels. Left Panel Element What it does Notes Free-text field. Auto-saves 800ms after you stop typing. Elements A tagged list of sub-components, props, effects, or other elements attached to this card. Right Panel Element What it does Type picker The card's category type. Cards and Colors Opens the Type Manager to add, remove, recolor, or organize types. Title Editable. Saves on blur or Enter. Status Click to cycle: blank, In Progress, On Hold, Co",
     "url": "/stage-2.html#card-detail-drawer"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Quick Notes",
+    "body": "Quick Notes is a fast-access notes popover on the card right-click context menu. Right-click any card and select Quick Notes to open a floating textarea anchored near the click position. The popover opens pre-filled with the card's existing notes. Start typing and changes save automatically 800ms after you stop. Close the popover with the &times; button, by clicking outside, or by pressing Escape &mdash; all three methods save any pending changes immediately. A Saved indicator appears briefly to confirm each write. Quick Notes writes to the same notes field as the Notes section in the card det",
+    "url": "/stage-2.html#quick-notes"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Card Attachments",
+    "body": "The Attachments section in the card detail drawer lets you upload files directly to a card. It sits between the Links and Inventory sections. Accepted File Types Type What happens when you click it JPG, PNG, SVG Displays as an 80&times;80 thumbnail. Click to open full size in a lightbox overlay. Press Escape to close. PDF Opens inline in a modal viewer. Press Escape or click outside to close. CSV Downloads to your device immediately on click. Upload Limits Plan Attachments per card Free Not available Base Unlimited 5 Pro 10 Studio 20 Maximum file size is 10 MB per file. The upload button does ",
+    "url": "/stage-2.html#card-attachments"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Mirrors",
+    "body": "A mirror is a small proxy node on the canvas that represents a parent card. The mirror carries no content of its own &mdash; all data lives on the parent card. You can place as many mirrors of a single card as you need. Mirrors are designed for large, spatially complex builds: floor plan layouts for haunted house zones, escape room puzzle placement diagrams, event booth maps, and any project where a card needs to appear in multiple physical locations at once. Creating a Mirror Right-click any card and select Create Mirror . A new mirror node appears near the parent card. Drag it to the intende",
+    "url": "/stage-2.html#mirrors"
   },
   {
     "title": "Stage 2 — Build",
@@ -224,7 +242,7 @@
   {
     "title": "Stage 2 — Build",
     "section": "Context Menus",
-    "body": "Canvas — right-click empty space Item Action New Card Opens card creation modal at click position. New room tile Opens card creation pre-set to room tile style. Paste Pastes clipboard card at cursor position. Add anchor Places an anchor at click position. Add Canvas Image Opens picker to place a reference image on the canvas. Card — right-click any card Item Action Edit details Opens the card detail drawer. Rename Activates inline title editing. Duplicate Creates a copy offset from the original. Size Picker: Small, Normal, Large, Small Square, Large Square. Cut Copies to clipboard then deletes",
+    "body": "Canvas — right-click empty space Item Action Add Export Frame Places an Export Frame on the canvas at the viewport center. Default size is Letter Landscape (11&times;8.5\"). See Canvas Export Frames . Export Canvas Opens the export menu. Quick Export captures the full visible canvas as a PNG with no frame needed. Export Frames opens the export modal and requires at least one Export Frame to be placed first. Clear all export frames appears when frames are present and removes all of them at once. New Card Opens card creation modal at click position. New room tile Opens card creation pre-set to ro",
     "url": "/stage-2.html#context-menus"
   },
   {
@@ -250,6 +268,12 @@
     "section": "Canvas Images",
     "body": "Canvas images are photographs, floor plans, or AI-generated artwork placed directly on the Build canvas. They sit behind all cards and drawing layers. They are not cards and do not appear in the Pile, Walk-Through, Grim context, or exports. A floor plan placed as a canvas background image with room cards positioned on top. Placing an Image Right-click any empty area of the canvas and select Add Canvas Image . The image picker opens with three tabs: Tab What it shows Upload File picker. Accepts JPG, PNG, WebP, GIF up to 20MB. Inspiration Library All images from your Inspiration Library. GrimVis",
     "url": "/stage-2.html#canvas-images"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Canvas Export Frames",
+    "body": "Export Frames are persistent rectangular objects placed directly on the canvas. Each frame defines an export region. Multiple frames produce multiple pages in a PDF or a set of PNG files in a zip archive. Placing an Export Frame Right-click any empty area of the canvas and select Add Export Frame . A frame appears at the viewport center in Letter Landscape size (11&times;8.5&rdquo;). Drag it to position it, then drag the resize handles to adjust its bounds. Frame Appearance Each frame shows a dashed purple border and a page label above the top-left corner (Page 1, Page 2, and so on). The inter",
+    "url": "/stage-2.html#canvas-export-frames"
   },
   {
     "title": "Stage 2 — Build",
@@ -421,9 +445,21 @@
   },
   {
     "title": "Exports",
-    "section": "Map Export  Coming Soon ",
-    "body": "Map Export will generate a printable canvas image with a numbered legend. Cards will render as either full tiles or numbered pins. Background images and drawing layers will be included. A legend below the map will list each number alongside the card title, optional photo, and optional notes. Exported maps will include a QR code linking to the hosted version when published via the Hosted Exports system. Map Export is coming in a future update. It will appear in the export menu alongside the existing exports when it ships. &larr; Grim Next: Reference Documents &rarr; On This Page",
+    "section": "Canvas Export",
+    "body": "Canvas Export captures your Build canvas as a PNG or multi-page PDF. There are two modes: Quick Export captures the full visible canvas at the current screen size as a PNG. No setup required &mdash; right-click the canvas and select Export Canvas, then Quick Export. Frame Export uses Export Frames placed on the canvas to define specific regions. Each frame becomes a page. Right-click the canvas, select Export Canvas, then Export Frames to open the export modal. From the modal you can choose format (PNG or PDF), resolution, which frames to include, and layer visibility toggles including mirrors",
+    "url": "/exports.html#canvas-export"
+  },
+  {
+    "title": "Exports",
+    "section": "Map Export",
+    "body": "Map Export generates a printable layout map using the Build canvas floor plan and mirror positions. Mirrors placed on the canvas become pin locations on the map. Cards without mirrors fall back to their canvas position. Available from the export menu in Stage 2 and from the Export Hub widget in Stage 3. When Hosted Exports is active the map includes a QR code linking to the hosted version.",
     "url": "/exports.html#map-export"
+  },
+  {
+    "title": "Exports",
+    "section": "Hosted Exports",
+    "body": "Hosted Exports publish a shareable permanent URL for your project's exports. No GrimFolio account is needed to view the hosted version &mdash; anyone with the link can access it. Available on Pro and Studio plans. &larr; Grim Next: Reference Documents &rarr; On This Page",
+    "url": "/exports.html#hosted-exports"
   },
   {
     "title": "Reference Documents",
@@ -680,7 +716,7 @@
   {
     "title": "Account Settings",
     "section": "Appearance",
-    "body": "Controls theme, canvas behavior, and Grim's interface. The Appearance tab showing theme toggle, snap to grid, and Grim settings. The Appearance tab showing font size options and export branding controls. Theme A single toggle: Dark Mode . On by default. Turn it off to switch to light mode. The toggle applies immediately without saving. Walk-Through presentation mode always stays dark regardless of the theme setting. This is intentional — the dark canvas makes presentations readable on any screen. Snap to Grid Toggles a 16px grid on the Stage 2 canvas. When on, cards snap to grid positions duri",
+    "body": "Controls theme, canvas behavior, and Grim's interface. The Appearance tab showing theme toggle, snap to grid, card handle visibility, and Grim settings. The Appearance tab showing font size options and export branding controls. Theme A single toggle: Dark Mode . On by default. Turn it off to switch to light mode. The toggle applies immediately without saving. Walk-Through presentation mode always stays dark regardless of the theme setting. This is intentional — the dark canvas makes presentations readable on any screen. Snap to Grid Toggles a 16px grid on the Stage 2 canvas. When on, cards sna",
     "url": "/account.html#appearance"
   },
   {

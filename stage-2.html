@@ -527,7 +527,215 @@
 
       <p><strong>Links</strong> — Read-only. Shows all connections to and from this card with direction arrows. Outgoing connections show as &rarr;, incoming as &larr;.</p>
 
+      <p><strong>Attachments</strong> — Upload files directly to a card. Accepted types: PDF, JPG, PNG, SVG, CSV. Images display as thumbnails and open in a lightbox on click. PDFs open in an inline viewer. CSVs download on click. Upload limits vary by plan. See <a href="#card-attachments">Card Attachments</a>.</p>
+
       <p><strong>Inventory</strong> — Assign physical inventory items from linked collections to this card.</p>
+
+      <!-- ── Quick Notes ──────────────────────────────── -->
+
+      <h2 id="quick-notes">Quick Notes</h2>
+
+      <p>Quick Notes is a fast-access notes popover on the card right-click context menu. Right-click any card and select <strong>Quick Notes</strong> to open a floating textarea anchored near the click position.</p>
+
+      <p>The popover opens pre-filled with the card's existing notes. Start typing and changes save automatically 800ms after you stop. Close the popover with the &times; button, by clicking outside, or by pressing Escape &mdash; all three methods save any pending changes immediately. A <strong>Saved</strong> indicator appears briefly to confirm each write.</p>
+
+      <p>Quick Notes writes to the same notes field as the Notes section in the card detail drawer. Changes made in the popover appear immediately in the full drawer, and vice versa. They are a live mirror of the same data.</p>
+
+      <div class="callout">
+        Quick Notes is available on single-card selection only. If multiple cards are selected the option does not appear in the context menu.
+      </div>
+
+      <!-- ── Card Attachments ──────────────────────────── -->
+
+      <h2 id="card-attachments">Card Attachments</h2>
+
+      <p>The Attachments section in the card detail drawer lets you upload files directly to a card. It sits between the Links and Inventory sections.</p>
+
+      <div class="screenshot-placeholder" data-filename="stage2-card-attachments.png" data-size="800x900" data-capture="Card detail drawer open, Attachments section expanded showing at least one image thumbnail, one PDF entry, and the upload button. Dark mode. Show the section label and the plan limit indicator if visible."></div>
+
+      <h3 id="accepted-file-types">Accepted File Types</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>What happens when you click it</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>JPG, PNG, SVG</td>
+            <td>Displays as an 80&times;80 thumbnail. Click to open full size in a lightbox overlay. Press Escape to close.</td>
+          </tr>
+          <tr>
+            <td>PDF</td>
+            <td>Opens inline in a modal viewer. Press Escape or click outside to close.</td>
+          </tr>
+          <tr>
+            <td>CSV</td>
+            <td>Downloads to your device immediately on click.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="attachment-upload-limits">Upload Limits</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Attachments per card</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Free</td>
+            <td>Not available</td>
+          </tr>
+          <tr>
+            <td>Base Unlimited</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Pro</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Studio</td>
+            <td>20</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Maximum file size is 10 MB per file. The upload button does not appear on mobile &mdash; attachments can only be added from a desktop browser.</p>
+
+      <h3 id="deleting-attachments">Deleting Attachments</h3>
+
+      <p>A &times; button appears on each attachment. Project owners and editors can delete any attachment. Viewers cannot delete.</p>
+
+      <!-- ── Mirrors ──────────────────────────────────── -->
+
+      <h2 id="mirrors">Mirrors</h2>
+
+      <p>A mirror is a small proxy node on the canvas that represents a parent card. The mirror carries no content of its own &mdash; all data lives on the parent card. You can place as many mirrors of a single card as you need.</p>
+
+      <p>Mirrors are designed for large, spatially complex builds: floor plan layouts for haunted house zones, escape room puzzle placement diagrams, event booth maps, and any project where a card needs to appear in multiple physical locations at once.</p>
+
+      <div class="screenshot-placeholder" data-filename="stage2-mirrors-canvas.png" data-size="1280x800" data-capture="Canvas with a floor plan background image. Several mirror nodes placed on top of it with visible numbered/prefixed labels. One parent card visible to the side with its mirror count badge. One mirror selected showing the parent card glowing purple. Dark mode."></div>
+
+      <h3 id="creating-a-mirror">Creating a Mirror</h3>
+
+      <p>Right-click any card and select <strong>Create Mirror</strong>. A new mirror node appears near the parent card. Drag it to the intended position on your canvas. Available on single-card selection only.</p>
+
+      <h3 id="mirror-appearance">Mirror Appearance</h3>
+
+      <p>Mirrors are 32&times;32px rounded squares. They use the parent card's type color as their background. Each mirror displays a label identifying its index within that card's mirror set.</p>
+
+      <p>The label mode determines the format. The toggle lives in project settings and persists per project:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Label mode</th>
+            <th>Example labels</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Numbered</strong> (default)</td>
+            <td>1, 2, 3</td>
+          </tr>
+          <tr>
+            <td><strong>Lettered</strong></td>
+            <td>A, B, C</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="mirror-prefix">Mirror Prefix</h3>
+
+      <p>Each card can have a short prefix label up to 3 characters. Set it in two places:</p>
+
+      <ul>
+        <li>Right-click a card on the canvas and select <strong>Set Mirror Prefix</strong>. A small popover opens. Type up to 3 characters and press Enter or click outside to save.</li>
+        <li>Open the card detail drawer. The <strong>Card Prefix</strong> input is in the header row next to the card type picker.</li>
+      </ul>
+
+      <p>When a prefix is set, mirrors show it on the top line with the index label below. For example with prefix &ldquo;FX&rdquo; in numbered mode: the first mirror shows FX above 1, the second shows FX above 2.</p>
+
+      <div class="screenshot-placeholder" data-filename="stage2-mirror-prefix-badge.png" data-size="600x400" data-capture="Close-up of a parent card tile showing the mirror prefix badge in the bottom-left corner — prefix text above the count dot. Two or three labeled mirrors visible nearby on the canvas (e.g. FX-1, FX-2). Dark mode."></div>
+
+      <div class="callout">
+        GrimFolio warns you if two cards share the same prefix. The warning appears in the card detail drawer next to the Card Prefix field. You can disable this warning in canvas settings via the <strong>Warn on duplicate prefix</strong> toggle.
+      </div>
+
+      <h3 id="mirror-badge">Mirror Badge on Parent Cards</h3>
+
+      <p>When a card has mirrors placed on the canvas, a badge appears in its bottom-left corner on both the canvas tile and the pile drawer card. The badge shows the prefix (if set) above a purple circle with the mirror count. The badge disappears when all mirrors for that card are removed.</p>
+
+      <h3 id="mirror-glow">Visual Feedback</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>What you see</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Click a mirror</td>
+            <td>The parent card glows purple on the canvas.</td>
+          </tr>
+          <tr>
+            <td>Click a parent card</td>
+            <td>All mirrors of that card glow purple.</td>
+          </tr>
+          <tr>
+            <td>Hold Ctrl / Cmd and click multiple mirrors</td>
+            <td>All their respective parent cards glow simultaneously.</td>
+          </tr>
+          <tr>
+            <td>Select a mirror node</td>
+            <td>The mirror highlights with the purple glow ring.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="mirror-context-menu">Mirror Right-Click Menu</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Go to parent card</strong></td>
+            <td>Pans the canvas to the parent card and selects it.</td>
+          </tr>
+          <tr>
+            <td><strong>Set Mirror Prefix</strong></td>
+            <td>Opens the prefix popover for the parent card.</td>
+          </tr>
+          <tr>
+            <td><strong>Delete Mirror</strong></td>
+            <td>Removes this mirror node. The parent card is not affected.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="mirror-connections">Connections and Walk-Through</h3>
+
+      <p>Mirrors support full connections. Drag from any handle on a mirror to another card or mirror to create a path. Mirror-to-mirror connections are supported. Connection data is shared with the parent card &mdash; connections drawn from mirrors appear in the parent card's Links section in the detail drawer.</p>
+
+      <p>Walk-Through mode follows mirror paths. When the active step is a mirror, the camera centers on the mirror's position on the canvas while the drawer shows the parent card's content including title, type, notes, and checklist. Advance buttons show the next connected card or mirror by its parent card name. Breadcrumbs display parent card names throughout.</p>
+
+      <div class="callout">
+        Mirrors are invisible to Grim, Walk-Through exports, and the JSON project data export. They do not count toward card limits. The parent card's data is what appears in all exports and in Grim context.
+      </div>
 
       <!-- ── Connections and Path Labels ──────────────── -->
 
@@ -615,6 +823,14 @@
         </thead>
         <tbody>
           <tr>
+            <td><strong>Add Export Frame</strong></td>
+            <td>Places an Export Frame on the canvas at the viewport center. Default size is Letter Landscape (11&times;8.5&quot;). See <a href="#canvas-export-frames">Canvas Export Frames</a>.</td>
+          </tr>
+          <tr>
+            <td><strong>Export Canvas</strong></td>
+            <td>Opens the export menu. <strong>Quick Export</strong> captures the full visible canvas as a PNG with no frame needed. <strong>Export Frames</strong> opens the export modal and requires at least one Export Frame to be placed first. <strong>Clear all export frames</strong> appears when frames are present and removes all of them at once.</td>
+          </tr>
+          <tr>
             <td><strong>New Card</strong></td>
             <td>Opens card creation modal at click position.</td>
           </tr>
@@ -656,6 +872,10 @@
             <td>Activates inline title editing.</td>
           </tr>
           <tr>
+            <td><strong>Quick Notes</strong></td>
+            <td>Opens a small floating textarea anchored near the click position. Pre-filled with any existing notes. Auto-saves 800ms after you stop typing. Close with &times;, clicking outside, or Escape &mdash; all three save immediately if anything is pending. A &ldquo;Saved&rdquo; indicator confirms each write.</td>
+          </tr>
+          <tr>
             <td><strong>Duplicate</strong></td>
             <td>Creates a copy offset from the original.</td>
           </tr>
@@ -682,6 +902,18 @@
           <tr>
             <td><strong>Return to pile</strong></td>
             <td>Removes card from canvas, returns it to the pile drawer.</td>
+          </tr>
+          <tr>
+            <td><strong>Create Mirror</strong></td>
+            <td>Places a miniature mirror node near the card. Drag it to its intended position on the canvas. Available on single-card selection only.</td>
+          </tr>
+          <tr>
+            <td><strong>Set Mirror Prefix</strong></td>
+            <td>Opens a small popover to assign a short prefix label (up to 3 characters) to this card. Mirrors display the prefix combined with their index label.</td>
+          </tr>
+          <tr>
+            <td><strong>View Mirrors (N)</strong></td>
+            <td>Highlights all existing mirrors for this card and pans to show them. Only appears when the card already has mirrors.</td>
           </tr>
           <tr>
             <td><strong>Lock / Unlock position</strong></td>
@@ -1058,6 +1290,154 @@
       </table>
 
       <p>Resize handles appear on edges and corners when an image is selected and unlocked at 0 degrees rotation. Drag any handle to resize. Hold Shift to maintain the original aspect ratio.</p>
+
+      <!-- ── Canvas Export Frames ──────────────────────── -->
+
+      <h2 id="canvas-export-frames">Canvas Export Frames</h2>
+
+      <p>Export Frames are persistent rectangular objects placed directly on the canvas. Each frame defines an export region. Multiple frames produce multiple pages in a PDF or a set of PNG files in a zip archive.</p>
+
+      <div class="screenshot-placeholder" data-filename="stage2-export-frame.png" data-size="1280x800" data-capture="Canvas with one Export Frame placed. Dashed purple border visible. Page label 'Page 1' visible above the top-left corner of the frame. Canvas content (cards, connections, or a floor plan) visible inside the frame showing it is transparent. Resize handles visible on corners. Dark mode."></div>
+
+      <h3 id="placing-an-export-frame">Placing an Export Frame</h3>
+
+      <p>Right-click any empty area of the canvas and select <strong>Add Export Frame</strong>. A frame appears at the viewport center in Letter Landscape size (11&times;8.5&rdquo;). Drag it to position it, then drag the resize handles to adjust its bounds.</p>
+
+      <h3 id="export-frame-appearance">Frame Appearance</h3>
+
+      <p>Each frame shows a dashed purple border and a page label above the top-left corner (Page 1, Page 2, and so on). The interior is transparent &mdash; canvas content is visible through the frame and pointer events pass through normally. The border does not appear in exported output.</p>
+
+      <p>Resize handles appear at corners and edges when a frame is selected. Drag any handle to resize. When you resize beyond the original preset's aspect ratio the frame switches to Custom size automatically.</p>
+
+      <h3 id="export-frame-presets">Preset Sizes</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Preset</th>
+            <th>Orientation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Letter (11&times;8.5&rdquo;)</td>
+            <td>Letter landscape</td>
+          </tr>
+          <tr>
+            <td>Letter (8.5&times;11&rdquo;)</td>
+            <td>Letter portrait</td>
+          </tr>
+          <tr>
+            <td>Large (17&times;11&rdquo;)</td>
+            <td>Tabloid landscape</td>
+          </tr>
+          <tr>
+            <td>Large (11&times;17&rdquo;)</td>
+            <td>Tabloid portrait</td>
+          </tr>
+          <tr>
+            <td>A4 (11.7&times;8.3&rdquo;)</td>
+            <td>A4 landscape</td>
+          </tr>
+          <tr>
+            <td>A4 (8.3&times;11.7&rdquo;)</td>
+            <td>A4 portrait</td>
+          </tr>
+          <tr>
+            <td>Square (9.4&times;9.4&rdquo;)</td>
+            <td>Square</td>
+          </tr>
+          <tr>
+            <td>Custom</td>
+            <td>Any size set by dragging the resize handles</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Right-click a frame to change its preset, reorder pages, export that frame individually, or delete it. The canvas right-click menu includes <strong>Clear all export frames</strong> when at least one frame is present.</p>
+
+      <h3 id="page-order">Page Order</h3>
+
+      <p>Frames are numbered in the order they were placed. The page label above each frame shows its current page number. Right-click a frame and use the page order controls to swap it with the page before or after. Page numbers update immediately across all frames.</p>
+
+      <h3 id="quick-export-vs-frame-export">Quick Export vs Frame Export</h3>
+
+      <p>Right-click the canvas and select <strong>Export Canvas</strong> to open the export menu.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Mode</th>
+            <th>When to use</th>
+            <th>What it captures</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Quick Export</strong></td>
+            <td>No frames needed</td>
+            <td>The full visible canvas at the current screen size. Always exports as PNG.</td>
+          </tr>
+          <tr>
+            <td><strong>Export Frames</strong></td>
+            <td>One or more frames placed on the canvas</td>
+            <td>Opens the export modal. Captures each selected frame as its own page or file.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="export-modal">Export Modal Options</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Option</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Format</strong></td>
+            <td>PNG or PDF.</td>
+          </tr>
+          <tr>
+            <td><strong>Frames</strong></td>
+            <td>Shown when more than one frame is placed. Check or uncheck individual frames to include or exclude them. Select all / Deselect all toggle.</td>
+          </tr>
+          <tr>
+            <td><strong>Resolution</strong></td>
+            <td>PNG only. Standard (96dpi), High (192dpi), or Print (300dpi).</td>
+          </tr>
+          <tr>
+            <td><strong>Include mirrors</strong></td>
+            <td>Toggle mirror nodes on or off in the export.</td>
+          </tr>
+          <tr>
+            <td><strong>Include drawing layer</strong></td>
+            <td>Toggle drawings on or off in the export.</td>
+          </tr>
+          <tr>
+            <td><strong>Include background images</strong></td>
+            <td>Toggle canvas background images on or off.</td>
+          </tr>
+          <tr>
+            <td><strong>Include card connections</strong></td>
+            <td>Toggle connection lines on or off.</td>
+          </tr>
+          <tr>
+            <td><strong>Transparent background</strong></td>
+            <td>Exports with a transparent background instead of the dark canvas color.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="download-behavior">Download Behavior</h3>
+
+      <p>A single frame exported as PNG downloads as one file. Multiple frames as PNG download as a zip archive. PDF always downloads as a single file with one page per frame in page order.</p>
+
+      <div class="callout">
+        Export Frames are invisible to Grim, Walk-Through mode, and the Walk-Through Guide PDF. They do not affect card counts or Grim context. Frame positions and sizes are included in the JSON project data export.
+      </div>
 
       <!-- ── Grim on the Canvas ────────────────────────── -->
 
