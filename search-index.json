@@ -212,13 +212,13 @@
   {
     "title": "Stage 2 — Build",
     "section": "Card Attachments",
-    "body": "The Attachments section in the card detail drawer lets you upload files directly to a card. It sits between the Links and Inventory sections. Accepted File Types Type What happens when you click it JPG, PNG, SVG Displays as an 80&times;80 thumbnail. Click to open full size in a lightbox overlay. Press Escape to close. PDF Opens inline in a modal viewer. Press Escape or click outside to close. CSV Downloads to your device immediately on click. Upload Limits Plan Attachments per card Free Not available Base Unlimited 5 Pro 10 Studio 20 Maximum file size is 10 MB per file. The upload button does ",
+    "body": "The Attachments section in the card detail drawer lets you upload files directly to a card. It sits between the Links and Inventory sections. The Attachments section in the card detail drawer showing thumbnails, file entries, and the upload button. Accepted File Types Type What happens when you click it JPG, PNG, SVG Displays as an 80&times;80 thumbnail. Click to open full size in a lightbox overlay. Press Escape to close. PDF Opens inline in a modal viewer. Press Escape or click outside to close. CSV Downloads to your device immediately on click. Upload Limits Plan Attachments per card Free N",
     "url": "/stage-2.html#card-attachments"
   },
   {
     "title": "Stage 2 — Build",
     "section": "Mirrors",
-    "body": "A mirror is a small proxy node on the canvas that represents a parent card. The mirror carries no content of its own &mdash; all data lives on the parent card. You can place as many mirrors of a single card as you need. Mirrors are designed for large, spatially complex builds: floor plan layouts for haunted house zones, escape room puzzle placement diagrams, event booth maps, and any project where a card needs to appear in multiple physical locations at once. Creating a Mirror Right-click any card and select Create Mirror . A new mirror node appears near the parent card. Drag it to the intende",
+    "body": "A mirror is a small proxy node on the canvas that represents a parent card. The mirror carries no content of its own &mdash; all data lives on the parent card. You can place as many mirrors of a single card as you need. Mirrors are designed for large, spatially complex builds: floor plan layouts for haunted house zones, escape room puzzle placement diagrams, event booth maps, and any project where a card needs to appear in multiple physical locations at once. Mirror nodes placed on a floor plan canvas. The parent card shows its mirror count badge. Clicking a mirror highlights its parent card i",
     "url": "/stage-2.html#mirrors"
   },
   {
@@ -272,7 +272,7 @@
   {
     "title": "Stage 2 — Build",
     "section": "Canvas Export Frames",
-    "body": "Export Frames are persistent rectangular objects placed directly on the canvas. Each frame defines an export region. Multiple frames produce multiple pages in a PDF or a set of PNG files in a zip archive. Placing an Export Frame Right-click any empty area of the canvas and select Add Export Frame . A frame appears at the viewport center in Letter Landscape size (11&times;8.5&rdquo;). Drag it to position it, then drag the resize handles to adjust its bounds. Frame Appearance Each frame shows a dashed purple border and a page label above the top-left corner (Page 1, Page 2, and so on). The inter",
+    "body": "Export Frames are persistent rectangular objects placed directly on the canvas. Each frame defines an export region. Multiple frames produce multiple pages in a PDF or a set of PNG files in a zip archive. An Export Frame placed on the canvas. The dashed purple border and page label are visible guides only — they do not appear in exported output. Placing an Export Frame Right-click any empty area of the canvas and select Add Export Frame . A frame appears at the viewport center in Letter Landscape size (11&times;8.5&rdquo;). Drag it to position it, then drag the resize handles to adjust its bou",
     "url": "/stage-2.html#canvas-export-frames"
   },
   {
