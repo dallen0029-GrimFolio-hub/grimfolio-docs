@@ -151,8 +151,14 @@
   },
   {
     "title": "Stage 1 — The Pile",
+    "section": "Starter Templates",
+    "body": "When you create a new project, GrimFolio offers to apply a Starter Template. A template populates your pile with a structured set of pre-built cards matched to your project type. You can also apply a template at any time from the top of the pile workspace. The picker lets you choose a template and decide what to do with your existing cards: Option What it does Replace Removes all existing pile cards and replaces them with the template cards. Keep Keeps your existing cards and adds the template cards alongside them. Template cards arrive with a 4-second gold glow and a persistent gold ✦ dot on ",
+    "url": "/stage-1.html#starter-templates"
+  },
+  {
+    "title": "Stage 1 — The Pile",
     "section": "Grim in The Pile",
-    "body": "The Grim panel is available in Stage 1 from the right side of the screen. Grim can read your reference documents, ask questions about your project, and create cards directly into your Pile. Cards that Grim creates appear with a 4-second purple glow and a persistent ✦ dot. The dot stays until you click the card. For full Grim documentation see the Grim page.",
+    "body": "The Grim panel is available in Stage 1 from the right side of the screen. Grim can read your reference documents, ask questions about your project, and create cards directly into your Pile. Cards that Grim creates appear with a 4-second purple glow and a persistent ✦ dot. The dot stays until you click the card. Double-click a Grim-created card to open its detail drawer. A purple ✦ Added by Grim label appears at the top of the drawer. For full Grim documentation see the Grim page.",
     "url": "/stage-1.html#grim-in-the-pile"
   },
   {
