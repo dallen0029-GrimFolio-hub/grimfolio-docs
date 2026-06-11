@@ -452,7 +452,7 @@
   {
     "title": "Exports",
     "section": "Map Export",
-    "body": "Map Export generates a printable layout map using the Build canvas floor plan and mirror positions. Mirrors placed on the canvas become pin locations on the map. Cards without mirrors fall back to their canvas position. Available from the export menu in Stage 2 and from the Export Hub widget in Stage 3. When Hosted Exports is active the map includes a QR code linking to the hosted version.",
+    "body": "Map Export generates a static image or PDF of your project floor plan with pins marking card locations and an optional legend. It is distinct from Canvas Export &mdash; Canvas Export captures the canvas as-is; Map Export composes a clean layout document from your floor plan image and mirror data. Map Export output &mdash; dark background, horizontal layout, 4-column legend sorted by type Where to find it Location How to access Stage 2 Top bar &rarr; Export &rarr; Map Export (top of the list) Stage 3 Export Hub widget &rarr; Map Export button Pro only. Map Export is available on Pro and Studio ",
     "url": "/exports.html#map-export"
   },
   {

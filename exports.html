@@ -240,9 +240,198 @@
 
       <h2 id="map-export">Map Export</h2>
 
-      <p>Map Export generates a printable layout map using the Build canvas floor plan and mirror positions. Mirrors placed on the canvas become pin locations on the map. Cards without mirrors fall back to their canvas position.</p>
+      <p>Map Export generates a static image or PDF of your project floor plan with pins marking card locations and an optional legend. It is distinct from Canvas Export &mdash; Canvas Export captures the canvas as-is; Map Export composes a clean layout document from your floor plan image and mirror data.</p>
 
-      <p>Available from the export menu in Stage 2 and from the Export Hub widget in Stage 3. When Hosted Exports is active the map includes a QR code linking to the hosted version.</p>
+      <figure>
+        <img src="images/the-collectors-eye-map-export-dark.png" alt="Map Export output showing a dark background floor plan with pins and a 4-column legend sorted by type" class="img-medium">
+        <figcaption>Map Export output &mdash; dark background, horizontal layout, 4-column legend sorted by type</figcaption>
+      </figure>
+
+      <h3>Where to find it</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Location</th>
+            <th>How to access</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Stage 2</td>
+            <td>Top bar &rarr; Export &rarr; Map Export (top of the list)</td>
+          </tr>
+          <tr>
+            <td>Stage 3</td>
+            <td>Export Hub widget &rarr; Map Export button</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <strong>Pro only.</strong> Map Export is available on Pro and Studio plans. Free and Base users see an upgrade prompt.
+      </div>
+
+      <h3>Prerequisites</h3>
+
+      <p>Before opening Map Export, you need at least one canvas image placed on the Stage 2 canvas. This becomes the base layer of the exported map. Cards with mirrors placed on the canvas appear as pins. Cards without mirrors appear in the legend only (if legend is enabled) with no pin on the map.</p>
+
+      <h3>Export options</h3>
+
+      <p>The Map Export modal walks through five sections in order.</p>
+
+      <figure>
+        <img src="images/stage2-export-ui-1.png" alt="Map Export modal top half showing capture region, floor plan selection, drawing layer toggle, and card selector" class="img-medium">
+        <figcaption>Map Export modal &mdash; capture region, floor plan selection, drawing layer toggle, and card selector</figcaption>
+      </figure>
+
+      <h4>Capture Region</h4>
+
+      <p>Choose what area of the canvas becomes the map boundary.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Option</th>
+            <th>When to use</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Floor plan image bounds</td>
+            <td>Default. Map boundary matches the exact edges of the selected floor plan image.</td>
+            <td>Most common.</td>
+          </tr>
+          <tr>
+            <td>Export Frame</td>
+            <td>Use an Export Frame node placed on the canvas for precise boundary control.</td>
+            <td>If no Export Frame exists, this option is disabled with a hint to add one in Stage 2. If multiple frames exist, a dropdown lets you choose which one to use.</td>
+          </tr>
+          <tr>
+            <td>Full canvas</td>
+            <td>Automatically computes a bounding box around all mirror positions and the floor plan image, with padding.</td>
+            <td>Use when content or mirrors extend outside the floor plan image bounds.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <strong>Tip.</strong> Export Frame gives you the most precise control over the map boundary. Place one on the canvas in Stage 2 before exporting, and use it to define exactly what the map shows.
+      </div>
+
+      <h4>Floor Plan Image</h4>
+
+      <p>Select which canvas image to use as the base layer. If only one image exists on the canvas, it is pre-selected. The image is rendered at its actual canvas position within the capture region &mdash; it does not stretch to fill the capture area.</p>
+
+      <h4>Drawing Layer</h4>
+
+      <p>A toggle controls whether canvas annotations made with the Drawing tool (lines, shapes, freehand, zone circles, text) are included in the export. On by default.</p>
+
+      <h4>Legend</h4>
+
+      <p>Toggle Include legend on or off. When on, the following options appear.</p>
+
+      <p><strong>Cards to include</strong> &mdash; a checklist of all cards with mirrors in the capture region, plus cards with no mirrors (legend-only). All checked by default. Use Select all / Deselect all to bulk-toggle. Deselected cards are excluded from both the map pins and the legend.</p>
+
+      <p><strong>Legend columns</strong> &mdash; 1, 2, 3, or 4 columns. Default is 4.</p>
+
+      <p><strong>Legend order</strong></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Option</th>
+            <th>How it sorts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>By type</td>
+            <td>Groups cards by type. Type-group headers appear when 2 or more types are present. Alphabetical within each group.</td>
+          </tr>
+          <tr>
+            <td>A&ndash;Z</td>
+            <td>Alphabetical by card title, no grouping.</td>
+          </tr>
+          <tr>
+            <td>Pin order</td>
+            <td>Left-to-right, top-to-bottom by pin position on the map. Cards without pins appear at the end.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Content toggles</strong> &mdash; Card title (always on), Card subtitle (toggle), Card type (toggle).</p>
+
+      <p><strong>Layout</strong> &mdash; Horizontal places the legend to the right of the floor plan. Vertical places it below.</p>
+
+      <figure>
+        <img src="images/stage2-export-ui-2.png" alt="Map Export modal bottom half showing legend columns, order, layout, format, and background options" class="img-medium">
+        <figcaption>Map Export modal &mdash; legend columns, order, layout, format, and background options</figcaption>
+      </figure>
+
+      <h4>Format</h4>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Setting</th>
+            <th>Options</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Format</td>
+            <td>PDF or PNG</td>
+          </tr>
+          <tr>
+            <td>Background</td>
+            <td>Dark (#0d0d14, default) / White (printer-friendly, adapts legend text colors) / Transparent (PNG only &mdash; disabled for PDF)</td>
+          </tr>
+          <tr>
+            <td>Resolution</td>
+            <td>Standard 96 dpi / High 192 dpi / Print 300 dpi (PNG only)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <strong>Note.</strong> Transparent background is not available for PDF. If Transparent is selected when switching to PDF, the background automatically changes to Dark.
+      </div>
+
+      <h3>What gets rendered</h3>
+
+      <p>The export composites layers in order, bottom to top.</p>
+
+      <ol>
+        <li>Background fill (or none for transparent)</li>
+        <li>Floor plan image &mdash; positioned and scaled within the capture region</li>
+        <li>Drawing layer &mdash; canvas annotations, if the Drawing Layer toggle is on</li>
+        <li>Pins &mdash; rounded square badges in the card's type color, white border, white label. Label shows the card's mirror prefix and index (e.g. FX-1, PRO-1, or just 1 if no prefix is set)</li>
+        <li>Legend (if enabled)</li>
+      </ol>
+
+      <h3>Header and footer</h3>
+
+      <p>Every Map Export includes a full-width header and footer that match the style of GrimFolio's other export documents.</p>
+
+      <p>The header shows the project name and MAP EXPORT label on the first row, and the studio or company name (if set in Account settings) alongside the export date on the second row. A purple gradient rule separates the header from the map content.</p>
+
+      <p>The footer shows "Built with GrimFolio" on the left (or your company name if the GrimFolio branding toggle is off in Account &rarr; Appearance) and the project name alongside MAP EXPORT on the right.</p>
+
+      <h3>Watermark</h3>
+
+      <p>The Grim G mark appears at low opacity in the bottom-right corner of the export. If you have uploaded a company logo (Studio plan), your logo appears instead. The mark adapts to the background &mdash; a light version on dark and transparent exports, a dark version on white exports. Toggle the watermark off in Account &rarr; Appearance.</p>
+
+      <h3>Notes</h3>
+
+      <ul>
+        <li>Map Export runs entirely in the browser. No data is sent to a server during export.</li>
+        <li>Cards in the pile that have no mirrors on the canvas do not appear on the map or in the legend.</li>
+        <li>Anchor nodes are excluded from the map and legend.</li>
+        <li>Export Frame nodes are excluded from all card-based exports (Checklist, Budget, Card Summary, Walk-Through, Inventory). They only affect Map Export when used as the capture region.</li>
+        <li>The floor plan image is required. If no canvas image exists on the project, the modal shows an empty state with instructions to add one in Stage 2.</li>
+      </ul>
 
       <h2 id="hosted-exports">Hosted Exports</h2>
 
