@@ -404,7 +404,7 @@
   {
     "title": "Exports",
     "section": "Checklist",
-    "body": "A printable task list showing all checklist items across every card that has them. Cards without checklist items are excluded. Summary stats at top: card count, total items, completed count, remaining count. For each card: Card title and type Per-card progress bar showing done vs total Each checklist item with its checkbox state — checked items show a filled box, unchecked show an empty box Screenshot: Checklist export PDF preview showing card sections with progress bars and checkbox items Use this for pre-show walkthroughs, tech checks, and production handoffs where the team needs a physical ",
+    "body": "A printable task list showing all checklist items across every card that has them. Cards without checklist items are excluded. Summary stats at top: card count, total items, completed count, remaining count. For each card: Card title and type Per-card progress bar showing done vs total Each checklist item with its checkbox state — checked items show a filled box, unchecked show an empty box The Checklist export showing card sections with per-card progress bars and checkbox items. Use this for pre-show walkthroughs, tech checks, and production handoffs where the team needs a physical reference.",
     "url": "/exports.html#checklist"
   },
   {
