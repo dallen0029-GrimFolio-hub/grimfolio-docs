@@ -434,9 +434,90 @@
 
       <h2 id="hosted-exports">Hosted Exports</h2>
 
-      <p>Hosted Exports publish a shareable permanent URL for your project's exports. No GrimFolio account is needed to view the hosted version &mdash; anyone with the link can access it.</p>
+      <p>Hosted Exports publish a live, shareable URL for your project data. Anyone with the link can view the export &mdash; no GrimFolio account required. The URL is permanent until you delete the export.</p>
 
-      <p>Available on Pro and Studio plans.</p>
+      <div class="callout">
+        <strong>Pro and Studio only.</strong> Hosted Exports require a Pro or Studio plan. Pro accounts can publish up to 15 hosted exports across all projects. Studio accounts have no limit.
+      </div>
+
+      <h3>Where to find it</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Location</th>
+            <th>How to access</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Stage 2 top bar</td>
+            <td>Export menu &rarr; <strong>&#x2B21; Hosted Exports</strong></td>
+          </tr>
+          <tr>
+            <td>Stage 3 Export Hub widget</td>
+            <td><strong>&#x2B21; Hosted Exports</strong> button at the bottom of the widget</td>
+          </tr>
+          <tr>
+            <td>Map Export modal</td>
+            <td><strong>&#x2B21; Publish as Hosted Export</strong> button in the footer (PNG format)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Supported export types</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>What the viewer shows</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Walk-Through Guide</strong></td>
+            <td>Numbered card sequence with notes, elements, and type badges</td>
+          </tr>
+          <tr>
+            <td><strong>Checklist</strong></td>
+            <td>All checklist items grouped by card with checkbox state</td>
+          </tr>
+          <tr>
+            <td><strong>Budget</strong></td>
+            <td>Full budget breakdown with estimated vs. actual totals</td>
+          </tr>
+          <tr>
+            <td><strong>Card Summary</strong></td>
+            <td>Card grid with title, type, status, and notes</td>
+          </tr>
+          <tr>
+            <td><strong>Map</strong></td>
+            <td>The rendered floor plan map PNG, full-width</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Publishing</h3>
+
+      <p>From the Hosted Exports modal, select the export type and click <strong>Publish</strong>. GrimFolio takes a snapshot of the current project data and stores it. The snapshot is frozen at publish time &mdash; later edits to your project do not update the hosted page unless you publish again.</p>
+
+      <p>Map exports are published from the Map Export modal footer after configuring the map. Click <strong>&#x2B21; Publish as Hosted Export</strong> to generate the PNG and upload it. The export type is automatically set to Map.</p>
+
+      <h3>Viewing and sharing</h3>
+
+      <p>After publishing, the modal shows the public URL. Copy it and share with anyone. The viewer page at <code>grimfolio.com/exports/[slug]</code> is public and renders the snapshot in a clean dark-themed layout with a GrimFolio footer.</p>
+
+      <h3>Managing hosted exports</h3>
+
+      <p>The Hosted Exports modal lists all exports for the current project. Each row shows the export type, slug, view count, and publish date. Actions available per row:</p>
+
+      <ul>
+        <li><strong>Copy URL</strong> &mdash; copies the public link to your clipboard</li>
+        <li><strong>Delete</strong> &mdash; removes the hosted export and its public URL immediately. The original project data is not affected.</li>
+      </ul>
+
+      <p>Pro plan users see a usage meter showing how many of their 15 slots are in use across all projects.</p>
 
       <hr>
 

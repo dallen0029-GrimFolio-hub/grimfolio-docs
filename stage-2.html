@@ -204,6 +204,11 @@
             <td>Notepad</td>
             <td>Opens the shared team notepad. Studio plan only — hidden on other plans.</td>
           </tr>
+          <tr>
+            <td><strong>Catalogs</strong></td>
+            <td>Open book</td>
+            <td>Opens the Vendor Catalogs panel. Browse products from integrated vendor catalogs and add them directly to cards. See <a href="#vendor-catalogs">Vendor Catalogs</a> below.</td>
+          </tr>
         </tbody>
       </table>
 
@@ -1509,6 +1514,64 @@
       <p>Grim does not delete cards, connections, or any project data.</p>
 
       <p>For full Grim documentation see the <a href="/grim.html">Grim</a> page.</p>
+
+      <!-- ── Vendor Catalogs ─────────────────────────────── -->
+
+      <h2 id="vendor-catalogs">Vendor Catalogs</h2>
+
+      <p>The Catalogs panel gives you a live, searchable product catalog from integrated vendors. Browse props, effects, and controllers, then add items directly to any canvas card's budget and components list &mdash; without leaving GrimFolio.</p>
+
+      <p>Open it from the open-book icon in the left toolbar. The panel is available in Stage 2 only and only on desktop.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/catalog-drawer.png" alt="The Vendor Catalogs panel open showing the FrightProps vendor entry with logo and descriptor text" class="img-small">
+        <figcaption>The Vendor Catalogs panel showing the available vendor list.</figcaption>
+      </figure>
+
+      <h3 id="vendor-catalogs-browsing">Browsing a Vendor</h3>
+
+      <p>Click a vendor entry to open the product list for that vendor. A search bar at the top filters results in real time by product title or description. Results are paginated &mdash; use the Previous and Next buttons at the bottom to page through. The search bar and pagination controls stay fixed while the list scrolls.</p>
+
+      <p>Click any product row to open the product detail view. From there, click <strong>Add to Card</strong> to attach the item to a canvas card.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/catalog-drawer-frightprops.png" alt="The FrightProps product list showing search, paginated results, and product rows" class="img-small">
+        <figcaption>The FrightProps product list with search and pagination.</figcaption>
+      </figure>
+
+      <h3 id="vendor-catalogs-add-to-card">Adding an Item to a Card</h3>
+
+      <p>When you click <strong>Add to Card</strong> on a product, a card picker appears. Type to filter your canvas cards by name, then click the card to confirm. The item is added in two places:</p>
+
+      <ul>
+        <li><strong>Components (Elements)</strong> &mdash; the product title is appended to the card's Components list, visible in the card detail drawer.</li>
+        <li><strong>Budget</strong> &mdash; a budget line is created for the product at the current price, with a <strong>&#8599;</strong> link back to the product page.</li>
+      </ul>
+
+      <p>Both sections update immediately in the open card drawer without a page reload. Adding the same product to the same card a second time shows a duplicate warning but still allows the add.</p>
+
+      <div class="callout">
+        <strong>Catalog Items section.</strong> The card detail drawer has a Catalog Items section that lists every catalog product added to that card, including the price at the time it was added and a direct link to the product page.
+      </div>
+
+      <h3 id="vendor-catalogs-vendors">Current Vendors</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Vendor</th>
+            <th>Category</th>
+            <th>Feed refresh</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>FrightProps</strong></td>
+            <td>Haunted Attraction &amp; Escape Room props, controllers, and effects</td>
+            <td>Cached every 24 hours from the live product feed</td>
+          </tr>
+        </tbody>
+      </table>
 
       <hr>
 
