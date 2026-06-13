@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exports — GrimFolio Docs</title>
+  <title>Export &amp; Import — GrimFolio Docs</title>
   <link rel="stylesheet" href="styles.css">
   <script>
     (function(){var t=localStorage.getItem('grimfolio-docs-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
@@ -71,453 +71,308 @@
     <div class="content-body">
 
       <div class="page-header">
-        <h1>Exports</h1>
+        <h1>Export &amp; Import</h1>
       </div>
 
-      <p>GrimFolio exports your project data as print-ready PDFs and raw JSON. Exports are available from two places: the <strong>Export</strong> button in the top bar from Stage 2, and the <strong>Export Hub</strong> widget in Stage 3 Production. All PDF exports open in a full-screen print preview overlay before downloading.</p>
+      <p>GrimFolio lets you export your project as print-ready documents, shareable maps, hosted links, and portable archive files. You can also import projects from file or directly from Google Drive.</p>
 
-      <div class="callout">
-        When the print preview opens, enable <strong>Background graphics</strong> in your browser's print settings for best results. Without it colored elements and table backgrounds may not render correctly in the saved PDF.
-      </div>
+      <h2 id="export-button">Export Button</h2>
 
-      <h2 id="export-formats">Export Formats</h2>
+      <p>The Export button sits in the top-right area of the top bar when a project is open. On desktop it shows as a full labeled button with a download icon. On mobile it is hidden inside the overflow menu.</p>
 
-      <p>Every PDF carries a document header with the project name, export type, your company name if set in Account Settings, and the current date. A GrimFolio watermark appears on each page.</p>
+      <p>Clicking Export opens a dropdown menu listing all available export types.</p>
+
+      <h2 id="export-types">Export Types</h2>
+
+      <h3 id="document-exports">Document Exports</h3>
+
+      <p>These open in a new browser tab formatted for print or PDF save. All include GrimFolio branding. Studio users can replace the GrimFolio mark with a custom logo.</p>
 
       <table>
         <thead>
           <tr>
-            <th>Plan</th>
-            <th>Watermark behavior</th>
+            <th>Option</th>
+            <th>What it exports</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Free</td>
-            <td>GrimFolio watermark on all pages.</td>
+            <td>Checklist</td>
+            <td>All card checklists grouped by card</td>
           </tr>
           <tr>
-            <td>Base Unlimited</td>
-            <td>GrimFolio watermark on all pages.</td>
+            <td>Budget</td>
+            <td>Full project budget breakdown</td>
           </tr>
           <tr>
-            <td>Pro</td>
-            <td>Toggle the watermark off in Account Settings &rarr; Appearance.</td>
+            <td>Card Summary</td>
+            <td>Quick reference sheet of all cards</td>
           </tr>
           <tr>
-            <td>Studio</td>
-            <td>Replace the GrimFolio mark with a custom SVG logo.</td>
+            <td>Walk-Through Guide</td>
+            <td>Full production walk-through narrative</td>
+          </tr>
+          <tr>
+            <td>Inventory</td>
+            <td>Project-linked inventory items</td>
+          </tr>
+          <tr>
+            <td>Chat History</td>
+            <td>Full Grim AI conversation log</td>
           </tr>
         </tbody>
       </table>
 
-      <h2 id="checklist">Checklist</h2>
+      <h3 id="map-export">Map Export <span style="font-size:0.75em;font-weight:normal;color:var(--accent)">(Pro and Studio only)</span></h3>
 
-      <p>A printable task list showing all checklist items across every card that has them. Cards without checklist items are excluded.</p>
+      <p>Map Export generates a static image or PDF of your project floor plan with pins marking card locations and an optional legend.</p>
 
-      <p><strong>Summary stats at top:</strong> card count, total items, completed count, remaining count.</p>
-
-      <p><strong>For each card:</strong></p>
+      <p>Opens a modal with options:</p>
       <ul>
-        <li>Card title and type</li>
-        <li>Per-card progress bar showing done vs total</li>
-        <li>Each checklist item with its checkbox state — checked items show a filled box, unchecked show an empty box</li>
+        <li><strong>Format</strong> &mdash; PNG or PDF</li>
+        <li><strong>Resolution</strong> &mdash; 96 dpi (Standard), 192 dpi (High), 300 dpi (Print, PNG only)</li>
+        <li><strong>Frame selection</strong> &mdash; choose which canvas frames define the capture region</li>
+        <li><strong>Layer toggles</strong> &mdash; mirrors, drawing layer, background images, card connections, transparent background</li>
       </ul>
-
-      <figure>
-        <img src="images/export-checklist-pdf.png" alt="The Checklist export PDF showing card sections with progress bars and checkbox items" class="img-medium">
-        <figcaption>The Checklist export showing card sections with per-card progress bars and checkbox items.</figcaption>
-      </figure>
-
-      <p>Use this for pre-show walkthroughs, tech checks, and production handoffs where the team needs a physical reference.</p>
-
-      <h2 id="budget">Budget</h2>
-
-      <p>A full budget breakdown across every card that has budget lines. Cards without budget lines are excluded.</p>
-
-      <p><strong>Summary stats at top:</strong> card count, total line items, grand total.</p>
-
-      <p><strong>For each card:</strong></p>
-      <ul>
-        <li>Card title and type</li>
-        <li>Table: item name, quantity, unit cost, status, line total</li>
-        <li>Card subtotal</li>
-        <li>Budget cap if set, with remaining amount or over-by amount in red</li>
-      </ul>
-
-      <p>Status labels: Planned, Ordered, Received, In Progress, Installed.</p>
-
-      <p>Grand total appears at the bottom of the document.</p>
-
-      <figure>
-        <img src="images/export-budget-pdf.png" alt="The Budget export PDF showing line items, status labels, card subtotal, and grand total" class="img-medium">
-        <figcaption>The Budget export showing line items, status pills, card subtotal, and grand total.</figcaption>
-      </figure>
-
-      <p>Use this when reviewing spend against plan, presenting to collaborators, or submitting a budget report.</p>
-
-      <h2 id="card-summary">Card Summary</h2>
-
-      <p>A document-style overview of every card on the canvas. All cards are included even those without notes.</p>
-
-      <p><strong>Summary stats at top:</strong> total card count, count with notes.</p>
-
-      <p><strong>For each card:</strong></p>
-      <ul>
-        <li>Card title and type</li>
-        <li>Notes in full if any. Cards without notes show "No notes." in italics.</li>
-        <li>Elements list if any are attached</li>
-      </ul>
-
-      <p>Use this for early-stage documentation, venue walk-through packets, or sharing project structure with people who are not in GrimFolio.</p>
-
-      <h2 id="walk-through-guide">Walk-Through Guide</h2>
-
-      <p>A reference document that maps the canvas as a sequence. Every card appears with its outgoing connections shown explicitly, creating a printed version of the Walk-Through path.</p>
-
-      <p><strong>Summary stats at top:</strong> card count, connection count, total checklist items, completed checklist items.</p>
-
-      <p><strong>For each card:</strong></p>
-      <ul>
-        <li>Card title and type</li>
-        <li>Notes if any</li>
-        <li>Elements list if any</li>
-        <li>Checklist progress bar</li>
-        <li>Outgoing connections: "Connects to [card name]" with path label shown in quotes when set</li>
-      </ul>
-
-      <figure>
-        <img src="images/export-walkthrough-pdf.png" alt="The Walk-Through Guide export showing a card section with notes, elements, and outgoing connections listed" class="img-medium">
-        <figcaption>The Walk-Through Guide export showing a card section with notes, elements, and outgoing connections.</figcaption>
-      </figure>
-
-      <p>Use this as a show-night reference packet, a script substitute for actors or crew, or a guide for a client walk of the experience.</p>
-
-      <h2 id="inventory">Inventory</h2>
-
-      <p>An assignment-based view of all inventory items across cards. Only cards with at least one inventory assignment appear.</p>
-
-      <p><strong>Summary stats at top:</strong> cards with inventory, total assignments.</p>
-
-      <p><strong>For each card:</strong></p>
-      <ul>
-        <li>Card title and item count</li>
-        <li>Table: item name, category, unit, quantity used, quantity available</li>
-      </ul>
-
-      <p>The Available column turns red when available quantity is less than the quantity in use, flagging potential supply gaps before build day.</p>
-
-      <h2 id="chat-history">Chat History</h2>
-
-      <p>A full transcript of your Grim conversation for this project. Includes both Stage 2 and Production conversations if both exist.</p>
-
-      <p><strong>Summary stats at top:</strong> total message count, earliest message date, latest message date.</p>
-
-      <p>Messages are grouped by day with date dividers. Each message shows the speaker (Grim or You), the time, and the full content. System notices appear as horizontal separators in the transcript.</p>
-
-      <p>Use this to hand off creative decisions to collaborators, review what was brainstormed, or archive the development conversation for a project.</p>
-
-      <h2 id="project-data">Project Data (JSON)</h2>
-
-      <p>Available from the Export Hub widget in Stage 3 only. Exports the raw project data as a JSON file and downloads immediately without opening a print preview.</p>
-
-      <p>The JSON contains your full project structure — zones, connections, pile items, crew, and shift arrays. This format is designed to be integration-ready for external tools.</p>
 
       <div class="callout">
-        The JSON export is the foundation for future integrations including direct handoff to operational tools. The crew and shifts arrays are reserved and ready for tools that handle staffing and scheduling.
+        <strong>Pro and Studio only.</strong> Free users see an upgrade prompt when Map Export is selected.
       </div>
-
-      <h2 id="canvas-export">Canvas Export</h2>
-
-      <p>Canvas Export captures your Build canvas as a PNG or multi-page PDF. There are two modes:</p>
-
-      <p><strong>Quick Export</strong> captures the full visible canvas at the current screen size as a PNG. No setup required &mdash; right-click the canvas and select Export Canvas, then Quick Export.</p>
-
-      <p><strong>Frame Export</strong> uses Export Frames placed on the canvas to define specific regions. Each frame becomes a page. Right-click the canvas, select Export Canvas, then Export Frames to open the export modal. From the modal you can choose format (PNG or PDF), resolution, which frames to include, and layer visibility toggles including mirrors, drawings, background images, connections, and transparent background.</p>
-
-      <p>For full details on placing and configuring Export Frames see <a href="/stage-2.html#canvas-export-frames">Canvas Export Frames</a> in the Stage 2 documentation.</p>
-
-      <h2 id="map-export">Map Export</h2>
-
-      <p>Map Export generates a static image or PDF of your project floor plan with pins marking card locations and an optional legend. It is distinct from Canvas Export &mdash; Canvas Export captures the canvas as-is; Map Export composes a clean layout document from your floor plan image and mirror data.</p>
 
       <figure>
         <img src="images/the-collectors-eye-map-export-dark.png" alt="Map Export output showing a dark background floor plan with pins and a 4-column legend sorted by type" class="img-medium">
         <figcaption>Map Export output &mdash; dark background, horizontal layout, 4-column legend sorted by type</figcaption>
       </figure>
 
-      <h3>Where to find it</h3>
+      <h3 id="hosted-exports">Hosted Exports <span style="font-size:0.75em;font-weight:normal;color:var(--accent)">(Pro and Studio only)</span></h3>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Location</th>
-            <th>How to access</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Stage 2</td>
-            <td>Top bar &rarr; Export &rarr; Map Export (top of the list)</td>
-          </tr>
-          <tr>
-            <td>Stage 3</td>
-            <td>Export Hub widget &rarr; Map Export button</td>
-          </tr>
-        </tbody>
-      </table>
+      <p>Hosted Exports publish a live, shareable URL for your project data. Anyone with the link can view the export &mdash; no GrimFolio account required.</p>
+
+      <p>Opens a modal to publish public links for: Walk-Through, Checklist, Budget, Cards, and Map.</p>
+
+      <p>Each published export gets a copyable URL, shows a view count, and can be deleted at any time.</p>
+
+      <ul>
+        <li><strong>Studio</strong> &mdash; unlimited hosted exports</li>
+        <li><strong>Pro</strong> &mdash; capped number across all projects</li>
+        <li><strong>Free</strong> &mdash; upgrade prompt shown</li>
+      </ul>
 
       <div class="callout">
-        <strong>Pro only.</strong> Map Export is available on Pro and Studio plans. Free and Base users see an upgrade prompt.
+        Map exports must be published from inside the Map Export modal, not from the Hosted Exports modal. Configure your map first, then click <strong>Publish as Hosted Export</strong> in the modal footer.
       </div>
 
-      <h3>Prerequisites</h3>
+      <h3 id="quick-export">Quick Export (.grimfolio)</h3>
 
-      <p>Before opening Map Export, you need at least one canvas image placed on the Stage 2 canvas. This becomes the base layer of the exported map. Cards with mirrors placed on the canvas appear as pins. Cards without mirrors appear in the legend only (if legend is enabled) with no pin on the map.</p>
+      <p>Downloads immediately. No dialog.</p>
 
-      <h3>Export options</h3>
+      <p>A single JSON file with the <code>.grimfolio</code> extension containing:</p>
+      <ul>
+        <li>All project metadata</li>
+        <li>Canvas nodes, connections, and positions</li>
+        <li>Card details: notes, checklists, budget lines, tags, stage</li>
+        <li>Pile items</li>
+        <li>Anchor, path, and label data</li>
+        <li>Walk-Through order</li>
+        <li>Document metadata and summaries</li>
+        <li>Inventory assignments</li>
+      </ul>
 
-      <p>The Map Export modal walks through five sections in order.</p>
+      <p>Best for: fast backups, sharing bare project structure, small projects with no large media.</p>
 
-      <figure>
-        <img src="images/stage2-export-ui-1.png" alt="Map Export modal top half showing capture region, floor plan selection, drawing layer toggle, and card selector" class="img-medium">
-        <figcaption>Map Export modal &mdash; capture region, floor plan selection, drawing layer toggle, and card selector</figcaption>
-      </figure>
+      <h3 id="full-export">Full Export (.grimfolio)</h3>
 
-      <h4>Capture Region</h4>
+      <p>Downloads immediately. No dialog.</p>
 
-      <p>Choose what area of the canvas becomes the map boundary.</p>
+      <p>A ZIP archive with the <code>.grimfolio</code> extension. Contains <code>project.json</code> plus all binary assets:</p>
 
       <table>
         <thead>
           <tr>
-            <th>Option</th>
-            <th>When to use</th>
-            <th>Notes</th>
+            <th>Asset folder</th>
+            <th>Contents</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Floor plan image bounds</td>
-            <td>Default. Map boundary matches the exact edges of the selected floor plan image.</td>
-            <td>Most common.</td>
+            <td><code>assets/card-photos/</code></td>
+            <td>Card cover photos</td>
           </tr>
           <tr>
-            <td>Export Frame</td>
-            <td>Use an Export Frame node placed on the canvas for precise boundary control.</td>
-            <td>If no Export Frame exists, this option is disabled with a hint to add one in Stage 2. If multiple frames exist, a dropdown lets you choose which one to use.</td>
+            <td><code>assets/inspiration/</code></td>
+            <td>Inspiration board images</td>
           </tr>
           <tr>
-            <td>Full canvas</td>
-            <td>Automatically computes a bounding box around all mirror positions and the floor plan image, with padding.</td>
-            <td>Use when content or mirrors extend outside the floor plan image bounds.</td>
+            <td><code>assets/attachments/</code></td>
+            <td>Card file attachments</td>
+          </tr>
+          <tr>
+            <td><code>assets/canvas-images/</code></td>
+            <td>Background and upload images on canvas</td>
+          </tr>
+          <tr>
+            <td><code>assets/grimvision/</code></td>
+            <td>GrimVision AI-generated images</td>
+          </tr>
+          <tr>
+            <td><code>assets/documents/</code></td>
+            <td>Reference documents</td>
           </tr>
         </tbody>
       </table>
 
-      <div class="callout">
-        <strong>Tip.</strong> Export Frame gives you the most precise control over the map boundary. Place one on the canvas in Stage 2 before exporting, and use it to define exactly what the map shows.
-      </div>
+      <p>Also included in <code>project.json</code>:</p>
+      <ul>
+        <li>Full Grim chat history</li>
+        <li>Inventory collections, items, and card assignments</li>
+        <li>Document full text (for Grim semantic search re-indexing on import)</li>
+      </ul>
 
-      <h4>Floor Plan Image</h4>
+      <p>Best for: full project archival, moving between accounts, picking up exactly where you left off.</p>
 
-      <p>Select which canvas image to use as the base layer. If only one image exists on the canvas, it is pre-selected. The image is rendered at its actual canvas position within the capture region &mdash; it does not stretch to fill the capture area.</p>
+      <h3 id="save-to-drive">Save to Drive</h3>
 
-      <h4>Drawing Layer</h4>
+      <p>Requires Google connected in Account Settings &rarr; Profile tab.</p>
 
-      <p>A toggle controls whether canvas annotations made with the Drawing tool (lines, shapes, freehand, zone circles, text) are included in the export. On by default.</p>
+      <p>Saves the current project to your Google Drive as a JSON <code>.grimfolio</code> file. Subsequent saves update the same file &mdash; no duplicates are created. The button shows <em>Saving to Drive&hellip;</em> while in progress, then <em>Saved: [filename]</em> in green when complete.</p>
 
-      <h4>Legend</h4>
+      <h2 id="import">Import</h2>
 
-      <p>Toggle Include legend on or off. When on, the following options appear.</p>
+      <p>Import options are found in Account Settings &rarr; Data tab. Click your account avatar to open Account Settings, then select the Data tab.</p>
 
-      <p><strong>Cards to include</strong> &mdash; a checklist of all cards with mirrors in the capture region, plus cards with no mirrors (legend-only). All checked by default. Use Select all / Deselect all to bulk-toggle. Deselected cards are excluded from both the map pins and the legend.</p>
+      <h3 id="import-from-file">Import from File</h3>
 
-      <p><strong>Legend columns</strong> &mdash; 1, 2, 3, or 4 columns. Default is 4.</p>
+      <p>Button label: <strong>Choose file to import</strong></p>
 
-      <p><strong>Legend order</strong></p>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Option</th>
-            <th>How it sorts</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>By type</td>
-            <td>Groups cards by type. Type-group headers appear when 2 or more types are present. Alphabetical within each group.</td>
-          </tr>
-          <tr>
-            <td>A&ndash;Z</td>
-            <td>Alphabetical by card title, no grouping.</td>
-          </tr>
-          <tr>
-            <td>Pin order</td>
-            <td>Left-to-right, top-to-bottom by pin position on the map. Cards without pins appear at the end.</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p><strong>Content toggles</strong> &mdash; Card title (always on), Card subtitle (toggle), Card type (toggle).</p>
-
-      <p><strong>Layout</strong> &mdash; Horizontal places the legend to the right of the floor plan. Vertical places it below.</p>
-
-      <figure>
-        <img src="images/stage2-export-ui-2.png" alt="Map Export modal bottom half showing legend columns, order, layout, format, and background options" class="img-medium">
-        <figcaption>Map Export modal &mdash; legend columns, order, layout, format, and background options</figcaption>
-      </figure>
-
-      <h4>Format</h4>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Setting</th>
-            <th>Options</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Format</td>
-            <td>PDF or PNG</td>
-          </tr>
-          <tr>
-            <td>Background</td>
-            <td>Dark (#0d0d14, default) / White (printer-friendly, adapts legend text colors) / Transparent (PNG only &mdash; disabled for PDF)</td>
-          </tr>
-          <tr>
-            <td>Resolution</td>
-            <td>Standard 96 dpi / High 192 dpi / Print 300 dpi (PNG only)</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="callout">
-        <strong>Note.</strong> Transparent background is not available for PDF. If Transparent is selected when switching to PDF, the background automatically changes to Dark.
-      </div>
-
-      <h3>What gets rendered</h3>
-
-      <p>The export composites layers in order, bottom to top.</p>
+      <p>Accepts <code>.grimfolio</code>, <code>.json</code>, or <code>.zip</code> files.</p>
 
       <ol>
-        <li>Background fill (or none for transparent)</li>
-        <li>Floor plan image &mdash; positioned and scaled within the capture region</li>
-        <li>Drawing layer &mdash; canvas annotations, if the Drawing Layer toggle is on</li>
-        <li>Pins &mdash; rounded square badges in the card's type color, white border, white label. Label shows the card's mirror prefix and index (e.g. FX-1, PRO-1, or just 1 if no prefix is set)</li>
-        <li>Legend (if enabled)</li>
+        <li>Click the button &mdash; a file picker opens</li>
+        <li>Select a <code>.grimfolio</code> file</li>
+        <li>The app auto-detects the format (ZIP vs JSON) by magic bytes</li>
+        <li>Imports as a brand new project &mdash; never overwrites an existing one</li>
+        <li>Status shows <em>Importing&hellip;</em> then <em>Imported '[name]' &mdash; opening project&hellip;</em> in green</li>
+        <li>Automatically navigates to the new project after one second</li>
       </ol>
 
-      <h3>Header and footer</h3>
-
-      <p>Every Map Export includes a full-width header and footer that match the style of GrimFolio's other export documents.</p>
-
-      <p>The header shows the project name and MAP EXPORT label on the first row, and the studio or company name (if set in Account settings) alongside the export date on the second row. A purple gradient rule separates the header from the map content.</p>
-
-      <p>The footer shows "Built with GrimFolio" on the left (or your company name if the GrimFolio branding toggle is off in Account &rarr; Appearance) and the project name alongside MAP EXPORT on the right.</p>
-
-      <h3>Watermark</h3>
-
-      <p>The Grim G mark appears at low opacity in the bottom-right corner of the export. If you have uploaded a company logo (Studio plan), your logo appears instead. The mark adapts to the background &mdash; a light version on dark and transparent exports, a dark version on white exports. Toggle the watermark off in Account &rarr; Appearance.</p>
-
-      <h3>Notes</h3>
-
+      <p><strong>What gets restored from a Full Export (ZIP):</strong></p>
       <ul>
-        <li>Map Export runs entirely in the browser. No data is sent to a server during export.</li>
-        <li>Cards in the pile that have no mirrors on the canvas do not appear on the map or in the legend.</li>
-        <li>Anchor nodes are excluded from the map and legend.</li>
-        <li>Export Frame nodes are excluded from all card-based exports (Checklist, Budget, Card Summary, Walk-Through, Inventory). They only affect Map Export when used as the capture region.</li>
-        <li>The floor plan image is required. If no canvas image exists on the project, the modal shows an empty state with instructions to add one in Stage 2.</li>
+        <li>All canvas data, cards, connections, and pile items</li>
+        <li>Card photos, inspiration images, attachments, and canvas images</li>
+        <li>GrimVision images (re-uploaded to storage, remapped to correct cards)</li>
+        <li>Full Grim chat history (prevents Grim from auto-creating cards on first open)</li>
+        <li>Inventory collections, items, and card assignments (all get new IDs &mdash; never merges with existing inventory)</li>
+        <li>Reference documents (re-uploaded and re-indexed so Grim can immediately search them)</li>
       </ul>
 
-      <h2 id="hosted-exports">Hosted Exports</h2>
+      <p><strong>What gets restored from a Quick Export (JSON):</strong></p>
+      <ul>
+        <li>All canvas data, cards, connections, pile items, and document metadata</li>
+        <li>No binary assets</li>
+      </ul>
 
-      <p>Hosted Exports publish a live, shareable URL for your project data. Anyone with the link can view the export &mdash; no GrimFolio account required. The URL is permanent until you delete the export.</p>
+      <h3 id="google-drive-load">Google Drive Load</h3>
+
+      <p>Button label: <strong>Load from Drive</strong></p>
+
+      <ol>
+        <li>Click &mdash; a file list panel opens showing all <code>.grimfolio</code> files in your Drive</li>
+        <li>Each file shows its name, last modified date, and a Load button</li>
+        <li>Click Load &mdash; a confirmation dialog appears: <em>"This will replace all current project data. This cannot be undone."</em></li>
+        <li>Confirm &mdash; the project loads and the page reloads</li>
+      </ol>
 
       <div class="callout">
-        <strong>Pro and Studio only.</strong> Hosted Exports require a Pro or Studio plan. Pro accounts can publish up to 15 hosted exports across all projects. Studio accounts have no limit.
+        <strong>Note.</strong> This overwrites the currently open project. The file loaded is a Drive JSON export, so binary assets not embedded in that export will not be present after load.
       </div>
 
-      <h3>Where to find it</h3>
+      <h3 id="open-with-grimfolio">Open With GrimFolio (Google Drive)</h3>
+
+      <div class="callout">
+        Pending Google Workspace Marketplace review. This feature will be available once the app is approved and installed from the Marketplace.
+      </div>
+
+      <p>Users who have installed GrimFolio from the Google Workspace Marketplace can right-click any <code>.grimfolio</code> file in Google Drive and choose <strong>Open with GrimFolio</strong>.</p>
+
+      <ol>
+        <li>Google Drive redirects to <code>grimfolio.com/drive/open</code></li>
+        <li>If not logged in: you are prompted to sign in, then returned to the file automatically</li>
+        <li>The file is fetched from Drive and imported as a new project</li>
+        <li>You land directly in the restored project</li>
+      </ol>
+
+      <h3 id="full-backup">Full Backup</h3>
+
+      <p>Button label: <strong>Download backup</strong></p>
+
+      <p>Downloads a single JSON file containing all projects across your account. Use this as a full account snapshot.</p>
+
+      <div class="callout">
+        Restore from full backup is coming soon.
+      </div>
+
+      <h2 id="plan-gating">Plan Gating</h2>
 
       <table>
         <thead>
           <tr>
-            <th>Location</th>
-            <th>How to access</th>
+            <th>Feature</th>
+            <th>Free</th>
+            <th>Pro</th>
+            <th>Studio</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Stage 2 top bar</td>
-            <td>Export menu &rarr; <strong>&#x2B21; Hosted Exports</strong></td>
+            <td>Quick Export</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
           </tr>
           <tr>
-            <td>Stage 3 Export Hub widget</td>
-            <td><strong>&#x2B21; Hosted Exports</strong> button at the bottom of the widget</td>
+            <td>Full Export (ZIP)</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
           </tr>
           <tr>
-            <td>Map Export modal</td>
-            <td><strong>&#x2B21; Publish as Hosted Export</strong> button in the footer (PNG format)</td>
+            <td>Document Exports</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Import from file</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Google Drive Save and Load</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Map Export</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Hosted Exports</td>
+            <td>No</td>
+            <td>Yes (capped)</td>
+            <td>Yes (unlimited)</td>
+          </tr>
+          <tr>
+            <td>Custom branding on exports</td>
+            <td>No</td>
+            <td>No</td>
+            <td>Yes</td>
           </tr>
         </tbody>
       </table>
-
-      <h3>Supported export types</h3>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Type</th>
-            <th>What the viewer shows</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Walk-Through Guide</strong></td>
-            <td>Numbered card sequence with notes, elements, and type badges</td>
-          </tr>
-          <tr>
-            <td><strong>Checklist</strong></td>
-            <td>All checklist items grouped by card with checkbox state</td>
-          </tr>
-          <tr>
-            <td><strong>Budget</strong></td>
-            <td>Full budget breakdown with estimated vs. actual totals</td>
-          </tr>
-          <tr>
-            <td><strong>Card Summary</strong></td>
-            <td>Card grid with title, type, status, and notes</td>
-          </tr>
-          <tr>
-            <td><strong>Map</strong></td>
-            <td>The rendered floor plan map PNG, full-width</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3>Publishing</h3>
-
-      <p>From the Hosted Exports modal, select the export type and click <strong>Publish</strong>. GrimFolio takes a snapshot of the current project data and stores it. The snapshot is frozen at publish time &mdash; later edits to your project do not update the hosted page unless you publish again.</p>
-
-      <p>Map exports are published from the Map Export modal footer after configuring the map. Click <strong>&#x2B21; Publish as Hosted Export</strong> to generate the PNG and upload it. The export type is automatically set to Map.</p>
-
-      <h3>Viewing and sharing</h3>
-
-      <p>After publishing, the modal shows the public URL. Copy it and share with anyone. The viewer page at <code>grimfolio.com/exports/[slug]</code> is public and renders the snapshot in a clean dark-themed layout with a GrimFolio footer.</p>
-
-      <h3>Managing hosted exports</h3>
-
-      <p>The Hosted Exports modal lists all exports for the current project. Each row shows the export type, slug, view count, and publish date. Actions available per row:</p>
-
-      <ul>
-        <li><strong>Copy URL</strong> &mdash; copies the public link to your clipboard</li>
-        <li><strong>Delete</strong> &mdash; removes the hosted export and its public URL immediately. The original project data is not affected.</li>
-      </ul>
-
-      <p>Pro plan users see a usage meter showing how many of their 15 slots are in use across all projects.</p>
 
       <hr>
 

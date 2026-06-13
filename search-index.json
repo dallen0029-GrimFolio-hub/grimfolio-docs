@@ -211,6 +211,12 @@
   },
   {
     "title": "Stage 2 — Build",
+    "section": "Pinned Card Photos",
+    "body": "Every card can display one of its photos directly on the canvas, anchored below the card node. This lets you see key reference images at a glance without opening the drawer — useful for scenic renders, floor plan crops, or any image you want visible while routing connections. A pinned photo showing the badge in the drawer and the image displayed below the card on the canvas. How to Pin a Photo Open the card drawer and expand the Photos section. Each photo thumbnail has two icon buttons: Button Action (top-left) Deletes the photo from the card permanently. (top-right) Pins or unpins the photo t",
+    "url": "/stage-2.html#pinned-card-photos"
+  },
+  {
+    "title": "Stage 2 — Build",
     "section": "Quick Notes",
     "body": "Quick Notes is a fast-access notes popover on the card right-click context menu. Right-click any card and select Quick Notes to open a floating textarea anchored near the click position. The popover opens pre-filled with the card's existing notes. Start typing and changes save automatically 800ms after you stop. Close the popover with the &times; button, by clicking outside, or by pressing Escape &mdash; all three methods save any pending changes immediately. A Saved indicator appears briefly to confirm each write. Quick Notes writes to the same notes field as the Notes section in the card det",
     "url": "/stage-2.html#quick-notes"
@@ -286,6 +292,12 @@
     "section": "Grim on the Canvas",
     "body": "Grim stays in the right panel throughout Stage 2. He reads both the canvas and the pile at the start of each turn. When Grim creates cards they go to the Pile Drawer, not onto the canvas. They arrive with a purple glow and a ✦ indicator. Drag them from the drawer to place them where you want them. Grim action What it does Create cards Adds cards to the Pile Drawer with title, type, and notes. Append to notes Adds content to an existing card's notes without overwriting. Replace notes Rewrites a card's notes from scratch. Add elements Adds items to a card's Elements list. Create checklist Adds c",
     "url": "/stage-2.html#grim-on-the-canvas"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Vendor Catalogs",
+    "body": "The Catalogs panel gives you a live, searchable product catalog from integrated vendors. Browse props, effects, and controllers, then add items directly to any canvas card's budget and components list &mdash; without leaving GrimFolio. Open it from the open-book icon in the left toolbar. The panel is available in Stage 2 only and only on desktop. The Vendor Catalogs panel showing the available vendor list. Browsing a Vendor Click a vendor entry to open the product list for that vendor. A search bar at the top filters results in real time by product title or description. Results are paginated &",
+    "url": "/stage-2.html#vendor-catalogs"
   },
   {
     "title": "Stage 3 — Production",
@@ -396,76 +408,34 @@
     "url": "/grim.html#working-effectively"
   },
   {
-    "title": "Exports",
+    "title": "Export & Import",
     "section": "",
-    "body": "Exports GrimFolio exports your project data as print-ready PDFs and raw JSON. Exports are available from two places: the Export button in the top bar from Stage 2, and the Export Hub widget in Stage 3 Production. All PDF exports open in a full-screen print preview overlay before downloading. When the print preview opens, enable Background graphics in your browser's print settings for best results. Without it colored elements and table backgrounds may not render correctly in the saved PDF.",
+    "body": "Export & Import GrimFolio lets you export your project as print-ready documents, shareable maps, hosted links, and portable archive files. You can also import projects from file or directly from Google Drive.",
     "url": "/exports.html"
   },
   {
-    "title": "Exports",
-    "section": "Export Formats",
-    "body": "Every PDF carries a document header with the project name, export type, your company name if set in Account Settings, and the current date. A GrimFolio watermark appears on each page. Plan Watermark behavior Free GrimFolio watermark on all pages. Base Unlimited GrimFolio watermark on all pages. Pro Toggle the watermark off in Account Settings &rarr; Appearance. Studio Replace the GrimFolio mark with a custom SVG logo.",
-    "url": "/exports.html#export-formats"
+    "title": "Export & Import",
+    "section": "Export Button",
+    "body": "The Export button sits in the top-right area of the top bar when a project is open. On desktop it shows as a full labeled button with a download icon. On mobile it is hidden inside the overflow menu. Clicking Export opens a dropdown menu listing all available export types.",
+    "url": "/exports.html#export-button"
   },
   {
-    "title": "Exports",
-    "section": "Checklist",
-    "body": "A printable task list showing all checklist items across every card that has them. Cards without checklist items are excluded. Summary stats at top: card count, total items, completed count, remaining count. For each card: Card title and type Per-card progress bar showing done vs total Each checklist item with its checkbox state — checked items show a filled box, unchecked show an empty box The Checklist export showing card sections with per-card progress bars and checkbox items. Use this for pre-show walkthroughs, tech checks, and production handoffs where the team needs a physical reference.",
-    "url": "/exports.html#checklist"
+    "title": "Export & Import",
+    "section": "Export Types",
+    "body": "Document Exports These open in a new browser tab formatted for print or PDF save. All include GrimFolio branding. Studio users can replace the GrimFolio mark with a custom logo. Option What it exports Checklist All card checklists grouped by card Budget Full project budget breakdown Card Summary Quick reference sheet of all cards Walk-Through Guide Full production walk-through narrative Inventory Project-linked inventory items Chat History Full Grim AI conversation log Map Export (Pro and Studio only) Map Export generates a static image or PDF of your project floor plan with pins marking card ",
+    "url": "/exports.html#export-types"
   },
   {
-    "title": "Exports",
-    "section": "Budget",
-    "body": "A full budget breakdown across every card that has budget lines. Cards without budget lines are excluded. Summary stats at top: card count, total line items, grand total. For each card: Card title and type Table: item name, quantity, unit cost, status, line total Card subtotal Budget cap if set, with remaining amount or over-by amount in red Status labels: Planned, Ordered, Received, In Progress, Installed. Grand total appears at the bottom of the document. The Budget export showing line items, status pills, card subtotal, and grand total. Use this when reviewing spend against plan, presenting",
-    "url": "/exports.html#budget"
+    "title": "Export & Import",
+    "section": "Import",
+    "body": "Import options are found in Account Settings &rarr; Data tab. Click your account avatar to open Account Settings, then select the Data tab. Import from File Button label: Choose file to import Accepts .grimfolio , .json , or .zip files. Click the button &mdash; a file picker opens Select a .grimfolio file The app auto-detects the format (ZIP vs JSON) by magic bytes Imports as a brand new project &mdash; never overwrites an existing one Status shows Importing&hellip; then Imported '[name]' &mdash; opening project&hellip; in green Automatically navigates to the new project after one second What ",
+    "url": "/exports.html#import"
   },
   {
-    "title": "Exports",
-    "section": "Card Summary",
-    "body": "A document-style overview of every card on the canvas. All cards are included even those without notes. Summary stats at top: total card count, count with notes. For each card: Card title and type Notes in full if any. Cards without notes show \"No notes.\" in italics. Elements list if any are attached Use this for early-stage documentation, venue walk-through packets, or sharing project structure with people who are not in GrimFolio.",
-    "url": "/exports.html#card-summary"
-  },
-  {
-    "title": "Exports",
-    "section": "Walk-Through Guide",
-    "body": "A reference document that maps the canvas as a sequence. Every card appears with its outgoing connections shown explicitly, creating a printed version of the Walk-Through path. Summary stats at top: card count, connection count, total checklist items, completed checklist items. For each card: Card title and type Notes if any Elements list if any Checklist progress bar Outgoing connections: \"Connects to [card name]\" with path label shown in quotes when set The Walk-Through Guide export showing a card section with notes, elements, and outgoing connections. Use this as a show-night reference pack",
-    "url": "/exports.html#walk-through-guide"
-  },
-  {
-    "title": "Exports",
-    "section": "Inventory",
-    "body": "An assignment-based view of all inventory items across cards. Only cards with at least one inventory assignment appear. Summary stats at top: cards with inventory, total assignments. For each card: Card title and item count Table: item name, category, unit, quantity used, quantity available The Available column turns red when available quantity is less than the quantity in use, flagging potential supply gaps before build day.",
-    "url": "/exports.html#inventory"
-  },
-  {
-    "title": "Exports",
-    "section": "Chat History",
-    "body": "A full transcript of your Grim conversation for this project. Includes both Stage 2 and Production conversations if both exist. Summary stats at top: total message count, earliest message date, latest message date. Messages are grouped by day with date dividers. Each message shows the speaker (Grim or You), the time, and the full content. System notices appear as horizontal separators in the transcript. Use this to hand off creative decisions to collaborators, review what was brainstormed, or archive the development conversation for a project.",
-    "url": "/exports.html#chat-history"
-  },
-  {
-    "title": "Exports",
-    "section": "Project Data (JSON)",
-    "body": "Available from the Export Hub widget in Stage 3 only. Exports the raw project data as a JSON file and downloads immediately without opening a print preview. The JSON contains your full project structure — zones, connections, pile items, crew, and shift arrays. This format is designed to be integration-ready for external tools. The JSON export is the foundation for future integrations including direct handoff to operational tools. The crew and shifts arrays are reserved and ready for tools that handle staffing and scheduling.",
-    "url": "/exports.html#project-data"
-  },
-  {
-    "title": "Exports",
-    "section": "Canvas Export",
-    "body": "Canvas Export captures your Build canvas as a PNG or multi-page PDF. There are two modes: Quick Export captures the full visible canvas at the current screen size as a PNG. No setup required &mdash; right-click the canvas and select Export Canvas, then Quick Export. Frame Export uses Export Frames placed on the canvas to define specific regions. Each frame becomes a page. Right-click the canvas, select Export Canvas, then Export Frames to open the export modal. From the modal you can choose format (PNG or PDF), resolution, which frames to include, and layer visibility toggles including mirrors",
-    "url": "/exports.html#canvas-export"
-  },
-  {
-    "title": "Exports",
-    "section": "Map Export",
-    "body": "Map Export generates a static image or PDF of your project floor plan with pins marking card locations and an optional legend. It is distinct from Canvas Export &mdash; Canvas Export captures the canvas as-is; Map Export composes a clean layout document from your floor plan image and mirror data. Map Export output &mdash; dark background, horizontal layout, 4-column legend sorted by type Where to find it Location How to access Stage 2 Top bar &rarr; Export &rarr; Map Export (top of the list) Stage 3 Export Hub widget &rarr; Map Export button Pro only. Map Export is available on Pro and Studio ",
-    "url": "/exports.html#map-export"
-  },
-  {
-    "title": "Exports",
-    "section": "Hosted Exports",
-    "body": "Hosted Exports publish a shareable permanent URL for your project's exports. No GrimFolio account is needed to view the hosted version &mdash; anyone with the link can access it. Available on Pro and Studio plans. &larr; Grim Next: Reference Documents &rarr; On This Page",
-    "url": "/exports.html#hosted-exports"
+    "title": "Export & Import",
+    "section": "Plan Gating",
+    "body": "Feature Free Pro Studio Quick Export Yes Yes Yes Full Export (ZIP) Yes Yes Yes Document Exports Yes Yes Yes Import from file Yes Yes Yes Google Drive Save and Load Yes Yes Yes Map Export No Yes Yes Hosted Exports No Yes (capped) Yes (unlimited) Custom branding on exports No No Yes &larr; Grim Next: Reference Documents &rarr; On This Page",
+    "url": "/exports.html#plan-gating"
   },
   {
     "title": "Reference Documents",
