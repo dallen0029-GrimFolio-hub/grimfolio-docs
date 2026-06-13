@@ -523,7 +523,7 @@
 
       <p>All sections are collapsible. A count badge shows when a section has content.</p>
 
-      <p><strong>Photos</strong> — Upload reference photos. The "Show on canvas" toggle displays the selected photo as the card's background tile on the canvas.</p>
+      <p><strong>Photos</strong> — Upload reference photos directly or pick from your Inspiration Library or GrimVision. Pin any photo to display it on the canvas card. See <a href="#pinned-card-photos">Pinned Card Photos</a>.</p>
 
       <p><strong>Inspiration</strong> — Link images from the project's Inspiration Library. The GrimVision button opens the AI concept art panel.</p>
 
@@ -541,6 +541,62 @@
       <p><strong>Attachments</strong> — Upload files directly to a card. Accepted types: PDF, JPG, PNG, SVG, CSV. Images display as thumbnails and open in a lightbox on click. PDFs open in an inline viewer. CSVs download on click. Upload limits vary by plan. See <a href="#card-attachments">Card Attachments</a>.</p>
 
       <p><strong>Inventory</strong> — Assign physical inventory items from linked collections to this card.</p>
+
+      <!-- ── Pinned Card Photos ────────────────────────── -->
+
+      <h2 id="pinned-card-photos">Pinned Card Photos</h2>
+
+      <p>Every card can display one of its photos directly on the canvas, anchored below the card node. This lets you see key reference images at a glance without opening the drawer — useful for scenic renders, floor plan crops, or any image you want visible while routing connections.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/stage2-card-pinned-photo.png" alt="A card detail drawer with the Photos section open. One photo shows a pinned badge and a pin icon highlighted in purple. On the canvas behind the drawer the same image appears below the card node." class="img-medium">
+        <figcaption>A pinned photo showing the badge in the drawer and the image displayed below the card on the canvas.</figcaption>
+      </figure>
+
+      <h3 id="how-to-pin">How to Pin a Photo</h3>
+
+      <p>Open the card drawer and expand the <strong>Photos</strong> section. Each photo thumbnail has two icon buttons:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Button</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&#x00D7; (top-left)</td>
+            <td>Deletes the photo from the card permanently.</td>
+          </tr>
+          <tr>
+            <td>&#x1F4CC; (top-right)</td>
+            <td>Pins or unpins the photo to the canvas card.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Click the pin icon on any photo. The thumbnail gains a <strong>pinned</strong> badge and the image appears below the card on the canvas, sized automatically.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/stage2-card-pinned-photo2.png" alt="The Build canvas showing a card node with a photo displayed directly below it, attached and moving as a unit with the card." class="img-medium">
+        <figcaption>The pinned photo on the canvas — it moves with the card as you reposition it.</figcaption>
+      </figure>
+
+      <h3 id="pinning-behavior">Behavior</h3>
+
+      <ul>
+        <li>Only one photo can be pinned per card at a time. Pinning a second photo automatically unpins the first.</li>
+        <li>To unpin without deleting, click the pin icon again on the currently pinned photo. The badge disappears and the canvas image is hidden.</li>
+        <li>The pinned photo moves with the card as you reposition it on the canvas.</li>
+        <li>Pinning is per-card and independent — different cards can each have their own pinned photo.</li>
+        <li>The pin state saves immediately and is visible to collaborators and viewers.</li>
+        <li>The pinned photo travels with <strong>Full Export</strong> and is restored on the imported card.</li>
+      </ul>
+
+      <div class="callout">
+        Viewers can see pinned photos on the canvas and in the card drawer, but cannot pin or unpin. The pin and delete buttons are hidden in Viewer mode.
+      </div>
 
       <!-- ── Quick Notes ──────────────────────────────── -->
 
