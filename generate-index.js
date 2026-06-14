@@ -13,6 +13,7 @@ const path = require('path');
 const PAGES = [
   'index.html',
   'dashboard.html',
+  'faq.html',
   'stage-1.html',
   'stage-2.html',
   'stage-3.html',

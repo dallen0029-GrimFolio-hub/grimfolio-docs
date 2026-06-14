@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — GrimFolio Docs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function(){var t=localStorage.getItem('grimfolio-docs-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+  <style>
+    .faq-list{display:flex;flex-direction:column;margin-top:8px}
+    .faq-item{border-bottom:1px solid var(--border-color)}
+    .faq-item:first-child{border-top:1px solid var(--border-color)}
+    .faq-item summary{
+      font-weight:600;color:var(--text-primary);
+      padding:16px 0;cursor:pointer;list-style:none;
+      display:flex;justify-content:space-between;align-items:center;gap:16px;
+      user-select:none;
+    }
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-item summary::after{content:'＋';font-family:sans-serif;font-size:16px;color:var(--accent);flex-shrink:0;line-height:1}
+    .faq-item[open] summary::after{content:'－'}
+    .faq-item[open] summary{color:var(--accent)}
+    .faq-body{color:var(--text-secondary);line-height:1.7;padding:0 0 18px;max-width:680px}
+  </style>
+</head>
+<body>
+
+<div class="layout">
+
+  <nav class="topnav">
+    <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+    <a href="/index.html" class="topnav-wordmark">Grim<span>Folio</span> Docs</a>
+    <div class="topnav-search">
+      <input type="search" id="search-input" placeholder="Search the docs..." autocomplete="off" aria-label="Search documentation">
+      <div class="search-dropdown" id="search-dropdown"></div>
+    </div>
+    <div class="topnav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9788;</button>
+      <a href="https://grimfolio.com" target="_blank" rel="noopener" class="topnav-site-link">grimfolio.com</a>
+    </div>
+  </nav>
+
+  <aside class="sidebar">
+    <nav>
+      <div class="nav-group">
+        <div class="nav-group-label">Getting Started</div>
+        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/dashboard.html" class="nav-link">Dashboard</a>
+        <a href="/faq.html" class="nav-link active">FAQ</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">The App</div>
+        <a href="/stage-1.html" class="nav-link">Stage 1 — The Pile</a>
+        <a href="/stage-2.html" class="nav-link">Stage 2 — Build</a>
+        <a href="/stage-3.html" class="nav-link">Stage 3 — Production</a>
+        <a href="/grim.html" class="nav-link">Grim</a>
+        <a href="/exports.html" class="nav-link">Exports</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Libraries and Tools</div>
+        <a href="/reference-documents.html" class="nav-link">Reference Documents</a>
+        <a href="/inspiration-library.html" class="nav-link">Inspiration Library</a>
+        <a href="/grimvision.html" class="nav-link">GrimVision</a>
+        <a href="/inventory.html" class="nav-link">Inventory</a>
+        <a href="/calendar.html" class="nav-link">Calendar</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Account</div>
+        <a href="/account.html" class="nav-link">Account Settings</a>
+        <a href="/team.html" class="nav-link">Team and Collaboration</a>
+        <a href="/referrals.html" class="nav-link">Referrals and Ambassador</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">Blog</div>
+        <a href="/blog/index.html" class="nav-link">All Posts</a>
+        <a href="/blog/planning-the-ritual-2026.html" class="nav-link">Planning The Ritual 2026</a>
+        <a href="/blog/why-spreadsheets-dont-work.html" class="nav-link">Why Spreadsheets Don't Work</a>
+        <a href="/blog/grimfolio-for-dnd.html" class="nav-link">GrimFolio for D&amp;D</a>
+      </div>
+    </nav>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <main class="main-content">
+    <div class="content-body">
+
+      <div class="page-header">
+        <h1>Frequently Asked Questions</h1>
+      </div>
+
+      <p>Common questions about GrimFolio — what it is, how it works, and who it's for.</p>
+
+      <div class="faq-list">
+
+        <details class="faq-item">
+          <summary>What is GrimFolio?</summary>
+          <div class="faq-body">GrimFolio is a creative project planning tool built for people who make immersive experiences — haunted houses, escape rooms, theater productions, film, TTRPGs, live events, and anything else with a lot of moving parts. It gives you a structured way to capture ideas, map how everything connects, and manage your production from concept to opening night.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What kinds of projects can I use it for?</summary>
+          <div class="faq-body">Any creative project with interconnected pieces. A 30-room haunted attraction and a 5-puzzle escape room are both great fits. So is a short film, a tabletop campaign, a cosplay build, or a community theater production. GrimFolio works at any scale — you don't need a massive project to get value from it.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Why use GrimFolio instead of Notion, Trello, or a spreadsheet?</summary>
+          <div class="faq-body">Those tools are built for generic task management. GrimFolio is built specifically for creative productions — the three-stage system mirrors how creative projects actually develop, the canvas lets you map spatial and narrative relationships between elements, and Grim understands your project deeply enough to give you real input instead of generic advice. It's the difference between a tool that tolerates your workflow and one built around it.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>How is GrimFolio different from a mind map tool?</summary>
+          <div class="faq-body">Mind maps capture structure but don't hold production details. In GrimFolio, every card carries notes, checklists, budget lines, photos, inventory assignments, and more. Your map is also your production bible — not just a diagram.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>How does the three-stage system work?</summary>
+          <div class="faq-body">Stage 1 (The Pile) is pure capture — dump every idea as a card without worrying about structure. Stage 2 (Build) is where you drag cards onto a canvas, connect them, and map how everything fits together. Stage 3 (Production) replaces the canvas with a customizable command center — checklists, budgets, schedules, crew, and your walk-through all in one place. You move between stages at your own pace and can always go back.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is it actually free?</summary>
+          <div class="faq-body">Yes. The Free plan is genuinely free — no credit card required. You get 3 projects, document exports, and a preview of Grim. If you outgrow it, paid plans start at a one-time purchase with no subscription required.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What do I get on the free plan?</summary>
+          <div class="faq-body">3 projects, 50 inspiration images, all document exports (checklist, budget, card summary, walk-through guide), and a limited preview of Grim. No credit card needed to sign up.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Why does it cost money?</summary>
+          <div class="faq-body">Building and running GrimFolio — the AI infrastructure, storage, worker compute, and ongoing development — has real costs. Paid plans fund continued development and keep the free tier genuinely useful. We'd rather charge fairly than show you ads or sell your data.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is the AI optional?</summary>
+          <div class="faq-body">Completely. Grim is there when you want her and out of the way when you don't. The Base Unlimited plan has no Grim access at all and is still a full-featured planning tool. Every core feature works without AI.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What can Grim actually do?</summary>
+          <div class="faq-body">Grim reads your entire project — cards, connections, notes, budgets, linked documents, crew schedule, and linked projects — and uses that context to give you specific, useful input. She can create cards, build checklists, suggest connections, generate project summaries, flag gaps in your plan, and help you think through problems. She's not a generic chatbot. She knows your project.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is my data used to train AI?</summary>
+          <div class="faq-body">No. Your project data is never used to train AI models. Grim uses your content as context for your session only. We do not share or sell your data.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is it safe to connect my Google account?</summary>
+          <div class="faq-body">Yes. Google sign-in uses the standard OAuth flow — we never see your Google password. If you connect Google Drive, GrimFolio only has access to files it creates. We cannot read the rest of your Drive. You can disconnect Google at any time from Account Settings, and you can revoke access entirely from your Google account security settings.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Do I need a Google account to use GrimFolio?</summary>
+          <div class="faq-body">No. You can sign up with any email address. Google sign-in is optional and only required if you want to use Google Drive backup features.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I use GrimFolio on mobile?</summary>
+          <div class="faq-body">Yes. GrimFolio works on mobile browsers. The canvas is optimized for desktop, but Stage 1, Stage 3, and most tools are fully usable on a phone or tablet.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I collaborate with others?</summary>
+          <div class="faq-body">Studio plan users can invite up to 5 collaborators per project. Collaborators share the canvas, card details, Team Notepad, and Walk-Through in real time. The Activity Log tracks every change with attribution.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What happens to my projects if I cancel my plan?</summary>
+          <div class="faq-body">Your projects stay. You drop to Free plan limits — 3 projects become accessible, the rest are preserved but not visible until you upgrade again. You never lose data.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I export my data? Am I locked in?</summary>
+          <div class="faq-body">No lock-in. Export any project as a Quick Export (JSON) or Full Export (ZIP) at any time, on any plan. Full Export includes every card, connection, image, document, and your Grim chat history. Import it back into any GrimFolio account or keep it as an archive.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I switch plans?</summary>
+          <div class="faq-body">Yes, any time. Upgrade instantly. Downgrade at the end of your billing period.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What is a Founder membership?</summary>
+          <div class="faq-body">The first 100 paid members get 20% off their plan forever, a gold G avatar, and a Founder Badge on their profile. Use code FOUNDER at checkout. Once 100 spots are gone, they're gone.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What does GrimFolio NOT do?</summary>
+          <div class="faq-body">GrimFolio is not a ticket sales platform, a point-of-sale system, a staff payroll tool, or a full enterprise project management suite. It's focused on the creative and production planning side of immersive experiences. If you need those other tools, GrimFolio works alongside them — not instead of them.</div>
+        </details>
+
+      </div>
+
+      <hr>
+
+      <p>
+        <a href="/dashboard.html">&larr; Dashboard</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="/stage-1.html">Next: Stage 1 — The Pile &rarr;</a>
+      </p>
+
+    </div>
+  </main>
+
+  <aside class="toc">
+    <div class="toc-label">On This Page</div>
+    <ul class="toc-list" id="toc-list"></ul>
+  </aside>
+
+</div>
+
+<div id="lightbox">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="main.js" defer></script>
+</body>
+</html>
