@@ -56,7 +56,7 @@
   {
     "title": "The Dashboard",
     "section": "Search",
-    "body": "The search bar appears above the project grid as soon as you have at least one project. It filters in real time as you type. GrimFolio searches three things simultaneously — project title, template type, and Grim's project summary. Matching cards are highlighted with a purple border. Non-matching cards drop to low opacity. Hovering a matching card shows a tooltip with exactly where the match was found: \"Title: The Ritual\", \"Template: Haunted House\", or a short excerpt from the Grim summary. The &times; button inside the bar clears the search instantly.",
+    "body": "The search bar appears above the project grid as soon as you have at least one project. It searches both your projects and every card inside them. Project Search GrimFolio searches three things simultaneously — project title, template type, and Grim's project summary. Matching project cards are highlighted with a purple border. Non-matching cards drop to low opacity. Hovering a matching project card shows a tooltip with exactly where the match was found: \"Title: The Ritual\", \"Template: Haunted House\", or a short excerpt from the Grim summary. Card Search As soon as you have typed two or more c",
     "url": "/dashboard.html#search"
   },
   {
@@ -698,7 +698,7 @@
   {
     "title": "Account Settings",
     "section": "Appearance",
-    "body": "Controls theme, canvas behavior, and Grim's interface. The Appearance tab showing theme toggle, snap to grid, card handle visibility, and Grim settings. The Appearance tab showing font size options and export branding controls. Theme A single toggle: Dark Mode . On by default. Turn it off to switch to light mode. The toggle applies immediately without saving. Walk-Through presentation mode always stays dark regardless of the theme setting. This is intentional — the dark canvas makes presentations readable on any screen. Snap to Grid Toggles a 16px grid on the Stage 2 canvas. When on, cards sna",
+    "body": "Controls theme, canvas behavior, and Grim's interface. The Appearance tab showing theme toggle, snap to grid, card handle visibility, and Grim settings. The Appearance tab showing font size options and export branding controls. Theme A single toggle: Dark Mode . On by default. Turn it off to switch to light mode. The toggle applies immediately without saving. System theme detection — On your very first sign-in to a new device or browser, if you have never manually chosen a theme, GrimFolio reads your operating system's light or dark preference and applies it automatically. Once you change the ",
     "url": "/account.html#appearance"
   },
   {
