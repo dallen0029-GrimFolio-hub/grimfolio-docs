@@ -422,9 +422,17 @@ Downloads immediately. Single JSON file containing all project metadata, canvas 
 
 Downloads immediately. ZIP archive containing project.json plus all binary assets: card photos, inspiration images, attachments, canvas images, GrimVision images, reference documents. Also includes full Grim chat history and inventory data.
 
+### Google Sign-In
+
+GrimFolio supports Google sign-in on the sign-in page (Continue with Google button). If you already have a GrimFolio account with the same email, the accounts are linked automatically — no duplicate created. OAuth scope is drive.file only — GrimFolio cannot read your full Drive, only files it creates. Connect or disconnect Google from Account Settings → Profile. Disconnecting requires a password to be set first if Google is your only sign-in method.
+
+### Google Workspace Marketplace
+
+GrimFolio is available on the Google Workspace Marketplace. Installing it enables Open with GrimFolio in Google Drive — click the three-dot menu on any .grimfolio file in Drive and open it directly in GrimFolio as a new project.
+
 ### Save to Drive
 
-Requires Google connected in Account Settings → Profile. Saves current project to Google Drive as a JSON .grimfolio file. Subsequent saves update the same file — no duplicates.
+Requires Google connected in Account Settings → Profile. Saves the current project to Google Drive as a file named "GrimFolio - [Project Name].grimfolio" with a custom GrimFolio thumbnail. Subsequent saves update the same file — no duplicates. Embeds binary assets (card photos, inspiration images, attachments, canvas images, GrimVision images, reference documents — up to 100 assets) directly in the file so all media restores fully on load.
 
 ### Import from File
 
@@ -432,7 +440,11 @@ Account Settings → Data tab. Accepts .grimfolio, .json, or .zip. Always import
 
 ### Google Drive Load
 
-Account Settings → Data tab. Lists all .grimfolio files in Drive. Loading overwrites the currently open project (confirmation required).
+Account Settings → Data tab → Load from Drive. Lists all .grimfolio files in Drive with name, last modified date, Load button. Loading overwrites the currently open project (confirmation required). Binary assets embedded in the file (from Save to Drive) restore fully.
+
+### Open With GrimFolio (Google Drive)
+
+Requires GrimFolio installed from the Google Workspace Marketplace. Click the three-dot menu on any .grimfolio file in Drive → Open with → GrimFolio. Redirects to grimfolio.com/drive/open. If not signed in, prompts Google sign-in then returns automatically. Always imports as a brand new project — never overwrites an existing one.
 
 ### Full Backup
 

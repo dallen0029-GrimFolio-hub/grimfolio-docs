@@ -487,6 +487,18 @@
   },
   {
     "title": "Export & Import",
+    "section": "Google & Drive Integration",
+    "body": "GrimFolio connects to Google for two things: signing in without a password, and saving and loading projects directly from Google Drive. Connect your Google account in Account Settings &rarr; Profile , or sign in with Google directly from the GrimFolio sign-in page. GrimFolio uses the drive.file scope only. It can see and modify files it creates &mdash; nothing else in your Drive. You can verify and revoke this at any time from your Google Account security settings at myaccount.google.com.",
+    "url": "/exports.html#google-drive"
+  },
+  {
+    "title": "Export & Import",
+    "section": "Google Workspace Marketplace",
+    "body": "GrimFolio is available on the Google Workspace Marketplace . Installing it unlocks Open with GrimFolio &mdash; the ability to click the three-dot menu on any .grimfolio file in Google Drive and open it directly in GrimFolio as a new project. GrimFolio on the Google Workspace Marketplace. Install GrimFolio from the Marketplace to enable Open with GrimFolio in Google Drive. Save to Drive Requires Google connected in Account Settings &rarr; Profile tab. Saves the current project to your Google Drive as a .grimfolio file. The file is named GrimFolio - [Project Name].grimfolio and appears in Drive ",
+    "url": "/exports.html#google-workspace-marketplace"
+  },
+  {
+    "title": "Export & Import",
     "section": "Import",
     "body": "Import options are found in Account Settings &rarr; Data tab. Click your account avatar to open Account Settings, then select the Data tab. Import from File Button label: Choose file to import Accepts .grimfolio , .json , or .zip files. Click the button &mdash; a file picker opens Select a .grimfolio file The app auto-detects the format (ZIP vs JSON) by magic bytes Imports as a brand new project &mdash; never overwrites an existing one Status shows Importing&hellip; then Imported '[name]' &mdash; opening project&hellip; in green Automatically navigates to the new project after one second What ",
     "url": "/exports.html#import"

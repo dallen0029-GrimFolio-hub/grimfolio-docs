@@ -240,11 +240,37 @@
 
       <p>Best for: full project archival, moving between accounts, picking up exactly where you left off.</p>
 
+      <h2 id="google-drive">Google &amp; Drive Integration</h2>
+
+      <p>GrimFolio connects to Google for two things: signing in without a password, and saving and loading projects directly from Google Drive. Connect your Google account in <strong>Account Settings &rarr; Profile</strong>, or sign in with Google directly from the GrimFolio sign-in page.</p>
+
+      <div class="callout">
+        GrimFolio uses the <strong>drive.file</strong> scope only. It can see and modify files it creates &mdash; nothing else in your Drive. You can verify and revoke this at any time from your Google Account security settings at myaccount.google.com.
+      </div>
+
+      <h2 id="google-workspace-marketplace">Google Workspace Marketplace</h2>
+
+      <p>GrimFolio is available on the <strong>Google Workspace Marketplace</strong>. Installing it unlocks <strong>Open with GrimFolio</strong> &mdash; the ability to click the three-dot menu on any <code>.grimfolio</code> file in Google Drive and open it directly in GrimFolio as a new project.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/google-marketplace.png" alt="GrimFolio listed on the Google Workspace Marketplace showing the app name, description, and install button" class="img-medium">
+        <figcaption>GrimFolio on the Google Workspace Marketplace.</figcaption>
+      </figure>
+
+      <figure class="lightbox-fig">
+        <img src="images/google-marketplace-install.png" alt="The GrimFolio Marketplace install confirmation screen" class="img-medium">
+        <figcaption>Install GrimFolio from the Marketplace to enable Open with GrimFolio in Google Drive.</figcaption>
+      </figure>
+
       <h3 id="save-to-drive">Save to Drive</h3>
 
       <p>Requires Google connected in Account Settings &rarr; Profile tab.</p>
 
-      <p>Saves the current project to your Google Drive as a JSON <code>.grimfolio</code> file. Subsequent saves update the same file &mdash; no duplicates are created. The button shows <em>Saving to Drive&hellip;</em> while in progress, then <em>Saved: [filename]</em> in green when complete.</p>
+      <p>Saves the current project to your Google Drive as a <code>.grimfolio</code> file. The file is named <code>GrimFolio - [Project Name].grimfolio</code> and appears in Drive with a custom GrimFolio thumbnail. Subsequent saves update the same file &mdash; no duplicates are created.</p>
+
+      <p>The save embeds your project's binary assets directly into the file &mdash; card photos, inspiration images, attachments, canvas background images, GrimVision images, and linked reference documents (up to 100 assets total). This means a Drive-saved project restores completely when loaded back, with no missing images.</p>
+
+      <p>The button shows <em>Saving to Drive&hellip;</em> while in progress, then <em>Saved: [filename]</em> in green when complete.</p>
 
       <h2 id="import">Import</h2>
 
@@ -293,23 +319,30 @@
       </ol>
 
       <div class="callout">
-        <strong>Note.</strong> This overwrites the currently open project. The file loaded is a Drive JSON export, so binary assets not embedded in that export will not be present after load.
+        <strong>Note.</strong> This overwrites the currently open project. If the Drive file was saved with Save to Drive (which embeds binary assets), all images and attachments restore fully. If the file is an older Quick Export without embedded assets, binary files will not be present after load.
       </div>
 
       <h3 id="open-with-grimfolio">Open With GrimFolio (Google Drive)</h3>
 
-      <div class="callout">
-        Pending Google Workspace Marketplace review. This feature will be available once the app is approved and installed from the Marketplace.
-      </div>
+      <p>Users who have installed GrimFolio from the Google Workspace Marketplace can open any <code>.grimfolio</code> file directly from Google Drive. Click the three-dot menu on the file and choose <strong>Open with &rarr; GrimFolio</strong>.</p>
 
-      <p>Users who have installed GrimFolio from the Google Workspace Marketplace can right-click any <code>.grimfolio</code> file in Google Drive and choose <strong>Open with GrimFolio</strong>.</p>
+      <figure class="lightbox-fig">
+        <img src="images/google-open-with.png" alt="Google Drive showing the three-dot context menu on a .grimfolio file with Open with GrimFolio highlighted" class="img-medium">
+        <figcaption>Click the three-dot menu on any .grimfolio file in Drive and choose Open with GrimFolio.</figcaption>
+      </figure>
 
       <ol>
+        <li>Click the three-dot icon on a <code>.grimfolio</code> file in Google Drive</li>
+        <li>Choose <strong>Open with &rarr; GrimFolio</strong></li>
         <li>Google Drive redirects to <code>grimfolio.com/drive/open</code></li>
-        <li>If not logged in: you are prompted to sign in, then returned to the file automatically</li>
-        <li>The file is fetched from Drive and imported as a new project</li>
+        <li>If not signed in: you are prompted to sign in with Google, then returned to the file automatically</li>
+        <li>The file is fetched from Drive and imported as a brand new project</li>
         <li>You land directly in the restored project</li>
       </ol>
+
+      <div class="callout">
+        Open With always imports as a <strong>new project</strong> &mdash; it never overwrites an existing one. This is different from Load from Drive, which replaces the currently open project.
+      </div>
 
       <h3 id="full-backup">Full Backup</h3>
 
