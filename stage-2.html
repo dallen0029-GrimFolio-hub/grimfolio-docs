@@ -90,6 +90,79 @@
         <figcaption>The Stage 2 canvas with cards, connections, and a path label pill visible.</figcaption>
       </figure>
 
+      <h3 id="card-face-anatomy">Card Face Anatomy</h3>
+
+      <p>Every canvas card can show a set of indicators at a glance without opening the drawer.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/stage2-full-card-face.png" alt="A canvas card showing a due date pill at the top, mirror prefix label, priority triangle, checklist ring with diamond, and assignee flags at the bottom right" class="img-medium">
+        <figcaption>A fully decorated card face: due date pill (top), mirror prefix, priority indicator, checklist ring with inspiration diamond, and assignee flags.</figcaption>
+      </figure>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Indicator</th>
+            <th>Where</th>
+            <th>What it means</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Due date pill</strong></td>
+            <td>Top center</td>
+            <td>Shows the card's due date when "show on card" is enabled. See <a href="#due-dates">Due Dates</a>.</td>
+          </tr>
+          <tr>
+            <td><strong>Mirror prefix</strong></td>
+            <td>Left edge</td>
+            <td>Short label used to identify mirrors of this card. See <a href="#mirror-prefix">Mirror Prefix</a>.</td>
+          </tr>
+          <tr>
+            <td><strong>Priority indicator</strong></td>
+            <td>Top, left of ring</td>
+            <td>Triangle icon when the card has a priority set. See <a href="#priority">Priority</a>.</td>
+          </tr>
+          <tr>
+            <td><strong>Checklist ring</strong></td>
+            <td>Top-right</td>
+            <td>Glowing ring when the card has a checklist. Purple = has items. Gold pulsing = overdue or urgent items.</td>
+          </tr>
+          <tr>
+            <td><strong>Inspiration diamond (&#9670;)</strong></td>
+            <td>Just left of the ring</td>
+            <td>Gold diamond when at least one inspiration image is linked to this card.</td>
+          </tr>
+          <tr>
+            <td><strong>Assignee flags</strong></td>
+            <td>Bottom-right</td>
+            <td>Colored initials chips for each assigned team member. See <a href="#card-assignment">Card Assignment</a>.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="list-and-board-views">List View and Board View</h3>
+
+      <p>The canvas is the default Stage 2 view, but you can switch to a <strong>List View</strong> or <strong>Board View</strong> using the toggle icons in the top bar (the grid and list icons beside the Export button).</p>
+
+      <figure class="lightbox-fig full-page">
+        <img src="images/stage2-list-view.png" alt="Stage 2 in List View showing all canvas cards in a sortable table with columns for type, status, priority, assignee, due date, and checklist progress" class="img-large">
+        <figcaption>List View &mdash; all cards in a sortable table. Click any column header to sort.</figcaption>
+      </figure>
+
+      <p><strong>List View</strong> displays all canvas cards in a sortable table. Columns: Title, Type, Status, Priority, Assignee, Due Date, Checklist progress. Click any column header to sort. Click any row to open that card's detail drawer. Use <strong>Show Pile Cards</strong> to include pile cards in the list.</p>
+
+      <figure class="lightbox-fig full-page">
+        <img src="images/stage2-board-view.png" alt="Stage 2 in Board View showing cards in Kanban-style columns by status: No Status, In Progress, On Hold, Complete, Cancelled" class="img-large">
+        <figcaption>Board View &mdash; cards in Kanban columns by status. Drag cards between columns to update status.</figcaption>
+      </figure>
+
+      <p><strong>Board View</strong> shows cards in Kanban-style columns grouped by status: No Status, In Progress, On Hold, Complete, Cancelled. Drag a card from one column to another to update its status instantly. Click any card to open its detail drawer.</p>
+
+      <div class="callout">
+        List View and Board View are alternative interfaces to the same canvas data. Any card you edit in either view is updated immediately &mdash; the canvas reflects the changes when you switch back.
+      </div>
+
       <!-- ── Left Toolbar ─────────────────────────────── -->
 
       <h2 id="the-left-toolbar">The Left Toolbar</h2>
@@ -210,12 +283,22 @@
             <td>Open book</td>
             <td>Opens the Vendor Catalogs panel. Browse products from integrated vendor catalogs and add them directly to cards. See <a href="#vendor-catalogs">Vendor Catalogs</a> below.</td>
           </tr>
+          <tr>
+            <td><strong>Project Checklist</strong></td>
+            <td>Checkbox list</td>
+            <td>Opens the project-wide checklist panel — a task list for the project as a whole, separate from card-level checklists. See <a href="#project-wide-checklist">Project-Wide Checklist</a> below.</td>
+          </tr>
         </tbody>
       </table>
 
       <div class="callout">
         <strong>Two erasers.</strong> The Eraser tool in the toolbar deletes edges and anchor nodes. The Eraser inside the Drawing Tools panel deletes drawn shapes. They are separate tools.
       </div>
+
+      <figure>
+        <img src="images/stage2-left-toolbar.png" alt="The Stage 2 left toolbar showing all tool icons from Select at the top to the clock restore points button at the bottom" class="img-small">
+        <figcaption>The full left toolbar. Top section: navigation and selection tools. Bottom section: workspace panels and tools.</figcaption>
+      </figure>
 
       <figure>
         <img src="images/stage2-libraries-popout.png" alt="The Libraries popout panel showing Reference Documents, Linked Projects, and Inspiration Library options" class="img-small">
@@ -508,6 +591,22 @@
             <td>Click to cycle: blank, In Progress, On Hold, Complete, Cancelled.</td>
           </tr>
           <tr>
+            <td><strong>Priority</strong></td>
+            <td>Low, Medium, High, or Critical. Appears in the Cross-Project Rollup and Card Summary export. See <a href="#priority">Priority</a>.</td>
+          </tr>
+          <tr>
+            <td><strong>Due Date</strong></td>
+            <td>Date picker. Option to show the date on the canvas card face. See <a href="#due-dates">Due Dates</a>.</td>
+          </tr>
+          <tr>
+            <td><strong>Tags</strong></td>
+            <td>Color-coded labels applied from your account-wide tag library. See <a href="#tags">Tags</a>.</td>
+          </tr>
+          <tr>
+            <td><strong>Assignees</strong></td>
+            <td>Team members assigned to this card. Colored initials flags appear on the card face. See <a href="#card-assignment">Card Assignment</a>.</td>
+          </tr>
+          <tr>
             <td><strong>Icon</strong></td>
             <td>Single character or emoji pinned to the card.</td>
           </tr>
@@ -528,7 +627,12 @@
 
       <p><strong>Inspiration</strong> — Link images from the project's Inspiration Library. The GrimVision button opens the AI concept art panel.</p>
 
-      <p><strong>Checklist</strong> — Add and check off task items. A completion ring appears on the card's canvas tile reflecting progress.</p>
+      <p><strong>Checklist</strong> — Add and check off task items. A glowing ring appears in the top-right corner of the card's canvas tile reflecting progress. A <strong>purple static ring</strong> means the card has checklist items. A <strong>gold pulsing ring</strong> means one or more items are overdue or flagged urgent. Items can be set to repeat on a schedule — see <a href="#recurring-checklist-items">Recurring Checklist Items</a>.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/stage2-card-ring-diamond.png" alt="A canvas card close-up showing the purple checklist ring in the top-right corner and the gold inspiration diamond just to its left" class="img-small">
+        <figcaption>The checklist ring (top-right) and the inspiration diamond (&#9670;) just to its left. Both appear only when the card has that content.</figcaption>
+      </figure>
 
       <p><strong>Budget</strong> — Add line items with name, quantity, unit cost, actual cost, and status. Status cycles per line: Planned, Ordered, Received, In Progress, Installed. Set a budget cap for the card. The Remaining line turns red when over budget.</p>
 
@@ -1629,6 +1733,230 @@
           </tr>
         </tbody>
       </table>
+
+      <!-- ── Tags ─────────────────────────────────────── -->
+
+      <h2 id="tags">Tags</h2>
+
+      <p>Tags are reusable color-coded labels you can apply to any card across all your projects. They are managed globally per account &mdash; create a tag once and apply it to cards in any project.</p>
+
+      <h3 id="creating-tags">Creating and Applying Tags</h3>
+
+      <p>Open a card detail drawer and click the <strong>Tags</strong> field in the header. Your existing tags appear in a picker dropdown. Click any tag to apply it. To create a new tag, type a label, pick a hex color, and confirm. Multiple tags can be applied to one card.</p>
+
+      <p>Tags appear as small colored chips on the card in the drawer header. They are also visible in global search results and the Cross-Project Rollup.</p>
+
+      <h3 id="managing-tags">Managing Tags</h3>
+
+      <p>Tag management lives in the tag picker itself. You can rename a tag, change its color, or archive it. Archiving hides the tag from the picker but does not remove it from cards that already have it.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/stage2-card-drawer-fields.png" alt="The card detail drawer header showing the Tags, Priority, Due Date, and Assignees fields" class="img-medium">
+        <figcaption>The card detail drawer showing Tags, Priority, Due Date, and Assignees fields.</figcaption>
+      </figure>
+
+      <!-- ── Priority ──────────────────────────────────── -->
+
+      <h2 id="priority">Priority</h2>
+
+      <p>Each card can have a priority level set in the card detail drawer. Priority is shown in the Cross-Project Rollup Dashboard and the Card Summary export.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>When to use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Low</strong></td>
+            <td>Background work with no urgency.</td>
+          </tr>
+          <tr>
+            <td><strong>Medium</strong></td>
+            <td>Standard priority &mdash; needs to happen but not blocking anything.</td>
+          </tr>
+          <tr>
+            <td><strong>High</strong></td>
+            <td>Elevated attention needed soon.</td>
+          </tr>
+          <tr>
+            <td><strong>Critical</strong></td>
+            <td>Blocking, time-sensitive, or must not slip.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Priority is not shown on the canvas card face itself &mdash; it surfaces in list views, rollup, and exports. Leave it blank if a card does not need prioritization.</p>
+
+      <!-- ── Due Dates ─────────────────────────────────── -->
+
+      <h2 id="due-dates">Due Dates</h2>
+
+      <p>Set a due date on any card from the <strong>Due Date</strong> field in the card detail drawer. Click the field to open a date picker and select a date.</p>
+
+      <p><strong>Show on card</strong> &mdash; A toggle next to the date lets you display the due date as a small pill on the canvas card face. This is off by default. Turn it on for cards where the date is important enough to see at a glance without opening the drawer.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/stage2-full-card-face.png" alt="A canvas card showing the due date pill displayed on the card face" class="img-medium">
+        <figcaption>A canvas card with the due date pill visible when &ldquo;show on card&rdquo; is enabled.</figcaption>
+      </figure>
+
+      <p>Due dates appear in the Cross-Project Rollup Dashboard for planning across projects. To clear a due date, open the date picker and remove the value.</p>
+
+      <!-- ── Card Assignment ────────────────────────────── -->
+
+      <h2 id="card-assignment">Card Assignment</h2>
+
+      <p>Cards can be assigned to one or more team members. Assignments are visible on the canvas card face and in the Ownership Report export.</p>
+
+      <div class="callout">
+        Card assignment requires at least one accepted collaborator on the project. The pool of assignable members is the project owner plus all accepted collaborators. See <a href="/team.html">Team and Collaboration</a>.
+      </div>
+
+      <h3 id="assigning-a-card">Assigning a Card</h3>
+
+      <p>Open the card detail drawer and click the <strong>Assignees</strong> field. A member picker appears listing everyone with access to the project. Click a name to assign them. Choose a color for their flag &mdash; this is the color that appears on the canvas card face to identify them at a glance. Multiple team members can be assigned to the same card.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/stage2-assignee-flags.png" alt="Canvas cards showing colored initials flags in the bottom-right corner for each assigned team member" class="img-medium">
+        <figcaption>Assignee flags on canvas cards &mdash; each assigned member's initials appear as a colored chip in the bottom-right corner.</figcaption>
+      </figure>
+
+      <h3 id="assignee-flags">Assignee Flags on the Canvas</h3>
+
+      <p>Each assigned team member's initials appear as a small colored flag hanging from the bottom-right corner of the card tile. Multiple assignees stack as overlapping flags. This gives an at-a-glance view of ownership without opening any drawer.</p>
+
+      <h3 id="removing-assignees">Removing an Assignee</h3>
+
+      <p>Open the card detail drawer, find the assignee chip in the Assignees field, and click the &times; to remove them. The flag disappears from the canvas card immediately.</p>
+
+      <!-- ── Comments & @Mentions ───────────────────────── -->
+
+      <h2 id="comments">Comments &amp; @Mentions</h2>
+
+      <p>Every card has a threaded comment section at the bottom of the card detail drawer. Use it for questions, decisions, status notes, and anything that belongs with the card rather than in the notes field.</p>
+
+      <h3 id="posting-comments">Posting a Comment</h3>
+
+      <p>Open the card detail drawer and scroll to the <strong>Comments</strong> section. Type in the input field and press Enter or click Post. Comments can be up to 2,000 characters. Editors and project owners can post. Viewers can read comments but cannot post.</p>
+
+      <p>Each comment shows the poster's display name and the time it was posted.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/stage2-card-comments.png" alt="The Comments section in the card detail drawer showing posted comments with names and timestamps, and the comment input field" class="img-medium">
+        <figcaption>The Comments section in the card detail drawer.</figcaption>
+      </figure>
+
+      <h3 id="mentions">@Mentions</h3>
+
+      <p>Type <strong>@</strong> inside a comment to mention another project member. A picker appears listing all members with access to the project. Select a name to insert the mention. The mentioned person receives a notification. See <a href="/team.html#notifications">Notifications</a>.</p>
+
+      <h3 id="unread-comments">Unread Comments</h3>
+
+      <p>Comments posted since you last viewed the card's comment section are marked as unread. The unread state clears automatically when you open the Comments section on that card.</p>
+
+      <!-- ── Recurring Checklist Items ──────────────────── -->
+
+      <h2 id="recurring-checklist-items">Recurring Checklist Items</h2>
+
+      <p>Any checklist item &mdash; on a card or in the project-wide checklist &mdash; can be set to repeat automatically on a schedule. When the reset date arrives the item is unchecked so it reappears as an active task.</p>
+
+      <h3 id="setting-recurrence">Setting Recurrence</h3>
+
+      <p>In the checklist, click the recurrence button (&#8635;) on any item. A small popover opens with frequency options.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Frequency</th>
+            <th>When the item resets</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Daily</strong></td>
+            <td>Every day.</td>
+          </tr>
+          <tr>
+            <td><strong>Weekly</strong></td>
+            <td>Every 7 days.</td>
+          </tr>
+          <tr>
+            <td><strong>Monthly</strong></td>
+            <td>Every 30 days.</td>
+          </tr>
+          <tr>
+            <td><strong>Custom</strong></td>
+            <td>Every N days &mdash; you enter the number.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>A recurring item shows the recurrence icon beside its label so you can see at a glance which items repeat. To remove recurrence click the icon again and clear the setting.</p>
+
+      <div class="callout">
+        Recurring items are not calendar events &mdash; they do not appear in the Calendar. They are task-level resets only.
+      </div>
+
+      <!-- ── Project-Wide Checklist ─────────────────────── -->
+
+      <h2 id="project-wide-checklist">Project-Wide Checklist</h2>
+
+      <p>In addition to per-card checklists, every project has a single project-wide checklist &mdash; a flat task list that belongs to the project rather than any specific card. Use it for high-level milestones, pre-show tasks, or anything that spans multiple cards.</p>
+
+      <h3 id="opening-the-project-checklist">Opening It</h3>
+
+      <p>Click the <strong>Project Checklist</strong> button (checkbox list icon) in the left toolbar. The panel opens in the sidebar alongside the Pile Drawer. It can stay open while you work on the canvas.</p>
+
+      <figure class="lightbox-fig">
+        <img src="images/stage2-project-checklist-panel.png" alt="The Project Checklist panel open in the Stage 2 left sidebar showing a list of project-wide task items with checkboxes" class="img-small">
+        <figcaption>The Project Checklist panel open in the Stage 2 left sidebar.</figcaption>
+      </figure>
+
+      <h3 id="project-checklist-features">What It Does</h3>
+
+      <p>The project checklist works the same as card-level checklists: add items by typing and pressing Enter, check them off, delete them, and reorder by drag. Recurring items are supported with the same frequency options. Viewers can see the checklist but cannot edit it.</p>
+
+      <p>The same checklist appears in the <strong>Master Checklist</strong> widget in Stage 3 Production. Checking an item in Stage 2 updates it in Stage 3 instantly and vice versa &mdash; it is the same data.</p>
+
+      <!-- ── Card Templates ──────────────────────────────── -->
+
+      <h2 id="card-templates">Card Templates</h2>
+
+      <p>Save any card as a reusable template to quickly create new cards with a pre-built checklist, notes, and component structure. Templates are stored per account and can be applied to cards in any project.</p>
+
+      <h3 id="saving-a-template">Saving a Card as a Template</h3>
+
+      <p>Open any card detail drawer &rarr; options menu (&hellip;) &rarr; <strong>Save as Template</strong>. A dialog asks for a template name and what to include:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Option</th>
+            <th>What gets copied</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Include checklist</strong></td>
+            <td>Checklist items are copied with all items reset to unchecked &mdash; no completed state carries over.</td>
+          </tr>
+          <tr>
+            <td><strong>Include notes</strong></td>
+            <td>The card's notes field is copied verbatim.</td>
+          </tr>
+          <tr>
+            <td><strong>Include elements</strong></td>
+            <td>The card's Elements / Components list is copied.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="applying-a-template">Applying a Template</h3>
+
+      <p>Open any card detail drawer &rarr; options menu (&hellip;) &rarr; <strong>Apply Template</strong>. A picker shows your saved templates. Select one and the card receives the template's checklist, notes, and elements. Existing card content is merged, not overwritten &mdash; if the card already has checklist items the template items are added below them.</p>
 
       <hr>
 

@@ -38,7 +38,7 @@
   {
     "title": "The Dashboard",
     "section": "Top Navigation Bar",
-    "body": "The bar across the top stays with you on every page of GrimFolio. Element What it does GrimFolio The wordmark on the far left. Not a button. Just a reminder of where you are. Plan badge A small pill showing your current tier: Free, Unlimited, Pro, or Studio. Color changes with your plan. Upgrade to Pro Appears only on Free and Unlimited accounts. Clicking it starts the upgrade flow. Disappears once you are on Pro or Studio. Inventory (crate icon) Opens your global Inventory as a panel overlay without leaving the dashboard. On mobile, access Inventory from inside a project instead. Help (? icon",
+    "body": "The bar across the top stays with you on every page of GrimFolio. Element What it does GrimFolio The wordmark on the far left. Not a button. Just a reminder of where you are. Plan badge A small pill showing your current tier: Free, Unlimited, Pro, or Studio. Color changes with your plan. Upgrade to Pro Appears only on Free and Unlimited accounts. Clicking it starts the upgrade flow. Disappears once you are on Pro or Studio. Inventory (crate icon) Opens your global Inventory as a panel overlay without leaving the dashboard. On mobile, access Inventory from inside a project instead. Notification",
     "url": "/dashboard.html#top-navigation-bar"
   },
   {
@@ -76,6 +76,12 @@
     "section": "Next 10 Days",
     "body": "The Next 10 Days panel gives you a rolling look at what is coming up across all your projects — deadlines, build days, rehearsals, deliveries, anything added to a project's calendar. It is optional. Turn it on or off in Account Settings &rarr; Project Defaults under \"Show upcoming events on dashboard.\" When enabled it appears below the main two-column layout. Events are displayed chronologically showing the event name, type, date, and which project it belongs to. Adding an Event from the Dashboard Click + Add Event to open the Add Event modal. Field Notes Project Which project this event belon",
     "url": "/dashboard.html#next-10-days"
+  },
+  {
+    "title": "The Dashboard",
+    "section": "All Projects Board",
+    "body": "The All Projects Board gives you a cross-project Kanban view of every card across all your projects at once. It is the fastest way to see what is in progress, what is blocked, and what is done without opening individual projects one by one. The All Projects Board &mdash; each project gets a tab and cards are sorted into status columns across all projects simultaneously. Project name tabs appear across the top of the board. Click a tab to filter the view to that project only. Click All to return to the combined view. Cards are organized into columns by status &mdash; Not Started, In Progress, C",
+    "url": "/dashboard.html#all-projects-board"
   },
   {
     "title": "Frequently Asked Questions",
@@ -182,7 +188,7 @@
   {
     "title": "Stage 2 — Build",
     "section": "The Canvas",
-    "body": "The canvas is an infinite spatial workspace rendered on a dot-grid background. Pan by dragging any empty area. Zoom by scrolling or use the + and - buttons in the left toolbar. Minimum zoom is 10%, maximum is 200%. Fit to Screen reframes the camera to show all placed cards. Snap to grid (16px) is optional. Toggle it in Account Settings &rarr; Appearance. The Stage 2 canvas with cards, connections, and a path label pill visible.",
+    "body": "The canvas is an infinite spatial workspace rendered on a dot-grid background. Pan by dragging any empty area. Zoom by scrolling or use the + and - buttons in the left toolbar. Minimum zoom is 10%, maximum is 200%. Fit to Screen reframes the camera to show all placed cards. Snap to grid (16px) is optional. Toggle it in Account Settings &rarr; Appearance. The Stage 2 canvas with cards, connections, and a path label pill visible. Card Face Anatomy Every canvas card can show a set of indicators at a glance without opening the drawer. A fully decorated card face: due date pill (top), mirror prefix",
     "url": "/stage-2.html#the-canvas"
   },
   {
@@ -306,6 +312,54 @@
     "url": "/stage-2.html#vendor-catalogs"
   },
   {
+    "title": "Stage 2 — Build",
+    "section": "Tags",
+    "body": "Tags are reusable color-coded labels you can apply to any card across all your projects. They are managed globally per account &mdash; create a tag once and apply it to cards in any project. Creating and Applying Tags Open a card detail drawer and click the Tags field in the header. Your existing tags appear in a picker dropdown. Click any tag to apply it. To create a new tag, type a label, pick a hex color, and confirm. Multiple tags can be applied to one card. Tags appear as small colored chips on the card in the drawer header. They are also visible in global search results and the Cross-Pro",
+    "url": "/stage-2.html#tags"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Priority",
+    "body": "Each card can have a priority level set in the card detail drawer. Priority is shown in the Cross-Project Rollup Dashboard and the Card Summary export. Level When to use Low Background work with no urgency. Medium Standard priority &mdash; needs to happen but not blocking anything. High Elevated attention needed soon. Critical Blocking, time-sensitive, or must not slip. Priority is not shown on the canvas card face itself &mdash; it surfaces in list views, rollup, and exports. Leave it blank if a card does not need prioritization.",
+    "url": "/stage-2.html#priority"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Due Dates",
+    "body": "Set a due date on any card from the Due Date field in the card detail drawer. Click the field to open a date picker and select a date. Show on card &mdash; A toggle next to the date lets you display the due date as a small pill on the canvas card face. This is off by default. Turn it on for cards where the date is important enough to see at a glance without opening the drawer. A canvas card with the due date pill visible when &ldquo;show on card&rdquo; is enabled. Due dates appear in the Cross-Project Rollup Dashboard for planning across projects. To clear a due date, open the date picker and ",
+    "url": "/stage-2.html#due-dates"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Card Assignment",
+    "body": "Cards can be assigned to one or more team members. Assignments are visible on the canvas card face and in the Ownership Report export. Card assignment requires at least one accepted collaborator on the project. The pool of assignable members is the project owner plus all accepted collaborators. See Team and Collaboration . Assigning a Card Open the card detail drawer and click the Assignees field. A member picker appears listing everyone with access to the project. Click a name to assign them. Choose a color for their flag &mdash; this is the color that appears on the canvas card face to ident",
+    "url": "/stage-2.html#card-assignment"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Comments & @Mentions",
+    "body": "Every card has a threaded comment section at the bottom of the card detail drawer. Use it for questions, decisions, status notes, and anything that belongs with the card rather than in the notes field. Posting a Comment Open the card detail drawer and scroll to the Comments section. Type in the input field and press Enter or click Post. Comments can be up to 2,000 characters. Editors and project owners can post. Viewers can read comments but cannot post. Each comment shows the poster's display name and the time it was posted. The Comments section in the card detail drawer. @Mentions Type @ ins",
+    "url": "/stage-2.html#comments"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Recurring Checklist Items",
+    "body": "Any checklist item &mdash; on a card or in the project-wide checklist &mdash; can be set to repeat automatically on a schedule. When the reset date arrives the item is unchecked so it reappears as an active task. Setting Recurrence In the checklist, click the recurrence button ( ) on any item. A small popover opens with frequency options. Frequency When the item resets Daily Every day. Weekly Every 7 days. Monthly Every 30 days. Custom Every N days &mdash; you enter the number. A recurring item shows the recurrence icon beside its label so you can see at a glance which items repeat. To remove ",
+    "url": "/stage-2.html#recurring-checklist-items"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Project-Wide Checklist",
+    "body": "In addition to per-card checklists, every project has a single project-wide checklist &mdash; a flat task list that belongs to the project rather than any specific card. Use it for high-level milestones, pre-show tasks, or anything that spans multiple cards. Opening It Click the Project Checklist button (checkbox list icon) in the left toolbar. The panel opens in the sidebar alongside the Pile Drawer. It can stay open while you work on the canvas. The Project Checklist panel open in the Stage 2 left sidebar. What It Does The project checklist works the same as card-level checklists: add items ",
+    "url": "/stage-2.html#project-wide-checklist"
+  },
+  {
+    "title": "Stage 2 — Build",
+    "section": "Card Templates",
+    "body": "Save any card as a reusable template to quickly create new cards with a pre-built checklist, notes, and component structure. Templates are stored per account and can be applied to cards in any project. Saving a Card as a Template Open any card detail drawer &rarr; options menu (&hellip;) &rarr; Save as Template . A dialog asks for a template name and what to include: Option What gets copied Include checklist Checklist items are copied with all items reset to unchecked &mdash; no completed state carries over. Include notes The card's notes field is copied verbatim. Include elements The card's E",
+    "url": "/stage-2.html#card-templates"
+  },
+  {
     "title": "Stage 3 — Production",
     "section": "",
     "body": "Stage 3 — Production Production replaces the canvas view entirely. The spatial map from Stage 2 stays intact behind the scenes. Production surfaces it differently: as a customizable command center built from widgets. Each widget is a focused tool. You choose what goes on the board and where it sits. Everything here reflects the current state of your project. Check off a checklist item in Production and it updates in Build. Edit a budget line and it saves to the card. Nothing is a duplicate view ",
@@ -338,7 +392,7 @@
   {
     "title": "Stage 3 — Production",
     "section": "The Widgets",
-    "body": "Card List Free All canvas cards grouped by type. Click any card row to expand it inline showing notes, checklist items, and an \"Edit photos in Build &rarr;\" link. Collapsed rows show a checklist summary badge and the card's current status. Right-click any row to hide or show the card in Production. Master Checklist Free Every checklist item across all visible cards in one scrollable list. A progress bar at the top shows total completion: X/Y done (Z%). Cards are grouped by title with a per-card done/total count. Filter buttons: all, done, undone. Toggle items directly in this widget — changes ",
+    "body": "Card List Free All canvas cards grouped by type. Click any card row to expand it inline showing notes, checklist items, and an \"Edit photos in Build &rarr;\" link. Collapsed rows show a checklist summary badge and the card's current status. Right-click any row to hide or show the card in Production. Master Checklist Free Every checklist item across all visible cards in one scrollable list, plus the project-wide checklist at the top. A progress bar shows total completion: X/Y done (Z%). Cards are grouped by title with a per-card done/total count. Filter buttons: all, done, undone. Toggle items d",
     "url": "/stage-3.html#the-widgets"
   },
   {
@@ -362,7 +416,7 @@
   {
     "title": "Grim",
     "section": "What Grim Reads",
-    "body": "At the start of every turn Grim receives a structured snapshot of your project: Project name, current stage, and template type Canvas cards: title, type, status, number of connections, notes (up to 300 characters), elements, checklist completion, budget lines, and inventory assignments Pile items: title, type, and notes (up to 200 characters) for all unplaced cards Connections: all edges with their path labels On large projects with more than 15 canvas cards Grim uses semantic search to identify the 12 cards most relevant to your current message. Those get full detail. All other cards are incl",
+    "body": "At the start of every turn Grim receives a structured snapshot of your project: Project name, current stage, and template type Canvas cards: title, type, status, priority, due date, tags, assignees, number of connections, notes (up to 300 characters), elements, checklist completion, budget lines, and inventory assignments Pile items: title, type, and notes (up to 200 characters) for all unplaced cards Connections: all edges with their path labels On large projects with more than 15 canvas cards Grim uses semantic search to identify the 12 cards most relevant to your current message. Those get ",
     "url": "/grim.html#what-grim-reads"
   },
   {
@@ -422,13 +476,13 @@
   {
     "title": "Export & Import",
     "section": "Export Button",
-    "body": "The Export button sits in the top-right area of the top bar when a project is open. On desktop it shows as a full labeled button with a download icon. On mobile it is hidden inside the overflow menu. Clicking Export opens a dropdown menu listing all available export types.",
+    "body": "The Export button sits in the top-right area of the top bar when a project is open. On desktop it shows as a full labeled button with a download icon. On mobile it is hidden inside the overflow menu. Clicking Export opens a dropdown menu listing all available export types. The Export dropdown listing all available document exports.",
     "url": "/exports.html#export-button"
   },
   {
     "title": "Export & Import",
     "section": "Export Types",
-    "body": "Document Exports These open in a new browser tab formatted for print or PDF save. All include GrimFolio branding. Studio users can replace the GrimFolio mark with a custom logo. Option What it exports Checklist All card checklists grouped by card Budget Full project budget breakdown Card Summary Quick reference sheet of all cards Walk-Through Guide Full production walk-through narrative Inventory Project-linked inventory items Chat History Full Grim AI conversation log Map Export (Pro and Studio only) Map Export generates a static image or PDF of your project floor plan with pins marking card ",
+    "body": "Document Exports These open in a new browser tab formatted for print or PDF save. All include GrimFolio branding. Studio users can replace the GrimFolio mark with a custom logo. Option What it exports Checklist All card checklists grouped by card Budget Full project budget breakdown Card Summary Quick reference sheet of all cards Walk-Through Guide Full production walk-through narrative Inventory Project-linked inventory items Chat History Full Grim AI conversation log Ownership Report All cards grouped by assigned team member, unassigned last Map Export (Pro and Studio only) Map Export genera",
     "url": "/exports.html#export-types"
   },
   {
@@ -772,6 +826,24 @@
     "section": "Managing Your Team  Studio ",
     "body": "The My projects and team section lists all your projects that have collaborators along with their current collaborators. Each collaborator row shows: Element What it does Name and email The collaborator's display name and email. Status badge Accepted (green) or Pending (gray). Pending means they have not responded yet. Role selector Change the role between Editor and Viewer at any time. Takes effect immediately. Remove button Removes the collaborator from the project. Confirmation prompt appears first. Projects with no collaborators show a \"No collaborators yet\" placeholder. They still appear ",
     "url": "/team.html#managing-your-team"
+  },
+  {
+    "title": "Team and Collaboration",
+    "section": "Card Assignment",
+    "body": "Cards can be assigned to one or more members on a project. The pool of assignable people is the project owner plus all accepted collaborators. Assigning a Card Open any card detail drawer on the canvas and click the Assignees field. A member picker appears. Click a name to assign them, then pick a color for their flag. Multiple team members can be assigned to the same card. Assignee flags on canvas cards &mdash; each assigned member's initials appear as a colored chip in the bottom-right corner. Assignee Flags on the Canvas Each assigned member's initials appear as a small colored flag on the ",
+    "url": "/team.html#card-assignment"
+  },
+  {
+    "title": "Team and Collaboration",
+    "section": "Comments & @Mentions",
+    "body": "Every card has a threaded comment section at the bottom of the card detail drawer. Use it for async communication directly on the card &mdash; questions, decisions, handoff notes, or anything that should stay with that card rather than in a separate thread. Posting a Comment Open the card detail drawer and scroll to Comments . Type and press Enter to post. Comments are up to 2,000 characters. Editors and project owners can post. Viewers can read but cannot post. @Mentions Type @ inside a comment to mention a project member. A picker lists everyone with access to the project. Select a name to i",
+    "url": "/team.html#comments"
+  },
+  {
+    "title": "Team and Collaboration",
+    "section": "Notifications",
+    "body": "GrimFolio sends in-app notifications when something happens that needs your attention. The notification bell in the top bar shows an unread badge when new notifications arrive. Notification type When it fires Assignment A card is assigned to you. Mention Someone @mentions you in a comment. Unassignment You are removed from a card's assignees. Click the bell to open the notifications panel. The 50 most recent notifications are shown, newest first. Click Mark all read to clear the unread badge, or dismiss individual notifications. The notifications panel showing recent assignment and mention not",
+    "url": "/team.html#notifications"
   },
   {
     "title": "Team and Collaboration",
