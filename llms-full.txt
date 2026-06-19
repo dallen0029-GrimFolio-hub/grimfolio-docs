@@ -1,0 +1,666 @@
+# GrimFolio — Complete Documentation
+
+> GrimFolio is a creative project planning tool for haunted house designers, escape room builders, theater directors, film makers, TTRPG dungeon masters, cosplayers, and anyone managing a complex creative production with interconnected moving parts. Live at grimfolio.com.
+
+---
+
+## Overview
+
+GrimFolio digitizes the natural creative process through a three-stage system. The core insight: going straight into a mind map is overwhelming. Capture first, structure later, produce last.
+
+**Stage 1 — The Pile:** Raw idea capture. Dump every idea as a card without worrying about structure.
+
+**Stage 2 — Build:** A spatial canvas where cards are arranged and connected into a map of the experience.
+
+**Stage 3 — Production:** A customizable widget-based command center. All data pulls live from Stage 2 automatically.
+
+Cards are the core unit. Every card carries notes, status, priority, due date, tags, assignees, photos, budget lines, checklists, inspiration images, inventory assignments, vendor catalog items, and comments.
+
+Grim is the built-in AI collaborator. She reads the full project state at the start of every turn and acts from context, not a blank slate.
+
+---
+
+## Plans
+
+| Plan | Key details |
+|---|---|
+| Free | 3 projects, 50 inspiration images, Grim preview only |
+| Base Unlimited | Unlimited projects, 200 images, no Grim, one-time purchase |
+| Pro | Unlimited + Grim, Map Export, Hosted Exports (15 max), Schedule widget, 500 images |
+| Studio | Everything + 5 collaborators, Activity Log, Restore Points, white-label exports, unlimited Hosted Exports |
+
+Founder offer: First 100 paid members get 20% off forever, a gold G avatar, and a Founder Badge. Promo code: FOUNDER.
+
+---
+
+## Dashboard
+
+The Dashboard is your home base. Every project lives here alongside quick access to libraries, an optional look at upcoming events, and the button that starts everything new.
+
+### Top Navigation Bar
+
+| Element | What it does |
+|---|---|
+| GrimFolio wordmark | Always visible. Not a button. |
+| Plan badge | Shows current tier: Free, Unlimited, Pro, or Studio. |
+| Upgrade to Pro | Appears on Free and Unlimited accounts only. |
+| Inventory (crate icon) | Opens global Inventory as a panel overlay. |
+| Notifications (bell icon) | Opens notifications panel. Red badge when unread. |
+| Help (? icon) | Opens contextual help panel. |
+| Account button | Opens Account Settings. |
+| Sign Out | Ends session. |
+
+### Your Projects
+
+Projects display in a responsive grid sorted by last edited. The New Project card is always first. Each project card shows: title, stage pill (amber/blue/green), card count, template type, last edited time, and a collaborator badge if you were invited.
+
+Hover a card to reveal the ··· menu. Right-click anywhere on the card opens the same menu. Options: Rename (inline edit), Delete (confirmation required). Collaborated projects show View only instead.
+
+### All Projects Board
+
+A cross-project Kanban view of every card across all your projects at once. Cards are grouped into status columns: Not Started, In Progress, Complete, On Hold, Archived. Project name tabs across the top filter to one project or keep All for the combined view. Read-only — double-click a card to navigate to its home project and open the detail drawer.
+
+### Search
+
+The search bar appears above the project grid once you have at least one project.
+
+**Project filter:** Searches project title, template type, and Grim project summary simultaneously. Matching cards get a purple border. Non-matching cards drop to low opacity.
+
+**Card search:** Triggered at 2+ characters. Dropdown groups results by project showing card type, title, and a notes excerpt. Click any result to navigate to that project and auto-open the card detail drawer.
+
+### Creating a Project
+
+Click the New Project card. Required: project name. Optional: template (sets default card types), reference document to give Grim starting context. Templates: Blank, Haunted House, Escape Room, Theater, Event Planning, Film, Cosplay, Creative Writing, General, and TTRPG templates (D&D 5e, Pathfinder 2e, Dragonbane, Dungeon World, Monster of the Week, PbtA, Blades in the Dark, OSR, Vampire: The Masquerade, Call of Cthulhu, FATE).
+
+### Libraries
+
+The right column of the dashboard holds entry-point cards for global libraries: Inventory, Inspiration Library, GrimVision Library, Reference Documents, and Data and Import.
+
+### Next 10 Days
+
+Optional panel showing upcoming calendar events across all projects for the next 10 days. Toggle on/off in Account Settings → Project Defaults. Events show name, type, date, and project. Add events directly from the panel without opening a project.
+
+---
+
+## Stage 1 — The Pile
+
+Stage 1 is pure capture. Cards live in the Pile until you drag them onto the canvas in Stage 2.
+
+### Adding Cards
+
+Add via the + button in the toolbar or right-click the pile area. Each card gets a title, type, and optional notes. 30+ built-in card types plus custom types.
+
+### Card Types
+
+Room, puzzle, scare, transition, finale, clue, mechanism, location, scene, encounter, NPC, quest, mechanic, item, faction, component, material, reference, technique, vendor, act, character, prop, cue, region, settlement, dungeon, boss, task, milestone, deliverable, meeting, decision, blocker, resource, chapter, plot point, subplot, theme, research note, shot, setup, shooting day, edit pass, review, delivery, title card, general. Custom types can be created and work everywhere.
+
+### Grim in Stage 1
+
+Grim is available in Stage 1 as a right panel. She can create cards, develop ideas, and help populate the pile. Cards Grim creates glow purple for 4 seconds. A persistent purple dot on the card clears when clicked. The pile drawer badge pulses when Grim-new cards exist and the drawer is closed.
+
+### Double-Click in Stage 1
+
+Opens a read-only popup showing the card's title and notes. Cards cannot be fully edited until placed on the canvas.
+
+---
+
+## Stage 2 — Build (Canvas)
+
+Stage 2 is the spatial canvas where cards are arranged, connected, and developed in full detail.
+
+### Canvas Basics
+
+- Drag cards from the Pile Drawer (left sidebar) onto the canvas
+- Canvas starts empty — no auto-fanout
+- Single-click = select. Double-click = open Card Detail Drawer.
+- Right-click canvas = context menu (add card, export canvas, etc.)
+- Right-click card = card context menu: Rename, Duplicate, Cut, Copy, Return to storage, Lock position, Delete
+- Right-click connection = edge context menu: Edit path label, Clear path label, Set color (8 options), Set style (solid/dashed/dotted), Delete
+- Drag from a card handle (>5px) = create a new connection
+- Cards auto-save in real time
+
+### Card Face Indicators
+
+Cards on the canvas display visual indicators at a glance:
+
+| Indicator | Meaning |
+|---|---|
+| Due date pill | Date shown on card face. Red when overdue. |
+| Mirror prefix | Room number prefix when mirror card is enabled. |
+| Priority triangle | Colored badge — Low to Critical. |
+| Checklist ring | Top-right. Purple static = has checklist items. Gold pulsing = overdue or urgent items. |
+| Inspiration diamond | Top-right. Purple ◆ when inspiration images are linked. |
+| Assignee flags | Bottom-right. Colored initials chips for each assignee. |
+
+### Connections
+
+Draw by dragging from a card's handle. Path labels describe the relationship (right-click → Edit path label). Edge labels are semantic tags (blocks, follows, enables). Color (8 options) and style (solid/dashed/dotted) are per connection. Bulk edge styling: select 2+ connections via shift-click → floating toolbar with color swatches and style buttons.
+
+### Anchor Nodes
+
+Small purple circles — routing waypoints only. No content, no detail view. Right-click = Delete only. Excluded from Walk-Through, exports, Grim context, and card count limits.
+
+### Color Legend
+
+Floating panel defining what each connection color means for this project. Draggable, collapsible, lockable. Saved per project. Grim reads it for context.
+
+### List View
+
+Alternate view of the canvas. Sortable table showing all cards: title, type, status, priority, due date, tags, and assignees. Accessible from the Stage 2 toolbar. The same cards as the canvas — a different lens.
+
+### Board View
+
+Alternate view of the canvas. Kanban layout grouping cards by status. Accessible from the Stage 2 toolbar. Move cards between columns to change status.
+
+### Top Bar (Stage 2)
+
+Export button, Walk-Through, Grim's Take, Team Notepad, Activity Log, Color Legend, Help.
+
+### Left Sidebar Panels (Stage 2)
+
+- **Pile Drawer** — all pile cards, draggable to canvas
+- **Inventory Panel** — link inventory collections to this project
+- **Reference Documents Panel** — link docs for Grim context
+- **Linked Projects Panel** — link related projects for shared Grim context
+- **Catalogs Panel** — browse FrightProps vendor catalog
+- **Project Checklist Panel** — project-wide checklist independent of card checklists
+
+### Return to Storage
+
+Right-click card → Return to storage. Moves card off canvas to a storage zone at X = -1800. Card stays in the project and is accessible from the Pile Drawer.
+
+### Canvas Export
+
+Right-click canvas → Export Canvas. Quick Export: full visible canvas as PNG. Frame Export: uses Export Frame nodes to define regions with format, resolution, and layer toggles.
+
+---
+
+## Card Detail Drawer
+
+Open by double-clicking any card on the canvas. Slides in from the right.
+
+### Right Panel Fields
+
+| Field | Details |
+|---|---|
+| Status | Not Started / In Progress / Complete / On Hold / Archived |
+| Priority | None / Low / Medium / High / Critical |
+| Due Date | Date picker. Shows as pill on card tile. Overdue shown in red. |
+| Tags | Freeform keyword labels. Multiple per card. |
+| Assignees | One or more project members. Each gets a colored initials flag on the card tile. |
+
+### Drawer Sections
+
+| Section | What it does |
+|---|---|
+| PHOTOS | Card cover photo. Upload or drag an image. |
+| NOTES | Free-text notes. Debounced auto-save. Appears in Walk-Through, exports, Grim context. |
+| BUDGET | Line items: name, qty, cost per unit, status pill, line total (derived). Budget cap field. Goes red when over cap. |
+| CHECKLIST | Checklist items with checkbox state. Flow into Stage 3 Master Checklist. Individual items can be set to recur on a schedule. |
+| LINKS | External URLs attached to this card. |
+| INVENTORY | Assign inventory items from linked collections with quantity used. |
+| INSPIRATION | Inspiration Library images linked to this card. |
+| CATALOG ITEMS | FrightProps vendor items. Shows product title, price at add, link to product. |
+| COMMENTS | Threaded comments. Editors and owner can post (up to 2,000 chars). Viewers read only. @mention support. |
+
+All sections auto-save. No submit button.
+
+---
+
+## Tags
+
+Freeform keyword labels applied to cards. Multiple tags per card. Set in the card detail drawer right panel. Used for filtering in List View and searching. No predefined list — create any tags that make sense for your project.
+
+---
+
+## Priority
+
+Set per card: None, Low, Medium, High, Critical. Shown as a colored triangle badge on the card tile on the canvas. Set in the card detail drawer right panel. Grim reads priority as part of its project context.
+
+---
+
+## Due Dates
+
+Set per card via date picker in the card detail drawer right panel. Due date shows as a pill on the card tile on the canvas. Overdue dates display in red. Grim reads due dates as part of its project context. Due dates appear in List View.
+
+---
+
+## Card Assignment
+
+Assign cards to one or more members of the project team (owner plus all accepted collaborators). Open the card detail drawer → Assignees field → member picker → select a person → pick a flag color. Multiple assignees per card. Each assigned member's colored initials appear as a flag chip on the card tile bottom-right corner. Multiple assignees stack as overlapping flags.
+
+### Ownership Report
+
+Export all cards grouped by assigned team member as a PDF. Export dropdown → Ownership Report. Summary bar at top: total cards, assigned count, team member count, unassigned count. Unassigned cards appear last.
+
+---
+
+## Comments & @Mentions
+
+Every card has a threaded comment section at the bottom of the card detail drawer.
+
+- Type and press Enter to post
+- Up to 2,000 characters per comment
+- Editors and project owners can post. Viewers can read only.
+- Type @ inside a comment to open a member picker. Select a name to insert a mention.
+- Mentioned people receive an in-app notification.
+
+---
+
+## Notifications
+
+In-app notification system. Bell icon in the top bar shows a red badge when unread notifications exist.
+
+| Type | When it fires |
+|---|---|
+| Assignment | A card is assigned to you |
+| Mention | Someone @mentions you in a comment |
+| Unassignment | You are removed from a card's assignees |
+
+Click the bell to open the panel. 50 most recent notifications shown, newest first. Mark all read clears the badge. Individual notifications can be dismissed.
+
+---
+
+## Recurring Checklist Items
+
+Individual checklist items inside a card can be set to recur — daily, weekly, monthly, or custom. When the date arrives the item resets to unchecked automatically. Configured inside the card detail drawer checklist section. This is separate from calendar events, which do not repeat.
+
+---
+
+## Project-Wide Checklist
+
+A checklist at the project level, independent of any individual card. Accessible from the left sidebar panel in Stage 2. Use for general to-dos, milestones, or pre-open checks that don't belong on a specific card. Appears first in the Stage 3 Master Checklist widget.
+
+---
+
+## Card Templates
+
+Save a card's checklist, budget lines, and notes as a reusable template. Apply a template to any card to populate it instantly instead of building from scratch. Templates are stored per project and managed in Stage 2.
+
+---
+
+## Walk-Through Mode
+
+Triggered from the Stage 2 top bar or Stage 3 toolbar. Fixed drawer at top of viewport. Plays the experience card by card following canvas connections in sequence. Shows: card title, type, status, notes, action row, breadcrumb footer.
+
+Presentation mode collapses Grim panel and hides chrome. Stays dark even in light mode. Disabled with tooltip "Connect a few cards together first" when no connections exist. Walk-Through Guide PDF export is in the top bar Export dropdown.
+
+---
+
+## Stage 3 — Production
+
+Stage 3 replaces the canvas with a customizable widget-based command center. All widgets pull live data from Stage 2 automatically. Go back to Stage 1 or 2 at any time — Stage 3 updates automatically.
+
+### Adding Widgets
+
+Click + Add Widget. Multiple instances of the same widget type can be added with different filters.
+
+### Available Widgets
+
+| Widget | What it shows |
+|---|---|
+| Master Checklist | All checklist items across every card (plus project-wide checklist). Filter by status or card type. Check items off without leaving Production. |
+| Budget Dashboard | Full budget with totals and line-item status. Edit budget lines directly. |
+| Inventory | Linked inventory collections with quantities. Low-stock items flagged amber. |
+| Schedule | Gantt-style crew schedule. Pro and Studio only. |
+| Export Hub | All export options in one widget. |
+| Upcoming Events | Next 14 days of project calendar events. Scope toggle: this project or all projects. |
+| Team Notepad | Shared scratchpad. Same data as Stage 2 notepad. |
+| Activity Log | Full project action history grouped by person or chronologically. |
+| Walk-Through | Run Walk-Through sequence from inside Production. |
+| Grim | Grim in production mode — readiness checks, what's not done, status summaries. |
+
+### Card List Widget
+
+Shows cards from the project in a filterable list. Displays title, type, status, priority, due date, and tags. Does not display assignees.
+
+---
+
+## Grim — The AI Collaborator
+
+Grim is the AI built into every GrimFolio project. She lives in the right panel in Stages 1 and 2, and inside the Grim widget in Stage 3.
+
+### Plans
+
+| Plan | Access |
+|---|---|
+| Free | Preview only |
+| Base Unlimited | None |
+| Pro | 500,000 tokens/month |
+| Studio | 2,000,000 tokens/month |
+
+Token allowances reset on the first of each month. Additional tokens can be purchased in packs (don't expire).
+
+### What Grim Reads
+
+At the start of every turn Grim receives a structured snapshot:
+- Project name, current stage, template type
+- Canvas cards: title, type, status, priority, due date, tags, assignees, connections, notes (up to 300 chars), elements, checklist completion, budget lines, inventory assignments
+- Pile items: title, type, notes (up to 200 chars)
+- All connections with path labels
+- Color legend
+- Linked project summaries
+- Reference document excerpts (semantic search, most relevant to the current message)
+
+On large projects (15+ canvas cards) Grim uses semantic search to identify the 12 most relevant cards for full detail. All other cards are included as lightweight entries.
+
+### Grim Actions (Stage 2)
+
+| Action | What it does |
+|---|---|
+| Create cards | Adds cards to the Pile Drawer with title, type, notes |
+| Append to notes | Adds content to a card's notes without overwriting |
+| Replace notes | Rewrites a card's notes from scratch |
+| Add elements | Adds items to a card's Elements list |
+| Create checklist | Adds checklist items to a canvas card |
+| Create budget lines | Adds budget line items with estimated costs |
+| Suggest connections | Proposes connections between cards — requires approval before drawing |
+
+Grim cannot delete cards, connections, or any project data.
+
+### How Grim Opens
+
+If autostart is on (default): Grim skips pleasantries and creates 3 starter cards immediately. If reference documents are attached: Grim opens with a specific observation from the content. If the project already has cards: Grim opens with an observation about the current state. Grim never opens with a greeting.
+
+### Focus Mode (Pro)
+
+Toggle in the Grim panel header. When on, canvas and pile are hidden from Grim's context. Uses ~60% fewer tokens per turn. Ideal for planning conversations that don't need full project state. Not available in Stage 3.
+
+### Grim in Stage 3
+
+Separate conversation thread from Stage 2 Grim. Operational focus: readiness checks, what's not done, understaffed dates. Three quick prompts: Run final check, What's not done?, Generate summary. Advisory only — does not create cards or connections in Stage 3.
+
+### Grim's Take
+
+Triggered from the Stage 2 toolbar (document icon). Server-generated structured summary of the entire project: status, structure, risks, gaps. Not a chat message. Regenerates fresh each time.
+
+### Grim Panel
+
+- Resizable: drag left edge (min 220px, max half viewport on desktop)
+- Collapsible: click ‹ to collapse to a narrow rail. Dot appears on rail when there are unread messages.
+- Viewers see the project summary instead of the chat
+
+### Appearance Settings
+
+Grim Chat Font Size (Small/Medium/Large/Huge), Display Font Size (Small/Large/Huge), Grim Avatar (Default G mark or Gold G mark for Founder accounts).
+
+---
+
+## Export & Import
+
+### Export Button
+
+Top-right area of top bar in any open project. Opens a dropdown with all export types.
+
+### Document Exports
+
+Open in a new browser tab formatted for print or PDF save. All include GrimFolio branding. Studio users can replace the GrimFolio mark with a custom logo.
+
+| Option | What it exports |
+|---|---|
+| Checklist | All card checklists grouped by card with checkbox state and progress bars |
+| Budget | Full budget: line items, status pills, card subtotals, grand total, caps |
+| Card Summary | Every card with title, type, notes |
+| Walk-Through Guide | Cards in sequence order with notes, elements, checklist progress, connections |
+| Inventory | Cards with inventory assignments |
+| Chat History | Full Grim conversation transcript grouped by day with timestamps |
+| Ownership Report | All cards grouped by assigned team member, unassigned last |
+
+### Map Export (Pro and Studio only)
+
+Generates a static image or PDF of the floor plan with card pins and optional legend. Options: format (PNG/PDF), resolution (96/192/300 dpi), capture region, layer toggles (drawing layer, mirrors, background images, connections, transparent background), legend configuration (column count 1-4, sort order, content toggles, layout).
+
+### Hosted Exports (Pro and Studio only)
+
+Publish permanent shareable URLs for project data snapshots. No account required to view. Supported types: Walk-Through Guide, Checklist, Budget, Card Summary, Map (from inside Map Export modal). Each export shows view count and can be deleted. Pro: 15 total. Studio: unlimited.
+
+### Quick Export (.grimfolio)
+
+Downloads immediately. Single JSON file containing all project metadata, canvas nodes, connections, card details, pile items, Walk-Through order, document metadata, and inventory assignments.
+
+### Full Export (.grimfolio)
+
+Downloads immediately. ZIP archive containing project.json plus all binary assets: card photos, inspiration images, attachments, canvas images, GrimVision images, reference documents. Also includes full Grim chat history and inventory data.
+
+### Save to Drive
+
+Requires Google connected in Account Settings → Profile. Saves current project to Google Drive as a JSON .grimfolio file. Subsequent saves update the same file — no duplicates.
+
+### Import from File
+
+Account Settings → Data tab. Accepts .grimfolio, .json, or .zip. Always imports as a brand new project — never overwrites. Auto-navigates to new project after 1 second.
+
+### Google Drive Load
+
+Account Settings → Data tab. Lists all .grimfolio files in Drive. Loading overwrites the currently open project (confirmation required).
+
+### Full Backup
+
+Account Settings → Data tab. Downloads a single JSON file containing all projects across the account. Restore from full backup coming soon.
+
+### Plan Gating
+
+| Feature | Free | Pro | Studio |
+|---|---|---|---|
+| Quick Export | Yes | Yes | Yes |
+| Full Export (ZIP) | Yes | Yes | Yes |
+| Document Exports | Yes | Yes | Yes |
+| Import from file | Yes | Yes | Yes |
+| Google Drive Save/Load | Yes | Yes | Yes |
+| Map Export | No | Yes | Yes |
+| Hosted Exports | No | Yes (capped) | Yes (unlimited) |
+| Custom branding | No | No | Yes |
+
+---
+
+## Team and Collaboration
+
+Studio plan users can invite up to 5 collaborators per project as Editors or Viewers. Managed in Account Settings → Team tab.
+
+### Roles
+
+| Role | What they can do |
+|---|---|
+| Editor | View and edit canvas, add/modify cards, use Grim, post comments, update any content |
+| Viewer | Read-only. Can view canvas, Walk-Through, card content. Cannot post comments or use Grim. Sees project summary instead of Grim chat. |
+
+### Inviting Collaborators
+
+Enter email + select role (Editor or Viewer) + select project → Send invite. Recipient must already have a GrimFolio account. Invite appears in their Team tab. Accept to join — project appears in their Dashboard with Editor/Viewer badge. Decline removes the invite.
+
+### Managing Your Team
+
+Account Settings → Team tab → My projects and team. Each collaborator row shows: name, email, status (Accepted/Pending), role selector (changes take effect immediately, no confirmation), Remove button (confirmation required).
+
+### Pending Invitations
+
+Invitations you have received appear in the Pending invitations section of the Team tab. Accept to join; project appears in your Dashboard. Decline to remove the invite. Leave a project at any time from the Projects I'm collaborating on section.
+
+### Card Assignment
+
+Assign cards to any project member (owner + accepted collaborators). Open card detail drawer → Assignees field → member picker. Pick a name and a flag color. Multiple assignees per card. Colored initials flags appear on the card tile bottom-right corner.
+
+### Comments & @Mentions
+
+Every card has a threaded comment section in the card detail drawer. Editors and owner can post. Viewers can read only. Type @ to mention a project member — they receive an in-app notification.
+
+### Notifications
+
+Bell icon in the top bar. Fires for: card assignment, @mention in a comment, removal from a card's assignees. Panel shows 50 most recent. Mark all read clears the badge.
+
+---
+
+## Reference Documents
+
+A library of uploaded documents available for Grim to read as context.
+
+- Upload: PDF, DOCX, TXT, Markdown
+- On upload, Grim auto-generates a concise working summary
+- Link a document to a project in Stage 2 → Documents panel in left sidebar
+- One document can be linked to multiple projects simultaneously
+- Linked document summary becomes part of Grim's context in every conversation in that project
+- Documents are re-indexed on import so Grim can immediately search them in a restored project
+
+---
+
+## Inspiration Library
+
+A global image collection across all projects. Upload mood board images, reference photos, style references, texture ideas. Images link to specific cards. One image can only be linked to one card. Unlinked images show an amber "Unlinked" pill. Linked images appear in the card's INSPIRATION section in the detail drawer. Plan limits: Free = 50, Base = 200, Pro = 500, Studio = unlimited.
+
+---
+
+## GrimVision
+
+AI concept art generator inside the card detail drawer. 1 credit = 1 generation = 2 images. User picks which to keep. Credit packs: Starter 20/$4, Builder 75/$15, Studio 250/$40. Niche selector tunes the prompt engine (haunted house, escape room, theater, film, TTRPG, cosplay, other). Templates: Rough Concept Sketch, Atmospheric Background, Character Study, Storyboard Frame, Blueprint, Card Portrait. Generated images stored in R2, linked to the card, optionally set as card cover.
+
+---
+
+## Inventory
+
+A single global inventory library shared across all projects.
+
+### Collections
+
+Group items by category. One collection can be linked to multiple projects.
+
+### Items
+
+Each item: name, category, unit, quantity, low-stock threshold (optional), consumable flag. When quantity ≤ threshold, item gets an amber flag.
+
+### Shopping List
+
+Add items needed, mark purchased, optionally auto-add to inventory when checked off. Export as PDF.
+
+### Linking to Projects
+
+Stage 2 → left sidebar → Inventory panel → link collections to the current project. Only linked collection items appear in Stage 3 Inventory widget and are available for card assignments.
+
+### Card Assignments
+
+Card detail drawer → INVENTORY section. Assign items from linked collections with a quantity used field.
+
+---
+
+## Calendar
+
+Per-project event calendar. Accessible from the toolbar inside any project.
+
+### Event Types
+
+Rehearsal (blue), Performance (purple), Meeting (slate), Inspection (orange), Delivery (green), Deadline (red), Build Day (amber), Custom (gray).
+
+### Adding Events
+
+Click any day cell or hover a cell and click +. Fields: Title (required), Type, Time (optional), Notes (optional).
+
+### Editing and Deleting
+
+Click any event pill to open the detail panel. All fields editable including date (reschedule by changing the date field). Delete in the panel footer with confirmation.
+
+### Recurring Events
+
+Calendar events do not repeat. For recurring time-based tasks use Recurring Checklist Items instead — individual checklist items inside a card can be set to recur on a schedule (daily, weekly, monthly, custom).
+
+### How Events Surface Elsewhere
+
+- Next 10 Days panel on Dashboard — upcoming events across all projects
+- Upcoming Events widget in Stage 3 — next 14 days for the current project (scope toggle: this project or all projects)
+- Add events from Dashboard without opening a project
+
+---
+
+## Schedule Widget (Stage 3 — Pro and Studio)
+
+### Crew Roster
+
+Build a crew roster per project: name, roles (free-form chips, multiple per person), contact info.
+
+### Gantt View
+
+Crew members as rows, dates as columns. Click a cell to assign a shift. Drag a shift to copy to adjacent dates. Color coded by role. Dates with fewer than 2 crew flagged amber (understaffed).
+
+### Blackout Dates
+
+Mark unavailable dates per crew member. Blacked-out cells cannot receive shifts. Grim reads the schedule in Stage 3 and can flag understaffed dates.
+
+### CSV Export / Import
+
+Export schedule as CSV. Import CSV to bulk-load shifts. Columns: Name, Role, Date, Start, End, Notes.
+
+---
+
+## FrightProps Vendor Catalog
+
+~3,400 FrightProps SKUs browsable inside GrimFolio. Available to all plan tiers. Access via Stage 2 or Stage 3 → Catalogs button in sidebar. Add to Card drops the item into the card's Elements list and auto-creates a budget line. All outbound FrightProps links route through api.grimfolio.com/out/catalog with UTM params.
+
+---
+
+## Team Notepad
+
+Shared scratchpad visible to all project collaborators. Posts attributed by name and timestamp. Updates appear instantly for all collaborators. Accessible from Stage 2 and Stage 3 toolbar. Same data in both views.
+
+---
+
+## Activity Log (Pro and Studio)
+
+Tracks every meaningful project action — cards created, connections added, budget updated, collaborators invited. Team view (grouped by person) and Timeline view (chronological). Shows last 7 days by default with load more. Read-only.
+
+---
+
+## Restore Points (Studio)
+
+Auto restore points trigger on: advancing stages, Grim creating cards, major structural changes. Manual restore points available on Studio. Can be named. Max: 10 auto / 5 manual per project. Full project state snapshot stored in the database.
+
+---
+
+## Account Settings
+
+Click account avatar (top right). Six tabs:
+
+| Tab | Contents |
+|---|---|
+| Profile | Display name, Google account connection, avatar selector |
+| Appearance | Theme (dark/light), display font (Cinzel/Playfair Display/IM Fell English), snap to grid toggle, Grim font size, watermark toggle (Pro), custom logo upload (Studio), Grim avatar style |
+| Plan & Billing | Current plan, upgrade options, billing management, token pack purchases |
+| Project Defaults | Default project type, Next 10 Days toggle |
+| Data | Import from file, Google Drive Load, Full Backup download |
+| Danger Zone | Account deletion |
+
+Light mode: background #f5f4f0, surface #ffffff, text #111111, accent #7c3aed. Presentation mode stays dark even in light mode.
+
+---
+
+## FAQ
+
+**What is GrimFolio?**
+A creative project planning tool built for people who make immersive experiences — haunted houses, escape rooms, theater, film, TTRPGs, live events. It gives you a structured way to capture ideas, map how everything connects, and manage production from concept to opening night.
+
+**Is it free?**
+Yes. The Free plan is genuinely free — no credit card required. You get 3 projects, document exports, and a preview of Grim.
+
+**Is the AI optional?**
+Completely. The Base Unlimited plan has no Grim access at all and is still a full-featured planning tool. Every core feature works without AI.
+
+**Can I collaborate with others?**
+Studio plan users can invite up to 5 collaborators per project as Editors or Viewers. Assign cards to team members, @mention them in comments, and get notified of assignments and mentions.
+
+**Can I export my data?**
+No lock-in. Export any project as Quick Export (JSON) or Full Export (ZIP) at any time, on any plan. Full Export includes every card, connection, image, document, and Grim chat history.
+
+**Can I use it on mobile?**
+Yes. Stage 1, Stage 3, and most tools are fully usable on phone or tablet. The canvas is optimized for desktop.
+
+**Can checklist items repeat automatically?**
+Yes. Individual checklist items can be set to recur on a schedule — daily, weekly, monthly, or custom. Calendar events do not repeat.
+
+**What is the Ownership Report?**
+A PDF export grouping all cards by assigned team member, with unassigned cards at the end and a summary bar showing totals. Accessed via the Export dropdown.
+
+---
+
+## Links
+
+- [GrimFolio App](https://grimfolio.com)
+- [Documentation](https://docs.grimfolio.com)
+- [Pricing](https://grimfolio.com/pricing)
+- [Blog](https://docs.grimfolio.com/blog/index.html)

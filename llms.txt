@@ -1,0 +1,44 @@
+# GrimFolio Documentation
+
+> Official documentation for GrimFolio — a creative project planning tool for haunted house designers, escape room builders, theater directors, film makers, TTRPG dungeon masters, cosplayers, and immersive experience creators.
+
+## What This Site Contains
+
+This site (docs.grimfolio.com) is the full user documentation for GrimFolio. It covers every feature of the app in structured detail.
+
+## Documentation Pages
+
+- [Home / Overview](https://docs.grimfolio.com/index.html)
+- [Dashboard](https://docs.grimfolio.com/dashboard.html)
+- [FAQ](https://docs.grimfolio.com/faq.html)
+- [Stage 1 — The Pile](https://docs.grimfolio.com/stage-1.html)
+- [Stage 2 — Build](https://docs.grimfolio.com/stage-2.html)
+- [Stage 3 — Production](https://docs.grimfolio.com/stage-3.html)
+- [Grim (AI Collaborator)](https://docs.grimfolio.com/grim.html)
+- [Export & Import](https://docs.grimfolio.com/exports.html)
+- [Reference Documents](https://docs.grimfolio.com/reference-documents.html)
+- [Inspiration Library](https://docs.grimfolio.com/inspiration-library.html)
+- [GrimVision](https://docs.grimfolio.com/grimvision.html)
+- [Inventory](https://docs.grimfolio.com/inventory.html)
+- [Calendar](https://docs.grimfolio.com/calendar.html)
+- [Account Settings](https://docs.grimfolio.com/account.html)
+- [Team and Collaboration](https://docs.grimfolio.com/team.html)
+- [Referrals and Ambassador](https://docs.grimfolio.com/referrals.html)
+
+## Full Plain Text Version
+
+A single flat Markdown file containing the complete documentation for AI consumption:
+[https://docs.grimfolio.com/llms-full.txt](https://docs.grimfolio.com/llms-full.txt)
+
+## Product Overview
+
+GrimFolio is a three-stage creative project planning tool. Stage 1 (The Pile) is raw idea capture. Stage 2 (Build) is a spatial canvas where cards are arranged and connected. Stage 3 (Production) is a customizable widget-based command center.
+
+Cards are the core unit — each card carries notes, status, priority, due date, tags, assignees, photos, budget lines, checklists, inspiration images, inventory assignments, and comments.
+
+Grim is the built-in AI collaborator. She reads the full project at the start of every turn and can create cards, build checklists, generate budget lines, suggest connections, and write project summaries.
+
+## Links
+
+- [GrimFolio App](https://grimfolio.com)
+- [Full AI-readable docs](https://docs.grimfolio.com/llms-full.txt)
